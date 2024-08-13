@@ -21,3 +21,4 @@ The following events are currently scheduled.
 - TBD - Yard Charge
 - 10/19 - Troop Planning Meeting - Time TBD (tentative)
 
+<iframe src="https://calendar.google.com/calendar/embed?src=ccb15b7c3c3e506c128bcabfb6b42037342f0d1b73f8e493120475e07f119d07%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
