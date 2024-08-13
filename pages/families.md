@@ -101,6 +101,8 @@ Initially, the girls will get their rank requirements signed off by more advance
 Every rank requires a Scoutmaster Conference.  Ranks beyond Scout Rank also require a Board of Review.  More info about these can be found here.
 
 The path to Eagle consists of the following steps:
+
+| |Scout|Tenderfoot|2nd Class|1st Class|Star|Life|Eagle|
 |---|---|---|---|---|---|---|---|
 |Minimum Active Period| | | | | 4 months | 6 months | 6 months |
 |Typical Active Period| | | | | | | 10 months |
