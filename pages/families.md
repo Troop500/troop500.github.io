@@ -12,7 +12,7 @@ Scouts is a new experience for both scout and parent. There is a time when the p
 
 ## Uniform
 
-The formal BSA uniform is termed a "Class A". The Class A uniform consists of the following:
+The formal SA uniform is termed a "Class A". The Class A uniform consists of the following:
 
 - Scout Uniform Shirt with dark green epaulets and the following patches (Proper placement of the badges is shown in the Scout Handbook):
 	- Lake Erie Council
@@ -20,7 +20,7 @@ The formal BSA uniform is termed a "Class A". The Class A uniform consists of th
 	- Purple Fleur de Lis
 	- Patrol Badge *We will provide this for you, and will change depending on your patrol within the troop
 - Purple neckerchief, with lime green edging           *We will provide this for you
-- BSA Scout belt (some pants and shorts have a "built in" belt)
+- SA Scout belt (some pants and shorts have a "built in" belt)
 - Scout Uniform Pants or zip-off pants (uniform shorts for summer)
 
 You will also need to purchase a Scout Handbook for Girls.  *This is provided for all girls that are crossing over from Cubs
@@ -68,7 +68,9 @@ In order for your daughter to get the most out of scouting, it is essential that
 Please read through the Guide to Safe Scouting book with your child. You can find it in the front of every new Scoutbook, as well as in our Google Drive folder.  Then watch the Personal Safety Videos that correspond to your rank at this link: https://www.scouting.org/training/youth/scouts-bsa/
 
 ## Technology
-We communicate via Groupme and have a adult and Scout whole group chat, as well as have a Scout-specific chat.  This Scout chat is monitored by two-deep adult leadership.  **Whenever there is any online/text/virtual/phone communication between a Scout and an adult, there must always be two adults that are a part of this communication, just like we have two-deep leadership in person.  A youth should NEVER be communicating with an adult 1-on-1. **
+We communicate via Groupme and have a adult and Scout whole group chat, as well as have a Scout-specific chat.  This Scout chat is monitored by two-deep adult leadership.
+
+**Whenever there is any online/text/virtual/phone communication between a Scout and an adult, there must always be two adults that are a part of this communication, just like we have two-deep leadership in person.  A youth should NEVER be communicating with an adult 1-on-1.**
 
 We allow Scouts to bring phones with them to meetings and outings and to use them appropriately. If technology use becomes a problem, that will be dealt with on a case-by-case basis. 
 
@@ -77,7 +79,8 @@ Service to others is a cornerstone of the SA philosophy.  The girls are encourag
 
 ## Troop Organization
 Elections are held for patrol and troop positions.  Senior Patrol Leader is elected every 6 months.  Experienced scouts holding a rank of First Class or higher, and having been active in a scout troop for at least six months, will have an opportunity to run for patrol and troop positions.
-**Those that are elected to leadership positions will be expected to participate in Patrol Leader Conferences, which are held at least monthly and involve planning troop meetings and activities.
+
+**Those that are elected to leadership positions will be expected to participate in Patrol Leader Conferences, which are held at least monthly and involve planning troop meetings and activities.**
 
 ### Current Adult Leadership Contact Information:
 Charter Organization = Advent Lutheran Church (Anthony Binkowsky is our Charter Organization Representative)
@@ -98,9 +101,14 @@ Initially, the girls will get their rank requirements signed off by more advance
 Every rank requires a Scoutmaster Conference.  Ranks beyond Scout Rank also require a Board of Review.  More info about these can be found here.
 
 The path to Eagle consists of the following steps:
-<insert table here>
+|---|---|---|---|---|---|---|---|
+|Minimum Active Period| | | | | 4 months | 6 months | 6 months |
+|Typical Active Period| | | | | | | 10 months |
+|Cumulative Merit Badges| | | | | 6, 4 Eagle require | 11, 7 Eagle required | 21, 14 Eagle required |
+|Typical Age| 11-12 | 11-12 | 12-13 | 14-15 | 15-16 | 16-17 | Before 18 years old |
+|Fast Track Age| | | By end of 1st year | 11-12 | 12-13 | 13-14 | 14-15 |
 
-*Note: Advancement requires scoutmaster conference, merit badges, service projects, and other activities so the "Minimum Active Period" quoted here and in the Scout Book is very misleading.
+Note: Advancement requires scoutmaster conference, merit badges, service projects, and other activities so the "Minimum Active Period" quoted here and in the Scout Book is very misleading.
 
 ## Merit Badges
 Scouts earn merit badges throughout their scouting career. Twenty-one badges are the minimum for Eagle Scout Rank of which fourteen specific badges are identified as required. The girls will work with a merit badge counselor to complete the requirements, and can also complete these during merit badge universities and during summer camp, along with their individual work. 
@@ -112,15 +120,14 @@ Paper blue cards are in three parts. One part is held by the Troop, one part is 
 ## Parent Involvement
 Becoming a trained scout leader will provide numerous opportunities for you to make your daughter's scouting experience rich and rewarding.  Adult leaders help to organize and assist the girls in running outings.  You also provide leadership examples for the girls. Though Scouts lead, adults facilitate the details.
 
-
 ## Safety and Youth Protection
-Scouting promises adventure, learning, challenge, responsibility and much more. In order to fulfill these promises, Scouting must be safe. All scout leaders are trained and certified in the Youth Protection program through Boy Scouts of America. Scout parents are also required to complete a Youth Protection exercise with their daughter and submit documentation of this exercise to the troop.
+Scouting promises adventure, learning, challenge, responsibility and much more. In order to fulfill these promises, Scouting must be safe. All scout leaders are trained and certified in the Youth Protection program through Scouting America. Scout parents are also required to complete a Youth Protection exercise with their daughter and submit documentation of this exercise to the troop.
 
 Safe scouting is everything from safety in camping, knife skills, fire skills, and using a buddy
-system to recognition, prevention and intervention in situations of bullyingIt also includes
+system to recognition, prevention and intervention in situations of bullying. It also includes
 safety from physical or sexual abuse.
 
-To ensure the safety of all scouts, Boy Scouts of America requires "Two Deep Leadership."  This means that there must be at least two adults present for any scouting activity.  This is especially essential during outings, summer camp and high adventure activities.  To achieve this level of safety, parents must take an active part in the operations and activities of the troop.
+To ensure the safety of all scouts, Scouting America requires "Two Deep Leadership."  This means that there must be at least two adults present for any scouting activity.  This is especially essential during outings, summer camp and high adventure activities.  To achieve this level of safety, parents must take an active part in the operations and activities of the troop.
 
 ## Summer Camp:
 Our troop attends one week of summer camp each summer.  The girls choose where they want to go, within a drive away, and we have generally gone to a different camp every summer.  Summer camp fees are different at each camp we attend, but we have been able to get as-needed individual camperships (“scholarship” discounts off from camp) for many of our camps, if needed.
