@@ -48,7 +48,7 @@ Form C is required for summer camp and any high adventure activity. Parts A and 
 
 ## Meetings
 Troop Meetings are held Monday evenings from 7:00 to 8:30 pm, depending on troop activities.
-In the summer months, meetings are held on Monday evenings at the Shelterhouse Picnic area in South Chagrin Reservation from 6:30-8:00pm.  Please refer to the [current calendar](https://troop500.github.io/events) for up-to-date details.
+In the summer months, meetings are held on Monday evenings at the Shelterhouse Picnic area in South Chagrin Reservation from 6:30-8:00pm.  Please refer to the [current calendar](/events) for up-to-date details.
 
 
 ## Outings

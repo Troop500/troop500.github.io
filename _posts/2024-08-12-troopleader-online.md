@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Learning Resources"
-author: "Ryan"
+title: "Troop Resources"
+author: "Mr. Ryan"
 categories: resources
 tags: [resources, online]
 image: arctic-2.jpg
