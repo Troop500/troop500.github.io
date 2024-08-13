@@ -1,7 +1,6 @@
 ---
-layout: category
+layout: page
 title: Upcoming Events
-category: events
 permalink: /events
 ---
 
