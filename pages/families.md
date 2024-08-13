@@ -125,11 +125,9 @@ Becoming a trained scout leader will provide numerous opportunities for you to m
 ## Safety and Youth Protection
 Scouting promises adventure, learning, challenge, responsibility and much more. In order to fulfill these promises, Scouting must be safe. All scout leaders are trained and certified in the Youth Protection program through Scouting America. Scout parents are also required to complete a Youth Protection exercise with their daughter and submit documentation of this exercise to the troop.
 
-Safe scouting is everything from safety in camping, knife skills, fire skills, and using a buddy
-system to recognition, prevention and intervention in situations of bullying. It also includes
-safety from physical or sexual abuse.
+Safe scouting is everything from safety in camping, knife skills, fire skills, and using a buddy system to recognition, prevention and intervention in situations of bullying. It also includes safety from physical or sexual abuse.
 
 To ensure the safety of all scouts, Scouting America requires "Two Deep Leadership."  This means that there must be at least two adults present for any scouting activity.  This is especially essential during outings, summer camp and high adventure activities.  To achieve this level of safety, parents must take an active part in the operations and activities of the troop.
 
-## Summer Camp:
+## Summer Camp
 Our troop attends one week of summer camp each summer.  The girls choose where they want to go, within a drive away, and we have generally gone to a different camp every summer.  Summer camp fees are different at each camp we attend, but we have been able to get as-needed individual camperships (“scholarship” discounts off from camp) for many of our camps, if needed.
