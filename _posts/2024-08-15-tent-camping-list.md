@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Troop Resources"
+title: "Tent Camping Checklist"
 author: "Amy"
 categories: resources
 tags: [resources, checklist]
