@@ -20,31 +20,31 @@ Ideally, you’ll want to set your tent up on a clean, dry surface, preferably i
 
 1. Unpack your tent from the stuff sack. 
 2. Inventory all of the contents. You should have: 
-  - Tent – one (1) 
-  - Rain fly – one (1) 
-  - Leg poles - two (2) - these have two (2) aluminum sections each with a shock cord holding them together. 
-  - Pole bag – one (1) – holds the two leg poles
-  - Tent Stuff Sack – holds the complete contents of your tent 
-  - Tent Stakes and bag
-  - footprint 
+    - Tent – one (1) 
+    - Rain fly – one (1) 
+    - Leg poles - two (2) - these have two (2) aluminum sections each with a shock cord holding them together. 
+    - Pole bag – one (1) – holds the two leg poles
+    - Tent Stuff Sack – holds the complete contents of your tent 
+    - Tent Stakes and bag
+    - footprint 
 3. Open the entrance end of your tent to gently shake out any mud, grass, leaves or other debris which may be trapped inside. You might need to turn the tent completely inside out so that you can shake out any tiny sand or dirt that is inside, because this can damage the tent.
 4. Setup the tent, just like you do during our campouts.  **If you had turned the tent inside out, make sure that you carefully turn it back to right-side-in before you set up the tent.** Leave the rain fly OFF of your tent so that the air can flow through it.  Leave all of the zippers unzipped, as well.
 5. If there is mud inside your tent:  
-  1. remove as much of the mud as possible first. Place the setup tent into direct sun light or a light breeze for several hours until the mud is dried. Gently shake or sweep out the dried mud and debris.
-  2. Wipe out the remaining dried mud with a soap and water solution and a sponge. Allow your tent to thoroughly dry.
+    1. remove as much of the mud as possible first. Place the setup tent into direct sun light or a light breeze for several hours until the mud is dried. Gently shake or sweep out the dried mud and debris.
+    2. Wipe out the remaining dried mud with a soap and water solution and a sponge. Allow your tent to thoroughly dry.
 6. Dry the rain fly by hanging it over a clothes line or patio chairs (Do NOT hang it over a fence or bushes because these can snag or puncture the nylon fabric.
 7. Turn the tent pole and tent stuff sack inside out to remove any debris. Hang the inside-out pole bag and the tent stuff sack in the sun or breeze and let them dry thoroughly.
 8. After your tent has been drying, check to make sure that the tent is COMPLETELY dry.  If it is completely dry, you won’t feel any moisture at all, anywhere inside or outside the tent. This is very important!  If your tent is not dry, you’ll need to give it more time to dry.  You cannot put it into the bag until it is 100% dry.  Do not leave your tent out overnight because moisture will condense on the surface and you’ll have to wait longer for it to dry completely.
 9.  When completely dry, disassemble your tent and account for all the parts of the tent including the tent, tent poles, tent fly, stakes, and footprint.
 10. Re-pack your tent 
-  1. Turn the tent pole bag right-side-in & pack the two poles inside, then  tie it shut.
-  1. Fold the tent lengthwise in half and in half again. Allow trapped air to escape before rolling it. 
-  1. Fold the rain fly lengthwise in half and in half again and place it on top of the tent. 
-  1. Fold the Footprint in half and then in half again and place it on top of the rain fly.  
-  1. You will roll the tent, footprint, and rain fly together. 
-  1. Place the pole bag at one end of the tent and roll the pole bag, tent, footprint, and rain fly SLOWLY and tightly from one end to the other, allowing ALL trapped air to escape as you roll. Keep the roll aligned, like a roll of paper towels. 
-  1. Turn the tent stuff sack right-side out so that you can see the number of your tent on the outside (shake the bag to ensure there’s no debris remaining inside the bag.) 
-  1. Insert the tent, rain fly and rolled-up pole bag into the tent bag and secure the top.
+    1. Turn the tent pole bag right-side-in & pack the two poles inside, then  tie it shut.
+    1. Fold the tent lengthwise in half and in half again. Allow trapped air to escape before rolling it. 
+    1. Fold the rain fly lengthwise in half and in half again and place it on top of the tent. 
+    1. Fold the Footprint in half and then in half again and place it on top of the rain fly.  
+    1. You will roll the tent, footprint, and rain fly together. 
+    1. Place the pole bag at one end of the tent and roll the pole bag, tent, footprint, and rain fly SLOWLY and tightly from one end to the other, allowing ALL trapped air to escape as you roll. Keep the roll aligned, like a roll of paper towels. 
+    1. Turn the tent stuff sack right-side out so that you can see the number of your tent on the outside (shake the bag to ensure there’s no debris remaining inside the bag.) 
+    1. Insert the tent, rain fly and rolled-up pole bag into the tent bag and secure the top.
 
 # Cooler Cleaning Procedure 
 
