@@ -6,8 +6,7 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 8/19: Troop Meeting
-- 8/26: Court of Honor (in place of troop meeting)
+- 8/26: Court of Honor (in place of troop meeting, please bring treenut-free snack or drink to share)
 - 9/02: Labor Day, no meeting  **Meetings will switch back to 7:00 at church**
 - 9/03: PLC
 - 9/06-07: Scouting in Twinsburg [RSVP](https://forms.gle/YUt9AmCVxDkaFjhK6)
@@ -23,7 +22,7 @@ The following events are currently scheduled.
 - 10/1: PLC
 - 10/4-6: Tough As Nails Camporee @ Firelands [RSVP](https://forms.gle/YqeJ7Hws3uy7sZ7m8)
 - 10/7: Troop Meeting
-- 10/11-13: Cub Haunted  (volunteering)
+- 10/11-13: Volunteer @ Cub Haunted [RSVP](https://forms.gle/9gQyTM925DaLUVSw7)
 - 10/14: Troop Meeting
 - TBD: Yard Charge
 - 10/19: Troop Planning Meeting - Time TBD (tentative)
