@@ -6,7 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 8/26: Court of Honor (in place of troop meeting, please bring treenut-free snack or drink to share)
 - 9/02: Labor Day, no meeting  **Meetings will switch back to 7:00 at church**
 - 9/03: PLC
 - 9/06-07: Scouting in Twinsburg - RSVP is Closed
