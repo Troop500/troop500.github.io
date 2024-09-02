@@ -11,7 +11,7 @@ The following events are currently scheduled.
 - 9/06-07: Scouting in Twinsburg - RSVP is Closed
 	- Meet at Twinsburg Town Square (9050 Church St) at 6:30 PM on Friday, Sept 6th.  Please come having already eaten dinner, wearing Class A's.  
 	- Scouts will need to be picked up at the Square around 3pm on Saturday Sept 7th after helping to clean up.
-- 9/09: Troop Meeting
+- 9/09: Troop Meeting - 7pm at Church
 - 9/16: Troop Meeting
 - 9/20-22: MAPS Air Museum Campout - RSVP is Closed
 	- Meet at 5pm at the Church having eaten dinner and wearing Class As. 
@@ -24,7 +24,7 @@ The following events are currently scheduled.
 - 10/11-13: Volunteer @ Cub Haunted [RSVP due Sept 11](https://forms.gle/9gQyTM925DaLUVSw7)
 - 10/14: Troop Meeting
 - TBD: Yard Charge
-- 10/19: Troop Planning Meeting - Time TBD (tentative)
+- 10/19: Troop Planning Meeting - 12-4pm @ the church
 - 10/21: Troop Meeting
 - 10/28: Troop Meeting
 
