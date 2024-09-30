@@ -6,21 +6,11 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 9/06-07: Scouting in Twinsburg - RSVP is Closed
-	- Meet at Twinsburg Town Square (9050 Church St) at 6:30 PM on Friday, Sept 6th.  Please come having already eaten dinner, wearing Class A's.  
-	- Scouts will need to be picked up at the Square around 3pm on Saturday Sept 7th after helping to clean up.
-- 9/09: Troop Meeting - 7pm at Church
-- 9/16: Troop Meeting
-- 9/20-22: MAPS Air Museum Campout - RSVP is Closed
-	- Meet at 5pm at the Church having eaten dinner and wearing Class As. 
-	- We will return at approximately 9:30am on Sunday.
-- 9/23: ILST - Youth leaders only. Meet at Church at 7pm
-- 9/28: Fundraiser @ Car Wash 10am-2pm
 - 9/30: Troop Meeting
 - 10/1: PLC
-- 10/4-6: Tough As Nails Camporee @ Firelands [RSVP due Sept 9](https://forms.gle/YqeJ7Hws3uy7sZ7m8)
+- 10/4-6: Tough As Nails Camporee @ Firelands [RSVP Closed]
 - 10/7: Troop Meeting
-- 10/11-13: Volunteer @ Cub Haunted [RSVP due Sept 11](https://forms.gle/9gQyTM925DaLUVSw7)
+- 10/11-13: Volunteer @ Cub Haunted [RSVP Closed]
 - 10/14: Troop Meeting
 - TBD: Yard Charge
 - 10/19: Troop Planning Meeting - 12-4pm @ the church
