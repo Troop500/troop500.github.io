@@ -6,10 +6,7 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 10/26: Trunk or Treat - 4-7:15pm @ the church
-- 10/28: Troop Meeting
-- 11/4: Troop Meeting
-- 11/5: PLC
+- 11/4: PLC
 - 11/11: Troop Meeting
 - 11/16: Yard Charge - 9-noon, location TBD
 - 11/18: Troop Meeting
