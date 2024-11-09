@@ -7,7 +7,7 @@ permalink: /events
 The following events are currently scheduled.
 
 - 11/11: Troop Meeting
-- 11/16: Yard Charge - 9-noon, location TBD
+- 11/16: Yard Charge - 9-noon, location TBD [RSVP](https://forms.gle/KkY9YHExHkNzK9vH7)
 - 11/18: Troop Meeting
 - 11/25: Troop Meeting
 - 12/2: Troop Meeting
