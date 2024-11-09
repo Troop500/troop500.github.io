@@ -6,7 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 11/4: PLC
 - 11/11: Troop Meeting
 - 11/16: Yard Charge - 9-noon, location TBD
 - 11/18: Troop Meeting
@@ -15,7 +14,7 @@ The following events are currently scheduled.
 - 12/3: PLC
 - 12/6-12/8: Boomers vs Zoomers [RSVP](https://forms.gle/7abqqEbNUwPPmgbN7)
 - 12/9: Troop Meeting
-- 12/14: Whirlyball 2:30pm-5
+- 12/14: Whirlyball 2:30pm-5 [RSVP](https://docs.google.com/forms/d/e/1FAIpQLSeaUA152M9W1CXoK3slxv48xmy4qGxOD9fSGiNMy65A0aUUhg/viewform?usp=pp_url), [Waiver](https://img1.wsimg.com/blobby/go/02799e64-7b22-40c3-b0fe-6fc0dcbb70e2/Whirlyball-Cleveland-pages-8.pdf)
 - 12/16: Troop Meeting
 - 1/6: Troop Meeting
 - 1/7: PLC
