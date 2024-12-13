@@ -6,12 +6,7 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 12/2: Eagle COH - 6:30pm
-- 12/3: PLC
-- 12/6-12/8: Boomers vs Zoomers [RSVP Closed]
-  - Meet at Church at 5pm having already eaten, wearing Class As. We will be home around 10am on Sunday.
-- 12/9: Troop Meeting
-- 12/14: Whirlyball 2:30pm-5 [RSVP](https://docs.google.com/forms/d/e/1FAIpQLSeaUA152M9W1CXoK3slxv48xmy4qGxOD9fSGiNMy65A0aUUhg/viewform?usp=pp_url), [Waiver](https://img1.wsimg.com/blobby/go/02799e64-7b22-40c3-b0fe-6fc0dcbb70e2/Whirlyball-Cleveland-pages-8.pdf)
+- 12/14: Whirlyball 2:30pm-5 [RSVP Closed], [Waiver](https://img1.wsimg.com/blobby/go/02799e64-7b22-40c3-b0fe-6fc0dcbb70e2/Whirlyball-Cleveland-pages-8.pdf)
 - 12/16: Troop Meeting
 - 1/6: Troop Meeting
 - 1/7: PLC
