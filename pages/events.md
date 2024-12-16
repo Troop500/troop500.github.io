@@ -8,6 +8,7 @@ The following events are currently scheduled.
 
 - 12/14: Whirlyball 2:30pm-5 [RSVP Closed], [Waiver](https://img1.wsimg.com/blobby/go/02799e64-7b22-40c3-b0fe-6fc0dcbb70e2/Whirlyball-Cleveland-pages-8.pdf)
 - 12/16: Troop Meeting
+- 12/30: Troop Meeting
 - 1/6: Troop Meeting
 - 1/7: PLC
 - 1/10-1/12: Klondike Camping [RSVP](https://forms.gle/djtCiEfDYcuFnoBa7)
