@@ -1,5 +1,8 @@
 The website of Scouting America Troop 500G
 
+## Building with GitHub Actions
+TODO: Update.  GitHub will automatically build and deploy the site based on commits to gh-pages branch. 
+
 ## Building Locally with Docker
 
 ### Dependencies
