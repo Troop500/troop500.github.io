@@ -13,6 +13,16 @@ Ensure you have Docker installed on your system. You can follow the instructions
 - **Ubuntu**: [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 - **Mac**: [Install Docker Desktop on Mac](https://docs.docker.com/desktop/install/mac-install/)
 
+### Build the Jekyll site
+```sh
+docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build
+```
+
+### Serve the Jekyll site
+```sh
+docker run --name newblog --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve --watch --drafts
+```
+
 ## Adding and Removing Posts
 
 ### Adding a Post
@@ -38,13 +48,3 @@ Ensure you have Docker installed on your system. You can follow the instructions
 2. Locate the file you want to remove.
 3. Delete the file.
 4. Commit your changes.
-
-### Build the Jekyll site
-```sh
-docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build
-```
-
-### Serve the Jekyll site
-```sh
-docker run --name newblog --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve --watch --drafts
-```
