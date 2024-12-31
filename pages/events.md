@@ -6,7 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 12/30: Troop Meeting
 - 1/6: Troop Meeting
 - 1/7: PLC
 - 1/10-1/12: Klondike Camping [RSVP Closed]
@@ -17,6 +16,7 @@ The following events are currently scheduled.
 - 2/3: Troop Meeting
 - 2/4: PLC
 - 2/10: Troop Meeting
+- 2/14: First Aid Meet - 1pm
 - 2/17: Troop Meeting
 - 2/24: Troop Meeting
 - 4/5: Planning Meeting - 1pm
