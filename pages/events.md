@@ -6,8 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 1/20: Troop Meeting
-- 1/27: Troop Meeting (Elections)
 - 2/3: Troop Meeting
 - 2/4: PLC
 - 2/10: Troop Meeting
@@ -15,9 +13,10 @@ The following events are currently scheduled.
 - 2/17: Troop Meeting
 - 2/24: Troop Meeting
 - 3/3: Troop Meeting
+- 3/8: Sap Camp at Beaumont
+	Arrive at 9am wearing Class As.
 - 3/10: Troop Meeting
 - 3/17: Troop Meeting
-- 3/21: MBU @ Beaumont (tentative)
 - 3/24: Troop Meeting
 - 3/31: Troop Meeting
 - 4/5: Planning Meeting - 1pm
