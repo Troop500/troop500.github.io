@@ -14,7 +14,7 @@ The following events are currently scheduled.
 - 2/24: Troop Meeting
 - 3/3: Troop Meeting
 - 3/8: Sap Camp at Beaumont
-	Arrive at 9am wearing Class As.
+  - Arrive at Church by 9am wearing Class As.
 - 3/10: Troop Meeting
 - 3/17: Troop Meeting
 - 3/24: Troop Meeting
