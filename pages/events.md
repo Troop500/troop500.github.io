@@ -6,18 +6,13 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 2/10: Troop Meeting
-- 2/11: PLC
-- 2/16: First Aid Meet - 1pm
-- 2/17: Troop Meeting
-- 2/24: Troop Meeting
-- 3/3: Troop Meeting
 - 3/8: Sap Camp at Beaumont
   - Arrive at Church by 9am wearing Class As.
 - 3/10: Troop Meeting
 - 3/17: Troop Meeting
 - 3/24: Troop Meeting
 - 3/31: Troop Meeting
+- 4/1: PLC Meeting
 - 4/5: Planning Meeting - 1pm
 - 4/11-4/13: Zombie Campout at Tuscazoar
 - 5/2-5/4: Plant Science MB Campout at Tuscazoar
