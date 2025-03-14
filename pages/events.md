@@ -7,7 +7,7 @@ permalink: /events
 The following events are currently scheduled.
 
 - 3/17: Troop Meeting
-- 3/24: Troop Meeting
+- 3/24: **NO** Troop Meeting - Spring Break
 - 3/31: Troop Meeting
 - 4/1: PLC Meeting
 - 4/6: Planning Meeting - 1pm **DATE CHANGE**
