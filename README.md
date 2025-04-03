@@ -82,17 +82,41 @@ The site will be available at `http://localhost:4000` until you stop the Docker 
 
 ## Adding a New Page
 
-### Adding a "Files" Page
+To add a new page to the site:
 
-1. Navigate to the root directory of the project.
-2. Create a new file named `files.md`.
+1. Navigate to the `pages` directory of the project.
+2. Create a new file with a descriptive name (e.g., `files.md` for a Files page).
 3. Add the following front matter to the top of the file:
     ```markdown
     ---
     layout: page
-    title: "Troop 500G Files"
-    permalink: /files
+    title: "Page Title"
+    permalink: /page-permalink
     ---
     ```
-4. Add the content for the "Files" page below the front matter.
-5. Save the file and commit your changes.
+    Replace `Page Title` with the title of the page and `page-permalink` with the desired URL path for the page.
+4. Add the content for the page below the front matter. For example, the Files page includes:
+    ```markdown
+    Welcome to the Documents page. Here you can find important files and resources for Troop 500G.
+
+    - [Inventory - Patrol Box](assets/files/inventory-patrol-box.pdf){:target="_blank"}
+    ```
+5. Open the `_data/settings.yml` file and add the new page to the `menu` section. Use the following format:
+    ```yaml
+    - {name: 'Page Title', url: 'page-permalink'}
+    ```
+    Replace `Page Title` with the title of the page and `page-permalink` with the permalink defined in the front matter.
+6. Save your changes and commit them to the repository.
+
+## Adding a New File
+
+To add a new file to the site:
+
+1. Place the file in the `assets/files/` directory. Ensure the file name is descriptive and uses lowercase letters with hyphens as separators (e.g., `inventory-troop-gear.pdf`).
+2. Open the `pages/files.md` file.
+3. Add a new list item with a link to the file. Use the following format:
+    ```markdown
+    - [File Description](assets/files/filename.pdf){:target="_blank"}
+    ```
+    Replace `File Description` with a meaningful description of the file and `filename.pdf` with the actual file name.
+4. Save your changes and commit them to the repository.
