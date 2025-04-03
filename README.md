@@ -79,3 +79,20 @@ The site will be available at `http://localhost:4000` until you stop the Docker 
 2. Locate the file you want to remove.
 3. Delete the file.
 4. Commit your changes.
+
+## Adding a New Page
+
+### Adding a "Files" Page
+
+1. Navigate to the root directory of the project.
+2. Create a new file named `files.md`.
+3. Add the following front matter to the top of the file:
+    ```markdown
+    ---
+    layout: page
+    title: "Troop 500G Files"
+    permalink: /files
+    ---
+    ```
+4. Add the content for the "Files" page below the front matter.
+5. Save the file and commit your changes.
