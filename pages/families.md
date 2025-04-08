@@ -10,8 +10,24 @@ We are happy to have you and your daughter join us for the awesome adventure of 
 
 Scouts is a new experience for both scout and parent. There is a time when the parents, although still involved in new ways, take a step back and let their daughters take on more and more responsibility for their achievements. While Scouts is girl led, it is parent facilitated. Your role as a facilitator requires a commitment of your time on both organizational and activity levels. To support the girls in their efforts, this guide provides a brief overview of what a parent needs to know to survive the first year of scout life.
 
-## Uniform
+## Meetings
+Troop Meetings are held Monday evenings from 7:00 to 8:30 pm, depending on troop activities.
+In the summer months, meetings are held on Monday evenings at the Shelterhouse Picnic area in South Chagrin Reservation from 6:30-8:00pm.  Please refer to the [current calendar](/events) for up-to-date details.
 
+## Outings
+The Troop organizes outings each month.  The outings are designed to provide opportunities for the girls to complete rank requirements and merit badges. They are also fun times with camping, hiking, cooking, and other outdoor activities. Most outings are Friday evenings through Sunday mid-day. Parents are encouraged to attend outings and share the outdoor experience with your daughter.  **Fees for the outings vary, are paid per outing by those Scouts and adults attending, and are to be paid in advance.**  RSVPs are done on Scoutbook and we ask for a Google Form to be completed if you plan to attend (info for this link will be in Scoutbook) and indicate your commitment to paying your Scout’s fees for attending, as we often either register your daughter in advance when going to a Council-sponsored event and/or are reserving campsites and purchasing food based on the numbers that RSVP as attending.  These Scoutbook invitations are used for planning purposes and it is asked that each Scout/adult complete the calendar invitation regardless of whether they plan to attend the event or not. Thank you!
+
+Scouts camp and cook in patrols, and Scouts most often will tent with a buddy. Tent partners can be no more than 2 years apart in age. Tents and all cooking equipment are supplied by the troop.  **Scouts need to pack and bring all personal clothes, sleeping bag and pad, a camp chair, mess kit, day backpack with individual first aid kit, Scout book, and anything else individually needed for the trip.**  Each patrol, generally, will have a “Grubmaster” that is responsible for planning the food menu, budgeting, shopping, and prepping for the food for the event.  Recommended packing lists are available on the [Resources](/resources) page.
+
+The girls plan/calendar for by outings during a twice yearly "Semi-Annual Planning Meeting" during which time we look at school and other calendars, take into account what the Scouts are interested in and the activities that they want to do, and plan our calendar 6 months in advance. The girls’ interests drive our calendars and activities that are planned.  
+
+## Fees
+Along with the fees per outing and the annual membership renewal fees per Scout, the troop has has twice yearly Troop fees.  Because it can be burdensome to purchase everything needed when you first start in the troop, all new members will forgo the initial membership fee that is due once they join the troop.  They will then be responsible for membership fees **after** this first fee.  Currently, the dues are $50 every 6 months, but that price is subject to change.  Fees are put towards purchasing merit badges, items needed for Courts of Honor, and other troop-related expenses.  
+
+## Attendance at Troop and Patrol Meetings and Outings
+In order for your daughter to get the most out of scouting, it is essential that she attend troop meetings, patrol meetings (if they are a part of them) and outings on a regular basis. The troop is stronger when there is full and consistent participation.
+
+## Uniform
 The formal SA uniform is termed a "Class A". The Class A uniform consists of the following:
 
 - Scout Uniform Shirt with dark green epaulets and the following patches (Proper placement of the badges is shown in the Scout Handbook):
@@ -28,8 +44,8 @@ You will also need to purchase a Scout Handbook for Girls.  *This is provided fo
 *Troop 500 will provide each scout with the neckerchief, troop 500 numbers, and a patrol badge. The other items, except for hiking boots, can be purchased at the Scout Shop at the Lake Erie Council Headquarters building and store is at 2241 Woodland Ave. Cleveland Ohio.  All of the pants come un-hemmed.
 
 Each scout should have her complete Class A Uniform and handbook as soon as possible upon joining.
-Occasions at which Class A Uniforms are required are:
 
+Occasions at which Class A Uniforms are required are:
 - Troop Meetings 
 - Court of Honor
 - Summer Camp
@@ -45,24 +61,6 @@ For other troop activities, a Troop 500 t-shirt (aka “Class B”) can be worn 
 Medical forms are required before a scout can participate in any scouting activity. The medical forms have several parts. One of the sections includes an annual physical exam and requires a physician's signature. The entire multi-part medical form must be completed and submitted to the troop before the scout can participate in summer camp or any high adventure activity. Forms may be printed from the [scouting.org page](https://filestore.scouting.org/filestore/HealthSafety/pdf/680-001_ABC.pdf)
 
 Form C is required for summer camp and any high adventure activity. Parts A and B are required for any event.
-
-## Meetings
-Troop Meetings are held Monday evenings from 7:00 to 8:30 pm, depending on troop activities.
-In the summer months, meetings are held on Monday evenings at the Shelterhouse Picnic area in South Chagrin Reservation from 6:30-8:00pm.  Please refer to the [current calendar](/events) for up-to-date details.
-
-
-## Outings
-The Troop organizes outings each month.  The outings are designed to provide opportunities for the girls to complete rank requirements and merit badges. They are also fun times with camping, hiking, cooking, and other outdoor activities. Most outings are Friday evenings through Sunday mid-day. Parents are encouraged to attend outings and share the outdoor experience with your daughter.  Fees for the outings vary, are paid per outing by those Scouts and adults attending, and are to be paid in advance.  Google forms are used for RSVPs and your commitment to paying your Scout’s fees for attending, as we often either register your daughter in advance when going to a Council-sponsored event and/or are reserving campsites and purchasing food based on the numbers that RSVP as attending.  These RSVPs are used for planning purposes and it is asked that each Scout has an RSVP Google Form filled out regardless of whether they plan to attend the event or not.  Thank you!
-
-Scouts camp and cook in patrols, and Scouts most often will tent with a buddy. Tent partners can be no more than 2 years apart in age. Tents and all cooking equipment are supplied by the troop.  Scouts need to pack and bring all personal clothes, sleeping bag and pad, a camp chair, mess kit, day backpack with individual first aid kit, Scout book, and anything else individually needed for the trip.  Each patrol, generally, will have a “Grubmaster” that is responsible for planning the food menu, budgeting, shopping, and prepping for the food for the event.  Recommended packing lists are available on the [Resources](/resources) page.
-
-The girls plan/calendar for by outings during a twice yearly "Semi-Annual Planning Meeting" during which time we look at school and other calendars, take into account what the Scouts are interested in and the activities that they want to do, and plan our calendar 6 months in advance. The girls’ interests drive our calendars and activities that are planned.  
-
-## Fees
-Along with the fees per outing and the annual membership renewal fees per Scout, the troop has has twice yearly Troop fees.  Because it can be burdensome to purchase everything needed when you first start in the troop, all new members will forgo the initial membership fee that is due once they join the troop.  They will then be responsible for membership fees after this first fee.  Currently, the dues are $50 every 6 months, but that price is subject to change.  Fees are put towards purchasing merit badges, items needed for Courts of Honor, and other troop-related expenses.  
-
-## Attendance at Troop and Patrol Meetings and Outings
-In order for your daughter to get the most out of scouting, it is essential that she attend troop meetings, patrol meetings (if they are a part of them) and outings on a regular basis. The troop is stronger when there is full and consistent participation.
 
 ## Safe Scouting
 Please read through the Guide to Safe Scouting book with your child. You can find it in the front of every new Scoutbook, as well as in our Google Drive folder.  Then watch the Personal Safety Videos that correspond to your rank at this link: https://www.scouting.org/training/youth/scouts-bsa/
@@ -89,7 +87,7 @@ Assistant Scoutmaster = Shari Armstrong redbaron96@sbcglobal.com   216-650-3059
 Assistant Scoutmaster = Arunkumar Srinivasan mrarunks@yahoo.com  614-216-2519
 Assistant Scoutmaster = Ryan May spockmay@gmail.com 216-385-5341
 Committee Chair = Heather Gansler heatherlgee@gmail.com       440-666-6680
-Treasurer = TBD
+Treasurer = Renee Kirbawy rechell98@yahoo.com     216-314-9550
 
 Other possible adult leadership roles can be found in the Troop. We would love for any new adults to consider learning about and taking on a role. We are at our best with all hands on deck!
 
