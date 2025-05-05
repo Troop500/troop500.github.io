@@ -6,11 +6,8 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 4/21: Troop Meeting
-- 4/28: Troop Meeting
-- 5/2-5/4: Plant Science MB Campout at Tuscazoar
-  - Meet at Church at 5pm having eaten dinner and wearing class As. Plan to return around 10am on Sunday.
 - 5/5: Troop Meeting
+- 5/6: PLC Meeting
 - 5/12: Troop Meeting
 - 5/19: Troop Meeting
 - 5/25: Theater Camp at Weathervane
