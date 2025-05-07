@@ -10,9 +10,11 @@ The following events are currently scheduled.
 - 5/6: PLC Meeting
 - 5/12: Troop Meeting
 - 5/19: Troop Meeting
-- 5/25: Theater Camp at Weathervane
+- 5/24: Theater Camp at Weathervane
   - Meet at Church at 1:45pm wearing Class As.
+- 5/26: Memorial Day Parade - 9:30am
 - 6/2: Troop Meeting
+- 6/3: PLC Meeting
 - 6/9: Troop Meeting - **change to Shelterhouse at 6:30pm**
 - 6/16: Troop Meeting
 - 6/22-6/28: Summer Camp @ Beaumont
