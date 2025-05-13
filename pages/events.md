@@ -6,9 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 5/5: Troop Meeting
-- 5/6: PLC Meeting
-- 5/12: Troop Meeting
 - 5/19: Troop Meeting
 - 5/24: Theater Camp at Weathervane
   - Meet at Church at 1:45pm wearing Class As.
@@ -32,6 +29,7 @@ The following events are currently scheduled.
 - 8/25: Troop Meeting
 - 9/2: PLC Meeting
 - 9/5-9/7: Scouting in Twinsburg
+- 9/8: Court of Honor
 - 9/26-9/28: Scout Haunted at Beaumont
 - 10/10-10/12: Cub Haunted at Beaumont
 - 11/15: Yard Charge
