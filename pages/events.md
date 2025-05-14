@@ -7,8 +7,6 @@ permalink: /events
 The following events are currently scheduled.
 
 - 5/19: Troop Meeting
-- 5/24: Theater Camp at Weathervane
-  - Meet at Church at 1:45pm wearing Class As.
 - 5/26: Memorial Day Parade - 9:30am
 - 6/2: Troop Meeting
 - 6/3: PLC Meeting
