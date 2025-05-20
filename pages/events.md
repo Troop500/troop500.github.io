@@ -6,7 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 5/19: Troop Meeting
 - 5/26: Memorial Day Parade - 9:30am
 - 6/2: Troop Meeting
 - 6/3: PLC Meeting
@@ -17,9 +16,10 @@ The following events are currently scheduled.
 - 7/1: PLC Meeting
 - 7/7: Day at the Lake House
 - 7/14: Troop Meeting
+- 7/17-7/20: Mid-Adventure Expedition 
 - 7/21: Troop Meeting
 - 7/28: Troop Meeting
-- 7/31-8/3: Mid-Adventure Expedition
+- 8/2: Camp Hi
 - 8/4: Troop Meeting - Elections!
 - 8/11: Troop Meeting
 - 8/12: PLC Meeting
