@@ -6,15 +6,12 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 5/26: Memorial Day Parade - 9:30am
-- 6/2: Troop Meeting
-- 6/3: PLC Meeting
 - 6/9: Troop Meeting - **change to Shelterhouse at 6:30pm**
 - 6/16: Troop Meeting
 - 6/22-6/28: Summer Camp @ Beaumont
 - 6/30: Troop Meeting
 - 7/1: PLC Meeting
-- 7/7: Day at the Lake House
+- TBD: Day at the Lake House
 - 7/14: Troop Meeting
 - 7/17-7/20: Mid-Adventure Expedition 
 - 7/21: Troop Meeting
