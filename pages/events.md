@@ -6,19 +6,16 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 6/9: Troop Meeting - **change to Shelterhouse at 6:30pm**
-- 6/16: Troop Meeting
-- 6/22-6/28: Summer Camp @ Beaumont
-- 6/30: Troop Meeting
 - 7/1: PLC Meeting
-- TBD: Day at the Lake House
+- 7/7: Troop Meeting
 - 7/14: Troop Meeting
 - 7/17-7/20: Mid-Adventure Expedition 
 - 7/21: Troop Meeting
 - 7/28: Troop Meeting
 - 8/2: Camp Hi
 - 8/4: Troop Meeting - Elections!
-- 8/11: Troop Meeting
+- 8/6: Day at the Lake House 5:30pm-8pm
+- 8/11: **NO** Troop Meeting
 - 8/12: PLC Meeting
 - 8/18: Troop Meeting
 - 8/25: Troop Meeting
