@@ -6,11 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 7/1: PLC Meeting
-- 7/7: Troop Meeting
-- 7/14: Troop Meeting
-- 7/17-7/20: Mid-Adventure Expedition 
-- 7/21: Troop Meeting
 - 7/28: Troop Meeting
 - 8/2: Camp Hi
 - 8/4: Troop Meeting - Elections!
