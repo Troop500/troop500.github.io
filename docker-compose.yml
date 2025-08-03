@@ -1,0 +1,22 @@
+services:
+  jekyll:
+    build:
+      context: .
+      dockerfile: Dockerfile.jekyll
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+      - /srv/jekyll/vendor/bundle
+    environment:
+      - JEKYLL_ENV=development
+
+  pdf-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile.pandoc
+    volumes:
+      - .:/srv/jekyll
+    command: /scripts/build-handbook-simple.sh
+    profiles:
+      - pdf

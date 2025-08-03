@@ -9,6 +9,9 @@ highlighter:         rouge
 permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
+# Tell Jekyll to treat PDFs as static files only, not content
+keep_files:          [".pdf"]
+
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:               "Troop 500"
 description:         "a Scouting America Troop"
@@ -17,3 +20,15 @@ author:              "Webmaster"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
+
+# Exclude build and development files from Jekyll processing  
+exclude:
+  - assets/files/handbook/archive/
+  - assets/files/handbook/attachments/
+  - "assets/files/handbook/*-20*.pdf"  # Exclude timestamped PDFs only
+  - scripts/
+  - templates/
+  - Dockerfile.*
+  - docker-compose.yml
+  - build_and_test_optimized.ps1
+  - pdf_output.log
