@@ -41,22 +41,16 @@ mkdir -p "$TEMP_DIR"
 
 # Handbook sections in order (only existing files)
 HANDBOOK_SECTIONS=(
-    "_includes/introduction-welcome.md"
-    "_includes/getting-started.md"
-    "_includes/troop-structure.md"
-    "_includes/contact-info.md"
-    "pages/handbook/uniform-guidelines.md"
-    "pages/handbook/youth-leadership.md"
-    "pages/handbook/adult-leadership.md"
-    "pages/handbook/camping-guidelines.md"
-    "pages/handbook/packing-gear.md"
-    "pages/handbook/rank-advancement.md"
-    "pages/handbook/merit-badges.md"
-    "pages/handbook/safety-policies.md"
-    "pages/handbook/financial-info.md"
-    "pages/handbook/duty-rosters.md"
-    "pages/handbook/gear-maintenance.md"
-    "pages/handbook/grubmaster.md"
+    "_includes/content/handbook-introduction.md"
+    "_includes/content/introduction-welcome.md"
+    "_includes/content/getting-started.md"
+    "_includes/content/leadership-organization.md"
+    "_includes/content/outdoor-program.md"
+    "_includes/content/advancement.md"
+    "_includes/content/policies-safety.md"
+    "_includes/content/accessibility-inclusion.md"
+    "_includes/content/resources-equipment.md"
+    "_includes/content/contact-info.md"
 )
 
 echo "📝 Combining handbook sections..."
@@ -111,11 +105,18 @@ for section_file in "${HANDBOOK_SECTIONS[@]}"; do
         # Extract content without YAML frontmatter
         if grep -q "^---$" "$section_file"; then
             # Skip YAML frontmatter (everything between first two --- lines)
-            awk '/^---$/{if(++n==2) start=1; next} start' "$section_file" >> "$COMBINED_MD"
+            awk '/^---$/{if(++n==2) start=1; next} start' "$section_file" > "$TEMP_DIR/$(basename "$section_file")"
         else
-            # No frontmatter, just append the file
-            cat "$section_file" >> "$COMBINED_MD"
+            # No frontmatter, just copy the file
+            cp "$section_file" "$TEMP_DIR/$(basename "$section_file")"
         fi
+        
+        # Replace Jekyll liquid templates with actual values for PDF
+        CURRENT_DATE=$(date +'%B %Y')
+        sed -i "s/.*PDF_BUILD: REPLACE_DATE.*/*Last Updated: ${CURRENT_DATE}*/g" "$TEMP_DIR/$(basename "$section_file")"
+        
+        # Append processed content to combined markdown
+        cat "$TEMP_DIR/$(basename "$section_file")" >> "$COMBINED_MD"
         
         # Add page break between sections
         echo -e "\n\\newpage\n" >> "$COMBINED_MD"

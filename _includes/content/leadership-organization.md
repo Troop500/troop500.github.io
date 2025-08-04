@@ -1,26 +1,22 @@
-# Troop Leader"The patrol system is not one method in which Scouting can be carried on. It is the only method."
-—Lord Baden-Powell, Scouting's founder
+# Troop Leadership
 
-For more information about the patrol method, see the [Scouting America Patrol Method Guide](https://troopleader.scouting.org/general-troop-information/troop-structure/the-patrol/).
+Troop 500 operates under the Scouting America troop leadership model, where youth leaders are elected by the troop and adult leaders provide guidance and support to all youth-led activities.
 
-
-### Senior Patrol Leader (SPL) <img src="/assets/images/handbook/patch_senior_patrol_leader.jpg" alt="Senior Patrol Leader Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">ur troop operates under the Scouting America troop leadership model, where youth leaders are elected by the troop and adult leaders provide guidance and support.
-
-## Youth Leadership Positions
-
-<img src="/assets/images/handbook/Organization-Chart-726x1024.png" alt="Troop Organization Chart" style="width: 50%; max-width: 400px; height: auto; display: block; margin: 0 auto;">
-
-*Troop 500G Leadership Structure and Organization*
-
-**The Patrol Method**
+## The Patrol Method
 
 A Scout patrol is a small team of normally six to eight members where Scouts learn skills together, share responsibilities and take on leadership roles. Each patrol elects its own patrol leader and develops its own identity and traditions.
 
 “The patrol system is not one method in which Scouting can be carried on. It is the only method.”
 —Lord Baden-Powell, Scouting’s founder
 
-https://troopleader.scouting.org/general-troop-information/troop-structure/the-patrol/ 
+For more information about the patrol method, see the [Scouting America Patrol Method Guide](https://troopleader.scouting.org/general-troop-information/troop-structure/the-patrol/).
 
+
+## Youth Leadership Positions
+
+<img src="/assets/images/handbook/Organization-Chart-726x1024.png" alt="Troop Organization Chart" style="width: 50%; max-width: 400px; height: auto; display: block; margin: 0 auto;">
+
+*Troop 500G Leadership Structure and Organization*
 
 ### Senior Patrol Leader (SPL) <img src="/assets/images/handbook/patch_senior_patrol_leader.jpg" alt="Senior Patrol Leader Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
