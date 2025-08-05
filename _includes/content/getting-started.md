@@ -4,236 +4,107 @@ Welcome to Scouting America Troop 500G! We are happy to have you and your daught
 
 Scouting is a new experience for both scout and parent. There is a time when the parents, although still involved in new ways, take a step back and let their daughters take on more and more responsibility for their achievements. While Scouting is girl-led, it is parent-facilitated. Your role as a facilitator requires a commitment of your time on both organizational and activity levels. This guide provides what a parent needs to know to survive the first year of scout life.
 
-## New Scout Orientation
-All new scouts participate in a comprehensive orientation program that covers:
-- Troop traditions and expectations
-- Basic Scout skills and knowledge
-- Uniform and equipment requirements
-- Introduction to the patrol system
+## Your First Meeting
+
+We meet Monday evenings at Advent Lutheran Church (regular meetings 7:00-8:30 PM, summer meetings 6:30-8:00 PM). All activities are tracked in Scoutbook and Google Calendar, and we organize monthly outings for advancement and merit badges. 
+
+You may not have everything we list as required when you start - don't worry! Do your best, show up ready to learn about Scouting, and we'll work with you on the rest. More detailed information about meetings and activities can be found later in the handbook.
+
+## Troop Communications
+
+We use GroupMe for routine chats following all Youth Protection Training two-deep policies. We have groups for the troop, committee, parents, and each patrol, as well as groups for specific events as needed. We use Scoutbook as much as possible to keep all information in one place. Adult leaders also use a Google Drive, but we are working to move as much information as possible onto the website troop500.org to reduce the number of locations we need to access.
 
 ## Joining Conference
 Every new Scout family is required to participate in a joining conference with troop leadership before their Scout's first overnight camping experience. This friendly, informative meeting helps us understand your Scout's unique strengths, interests, and any special considerations that will help ensure their success in our program. During the conference, we'll discuss how we can work together as partners to provide the best possible Scouting experience, establish open communication, and build the foundation for a positive relationship between your family and our troop leadership. The joining conference is scheduled within the first month after joining and serves as an important step in creating a supportive environment where every Scout can thrive.
 
-## What You'll Need
-- **Official Scout Handbook**: Required for all advancement (*provided for girls crossing over from Cubs*)
-- **Troop Uniform**: Complete uniform guidelines below
-- **Basic Camping Gear**: See our recommended packing lists
-- **Positive Attitude**: Ready to learn, grow, and have fun!
+## Documents, Sites and Training
+
+Getting started with Troop 500 involves a few important steps to keep everyone safe and connected. You'll need to complete some paperwork, get familiar with our digital tools, and take care of some training requirements. Don't worry - we'll walk you through everything! Here's what you and your Scout need to take care of within your first month, and definitely before your Scout's first campout.
+
+**Annual Health and Medical Record**
+For any and all Scouting activities, all participants must complete Part A and Part B of the Annual Health and Medical Record. "All participants" includes parents, guardians, siblings, youth, staff, and unit leaders. Part C (pre-participation physical by a licensed health-care provider) is required for events lasting longer than 72 hours, such as summer camp or high adventure activities, though all participants are encouraged to complete this during an annual exam.
+
+Forms are available at: [Scouting America Annual Health and Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
+
+**Guide to Safe Scouting**
+All participants in official Scouting activities should become familiar with the Guide to Safe Scouting and applicable program literature or manuals, and be aware of state or local government regulations that supersede Scouting America practices, policies, and guidelines. The Guide to Safe Scouting is an overview of Scouting policies and procedures gleaned from a variety sources. 
+
+Guide to Safe Scouting: [https://www.scouting.org/health-and-safety/gss/](https://www.scouting.org/health-and-safety/gss/)
+
+**Safeguarding Youth**
+Safeguarding Youth training is required for all Scouting America registered volunteers and is a joining requirement. Safeguarding Youth training must be taken every year. If a volunteer's Safeguarding Youth training is not current at the time of annual registration renewal, the volunteer will not be re-registered.
+
+Safeguarding Youth training is strongly encouraged for parents and guardians. If an adult is attending a longer campout, like summer resident camp, for 72 hours or longer, that adult must be registered as an adult leader and complete Safeguarding Youth training.
+
+To take the training, go to My.Scouting.org and create an account. You'll receive an email notification with your account information, including a member ID/reference number.
+
+More information: [https://www.scouting.org/training/youth-protection/](https://www.scouting.org/training/youth-protection/)
+
+**My.Scouting.org**
+My.Scouting.org is where you'll create your Scouting America account, complete training requirements like Safeguarding Youth, and manage your annual membership renewal. This is your central hub for all official Scouting America business and training.
+
+**Scoutbook**
+Every Scout, adult leader, and parent/guardian should have a Scoutbook account. Scoutbook uses your My.Scouting.org account and is the official digital platform for Scouting America that tracks advancement, activities, and communication. Your Scout's progress, merit badge requirements, and troop calendar are all managed through Scoutbook. Parents and Scouts can access Scoutbook through the web at [scoutbook.scouting.org](https://scoutbook.scouting.org) or via the mobile app.
+
+**Troop Website**
+Our troop website at [troop500.org](https://troop500.org) contains the most up-to-date information about our troop, including this handbook, meeting schedules, upcoming events, resources, and important announcements. We encourage all families to bookmark and regularly check the website for the latest information.
+
+## Gear Up
+As an organization focused on a wide variety of activities, it is easy to either overspend on gear or become overwhelmed by everything you think you need. A Scout is thrifty - please do not buy everything you think you'll need for your entire Scouting experience before your first meeting. The gear listed below consists of the basics that you need to get started. The troop also has access to some secondhand uniform items and can provide recommendations on the best way to gear up.
+
+### Scout Handbook
+Required for all advancement (*provided for new Scouts joining our troop*)
+
+### Class A Uniform (Field Uniform)
+The Class A uniform is purchased individually at the Scout Shop with some components provided by the troop.
+
+### Class B Uniform (Activity Uniform)
+The Class B uniform is purchased from the troop during your first couple of meetings.
+
+### Scout 10 Essentials 
+
+[Learn more about the 10 Essentials](https://scoutingmagazine.org/2013/02/the-10-essentials/)
+
+"Prepared. For Life." It's more than a motto for Scouting; it's a way to plan and execute each outing, even if it's just a Saturday morning hike. In the woods, the items here (stowed in a daypack) can keep you comfortable, warm, hydrated, safe and, most of all, prepared to face what nature puts in your path — whether you asked for it or not.
+
+1. Pocket Knife
+2. First Aid Kit
+3. Extra Clothing
+4. Rain Gear
+5. Water Storage
+6. Flashlight / Headlamp
+7. Trail Food
+8. Matches / Fire Starters
+9. Sun Protection
+10. Map / Compass
+
+*Note: Camping gear will be discussed separately as you prepare for your first outing. The troop provides tents and cooking equipment.*
 
 ## Troop Fees and Expenses
 
-**Annual Dues**
-The Treasurer will communicate annual dues and rechartering fees during the annual rechartering process. All new members will forgo the initial membership fee when they first join the troop, but will be responsible for subsequent membership fees.
+**Annual Membership Fees**
+All Scouts and adult leaders must complete annual membership renewal through My.Scouting.org. This includes both Scouting America registration fees and troop dues.
 
 **Event Fees**
-Individual outing and event fees vary based on the activity and will be:
-- Advertised in advance with each event announcement
-- Collected on an as-needed basis per event
-- Paid by those Scouts and adults attending each specific outing
-- Used to cover costs such as camping fees, food, and activity materials
+Event fees are collected by the troop Treasurer and tracked in your Scout's Scoutbook account.
 
-**Fee Structure**
-Troop dues support ongoing expenses including merit badges, Courts of Honor supplies, and other troop-related expenses. Event fees cover the direct costs of individual activities and outings.
+## What's Next? 
 
-## Meetings and Activities
+Now that you've covered the basics, here's what to look forward to in your Scouting journey:
 
-**Troop Meetings**
-- Regular meetings: Monday evenings, 7:00-8:30 PM at Advent Lutheran Church
-- Summer schedule: Monday evenings, 6:30-8:00 PM at South Chagrin Reservation Shelterhouse
-- Please refer to the current calendar on our website and Google Calendars
+### Youth Involvement
 
-**Monthly Outings**
-The Troop organizes outings each month designed to provide opportunities for girls to complete rank requirements and merit badges. Most outings are Friday evenings through Sunday mid-day. Parents are encouraged to attend outings and share the outdoor experience with your daughter.
+- **Campouts and Hiking**: Monthly outdoor adventures for skill building and advancement
+- **Summer Camp**: Week-long resident camp experiences with merit badges and outdoor skills
+- **Service Projects**: Community service opportunities including Eagle Scout projects, church yard work, and council events like Yard Charge
+- **High Adventure**: Exciting challenges and expeditions for older Scouts
+- **Merit Badge Programs**: Specialized learning opportunities in areas of interest
+- **Leadership Development**: Opportunities for Scouts to grow as leaders
 
-**Planning and RSVPs**
-- Fees for outings vary and are paid per outing by those Scouts and adults attending
-- Fees must be paid in advance
-- RSVPs are done on Scoutbook with Google forms completion required
-- We often register participants in advance for Council-sponsored events and reserve campsites based on RSVP numbers
-- Please complete calendar invitations regardless of whether you plan to attend
+### Parent Involvement
 
-**Camping Details**
-- Scouts camp and cook in patrols
-- Scouts typically tent with a buddy (tent partners can be no more than 2 years apart in age)
-- Tents and all cooking equipment are supplied by the troop
-- Each patrol generally has a "Grubmaster" responsible for planning food menu, budgeting, shopping, and preparation
+While Scouting is youth-led, it requires adult volunteers. Parent involvement at whatever level can be supported by your family is essential to the success of our troop. Once you and your Scout are settled in, we will be asking for your help too! 
 
-**What Scouts Need to Bring to Outings**
-- Personal clothes, sleeping bag and pad
-- Camp chair and mess kit
-- Day backpack with individual first aid kit
-- Scout handbook
-- Any other individually needed items for the trip
+As a parent, you can be as involved as you want to be, and it doesn't matter if you are a previous Eagle Scout or have never heard of Scouting before last week - there's an opportunity for you in Scouting America. Our troop was founded by a parent without any Scouting experience. Everyone has unique skills that can benefit our troop through our family talent survey.
 
-**Trip Planning**
-The girls plan outings during twice-yearly "Semi-Annual Planning Meetings" where we:
-- Review school and other calendars
-- Consider Scout interests and desired activities
-- Plan our calendar 6 months in advance
-- Let the girls' interests drive our activities
-
-**Attendance**
-Regular attendance at troop meetings, patrol meetings (if applicable), and outings is essential for your daughter to get the most out of scouting. The troop is stronger when there is full and consistent participation.
-
-## Uniform Requirements
-
-The formal BSA uniform is termed a "Class A". The Class A uniform consists of:
-
-**Scout Uniform Shirt** with dark green epaulets and the following patches:
-- Lake Erie Council patch
-- Troop numbers (500) *We provide these - do not buy*
-- Purple Fleur de Lis
-- Patrol Badge *We will provide this and it changes depending on your patrol*
-
-**Additional Uniform Items:**
-- Purple neckerchief with lime green edging *We provide this*
-- BSA Scout belt (some pants and shorts have a "built in" belt)
-- Boy Scout Uniform Pants or zip-off pants (uniform shorts for summer)
-
-**Where to Purchase**
-Items can be purchased at the Scout Shop at Lake Erie Council Headquarters (2241 Woodland Ave, Cleveland, Ohio). All pants come un-hemmed. We also have a small collection of outgrown Class A uniforms available - just let us know if you'd like to try these before buying new ones!
-
-**When Class A Uniforms are Required:**
-- Troop Meetings
-- Court of Honor
-- Summer Camp
-- Scoutmaster Conferences
-- Boards of Review
-- Other occasions as announced
-
-**Class B Uniform**
-For other troop activities, a Troop 500 t-shirt (aka "class B") can be worn with scout pants, jeans, or shorts. Class B shirts are purchased through the Troop.
-
-## Essential Forms and Safety
-
-**Medical Forms**
-Medical forms are required before a scout can participate in any scouting activity. The medical forms have several parts, including an annual physical exam that requires a physician's signature. The entire multi-part medical form must be completed and submitted to the troop before the scout can participate in summer camp or any high adventure activity. Forms may be printed from the Lake Erie Council website.
-
-**Safe Scouting**
-Please read through the Guide to Safe Scouting book with your child. You can find it in the front of every new Scout handbook, as well as in our Google Drive folder. Then watch the Personal Safety Videos that correspond to your rank at [scouting.org/training/youth/scouts-bsa/](https://www.scouting.org/training/youth/scouts-bsa/).
-
-**Youth Protection**
-All scout leaders are trained and certified in the Youth Protection program through Scouting America. Scout parents are also required to complete a Youth Protection exercise with their daughter and submit documentation to the troop.
-
-**Two Deep Leadership**
-To ensure the safety of all scouts, Scouting America requires "Two Deep Leadership" - at least two adults must be present for any scouting activity. This is especially essential during outings, summer camp, and high adventure activities. To achieve this level of safety, parents must take an active part in the operations and activities of the troop.
-
-**Technology Policy**
-We allow Scouts to bring phones with them to meetings and outings and to use them appropriately. If technology use becomes a problem, that will be dealt with on a case-by-case basis. See our Communication section for information about GroupMe groups.
-
-## Advancement and Recognition
-
-**Rank Advancement**
-The advancement path is outlined in the Scout Handbook. The girls can work on any requirement for advancement or merit badges at any time. However, they can only advance a rank when ALL requirements for that rank are completed. Rank advancement is earned by each scout; rank advancement is not automatic.
-
-**Advancement Order:** Scout, Tenderfoot, Second Class, First Class, Star, Life, and Eagle.
-
-**Requirements Process**
-- Initially, girls get their rank requirements signed off by more advanced Scouts
-- Girls should bring their Scout Handbook to meetings and outings for sign-offs
-- Scout's name MUST be inside and outside their book
-- Scouts need a pencil or pen and small notebook
-- Make photocopies or take pictures of completed pages every 2-3 months in case the book is lost
-- Unlike in Cub Scouts, parents may not sign off on requirements
-
-**Conferences and Reviews**
-- Every rank requires a Scoutmaster Conference
-- Ranks beyond Scout Rank also require a Board of Review
-
-**Path to Eagle Scout**
-- **Scout**: 11-12 years old typical
-- **Tenderfoot**: 11-12 years old typical  
-- **2nd Class**: 4 months minimum active period, 12-13 years old typical
-- **1st Class**: 6 months minimum active period, 14-15 years old typical
-- **Star**: 6 months minimum active period, 6 merit badges (4 from Eagle list), 15-16 years old typical
-- **Life**: 11 merit badges (7 from Eagle list), 16-17 years old typical
-- **Eagle**: 21 merit badges (14 from Eagle list), before 18 years old
-
-*Note: Advancement requires scoutmaster conferences, merit badges, service projects, and other activities, so the "Minimum Active Period" is often longer than indicated.*
-
-**Merit Badges**
-Scouts earn merit badges throughout their scouting career. Twenty-one badges are the minimum for Eagle Scout Rank, of which fourteen specific badges are required. Girls work with merit badge counselors to complete requirements, and can also complete these during merit badge universities, summer camp, and individual work.
-
-**Merit Badge Resources**
-- Merit badge books are optional but helpful (available at Scout Shop or borrowed from libraries)
-- We use electronic blue card records via Scoutbook.com
-- Blue cards are essential documentation - consider printing periodic backups
-- Paper blue cards have three parts: one for the troop, one for the counselor, one for the scout
-
-## Service and Community Involvement
-
-Service to others is a cornerstone of the BSA philosophy. The girls are encouraged to participate in service projects throughout the year. Service hours are required for rank advancement. The girls will:
-- Assist with Eagle Scout projects
-- Do yard work and other work at Advent Lutheran Church
-- Participate in events such as the council-wide annual Yard Charge
-- Have other service opportunities throughout the year
-
-## Summer Camp
-
-Our troop attends one week of summer camp each summer. The girls choose where they want to go within driving distance, and we have generally gone to a different camp every summer. Summer camp fees vary by camp, and we have been able to secure camperships ("scholarship" discounts) for many of our camps when needed.
-
-## Parent Involvement
-
-Becoming a trained scout leader provides numerous opportunities to make your daughter's scouting experience rich and rewarding. Adult leaders help organize and assist the girls in running outings and provide leadership examples. Though Scouts lead, adults facilitate the details.
-
-## Adult Training
-
-<img src="/assets/images/handbook/Trained_patch_green.jpg" alt="Scouting America Trained Patch" style="width: 150px; height: auto; float: right; margin: 0 0 15px 15px;">
-
-Adult leaders in Scouting America must complete required training to ensure the safety and quality of the program. Our troop is committed to having well-trained leaders who can provide the best possible experience for our Scouts.
-
-### Required Training for All Adult Leaders
-
-**Youth Protection Training (YPT)**
-- Required for ALL adult leaders before they can participate in any Scouting activities
-- Must be renewed every three years
-- Online training available at [my.scouting.org](https://my.scouting.org)
-- Covers child abuse prevention and safe Scouting practices
-
-**Position-Specific Training**
-Each adult leadership position has specific training requirements:
-- **Scoutmaster**: Scoutmaster Position-Specific Training
-- **Assistant Scoutmaster**: Assistant Scoutmaster Position-Specific Training  
-- **Committee Chair**: Committee Chair Position-Specific Training
-- **Committee Members**: Committee Member Position-Specific Training
-
-### Additional Training Opportunities
-
-**Outdoor Training**
-- Introduction to Outdoor Leader Skills (IOLS) - Required for Scoutmasters and Assistant Scoutmasters
-- Wilderness First Aid - Recommended for outdoor activity leaders
-- Leave No Trace Trainer - Environmental stewardship training
-
-**Leadership Development**
-- Wood Badge - Advanced leadership training for experienced leaders
-- University of Scouting - Council-sponsored training events
-- National Youth Leadership Training (NYLT) - For youth and adult leaders
-
-### Training Support
-
-**New Leader Orientation**
-- Personal mentoring from experienced leaders
-- Guidance through the training process
-- Introduction to troop-specific procedures and traditions
-
-**Training Resources**
-- Online training modules at my.scouting.org
-- Council training calendars and events
-- Troop library of training materials and handbooks
-
-**Training Reimbursement**
-The troop may provide financial assistance for training costs including:
-- Registration fees for Wood Badge and other advanced courses
-- Materials and handbooks
-- Transportation to training events
-
-### Getting Started with Training
-
-1. **Complete Youth Protection Training** - This is your first priority
-2. **Register for Position-Specific Training** - Check with the Training Coordinator for upcoming sessions
-3. **Plan for Outdoor Training** - Schedule IOLS if you'll be involved in outdoor activities
-4. **Consider Advanced Training** - Explore Wood Badge and other leadership development opportunities
-
-For questions about training requirements or to get assistance with registration, contact our Training Coordinator or visit the [Lake Erie Council website](https://www.lakeerie-bsa.org) for training schedules and resources.
-
-**Remember**: Every youth deserves a trained leader. Your commitment to training ensures we provide the highest quality Scouting program possible.
+For comprehensive information about parent involvement opportunities, leadership pathways, and training requirements, see our detailed [Getting Involved section](getting-involved.md).

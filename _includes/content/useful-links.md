@@ -21,6 +21,20 @@ The official magazine of Scouting America featuring outdoor adventure stories, S
 ### [Scouting America YouTube Channel](https://www.youtube.com/@boyscoutsofamerica)
 Official video content including outdoor skills tutorials, advancement guidance, inspiring Scout stories, and program information to enhance your Scouting experience.
 
+### [TroopLeader Online](https://troopleader.scouting.org/)
+Comprehensive digital resource hub for Scouts, families, and Scouters featuring advancement tracking, leadership position guides, troop structure information, and practical resources for all aspects of the Scouting program.
+
+## Local Resources
+
+### [Lake Erie Council](https://lecscouting.org/)
+Our local Scout council serving Northeast Ohio. Find council-wide events, training schedules, camp information, forms, and local Scouting news. Essential for staying connected with the broader Scouting community in our region.
+
+### [Scout Shop - Lake Erie Council](https://www.scoutshop.org/cleveland-scout-shop-s21021.aspx)
+Official Scout Shop at Lake Erie Council Headquarters (2241 Woodland Ave, Cleveland, Ohio) for purchasing uniforms, badges, handbooks, and other Scouting gear.
+
+### [Scout Shop - Great Trail Council](https://www.gtcbsa.org/scout-shop)
+Alternative Scout Shop serving Northeast Ohio, providing uniforms, patches, handbooks, camping gear, and other official Scouting merchandise.
+
 ## Getting the Most from These Resources
 
 **For New Scouts:**
@@ -30,11 +44,13 @@ Official video content including outdoor skills tutorials, advancement guidance,
 
 **For Advancing Scouts:**
 - Use [Scouts BSA Resources](https://www.scouting.org/programs/scouts-bsa/resources/) for advancement requirements
+- Explore [TroopLeader Online](https://troopleader.scouting.org/) for leadership position guides and troop structure
 - Check [Scouting.org](https://www.scouting.org/) for the latest program updates
 - Follow [Scout Life](https://scoutlife.org/) for outdoor adventure ideas and leadership tips
 
 **For Parents:**
 - Visit [Scouting.org](https://www.scouting.org/) for parent resources and volunteer opportunities
+- Check [Lake Erie Council](https://lecscouting.org/) for training schedules and local events
 - Explore [Be a Scout](https://beascout.scouting.org/) to understand the full Scouting program
 - Use these resources to support your Scout's advancement journey
 

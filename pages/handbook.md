@@ -10,6 +10,8 @@ permalink: /handbook
 
 {% include content/getting-started.md %}
 
+{% include content/getting-involved.md %}
+
 {% include content/leadership-organization.md %}
 
 {% include content/outdoor-program.md %}
@@ -21,6 +23,8 @@ permalink: /handbook
 {% include content/accessibility-inclusion.md %}
 
 {% include content/resources-equipment.md %}
+
+{% include content/scout-camps.md %}
 
 {% include content/useful-links.md %}
 
