@@ -212,6 +212,14 @@ For questions about the troop or this handbook:
 - Contact the Scoutmaster or New Member Coordinator
 - Visit our website at [troop500g.org](https://troop500g.org)
 
+### Communication
+
+**GroupMe Groups**
+We communicate via GroupMe with separate groups for adults and Scouts. Contact the Scoutmaster or committee members to be added to the appropriate groups. All Scout communication groups are monitored by two-deep adult leadership to ensure safety.
+
+**Two-Deep Communication Policy**
+Whenever there is any online, text, virtual, or phone communication between a Scout and an adult, there must always be two adults participating in the communication, maintaining our two-deep leadership standard.
+
 ---
 
 *Ready to start your Scouting adventure? Let's explore what Troop 500G has to offer!*

@@ -95,7 +95,7 @@ For more information about the Scribe role, see the [Scouting America Scribe Gui
 
 ### Scoutmaster <img src="/assets/images/handbook/patch_scoutmaster.jpg" alt="Scoutmaster Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-Available position. The Scoutmaster is the adult responsible for working directly with the Scouts providing direction, coaching, and support.
+The Scoutmaster is the adult responsible for working directly with the Scouts providing direction, coaching, and support.
 
 **The Scoutmaster has three basic roles:**
 - Providing the youth leaders with the tools and skills so they can run the troop

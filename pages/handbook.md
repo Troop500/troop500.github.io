@@ -22,4 +22,6 @@ permalink: /handbook
 
 {% include content/resources-equipment.md %}
 
+{% include content/useful-links.md %}
+
 {% include content/contact-info.md %}
