@@ -21,24 +21,8 @@ Every new Scout family is required to participate in a joining conference with t
 
 Getting started with Troop 500 involves a few important steps to keep everyone safe and connected. You'll need to complete some paperwork, get familiar with our digital tools, and take care of some training requirements. Don't worry - we'll walk you through everything! Here's what you and your Scout need to take care of within your first month, and definitely before your Scout's first campout.
 
-**Annual Health and Medical Record**
-For any and all Scouting activities, all participants must complete Part A and Part B of the Annual Health and Medical Record. "All participants" includes parents, guardians, siblings, youth, staff, and unit leaders. Part C (pre-participation physical by a licensed health-care provider) is required for events lasting longer than 72 hours, such as summer camp or high adventure activities, though all participants are encouraged to complete this during an annual exam.
-
-Forms are available at: [Scouting America Annual Health and Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
-
-**Guide to Safe Scouting**
-All participants in official Scouting activities should become familiar with the Guide to Safe Scouting and applicable program literature or manuals, and be aware of state or local government regulations that supersede Scouting America practices, policies, and guidelines. The Guide to Safe Scouting is an overview of Scouting policies and procedures gleaned from a variety sources. 
-
-Guide to Safe Scouting: [https://www.scouting.org/health-and-safety/gss/](https://www.scouting.org/health-and-safety/gss/)
-
-**Safeguarding Youth**
-Safeguarding Youth training is required for all Scouting America registered volunteers and is a joining requirement. Safeguarding Youth training must be taken every year. If a volunteer's Safeguarding Youth training is not current at the time of annual registration renewal, the volunteer will not be re-registered.
-
-Safeguarding Youth training is strongly encouraged for parents and guardians. If an adult is attending a longer campout, like summer resident camp, for 72 hours or longer, that adult must be registered as an adult leader and complete Safeguarding Youth training.
-
-To take the training, go to My.Scouting.org and create an account. You'll receive an email notification with your account information, including a member ID/reference number.
-
-More information: [https://www.scouting.org/training/youth-protection/](https://www.scouting.org/training/youth-protection/)
+**Register with Scouting America**
+If you haven't already registered with Scouting America, visit [BeAScout.scouting.org](https://beascout.scouting.org/) which will walk you through the registration process as well as provide resources for finding other Scouting units around us.
 
 **My.Scouting.org**
 My.Scouting.org is where you'll create your Scouting America account, complete training requirements like Safeguarding Youth, and manage your annual membership renewal. This is your central hub for all official Scouting America business and training.
@@ -46,8 +30,30 @@ My.Scouting.org is where you'll create your Scouting America account, complete t
 **Scoutbook**
 Every Scout, adult leader, and parent/guardian should have a Scoutbook account. Scoutbook uses your My.Scouting.org account and is the official digital platform for Scouting America that tracks advancement, activities, and communication. Your Scout's progress, merit badge requirements, and troop calendar are all managed through Scoutbook. Parents and Scouts can access Scoutbook through the web at [scoutbook.scouting.org](https://scoutbook.scouting.org) or via the mobile app.
 
+For help getting started with Scoutbook, download the [Parents Trail Guide to Scoutbook](assets/files/handbook/attachments/Parents-trail-guide-to-scoutbook.pdf).
+
+**Guide to Safe Scouting**
+All participants in official Scouting activities should become familiar with the Guide to Safe Scouting and applicable program literature or manuals, and be aware of state or local government regulations that supersede Scouting America practices, policies, and guidelines. The Guide to Safe Scouting is an overview of Scouting policies and procedures gleaned from a variety sources. 
+
+Guide to Safe Scouting: [https://www.scouting.org/health-and-safety/gss/](https://www.scouting.org/health-and-safety/gss/)
+
+**Annual Health and Medical Record**
+For any and all Scouting activities, all participants must complete Part A and Part B of the Annual Health and Medical Record. "All participants" includes parents, guardians, siblings, youth, staff, and unit leaders. Part C (pre-participation physical by a licensed health-care provider) is required for events lasting longer than 72 hours, such as summer camp or high adventure activities, though all participants are encouraged to complete this during an annual exam.
+
+Forms are available at: [Scouting America Annual Health and Medical Record](https://www.scouting.org/health-and-safety/ahmr/)
+
 **Troop Website**
 Our troop website at [troop500.org](https://troop500.org) contains the most up-to-date information about our troop, including this handbook, meeting schedules, upcoming events, resources, and important announcements. We encourage all families to bookmark and regularly check the website for the latest information.
+
+**Social Media Waiver**
+Troop 500G occasionally takes photos and videos during meetings, events, and outings for promotional purposes, social media posts, and documentation of activities. The Social Media Waiver allows families to specify their preferences regarding photography and the use of their Scout's image in troop communications and social media. This form ensures we respect each family's privacy wishes while still being able to share the great experiences and achievements of our troop.
+
+Download: [Troop 500 Social Media Waiver](assets/files/handbook/attachments/Troop%20500%20Social%20Media%20Waiver.pdf)
+
+**Safeguarding Youth**
+Safeguarding Youth training is required for all Scouting America registered volunteers and is a joining requirement that must be renewed annually. If training is not current at registration renewal, the volunteer will not be re-registered. This training is strongly encouraged for parents and guardians, and is required for any adult attending longer campouts (72+ hours) like summer resident camp.
+
+More information: [https://www.scouting.org/training/youth-protection/](https://www.scouting.org/training/youth-protection/)
 
 ## Gear Up
 As an organization focused on a wide variety of activities, it is easy to either overspend on gear or become overwhelmed by everything you think you need. A Scout is thrifty - please do not buy everything you think you'll need for your entire Scouting experience before your first meeting. The gear listed below consists of the basics that you need to get started. The troop also has access to some secondhand uniform items and can provide recommendations on the best way to gear up.
@@ -80,31 +86,10 @@ The Class B uniform is purchased from the troop during your first couple of meet
 
 *Note: Camping gear will be discussed separately as you prepare for your first outing. The troop provides tents and cooking equipment.*
 
-## Troop Fees and Expenses
+**Troop Fees and Expenses**
 
 **Annual Membership Fees**
 All Scouts and adult leaders must complete annual membership renewal through My.Scouting.org. This includes both Scouting America registration fees and troop dues.
 
 **Event Fees**
 Event fees are collected by the troop Treasurer and tracked in your Scout's Scoutbook account.
-
-## What's Next? 
-
-Now that you've covered the basics, here's what to look forward to in your Scouting journey:
-
-### Youth Involvement
-
-- **Campouts and Hiking**: Monthly outdoor adventures for skill building and advancement
-- **Summer Camp**: Week-long resident camp experiences with merit badges and outdoor skills
-- **Service Projects**: Community service opportunities including Eagle Scout projects, church yard work, and council events like Yard Charge
-- **High Adventure**: Exciting challenges and expeditions for older Scouts
-- **Merit Badge Programs**: Specialized learning opportunities in areas of interest
-- **Leadership Development**: Opportunities for Scouts to grow as leaders
-
-### Parent Involvement
-
-While Scouting is youth-led, it requires adult volunteers. Parent involvement at whatever level can be supported by your family is essential to the success of our troop. Once you and your Scout are settled in, we will be asking for your help too! 
-
-As a parent, you can be as involved as you want to be, and it doesn't matter if you are a previous Eagle Scout or have never heard of Scouting before last week - there's an opportunity for you in Scouting America. Our troop was founded by a parent without any Scouting experience. Everyone has unique skills that can benefit our troop through our family talent survey.
-
-For comprehensive information about parent involvement opportunities, leadership pathways, and training requirements, see our detailed [Getting Involved - Parents section](getting-involved-parents.md).

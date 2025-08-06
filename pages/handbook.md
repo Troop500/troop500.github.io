@@ -10,13 +10,17 @@ permalink: /handbook
 
 {% include content/getting-started.md %}
 
-{% include content/getting-involved.md %}
+{% include content/getting-involved-youth.md %}
+
+{% include content/getting-involved-parents.md %}
 
 {% include content/leadership-organization.md %}
 
 {% include content/outdoor-program.md %}
 
 {% include content/advancement.md %}
+
+{% include content/path-to-eagle.md %}
 
 {% include content/policies-safety.md %}
 
