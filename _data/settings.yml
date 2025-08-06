@@ -12,7 +12,10 @@ menu:
 - {name: 'Troop Handbook',     url: 'handbook'}
 - {name: 'For Families',       url: 'families' }
 - {name: 'Files',              url: 'files'}
-- {name: 'About',              url: 'about'}
+- name: 'About'
+  submenu:
+  - {name: 'About Us', url: 'about'}
+  - {name: 'Contact', url: 'contact'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
