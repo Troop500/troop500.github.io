@@ -107,4 +107,4 @@ While Scouting is youth-led, it requires adult volunteers. Parent involvement at
 
 As a parent, you can be as involved as you want to be, and it doesn't matter if you are a previous Eagle Scout or have never heard of Scouting before last week - there's an opportunity for you in Scouting America. Our troop was founded by a parent without any Scouting experience. Everyone has unique skills that can benefit our troop through our family talent survey.
 
-For comprehensive information about parent involvement opportunities, leadership pathways, and training requirements, see our detailed [Getting Involved section](getting-involved.md).
+For comprehensive information about parent involvement opportunities, leadership pathways, and training requirements, see our detailed [Getting Involved - Parents section](getting-involved-parents.md).
