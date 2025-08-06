@@ -8,9 +8,15 @@ permalink: /handbook
 
 {% include content/introduction-welcome.md %}
 
-{% include content/getting-started.md %}
+{% include content/getting-started-parents.md %}
 
-{% include content/getting-involved-youth.md %}
+{% include content/advancement-to-scout.md %}
+
+{% include content/advancement-first-class.md %}
+
+{% include content/advancement-eagle.md %}
+
+{% include content/getting-involved-parents.md %}
 
 {% include content/getting-involved-parents.md %}
 
@@ -18,13 +24,9 @@ permalink: /handbook
 
 {% include content/outdoor-program.md %}
 
-{% include content/advancement.md %}
-
-{% include content/path-to-eagle.md %}
+{% include content/accessibility-inclusion.md %}
 
 {% include content/policies-safety.md %}
-
-{% include content/accessibility-inclusion.md %}
 
 {% include content/resources-equipment.md %}
 

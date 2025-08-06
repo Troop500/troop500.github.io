@@ -1,4 +1,4 @@
-# Path to Eagle Scout
+# Advancement to Eagle
 
 The Eagle Scout rank is Scouting's highest achievement, representing years of growth, leadership, and service. After earning First Class, your Scouting journey shifts from learning basic skills to developing expertise, leadership, and making a lasting impact on your community.
 
