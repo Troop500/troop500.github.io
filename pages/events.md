@@ -6,10 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 7/28: Troop Meeting
-- 8/2: Camp Hi
-- 8/4: Troop Meeting - Elections!
-- 8/6: Day at the Lake House 5:30pm-8pm
 - 8/11: **NO** Troop Meeting
 - 8/12: PLC Meeting
 - 8/18: Troop Meeting
@@ -20,6 +16,7 @@ The following events are currently scheduled.
 - 9/26-9/28: Scout Haunted at Beaumont
 - 10/10-10/12: Cub Haunted at Beaumont
 - 11/15: Yard Charge
+- 6/28/26 - 7/4/26: Summer Camp
 
 
 ## Troop Google Calendar
