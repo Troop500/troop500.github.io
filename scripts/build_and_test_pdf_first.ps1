@@ -13,6 +13,7 @@ param(
     [switch]$SkipPDFs,
     [switch]$SkipTests,
     [switch]$Quick,
+    [string]$IssuesFile = "test-issues-summary.md",
     [switch]$Help
 )
 
@@ -28,6 +29,7 @@ OPTIONS:
     -SkipPDFs    Skip PDF generation (faster for web-only changes)
     -SkipTests   Skip endpoint testing (faster for build-only runs)
     -Quick       Skip both PDFs and tests (fastest option)
+    -IssuesFile  Path for consolidated issues report (default: test-issues-summary.md)
     -Help        Show this help message
 
 EXAMPLES:
@@ -41,6 +43,9 @@ This script follows a specific build order:
 2. Generate PDFs if needed (creates any missing files Jekyll expects)
 3. Build Jekyll container
 4. Start Jekyll with all files in place
+5. Run comprehensive test suite and generate consolidated issue report
+
+Issues are consolidated into a single Markdown file for LLM review and correction.
 "@
     exit 0
 }
@@ -49,6 +54,169 @@ This script follows a specific build order:
 if ($Quick) {
     $SkipPDFs = $true
     $SkipTests = $true
+}
+
+# Import test modules (cross-platform paths)
+. (Join-Path $PSScriptRoot (Join-Path "test" "test-self-urls.ps1"))
+. (Join-Path $PSScriptRoot (Join-Path "test" "test-external-links.ps1"))
+. (Join-Path $PSScriptRoot (Join-Path "test" "test-pdf-links.ps1"))
+. (Join-Path $PSScriptRoot (Join-Path "test" "test-appendix-pdfs.ps1"))
+. (Join-Path $PSScriptRoot (Join-Path "test" "test-linux-compatibility.ps1"))
+. (Join-Path $PSScriptRoot (Join-Path "utils" "jekyll-service.ps1"))
+
+# Error tracking for consolidated reporting
+$Global:IssueCount = 0
+$Global:AllIssues = @()
+
+function Add-Issue {
+    param(
+        [string]$Category,
+        [string]$Issue,
+        [string]$Details = "",
+        [string]$Severity = "Warning"
+    )
+    
+    $Global:IssueCount++
+    $IssueEntry = [PSCustomObject]@{
+        Number = $Global:IssueCount
+        Category = $Category
+        Severity = $Severity
+        Issue = $Issue
+        Details = $Details
+        Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    }
+    $Global:AllIssues += $IssueEntry
+    
+    # Also write to console for immediate feedback
+    Write-Warning "[$Category] $Issue $(if($Details) { "- $Details" })"
+}
+
+function Write-ConsolidatedReport {
+    param([string]$ReportPath)
+    
+    $ReportContent = @"
+# Build and Test Issues Report
+
+Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+Total Issues Found: $($Global:AllIssues.Count)
+
+"@
+
+    if ($Global:AllIssues.Count -eq 0) {
+        $ReportContent += @"
+
+## Summary
+✅ **All tests passed successfully!** No issues were detected during the build and test process.
+
+"@
+    } else {
+        # Group issues by category for better organization
+        $GroupedIssues = $Global:AllIssues | Group-Object Category
+        
+        $ReportContent += @"
+
+## Summary by Category
+
+"@
+        foreach ($Group in $GroupedIssues) {
+            $ErrorCount = ($Group.Group | Where-Object { $_.Severity -eq "Error" }).Count
+            $WarningCount = ($Group.Group | Where-Object { $_.Severity -eq "Warning" }).Count
+            $ReportContent += "- **$($Group.Name)**: $($Group.Count) issues ($ErrorCount errors, $WarningCount warnings)`n"
+        }
+        
+        $ReportContent += @"
+
+## Detailed Issues
+
+"@
+        
+        foreach ($Group in $GroupedIssues) {
+            $ReportContent += @"
+
+### $($Group.Name)
+
+"@
+            foreach ($Issue in $Group.Group) {
+                $SeverityIcon = if ($Issue.Severity -eq "Error") { "❌" } else { "⚠️" }
+                $ReportContent += @"
+$SeverityIcon **Issue #$($Issue.Number)**: $($Issue.Issue)
+$(if($Issue.Details) { "   - Details: $($Issue.Details)" })
+   - Time: $($Issue.Timestamp)
+
+"@
+            }
+        }
+        
+        $ReportContent += @"
+
+## Recommendations for LLM Review
+
+This report contains all issues found during the build and test process. Each issue includes:
+- Category (area of concern)
+- Severity level (Error/Warning)
+- Detailed description
+- Timestamp for tracking
+
+For LLM analysis, please focus on:
+1. **Errors** (❌) - These require immediate attention
+2. **Warnings** (⚠️) - These should be reviewed for potential improvements
+3. **Patterns** - Look for recurring issues across categories
+4. **Dependencies** - Consider how issues might be related
+
+"@
+    }
+    
+    try {
+        $ReportContent | Out-File -FilePath $ReportPath -Encoding UTF8 -Force
+        Write-Host "📊 Consolidated issues report written to: $ReportPath" -ForegroundColor Green
+        if ($Global:AllIssues.Count -gt 0) {
+            Write-Host "   Found $($Global:AllIssues.Count) total issues for review" -ForegroundColor Yellow
+        }
+    } catch {
+        Write-Error "Failed to write issues report to $ReportPath`: $_"
+    }
+}
+
+# Helper function to safely replace a file that might be locked by another process
+function Copy-FileWithRetry {
+    param(
+        [string]$SourcePath,
+        [string]$DestinationPath,
+        [int]$MaxRetries = 5,
+        [int]$RetryDelaySeconds = 2
+    )
+    
+    $attempt = 1
+    while ($attempt -le $MaxRetries) {
+        try {
+            # Try to remove existing file if it exists
+            if (Test-Path $DestinationPath) {
+                Remove-Item $DestinationPath -Force -ErrorAction Stop
+            }
+            
+            # Copy the new file
+            Copy-Item $SourcePath $DestinationPath -Force -ErrorAction Stop
+            return $true
+        }
+        catch {
+            Write-Host "Attempt $attempt failed: $($_.Exception.Message)" -ForegroundColor Yellow
+            
+            if ($attempt -eq $MaxRetries) {
+                $platform = if ($IsWindows) { "Windows" } elseif ($IsLinux) { "Linux" } elseif ($IsMacOS) { "macOS" } else { "Unknown" }
+                Write-Host "Failed to copy file after $MaxRetries attempts on $platform." -ForegroundColor Red
+                if ($IsWindows) {
+                    Write-Host "File may be locked by another process. Please close any PDF viewers or browsers that might have the file open and try again." -ForegroundColor Red
+                } else {
+                    Write-Host "Check file permissions and ensure the destination directory is writable." -ForegroundColor Red
+                }
+                return $false
+            }
+            
+            Write-Host "Retrying in $RetryDelaySeconds seconds..." -ForegroundColor Yellow
+            Start-Sleep -Seconds $RetryDelaySeconds
+            $attempt++
+        }
+    }
 }
 
 Write-Host @"
@@ -61,219 +229,6 @@ Configuration:
   - Build Order: PDF container first, then Jekyll
 
 "@ -ForegroundColor Cyan
-
-# Function to test URL endpoints
-function Test-Url {
-    param($url, $description)
-    try {
-        $response = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 5
-        if ($response.StatusCode -eq 200) {
-            Write-Host "[PASS] $description" -ForegroundColor Green
-            return $true
-        } else {
-            Write-Host "[FAIL] $description (Status: $($response.StatusCode))" -ForegroundColor Red
-            return $false
-        }
-    } catch {
-        Write-Host "[FAIL] $description (Error: $($_.Exception.Message))" -ForegroundColor Red
-        return $false
-    }
-}
-
-# Function to test appendix PDF generation and content
-function Test-AppendixPDFs {
-    $allTestsPassed = $true
-    $appendixDir = "assets/files/handbook/appendix"
-    
-    # Check if appendix directory exists
-    if (-not (Test-Path $appendixDir)) {
-        Write-Host "[FAIL] Appendix directory not found: $appendixDir" -ForegroundColor Red
-        return $false
-    }
-    
-    # Find all appendix markdown files
-    $appendixMdFiles = Get-ChildItem "_includes/content/appendix/*.md" -ErrorAction SilentlyContinue
-    
-    if ($appendixMdFiles.Count -eq 0) {
-        Write-Host "[WARN] No appendix markdown files found in _includes/content/appendix/" -ForegroundColor Yellow
-        return $true  # Not a failure if no appendix files exist yet
-    }
-    
-    foreach ($mdFile in $appendixMdFiles) {
-        $baseName = $mdFile.BaseName
-        $timestampedPattern = "$appendixDir/$baseName-????????_??????.pdf"
-        $latestPdf = "$appendixDir/$baseName-latest.pdf"
-        
-        # Test 1: Check if timestamped PDF was generated
-        $timestampedPdfs = Get-ChildItem $timestampedPattern -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending
-        if ($timestampedPdfs.Count -eq 0) {
-            Write-Host "[FAIL] No timestamped PDF found for $baseName (pattern: $timestampedPattern)" -ForegroundColor Red
-            $allTestsPassed = $false
-            continue
-        }
-        
-        $newestTimestamped = $timestampedPdfs[0]
-        Write-Host "[PASS] Found timestamped PDF: $($newestTimestamped.Name) ($([Math]::Round($newestTimestamped.Length / 1024, 1)) KB)" -ForegroundColor Green
-        
-        # Test 2: Check if latest PDF exists and is current
-        if (-not (Test-Path $latestPdf)) {
-            Write-Host "[FAIL] Latest PDF not found: $latestPdf" -ForegroundColor Red
-            $allTestsPassed = $false
-            continue
-        }
-        
-        $latestInfo = Get-Item $latestPdf
-        $sizeKB = [Math]::Round($latestInfo.Length / 1024, 1)
-        Write-Host "[PASS] Latest PDF exists: $baseName-latest.pdf ($sizeKB KB)" -ForegroundColor Green
-        
-        # Test 3: Verify latest PDF is reasonably current (within last hour)
-        $timeDiff = (Get-Date) - $latestInfo.LastWriteTime
-        if ($timeDiff.TotalHours -gt 1) {
-            Write-Host "[WARN] Latest PDF may be stale (last modified: $($latestInfo.LastWriteTime))" -ForegroundColor Yellow
-        }
-        
-        # Test 4: Basic PDF content validation using pdftotext if available
-        try {
-            $pdfTextFile = "$env:TEMP\appendix_test_$baseName.txt"
-            $pdfTextResult = & pdftotext $latestPdf $pdfTextFile 2>$null
-            
-            if (Test-Path $pdfTextFile) {
-                $pdfContent = Get-Content $pdfTextFile -Raw
-                Remove-Item $pdfTextFile -Force -ErrorAction SilentlyContinue
-                
-                # Test 5: Verify main appendix header is present (should be unnumbered)
-                if ($pdfContent -match "Appendix [A-Z]:\s*") {
-                    Write-Host "[PASS] Main appendix header found (unnumbered format)" -ForegroundColor Green
-                } else {
-                    Write-Host "[FAIL] Main appendix header not found or incorrectly formatted" -ForegroundColor Red
-                    $allTestsPassed = $false
-                }
-                
-                # Test 6: Verify subsection headers are unnumbered (should not contain patterns like "1.2.3")
-                $numberedHeaders = $pdfContent | Select-String -Pattern '\d+\.\d+\.\d+' -AllMatches
-                if ($numberedHeaders.Matches.Count -eq 0) {
-                    Write-Host "[PASS] No numbered subsection headers found (correct for appendix)" -ForegroundColor Green
-                } else {
-                    Write-Host "[FAIL] Found $($numberedHeaders.Matches.Count) numbered subsection headers (should be unnumbered in appendix PDFs)" -ForegroundColor Red
-                    $allTestsPassed = $false
-                }
-                
-                # Test 7: Verify PDF contains substantial content
-                if ($pdfContent.Length -gt 500) {
-                    Write-Host "[PASS] PDF contains substantial content ($($pdfContent.Length) characters)" -ForegroundColor Green
-                } else {
-                    Write-Host "[FAIL] PDF content appears too short ($($pdfContent.Length) characters)" -ForegroundColor Red
-                    $allTestsPassed = $false
-                }
-                
-                # Test 8: Check for proper template elements (for joining-conference-template)
-                if ($baseName -eq "joining-conference-template") {
-                    $requiredElements = @(
-                        "Template Instructions",
-                        "Conference Form", 
-                        "Pre-Meeting Checklist",
-                        "Understanding Your Scout",
-                        "Information Sharing Permissions"
-                    )
-                    
-                    foreach ($element in $requiredElements) {
-                        if ($pdfContent -match [regex]::Escape($element)) {
-                            Write-Host "[PASS] Found required element: $element" -ForegroundColor Green
-                        } else {
-                            Write-Host "[FAIL] Missing required element: $element" -ForegroundColor Red
-                            $allTestsPassed = $false
-                        }
-                    }
-                }
-            } else {
-                Write-Host "[WARN] Could not extract text from PDF for content validation" -ForegroundColor Yellow
-            }
-        } catch {
-            Write-Host "[WARN] pdftotext not available, skipping content validation" -ForegroundColor Yellow
-        }
-        
-        # Test 9: Test web accessibility of the PDF
-        $webUrl = "http://localhost:4000/assets/files/handbook/appendix/$baseName-latest.pdf"
-        if (-not (Test-Url $webUrl "Appendix PDF ($baseName)")) {
-            $allTestsPassed = $false
-        }
-    }
-    
-    return $allTestsPassed
-}
-
-# Function to wait for Jekyll with exponential backoff
-function Wait-ForJekyll {
-    param($maxAttempts = 15)
-    
-    Write-Host "Waiting for Jekyll to start..." -ForegroundColor Yellow
-    
-    for ($i = 1; $i -le $maxAttempts; $i++) {
-        # First check if Jekyll container is actually running
-        try {
-            $containerStatus = & $dockerComposeCmd.Split() ps --services --filter "status=running" 2>$null
-            if ($containerStatus -notcontains "jekyll") {
-                Write-Host "   Container check: Jekyll container is not running!" -ForegroundColor Red
-                
-                # Show container status for debugging
-                Write-Host "   Current container status:" -ForegroundColor Yellow
-                & $dockerComposeCmd.Split() ps jekyll
-                
-                # Show recent logs to understand what failed
-                Write-Host "   Recent Jekyll container logs:" -ForegroundColor Yellow
-                try {
-                    $logs = & $dockerComposeCmd.Split() logs --tail=20 jekyll 2>&1
-                    if ($logs) {
-                        $logs | ForEach-Object { Write-Host "   $_" -ForegroundColor White }
-                    } else {
-                        Write-Host "   (No logs available)" -ForegroundColor Gray
-                        
-                        # Try alternative logging approach
-                        Write-Host "   Trying docker logs directly..." -ForegroundColor Yellow
-                        $containerName = & $dockerComposeCmd.Split() ps -q jekyll 2>$null
-                        if ($containerName) {
-                            $dockerLogs = & docker logs --tail=20 $containerName 2>&1
-                            if ($dockerLogs) {
-                                $dockerLogs | ForEach-Object { Write-Host "   $_" -ForegroundColor White }
-                            } else {
-                                Write-Host "   (No direct docker logs available)" -ForegroundColor Gray
-                            }
-                        }
-                    }
-                } catch {
-                    Write-Host "   Error retrieving logs: $($_.Exception.Message)" -ForegroundColor Red
-                }
-                
-                Write-Host "FAIL - Jekyll container failed to start or crashed" -ForegroundColor Red
-                return $false
-            }
-            
-            Write-Host "   Container check: Jekyll container is running" -ForegroundColor Green
-        } catch {
-            Write-Host "   Container check: Could not verify container status" -ForegroundColor Yellow
-        }
-        
-        # Now test HTTP endpoint
-        try {
-            $response = Invoke-WebRequest -Uri "http://localhost:4000" -UseBasicParsing -TimeoutSec 2
-            if ($response.StatusCode -eq 200) {
-                Write-Host "PASS - Jekyll is ready!" -ForegroundColor Green
-                return $true
-            }
-        } catch {
-            # Expected when Jekyll isn't ready yet
-            Write-Host "   HTTP check: Jekyll not responding yet ($($_.Exception.Message))" -ForegroundColor Yellow
-        }
-        
-        # Exponential backoff: 2s, 4s, 8s, then 8s max
-        $sleepTime = [Math]::Min(8, [Math]::Pow(2, $i))
-        Write-Host "   Attempt $i/$maxAttempts - waiting ${sleepTime}s..." -ForegroundColor Yellow
-        Start-Sleep -Seconds $sleepTime
-    }
-    
-    Write-Host "FAIL - Jekyll failed to start after $maxAttempts attempts" -ForegroundColor Red
-    return $false
-}
 
 # Start timer
 $startTime = Get-Date
@@ -355,14 +310,13 @@ if (-not $SkipPDFs) {
             $latestPath = "assets/files/handbook/$pdfType-latest.pdf"
             
             if ($mostRecentPDF) {
-                # Remove existing latest file if it exists
-                if (Test-Path $latestPath) {
-                    Remove-Item $latestPath -Force
+                # Use the retry function for safer file operations
+                if (Copy-FileWithRetry -SourcePath $mostRecentPDF.FullName -DestinationPath $latestPath) {
+                    $sizeKB = [Math]::Round($mostRecentPDF.Length / 1024, 1)
+                    Write-Host "PASS - Updated $pdfType-latest.pdf from $($mostRecentPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                } else {
+                    Write-Host "FAIL - Could not update $pdfType-latest.pdf (file may be locked)" -ForegroundColor Red
                 }
-                
-                Copy-Item $mostRecentPDF.FullName $latestPath
-                $sizeKB = [Math]::Round($mostRecentPDF.Length / 1024, 1)
-                Write-Host "PASS - Updated $pdfType-latest.pdf from $($mostRecentPDF.Name) ($sizeKB KB)" -ForegroundColor Green
             } else {
                 Write-Host "WARN - No timestamped $pdfType PDF found to copy" -ForegroundColor Yellow
             }
@@ -382,14 +336,13 @@ if (-not $SkipPDFs) {
                 $latestAppendixPath = "$appendixDir/$baseName-latest.pdf"
                 
                 if ($mostRecentAppendixPDF) {
-                    # Remove existing latest file if it exists
-                    if (Test-Path $latestAppendixPath) {
-                        Remove-Item $latestAppendixPath -Force
+                    # Use the retry function for safer file operations
+                    if (Copy-FileWithRetry -SourcePath $mostRecentAppendixPDF.FullName -DestinationPath $latestAppendixPath) {
+                        $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
+                        Write-Host "PASS - Updated appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                    } else {
+                        Write-Host "FAIL - Could not update appendix $baseName-latest.pdf (file may be locked)" -ForegroundColor Red
                     }
-                    
-                    Copy-Item $mostRecentAppendixPDF.FullName $latestAppendixPath
-                    $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
-                    Write-Host "PASS - Updated appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
                 } else {
                     Write-Host "WARN - No timestamped appendix PDF found for $baseName" -ForegroundColor Yellow
                 }
@@ -439,9 +392,12 @@ if (-not $SkipPDFs) {
                              Select-Object -First 1
             
             if ($mostRecentPDF) {
-                Copy-Item $mostRecentPDF.FullName $latestPath
-                $sizeKB = [Math]::Round($mostRecentPDF.Length / 1024, 1)
-                Write-Host "PASS - Created $pdfType-latest.pdf from $($mostRecentPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                if (Copy-FileWithRetry -SourcePath $mostRecentPDF.FullName -DestinationPath $latestPath) {
+                    $sizeKB = [Math]::Round($mostRecentPDF.Length / 1024, 1)
+                    Write-Host "PASS - Created $pdfType-latest.pdf from $($mostRecentPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                } else {
+                    Write-Host "FAIL - Could not create $pdfType-latest.pdf (file may be locked)" -ForegroundColor Red
+                }
             } else {
                 # Create minimal placeholder if no PDFs exist
                 $pdfContent = @"
@@ -492,9 +448,12 @@ startxref
                                        Select-Object -First 1
                 
                 if ($mostRecentAppendixPDF) {
-                    Copy-Item $mostRecentAppendixPDF.FullName $latestAppendixPath
-                    $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
-                    Write-Host "PASS - Created appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                    if (Copy-FileWithRetry -SourcePath $mostRecentAppendixPDF.FullName -DestinationPath $latestAppendixPath) {
+                        $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
+                        Write-Host "PASS - Created appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                    } else {
+                        Write-Host "FAIL - Could not create appendix $baseName-latest.pdf (file may be locked)" -ForegroundColor Red
+                    }
                 } else {
                     Write-Host "WARN - No previous appendix PDF found for $baseName" -ForegroundColor Yellow
                 }
@@ -536,7 +495,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 # Wait for Jekyll to be ready
-if (-not (Wait-ForJekyll)) {
+if (-not (Wait-ForJekyll -TimeoutSec 120)) {
     Write-Host "FAIL - Build failed - Jekyll startup timeout" -ForegroundColor Red
     
     # Show recent logs for debugging
@@ -576,61 +535,108 @@ Write-Host "PASS - Jekyll started successfully ($([Math]::Round($startupTime.Tot
 
 # Step 7: Test website (if not skipped)
 if (-not $SkipTests) {
-    Write-Host "`nTesting website endpoints..." -ForegroundColor Cyan
-    $failedTests = 0
+    Write-Host "`nRunning comprehensive test suite..." -ForegroundColor Cyan
     
-    # Core pages (run in parallel for speed)
-    $testJobs = @()
-    $tests = @(
+    # Initialize issues tracking
+    $Global:IssueCount = 0
+    $Global:AllIssues = @()
+    
+    # Test self URLs (internal links)
+    Write-Host "Testing self URLs..." -ForegroundColor Yellow
+    try {
+        $selfUrlResults = Test-StandardWebsiteEndpoints -BaseUrl "http://localhost:4000"
+        if ($selfUrlResults -gt 0) {
+            Add-Issue "Self URLs" "Internal URL failures detected" "$selfUrlResults URL(s) failed testing" "Error"
+        }
+    } catch {
+        Add-Issue "Self URLs" "Test execution failed" $_.Exception.Message "Error"
+    }
+    
+    # Test external links
+    Write-Host "Testing external links..." -ForegroundColor Yellow
+    try {
+        $externalResults = Test-ExternalLinksFromWebsite -BaseUrl "http://localhost:4000" -ReportIssues
+        if ($externalResults.FailedLinks -gt 0) {
+            Add-Issue "External Links" "External link failures detected" "$($externalResults.FailedLinks) external link(s) failed out of $($externalResults.TotalLinks) total" "Error"
+        }
+    } catch {
+        Add-Issue "External Links" "Test execution failed" $_.Exception.Message "Error"
+    }
+    
+    # Test PDF links (if PDFs were generated)
+    if (-not $SkipPDFs) {
+        Write-Host "Testing PDF links..." -ForegroundColor Yellow
+        try {
+            $pdfResults = Test-LinksInPdfs -PdfDirectory (Join-Path $PSScriptRoot "..\assets\files\handbook")
+            if ($pdfResults.FailedLinks -gt 0) {
+                Add-Issue "PDF Links" "PDF link failures detected" "$($pdfResults.FailedLinks) PDF link(s) failed out of $($pdfResults.TotalLinks) total" "Error"
+            }
+        } catch {
+            Add-Issue "PDF Links" "Test execution failed" $_.Exception.Message "Error"
+        }
+        
+        # Test appendix PDFs
+        Write-Host "Testing appendix PDFs..." -ForegroundColor Yellow
+        try {
+            $appendixResults = Test-AppendixPDFs -BaseDir (Join-Path $PSScriptRoot "..")
+            if (-not $appendixResults) {
+                Add-Issue "Appendix PDFs" "Appendix PDF tests failed" "One or more appendix PDF tests did not pass" "Error"
+            }
+        } catch {
+            Add-Issue "Appendix PDFs" "Test execution failed" $_.Exception.Message "Error"
+        }
+    }
+    
+    # Test Linux compatibility
+    Write-Host "Testing Linux compatibility..." -ForegroundColor Yellow
+    try {
+        # Linux compatibility script runs directly - capture its execution
+        $linuxTestPath = Join-Path $PSScriptRoot (Join-Path "test" "test-linux-compatibility.ps1")
+        $linuxResults = & $linuxTestPath
+        # The script doesn't return a specific status, so we just note that it ran
+        # Issues would be written via Add-Issue if the script used ReportIssues
+    } catch {
+        Add-Issue "Linux Compatibility" "Test execution failed" $_.Exception.Message "Error"
+    }
+    
+    # Legacy core page tests (keeping for continuity)
+    Write-Host "Testing core pages..." -ForegroundColor Yellow
+    $corePageTests = @(
         @{ Url = "http://localhost:4000"; Name = "Homepage" },
         @{ Url = "http://localhost:4000/handbook"; Name = "Handbook page" },
         @{ Url = "http://localhost:4000/about"; Name = "About page" },
         @{ Url = "http://localhost:4000/events"; Name = "Events page" }
     )
     
-    foreach ($test in $tests) {
-        $testJobs += Start-Job -ScriptBlock {
-            param($url, $name)
-            try {
-                $response = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 10
-                return @{ Success = ($response.StatusCode -eq 200); Name = $name; Status = $response.StatusCode }
-            } catch {
-                return @{ Success = $false; Name = $name; Error = $_.Exception.Message }
+    foreach ($test in $corePageTests) {
+        try {
+            $response = Invoke-WebRequest -Uri $test.Url -UseBasicParsing -TimeoutSec 10
+            if ($response.StatusCode -ne 200) {
+                Add-Issue "Core Pages" "$($test.Name) returned status $($response.StatusCode)" $test.Url "Error"
             }
-        } -ArgumentList $test.Url, $test.Name
-    }
-    
-    # Wait for all tests and report results
-    foreach ($job in $testJobs) {
-        $result = Receive-Job -Job $job -Wait
-        if ($result.Success) {
-            Write-Host "[PASS] $($result.Name)" -ForegroundColor Green
-        } else {
-            Write-Host "[FAIL] $($result.Name)" -ForegroundColor Red
-            $failedTests++
+        } catch {
+            Add-Issue "Core Pages" "$($test.Name) failed to load" "$($test.Url) - $($_.Exception.Message)" "Error"
         }
     }
-    $testJobs | Remove-Job -Force
     
-    # Test PDF files (if they were generated)
-    if (-not $SkipPDFs) {
-        if (-not (Test-Url "http://localhost:4000/assets/files/handbook/troop-handbook-latest.pdf" "Latest handbook PDF")) { $failedTests++ }
-        if (-not (Test-Url "http://localhost:4000/assets/files/handbook/contact-info-latest.pdf" "Latest contact info PDF")) { $failedTests++ }
-        
-        # Test appendix PDFs
-        Write-Host "`nTesting appendix PDFs..." -ForegroundColor Cyan
-        if (-not (Test-AppendixPDFs)) { $failedTests++ }
-    }
+    # Generate consolidated issues report
+    Write-ConsolidatedReport $IssuesFile
     
-    # Report test results
+    # Report test results summary
+    $errorCount = ($Global:AllIssues | Where-Object { $_.Severity -eq "Error" }).Count
+    $warningCount = ($Global:AllIssues | Where-Object { $_.Severity -eq "Warning" }).Count
+    
     Write-Host ""
-    if ($failedTests -eq 0) {
+    if ($Global:AllIssues.Count -eq 0) {
         Write-Host "PASS - All tests passed!" -ForegroundColor Green
+        $failedTests = 0
     } else {
-        Write-Host "FAIL - $failedTests test(s) failed" -ForegroundColor Red
+        Write-Host "COMPLETED - Found $($Global:AllIssues.Count) issues ($errorCount errors, $warningCount warnings)" -ForegroundColor $(if ($errorCount -gt 0) { "Red" } else { "Yellow" })
+        Write-Host "Issues report: $IssuesFile" -ForegroundColor Cyan
+        $failedTests = $errorCount  # Only count errors as failures
     }
 } else {
-    Write-Host "`nSkipping endpoint tests" -ForegroundColor Yellow
+    Write-Host "`nSkipping test suite" -ForegroundColor Yellow
     $failedTests = 0
 }
 
@@ -644,7 +650,8 @@ Total time: $([Math]::Round($totalTime.TotalMinutes, 1)) minutes
 Build type: $(if ($NoCache) { "Clean (no cache)" } else { "Incremental (cached)" })
 Build order: PDF container first, then Jekyll
 PDFs: $(if ($SkipPDFs) { "Skipped" } else { "Generated" })
-Tests: $(if ($SkipTests) { "Skipped" } else { if ($failedTests -eq 0) { "PASS" } else { "FAIL ($failedTests failed)" } })
+Tests: $(if ($SkipTests) { "Skipped" } else { if ($failedTests -eq 0) { "PASS" } else { "Issues found ($failedTests errors)" } })
+$(if (-not $SkipTests) { "Issues report: $IssuesFile" } else { "" })
 
 Jekyll is running at: http://localhost:4000
 Container status:
@@ -654,8 +661,12 @@ Container status:
 
 if ($failedTests -eq 0) {
     Write-Host "`nSUCCESS - Build completed successfully!" -ForegroundColor Green
+    if (-not $SkipTests -and (Test-Path $IssuesFile)) {
+        Write-Host "Issues report available for LLM review: $IssuesFile" -ForegroundColor Cyan
+    }
     exit 0
 } else {
-    Write-Host "`nWARNING - Build completed with issues" -ForegroundColor Yellow
+    Write-Host "`nWARNING - Build completed with $failedTests error(s)" -ForegroundColor Yellow
+    Write-Host "Review issues report for details: $IssuesFile" -ForegroundColor Cyan
     exit 1
 }

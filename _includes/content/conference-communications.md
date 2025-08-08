@@ -185,7 +185,7 @@ Our trained leaders are here to support every Scout and family. Don't hesitate t
 - Professional Scouting staff consultation
 
 **Additional Information:**
-- [Scouting America Accessibility Resources](https://www.scouting.org/about/diversity-and-inclusion/)
+- [Scouting America Diversity Resources](https://www.scouting.org/about/diversity/)
 - [Guide to Safe Scouting](https://www.scouting.org/health-and-safety/gss/)
 
 Remember: Every Scout brings unique strengths to our troop. Through open communication and strong partnerships with families, we create an environment where every Scout can thrive and reach their full potential in Scouting.

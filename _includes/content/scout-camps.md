@@ -17,9 +17,6 @@ Lake Erie Council's Scout reservation offering unique programs and outdoor exper
 ### [Firelands Scout Reservation](https://lecscouting.org/firelands)
 Lake Erie Council Scout reservation featuring diverse programming options, outdoor adventure activities, and excellent facilities for summer camp and weekend events.
 
-### [Camp Buckeye](https://www.lecscouting.org/camping/camp-buckeye/)
-Lake Erie Council's day camp facility providing outdoor education and adventure programs for Scouts of all ages, featuring specialized programs and activities.
-
 ## Great Trail Council Camps
 
 ### [Manatoc Scout Reservation](https://www.manatoc.org)

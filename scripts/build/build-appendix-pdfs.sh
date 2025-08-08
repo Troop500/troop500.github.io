@@ -49,8 +49,8 @@ for appendix_file in "$APPENDIX_DIR"/*.md; do
         
         # Convert HTML images to LaTeX format
         echo "🖼️ Converting images to LaTeX format for $filename..."
-        if [ -f /scripts/convert_images_to_latex.py ]; then
-            python3 /scripts/convert_images_to_latex.py "/tmp/appendix-processed/${filename}-processed.md"
+        if [ -f /scripts/utils/convert_images_to_latex.py ]; then
+            python3 /scripts/utils/convert_images_to_latex.py "/tmp/appendix-processed/${filename}-processed.md"
         fi
         
         # Define output filenames

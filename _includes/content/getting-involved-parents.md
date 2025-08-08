@@ -187,7 +187,7 @@ Each adult leadership position has specific training requirements:
 3. Plan for Outdoor Training if you'll be involved in outdoor activities
 4. Consider Advanced Training like Wood Badge for leadership development
 
-For training questions or assistance with registration, contact our Training Coordinator or visit the [Lake Erie Council website](https://www.lakeerie-bsa.org).
+For training questions or assistance with registration, contact our Training Coordinator or visit the [Lake Erie Council website](https://lecscouting.org/).
 
 ### Continual Training
 

@@ -29,7 +29,7 @@ Comprehensive digital resource hub for Scouts, families, and Scouters featuring 
 ### [Lake Erie Council](https://lecscouting.org/)
 Our local Scout council serving Northeast Ohio. Find council-wide events, training schedules, camp information, forms, and local Scouting news. Essential for staying connected with the broader Scouting community in our region.
 
-### [Scout Shop - Lake Erie Council](https://www.scoutshop.org/cleveland-scout-shop-s21021.aspx)
+### [Scout Shop - Lake Erie Council](https://www.scoutshop.org/storelocator/cleveland-scout-shop/)
 Official Scout Shop at Lake Erie Council Headquarters (2241 Woodland Ave, Cleveland, Ohio) for purchasing uniforms, badges, handbooks, and other Scouting gear.
 
 ### [Scout Shop - Great Trail Council](https://www.gtcbsa.org/scout-shop)
@@ -58,4 +58,4 @@ Alternative Scout Shop serving Northeast Ohio, providing uniforms, patches, hand
 
 These links are great starting points, but remember that your local Troop 500G community is your primary resource. Don't hesitate to ask your patrol leaders, adult leaders, or fellow Scouts for guidance and support!
 
-*For the most current links and additional resources, visit our troop website at [troop500g.org](https://troop500g.org)*
+*For the most current links and additional resources, visit our troop website at [troop500.org](https://troop500.org)*

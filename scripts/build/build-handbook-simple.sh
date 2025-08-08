@@ -156,7 +156,7 @@ sed -i '/<!-- PDF-REPLACE-START:/,/<!-- PDF-REPLACE-END -->/c\
 
 echo "🖼️ Converting HTML images to LaTeX format..."
 # Convert HTML img tags to LaTeX \includegraphics with proper positioning
-python3 /scripts/convert_images_to_latex.py "$PROCESSED_HANDBOOK" --verbose || echo "⚠️ Python3 not found, trying alternative image conversion..."
+python3 /scripts/utils/convert_images_to_latex.py "$PROCESSED_HANDBOOK" --verbose || echo "⚠️ Python3 not found, trying alternative image conversion..."
 
 # Fallback sed-based image conversion if Python isn't available
 if [ $? -ne 0 ]; then
@@ -216,7 +216,7 @@ process_handbook "_includes/content/contact-info.md" "/tmp/handbook-processed/co
 
 echo "🖼️ Converting contact info images to LaTeX format..."
 # Convert HTML img tags to LaTeX \includegraphics for contact info
-python3 /scripts/convert_images_to_latex.py "/tmp/handbook-processed/contact-info-processed.md" --verbose || echo "⚠️ Python3 not found, trying alternative image conversion..."
+python3 /scripts/utils/convert_images_to_latex.py "/tmp/handbook-processed/contact-info-processed.md" --verbose || echo "⚠️ Python3 not found, trying alternative image conversion..."
 
 # Fallback sed-based image conversion if Python isn't available
 if [ $? -ne 0 ]; then
@@ -317,8 +317,8 @@ for appendix_file in "$APPENDIX_DIR"/*.md; do
         
         # Convert HTML images to LaTeX format
         echo "   🖼️ Converting images to LaTeX format for $filename..."
-        if [ -f /scripts/convert_images_to_latex.py ]; then
-            python3 /scripts/convert_images_to_latex.py "/tmp/handbook-processed/${filename}-processed.md"
+        if [ -f /scripts/utils/convert_images_to_latex.py ]; then
+            python3 /scripts/utils/convert_images_to_latex.py "/tmp/handbook-processed/${filename}-processed.md"
         fi
         
         # Define output filenames

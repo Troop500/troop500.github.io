@@ -210,7 +210,7 @@ Email: [To be updated]
 For questions about the troop or this handbook:
 - Attend any weekly meeting (Monday evenings at Advent Lutheran Church)
 - Contact the Scoutmaster or New Member Coordinator
-- Visit our website at [troop500g.org](https://troop500g.org)
+- Visit our website at [troop500.org](https://troop500.org)
 
 ### Communication
 

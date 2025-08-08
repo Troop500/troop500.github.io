@@ -27,6 +27,9 @@ exclude:
   - assets/files/handbook/attachments/
   - "assets/files/handbook/*-20*.pdf"  # Exclude timestamped PDFs only
   - scripts/
+  - scripts/build/
+  - scripts/test/
+  - scripts/utils/
   - templates/
   - Dockerfile.*
   - docker-compose.yml

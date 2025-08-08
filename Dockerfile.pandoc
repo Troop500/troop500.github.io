@@ -6,11 +6,11 @@ RUN tlmgr update --self && tlmgr install wrapfig float fancyhdr setspace
 
 # Copy scripts
 COPY scripts/ /scripts/
-RUN chmod +x /scripts/*.sh
+RUN chmod +x /scripts/build/*.sh
 
 # Set working directory to match Jekyll
 WORKDIR /srv/jekyll
 
 # Override the entrypoint and command to run our bash script
 ENTRYPOINT []
-CMD ["bash", "/scripts/build-handbook-simple.sh"]
+CMD ["bash", "/scripts/build/build-handbook-simple.sh"]

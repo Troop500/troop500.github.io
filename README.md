@@ -90,7 +90,7 @@ docker-compose run --rm pdf-generator
 ## 🌐 Official Deployment
 
 ### Live Website
-- **Production URL:** https://troop500g.org
+- **Production URL:** https://troop500.org
 - **GitHub Pages:** https://troop500.github.io
 
 ### Automated Deployment
@@ -274,7 +274,7 @@ docker-compose run --rm pdf-generator
 2. **Automatic deployment:**
    - GitHub Actions automatically rebuilds the site
    - PDFs are regenerated and published
-   - Changes appear at https://troop500g.org
+   - Changes appear at https://troop500.org
 
 ### Quick Workflow
 
