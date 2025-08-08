@@ -19,6 +19,8 @@ combined-handbook.md
 # PDF build outputs (all generated PDFs - these are build artifacts)
 assets/files/handbook/*.pdf
 assets/files/handbook/archive/*.pdf
+assets/files/handbook/appendix/*.pdf
+assets/files/handbook/appendix/archive/*.pdf
 
 # System files
 .DS_Store
