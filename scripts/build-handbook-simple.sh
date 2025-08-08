@@ -285,10 +285,91 @@ fi
 
 cd - > /dev/null
 
+# Generate appendix PDFs
+echo "📋 Generating appendix PDFs..."
+APPENDIX_DIR="_includes/content/appendix"
+
+# Create appendix output directory
+mkdir -p assets/files/handbook/appendix
+
+# Process each .md file in the appendix directory
+for appendix_file in "$APPENDIX_DIR"/*.md; do
+    if [ -f "$appendix_file" ]; then
+        # Extract filename without path and extension
+        filename=$(basename "$appendix_file" .md)
+        echo "   → Processing $filename.md"
+        
+        # Copy the appendix file to temp processing directory
+        cp "$appendix_file" "/tmp/handbook-processed/${filename}-processed.md"
+        
+        # Clean up any Jekyll includes or front matter for PDF processing
+        echo "   🧹 Cleaning PDF-specific content for $filename..."
+        sed -i 's/{% include [^%]*%}//g' "/tmp/handbook-processed/${filename}-processed.md"
+        sed -i '/^---$/,/^---$/d' "/tmp/handbook-processed/${filename}-processed.md"
+        
+        # Remove numbering from subsection headers but keep main appendix header
+        # Remove numbers from headers like "#### 1. Title" -> "#### Title"
+        sed -i 's/^\(####* \)[0-9][0-9]*\. */\1/' "/tmp/handbook-processed/${filename}-processed.md"
+        # Remove numbers from headers like "### 1. Title" -> "### Title"  
+        sed -i 's/^\(### \)[0-9][0-9]*\. */\1/' "/tmp/handbook-processed/${filename}-processed.md"
+        # Remove numbers from headers like "## 1. Title" -> "## Title" (but not "## Appendix A:")
+        sed -i 's/^\(## \)\([0-9][0-9]*\. \)/\1/' "/tmp/handbook-processed/${filename}-processed.md"
+        
+        # Convert HTML images to LaTeX format
+        echo "   🖼️ Converting images to LaTeX format for $filename..."
+        if [ -f /scripts/convert_images_to_latex.py ]; then
+            python3 /scripts/convert_images_to_latex.py "/tmp/handbook-processed/${filename}-processed.md"
+        fi
+        
+        # Define output filenames
+        APPENDIX_PDF_DATED="${filename}-${TIMESTAMP}.pdf"
+        APPENDIX_PDF_LATEST="${filename}-latest.pdf"
+        
+        echo "   📖 Creating PDF for $filename..."
+        
+        # Generate PDF using Pandoc with appendix template
+        pandoc "/tmp/handbook-processed/${filename}-processed.md" \
+            --from markdown \
+            --to pdf \
+            --pdf-engine=xelatex \
+            --template=templates/appendix.latex \
+            --variable=date:"$CURRENT_DATE" \
+            --variable=timestamp:"$TIMESTAMP" \
+            --output="assets/files/handbook/appendix/$APPENDIX_PDF_DATED" \
+            --verbose
+        
+        if [ $? -eq 0 ]; then
+            echo "   ✅ Created: $APPENDIX_PDF_DATED"
+            
+            # Create latest version link
+            echo "   🔗 Creating latest file copy for $filename..."
+            cp "assets/files/handbook/appendix/$APPENDIX_PDF_DATED" "assets/files/handbook/appendix/$APPENDIX_PDF_LATEST"
+            echo "   🔗 Created: $APPENDIX_PDF_LATEST"
+        else
+            echo "   ❌ Failed to create PDF for $filename"
+        fi
+    fi
+done
+
 echo "✅ PDF generation complete!"
 echo ""
 echo "📁 Files created in: assets/files/handbook/"
 echo "📖 Main handbook: $HANDBOOK_PDF"
 echo "📞 Contact info: $CONTACT_PDF"
 echo "🔗 Latest links: troop-handbook-latest.pdf, contact-info-latest.pdf"
+
+# List appendix files if any were created
+if ls assets/files/handbook/appendix/*.pdf 1> /dev/null 2>&1; then
+    echo ""
+    echo "📋 Appendix PDFs created:"
+    for pdf in assets/files/handbook/appendix/*.pdf; do
+        if [ -f "$pdf" ]; then
+            if [[ "$pdf" == *"latest"* ]]; then
+                echo "🔗 Latest link: $(basename "$pdf")"
+            else
+                echo "📋 Appendix: $(basename "$pdf")"
+            fi
+        fi
+    done
+fi
 echo ""

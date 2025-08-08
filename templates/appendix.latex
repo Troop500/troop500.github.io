@@ -1,11 +1,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-$if(documentclass)$
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
-$else$
 \documentclass[11pt]{article}
-$endif$
 \usepackage{xcolor}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb}
@@ -14,9 +10,10 @@ $endif$
 \usepackage{float}
 \usepackage{longtable}
 \usepackage{booktabs}
+\usepackage{array}
 % Set graphics path
 \graphicspath{{assets/images/}{assets/images/handbook/}}
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{0} % Disable section numbering for appendix PDFs
 \setcounter{tocdepth}{2} % only show sections and subsections in TOC
 \usepackage{iftex}
 \ifPDFTeX
@@ -52,12 +49,9 @@ $endif$
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-$if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
-$endif$
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead[L]{Troop 500G Handbook}
+\fancyhead[L]{Troop 500G Handbook Appendix}
 \fancyhead[R]{\today}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -67,11 +61,35 @@ $endif$
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={$title$},
-  pdfauthor={$author$},
+  $if(title-meta)$
+  pdftitle={$title-meta$},
+  $endif$
+  $if(author-meta)$
+  pdfauthor={$author-meta$},
+  $endif$
+  $if(lang)$
+  pdflang={$lang$},
+  $endif$
+  $if(subject)$
+  pdfsubject={$subject$},
+  $endif$
+  $if(keywords)$
+  pdfkeywords={$for(keywords)$$keywords$$sep$, $endfor$},
+  $endif$
+  $if(colorlinks)$
+  colorlinks=true,
+  linkcolor={$if(linkcolor)$$linkcolor$$else$Maroon$endif$},
+  filecolor={$if(filecolor)$$filecolor$$else$Maroon$endif$},
+  citecolor={$if(citecolor)$$citecolor$$else$Blue$endif$},
+  urlcolor={$if(urlcolor)$$urlcolor$$else$Blue$endif$},
+  $else$
   hidelinks,
+  $endif$
   pdfcreator={LaTeX via pandoc}}
+
+$if(title)$
 \title{$title$}
+$endif$
 $if(subtitle)$
 \usepackage{etoolbox}
 \makeatletter
@@ -81,14 +99,68 @@ $if(subtitle)$
 \makeatother
 \subtitle{$subtitle$}
 $endif$
-\author{$author$}
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+$if(institute)$
+\providecommand{\institute}[1]{}
+\institute{$for(institute)$$institute$$sep$ \and $endfor$}
+$endif$
+$if(date)$
 \date{$date$}
+$endif$
+
 \begin{document}
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+$if(title)$
 \maketitle
+$endif$
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$for(include-before)$
+$include-before$
+
+$endfor$
+$if(toc)$
+$if(toc-title)$
+\renewcommand*\contentsname{$toc-title$}
+$endif$
 {
-\setcounter{tocdepth}{2}
+$if(colorlinks)$
+\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$$endif$}
+$endif$
+\setcounter{tocdepth}{$toc-depth$}
 \tableofcontents
 }
+$endif$
+$if(lot)$
+\listoftables
+$endif$
+$if(lof)$
+\listoffigures
+$endif$
+$if(linestretch)$
+\setstretch{$linestretch$}
+$else$
 \setstretch{1.2}
+$endif$
+$if(has-frontmatter)$
+\mainmatter
+$endif$
+
 $body$
+
+$if(has-frontmatter)$
+\backmatter
+$endif$
+$for(include-after)$
+$include-after$
+
+$endfor$
 \end{document}

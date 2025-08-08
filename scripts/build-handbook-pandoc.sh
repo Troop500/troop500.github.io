@@ -77,8 +77,8 @@ titlepage: true
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
-  - \fancyhead[L]{Troop Handbook}
-  - \fancyhead[R]{2025 Edition}
+  - \fancyhead[L]{Troop 500G Handbook}
+  - \fancyhead[R]{$CURRENT_DATE}
   - \fancyfoot[C]{\thepage}
   - \renewcommand{\headrulewidth}{0.4pt}
   - \renewcommand{\footrulewidth}{0.4pt}

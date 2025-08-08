@@ -18,13 +18,13 @@ permalink: /handbook
 
 {% include content/getting-involved-parents.md %}
 
-{% include content/getting-involved-parents.md %}
-
 {% include content/leadership-organization.md %}
 
 {% include content/outdoor-program.md %}
 
 {% include content/accessibility-inclusion.md %}
+
+{% include content/conference-communications.md %}
 
 {% include content/policies-safety.md %}
 
@@ -35,3 +35,13 @@ permalink: /handbook
 {% include content/useful-links.md %}
 
 {% include content/contact-info.md %}
+
+---
+
+## Appendix
+
+### Appendix A: Joining Conference Template
+
+{% include content/appendix/joining-conference-template.md %}
+
+**📋 Download this template as PDF:** [Joining Conference Template (PDF)](/assets/files/handbook/appendix/joining-conference-template-latest.pdf)

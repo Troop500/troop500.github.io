@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 #
 # Troop 500G Build and Test Script - PDF Container First
 # ======================================================
@@ -78,6 +78,128 @@ function Test-Url {
         Write-Host "[FAIL] $description (Error: $($_.Exception.Message))" -ForegroundColor Red
         return $false
     }
+}
+
+# Function to test appendix PDF generation and content
+function Test-AppendixPDFs {
+    $allTestsPassed = $true
+    $appendixDir = "assets/files/handbook/appendix"
+    
+    # Check if appendix directory exists
+    if (-not (Test-Path $appendixDir)) {
+        Write-Host "[FAIL] Appendix directory not found: $appendixDir" -ForegroundColor Red
+        return $false
+    }
+    
+    # Find all appendix markdown files
+    $appendixMdFiles = Get-ChildItem "_includes/content/appendix/*.md" -ErrorAction SilentlyContinue
+    
+    if ($appendixMdFiles.Count -eq 0) {
+        Write-Host "[WARN] No appendix markdown files found in _includes/content/appendix/" -ForegroundColor Yellow
+        return $true  # Not a failure if no appendix files exist yet
+    }
+    
+    foreach ($mdFile in $appendixMdFiles) {
+        $baseName = $mdFile.BaseName
+        $timestampedPattern = "$appendixDir/$baseName-????????_??????.pdf"
+        $latestPdf = "$appendixDir/$baseName-latest.pdf"
+        
+        # Test 1: Check if timestamped PDF was generated
+        $timestampedPdfs = Get-ChildItem $timestampedPattern -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending
+        if ($timestampedPdfs.Count -eq 0) {
+            Write-Host "[FAIL] No timestamped PDF found for $baseName (pattern: $timestampedPattern)" -ForegroundColor Red
+            $allTestsPassed = $false
+            continue
+        }
+        
+        $newestTimestamped = $timestampedPdfs[0]
+        Write-Host "[PASS] Found timestamped PDF: $($newestTimestamped.Name) ($([Math]::Round($newestTimestamped.Length / 1024, 1)) KB)" -ForegroundColor Green
+        
+        # Test 2: Check if latest PDF exists and is current
+        if (-not (Test-Path $latestPdf)) {
+            Write-Host "[FAIL] Latest PDF not found: $latestPdf" -ForegroundColor Red
+            $allTestsPassed = $false
+            continue
+        }
+        
+        $latestInfo = Get-Item $latestPdf
+        $sizeKB = [Math]::Round($latestInfo.Length / 1024, 1)
+        Write-Host "[PASS] Latest PDF exists: $baseName-latest.pdf ($sizeKB KB)" -ForegroundColor Green
+        
+        # Test 3: Verify latest PDF is reasonably current (within last hour)
+        $timeDiff = (Get-Date) - $latestInfo.LastWriteTime
+        if ($timeDiff.TotalHours -gt 1) {
+            Write-Host "[WARN] Latest PDF may be stale (last modified: $($latestInfo.LastWriteTime))" -ForegroundColor Yellow
+        }
+        
+        # Test 4: Basic PDF content validation using pdftotext if available
+        try {
+            $pdfTextFile = "$env:TEMP\appendix_test_$baseName.txt"
+            $pdfTextResult = & pdftotext $latestPdf $pdfTextFile 2>$null
+            
+            if (Test-Path $pdfTextFile) {
+                $pdfContent = Get-Content $pdfTextFile -Raw
+                Remove-Item $pdfTextFile -Force -ErrorAction SilentlyContinue
+                
+                # Test 5: Verify main appendix header is present (should be unnumbered)
+                if ($pdfContent -match "Appendix [A-Z]:\s*") {
+                    Write-Host "[PASS] Main appendix header found (unnumbered format)" -ForegroundColor Green
+                } else {
+                    Write-Host "[FAIL] Main appendix header not found or incorrectly formatted" -ForegroundColor Red
+                    $allTestsPassed = $false
+                }
+                
+                # Test 6: Verify subsection headers are unnumbered (should not contain patterns like "1.2.3")
+                $numberedHeaders = $pdfContent | Select-String -Pattern '\d+\.\d+\.\d+' -AllMatches
+                if ($numberedHeaders.Matches.Count -eq 0) {
+                    Write-Host "[PASS] No numbered subsection headers found (correct for appendix)" -ForegroundColor Green
+                } else {
+                    Write-Host "[FAIL] Found $($numberedHeaders.Matches.Count) numbered subsection headers (should be unnumbered in appendix PDFs)" -ForegroundColor Red
+                    $allTestsPassed = $false
+                }
+                
+                # Test 7: Verify PDF contains substantial content
+                if ($pdfContent.Length -gt 500) {
+                    Write-Host "[PASS] PDF contains substantial content ($($pdfContent.Length) characters)" -ForegroundColor Green
+                } else {
+                    Write-Host "[FAIL] PDF content appears too short ($($pdfContent.Length) characters)" -ForegroundColor Red
+                    $allTestsPassed = $false
+                }
+                
+                # Test 8: Check for proper template elements (for joining-conference-template)
+                if ($baseName -eq "joining-conference-template") {
+                    $requiredElements = @(
+                        "Template Instructions",
+                        "Conference Form", 
+                        "Pre-Meeting Checklist",
+                        "Understanding Your Scout",
+                        "Information Sharing Permissions"
+                    )
+                    
+                    foreach ($element in $requiredElements) {
+                        if ($pdfContent -match [regex]::Escape($element)) {
+                            Write-Host "[PASS] Found required element: $element" -ForegroundColor Green
+                        } else {
+                            Write-Host "[FAIL] Missing required element: $element" -ForegroundColor Red
+                            $allTestsPassed = $false
+                        }
+                    }
+                }
+            } else {
+                Write-Host "[WARN] Could not extract text from PDF for content validation" -ForegroundColor Yellow
+            }
+        } catch {
+            Write-Host "[WARN] pdftotext not available, skipping content validation" -ForegroundColor Yellow
+        }
+        
+        # Test 9: Test web accessibility of the PDF
+        $webUrl = "http://localhost:4000/assets/files/handbook/appendix/$baseName-latest.pdf"
+        if (-not (Test-Url $webUrl "Appendix PDF ($baseName)")) {
+            $allTestsPassed = $false
+        }
+    }
+    
+    return $allTestsPassed
 }
 
 # Function to wait for Jekyll with exponential backoff
@@ -182,7 +304,7 @@ if (-not $Quick) {
 }
 
 # Ensure PDF directories exist
-@("assets/files/handbook", "assets/files/handbook/archive") | ForEach-Object {
+@("assets/files/handbook", "assets/files/handbook/archive", "assets/files/handbook/appendix", "assets/files/handbook/appendix/archive") | ForEach-Object {
     if (!(Test-Path $_)) {
         New-Item -Path $_ -ItemType Directory -Force | Out-Null
     }
@@ -243,6 +365,34 @@ if (-not $SkipPDFs) {
                 Write-Host "PASS - Updated $pdfType-latest.pdf from $($mostRecentPDF.Name) ($sizeKB KB)" -ForegroundColor Green
             } else {
                 Write-Host "WARN - No timestamped $pdfType PDF found to copy" -ForegroundColor Yellow
+            }
+        }
+        
+        # Update appendix PDF latest files
+        Write-Host "Updating appendix PDF latest files..." -ForegroundColor Yellow
+        $appendixDir = "assets/files/handbook/appendix"
+        if (Test-Path $appendixDir) {
+            $appendixMdFiles = Get-ChildItem "_includes/content/appendix/*.md" -ErrorAction SilentlyContinue
+            foreach ($mdFile in $appendixMdFiles) {
+                $baseName = $mdFile.BaseName
+                $mostRecentAppendixPDF = Get-ChildItem "$appendixDir/$baseName-20*.pdf" -ErrorAction SilentlyContinue | 
+                                       Sort-Object LastWriteTime -Descending | 
+                                       Select-Object -First 1
+                
+                $latestAppendixPath = "$appendixDir/$baseName-latest.pdf"
+                
+                if ($mostRecentAppendixPDF) {
+                    # Remove existing latest file if it exists
+                    if (Test-Path $latestAppendixPath) {
+                        Remove-Item $latestAppendixPath -Force
+                    }
+                    
+                    Copy-Item $mostRecentAppendixPDF.FullName $latestAppendixPath
+                    $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
+                    Write-Host "PASS - Updated appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                } else {
+                    Write-Host "WARN - No timestamped appendix PDF found for $baseName" -ForegroundColor Yellow
+                }
             }
         }
         
@@ -323,6 +473,35 @@ startxref
         } else {
             $existingSize = [Math]::Round((Get-Item $latestPath).Length / 1024, 1)
             Write-Host "PASS - $pdfType-latest.pdf already exists ($existingSize KB)" -ForegroundColor Green
+        }
+    }
+    
+    # Also ensure appendix PDF latest files exist when skipping generation
+    Write-Host "Ensuring appendix PDF latest files exist..." -ForegroundColor Yellow
+    $appendixDir = "assets/files/handbook/appendix"
+    if (Test-Path $appendixDir) {
+        $appendixMdFiles = Get-ChildItem "_includes/content/appendix/*.md" -ErrorAction SilentlyContinue
+        foreach ($mdFile in $appendixMdFiles) {
+            $baseName = $mdFile.BaseName
+            $latestAppendixPath = "$appendixDir/$baseName-latest.pdf"
+            
+            if (-not (Test-Path $latestAppendixPath)) {
+                # Find most recent timestamped appendix PDF to use as latest
+                $mostRecentAppendixPDF = Get-ChildItem "$appendixDir/$baseName-20*.pdf" -ErrorAction SilentlyContinue | 
+                                       Sort-Object LastWriteTime -Descending | 
+                                       Select-Object -First 1
+                
+                if ($mostRecentAppendixPDF) {
+                    Copy-Item $mostRecentAppendixPDF.FullName $latestAppendixPath
+                    $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
+                    Write-Host "PASS - Created appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
+                } else {
+                    Write-Host "WARN - No previous appendix PDF found for $baseName" -ForegroundColor Yellow
+                }
+            } else {
+                $existingSize = [Math]::Round((Get-Item $latestAppendixPath).Length / 1024, 1)
+                Write-Host "PASS - Appendix $baseName-latest.pdf already exists ($existingSize KB)" -ForegroundColor Green
+            }
         }
     }
 }
@@ -437,6 +616,10 @@ if (-not $SkipTests) {
     if (-not $SkipPDFs) {
         if (-not (Test-Url "http://localhost:4000/assets/files/handbook/troop-handbook-latest.pdf" "Latest handbook PDF")) { $failedTests++ }
         if (-not (Test-Url "http://localhost:4000/assets/files/handbook/contact-info-latest.pdf" "Latest contact info PDF")) { $failedTests++ }
+        
+        # Test appendix PDFs
+        Write-Host "`nTesting appendix PDFs..." -ForegroundColor Cyan
+        if (-not (Test-AppendixPDFs)) { $failedTests++ }
     }
     
     # Report test results
