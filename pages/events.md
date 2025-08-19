@@ -6,17 +6,33 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 8/11: **NO** Troop Meeting
-- 8/12: PLC Meeting
-- 8/18: Troop Meeting
 - 8/25: Troop Meeting
-- 9/2: PLC Meeting
-- 9/5-9/7: Scouting in Twinsburg
+- 8/30: Car Wash @ BrightPath 10am - 2pm
+- 9/1: NO Troop Meeting
+- 9/5-9/6: Scouting in Twinsburg
 - 9/8: Court of Honor
+- 9/8: PLC Meeting
+- 9/15: Troop Meeting @ Church, 7pm
+- 9/22: Troop Meeting
 - 9/26-9/28: Scout Haunted at Beaumont
+- 9/29: Troop Meeting
+- 10/6: Troop Meeting
 - 10/10-10/12: Cub Haunted at Beaumont
+- 10/13: Troop Meeting & PLC
+- 10/20: Troop Meeting
+- 10/27: Troop Meeting
+- 11/3: Troop Meeting
+- 11/10: Troop Meeting
 - 11/15: Yard Charge
+- 11/17: Troop Meeting
+- 11/24: Troop Meeting
+- 12/1: Troop Meeting
+- 12/8: Troop Meeting
+- 12/15: Troop Meeting
+- 12/22: Troop Meeting
+- 12/29: Troop Meeting
 - 6/28/26 - 7/4/26: Summer Camp
+- 7/22/26 - 7/31/26: National Jamboree
 
 
 ## Troop Google Calendar
