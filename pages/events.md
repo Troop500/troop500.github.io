@@ -6,14 +6,11 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 8/25: Troop Meeting
-- 8/30: Car Wash @ BrightPath 10am - 2pm
-- 9/1: NO Troop Meeting
 - 9/5-9/6: Scouting in Twinsburg
 - 9/8: Court of Honor
 - 9/15: Troop Meeting/PLC @ Church, 7pm
 - 9/22: Troop Meeting
-- 9/26-9/28: Scout Haunted at Beaumont
+- 9/27-9/28: Scout Haunted at Beaumont
 - 9/29: Troop Meeting
 - 10/6: Troop Meeting
 - 10/10-10/12: Cub Haunted at Beaumont
