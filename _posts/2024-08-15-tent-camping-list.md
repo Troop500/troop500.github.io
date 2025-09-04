@@ -7,7 +7,7 @@ tags: [resources, checklist]
 image: snowytents.jpg
 ---
 
-Troop 500 goes on tent campouts very often. You can use the following checklist to help you pack for these campouts. Most times, at least one girl forgets something. Try to use this list to help pack and do a final review to make sure you have it all.
+Troop 500 goes on tent campouts very often. You can use the following checklist to help you pack for these campouts. Most times, at least one girl forgets something. Try to use this list to help pack and do a final review to make sure you have it all. Want a [printable list](https://docs.google.com/document/d/1wBrampHK-uWejpoBDPUSsxcKZmh_md4_czmIbQIBWEg/edit?usp=drive_link)?
 
 - [ ] [13 Essentials](/ten-essentials)
 - [ ] Sleeping Bag
