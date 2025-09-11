@@ -6,20 +6,20 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 9/8: Court of Honor
 - 9/15: Troop Meeting/PLC @ Church, 7pm
-- 9/22: Troop Meeting
 - 9/27-9/28: Scout Haunted at Beaumont
-- 9/29: Troop Meeting
+	- details pending Council updates...
+- 9/29: Troop Meeting & Committee Meeting
 - 10/6: Troop Meeting
 - 10/10-10/12: Cub Haunted at Beaumont
 - 10/13: Troop Meeting & PLC
-- 10/19: Semi-Annual Planning Meeting (PLC members)
+- 10/19 1-5pm: Semi-Annual Planning Meeting (PLC members)
 - 10/20: Troop Meeting
 - 10/27: Troop Meeting
 - 11/3: Troop Meeting
 - 11/10: Troop Meeting
-- 11/14 - 11/16: Cooking Campout
+- 11/14 - 11/16: Cooking Campout (AOLs, come join us!)
+	- Meet at Church at 5pm wearing Class As having eaten dinner. Plan to return at 10:30am on Sunday.
 - 11/15: Yard Charge
 - 11/17: Troop Meeting
 - 11/24: Troop Meeting
