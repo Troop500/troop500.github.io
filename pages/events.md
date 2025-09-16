@@ -15,6 +15,7 @@ The following events are currently scheduled.
 - 10/13: Troop Meeting & PLC
 - 10/19 1-5pm: Semi-Annual Planning Meeting (PLC members)
 - 10/20: Troop Meeting
+- 10/25: Trunk or Treat (5-7pm)
 - 10/27: Troop Meeting
 - 11/3: Troop Meeting
 - 11/10: Troop Meeting
