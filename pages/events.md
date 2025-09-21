@@ -6,12 +6,12 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 9/15: Troop Meeting/PLC @ Church, 7pm
 - 9/27-9/28: Scout Haunted at Beaumont
-	- details pending Council updates...
+	- Meet at Church at 9am having eaten breakfast wearing Class As. I'd recommend to wear a class B underneath. I anticipate returning on Sunday around 11am but will keep everyone posted via groupme.
 - 9/29: Troop Meeting & Committee Meeting
 - 10/6: Troop Meeting
 - 10/10-10/12: Cub Haunted at Beaumont
+	- Cabin camping.
 - 10/13: Troop Meeting & PLC
 - 10/19 1-5pm: Semi-Annual Planning Meeting (PLC members)
 - 10/20: Troop Meeting
