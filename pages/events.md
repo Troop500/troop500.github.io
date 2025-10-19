@@ -19,7 +19,7 @@ The following events are currently scheduled.
 - 11/24: Troop Meeting
 - 12/1: Troop Meeting
 - 12/8: Troop Meeting
-- 11/12 - 11/14: Boomers vs Zoomers
+- 12/12 - 12/14: Boomers vs Zoomers
 	- Meet at Church at 5pm wearing Class As having eaten dinner. Plan to return at 10:30am on Sunday
 - 12/15: Troop Meeting
 - 12/22: Carolling at Nursing Home
