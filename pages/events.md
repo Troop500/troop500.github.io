@@ -6,10 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 10/20: Troop Meeting
-- 10/25: Trunk or Treat (5-7pm)
-- 10/27: Troop Meeting
-- 11/1: Scouting for Food (10am - 2pm)
 - 11/3: Troop Meeting
 - 11/10: Troop Meeting
 - 11/14 - 11/16: Cooking Campout (AOLs, come join us!)
