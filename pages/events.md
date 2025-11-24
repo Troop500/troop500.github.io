@@ -6,12 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 11/3: Troop Meeting
-- 11/10: Troop Meeting
-- 11/14 - 11/16: Cooking Campout (AOLs, come join us!)
-	- Meet at Church at 5pm wearing Class As having eaten dinner. Plan to return at 10:30am on Sunday.
-- 11/15: Yard Charge
-- 11/17: Troop Meeting & PLC
 - 11/24: Troop Meeting
 - 12/1: Troop Meeting
 - 12/8: Troop Meeting
