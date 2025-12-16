@@ -6,18 +6,20 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 11/24: Troop Meeting
-- 12/1: Troop Meeting
-- 12/8: Troop Meeting
-- 12/12 - 12/14: Boomers vs Zoomers
-	- Meet at Church at 5pm wearing Class As having eaten dinner. Plan to return at 10:30am on Sunday
-- 12/15: Troop Meeting
 - 12/22: Carolling at Nursing Home
 - 12/29: NO Troop Meeting
 - 1/5: Troop Meeting
 - 1/9 - 1/11: Klondike @ Beaumont
+- 1/12: Troop Meeting
+- 1/19: Winter Party!
+- 1/26: Troop Meeting/PLC
+- 2/2: Troop Meeting
+- 2/8: First Aid Meet - 11am - 3pm
 - 2/9: SPL/PL Elections
+- 2/16: NO Troop Meeting
 - 2/20 - 2/22: Cabin Camping - Games
+- 2/23: Troop Meeting/PLC
+- 3/2: Troop Meeting - DUES are Due
 - 3/13 - 3/15: Plane Crash Campout
 - 4/10 - 4/12: ILST/Advancement Campout
 - 4/20: Court of Honor
