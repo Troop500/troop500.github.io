@@ -6,8 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 12/22: Carolling at Nursing Home
-- 12/29: NO Troop Meeting
 - 1/5: Troop Meeting
 - 1/9 - 1/11: Klondike @ Beaumont
 - 1/12: Troop Meeting
@@ -20,11 +18,19 @@ The following events are currently scheduled.
 - 2/20 - 2/22: Cabin Camping - Games
 - 2/23: Troop Meeting/PLC
 - 3/2: Troop Meeting - DUES are Due
+- 3/9: Troop Meeting
 - 3/13 - 3/15: Plane Crash Campout
+- 3/16: Troop Meeting
+- 3/23: Troop Meeting
+- 3/30: Troop Meeting/PLC
+- 4/6: Troop Meeting
 - 4/10 - 4/12: ILST/Advancement Campout
+- 4/13: Troop Meeting
 - 4/20: Court of Honor
+- 4/27: Troop Meeting/PLC
 - 5/2: Trash the Trash in Solon
 - 5/3: Semi-Annual Planning
+- 5/4: Troop Meeting
 - 5/8 - 5/9: MBU at Firelands
 - 6/8 - First Troop Meeting at Shelterhouse - 6:30pm - 8pm
 - 6/28/26 - 7/4/26: Summer Camp
