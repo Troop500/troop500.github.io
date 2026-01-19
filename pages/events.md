@@ -23,6 +23,7 @@ The following events are currently scheduled.
 - 4/6: Troop Meeting
 - 4/10 - 4/12: ILST/Advancement Campout
 - 4/13: Troop Meeting
+- 4/18: Elizabeth Eagle CoH - 4:30pm-6pm
 - 4/20: Court of Honor
 - 4/27: Troop Meeting/PLC
 - 5/2: Trash the Trash in Solon
