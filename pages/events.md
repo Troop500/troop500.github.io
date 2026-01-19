@@ -6,11 +6,8 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 1/5: Troop Meeting
-- 1/9 - 1/11: Klondike @ Beaumont
-- 1/12: Troop Meeting
 - 1/19: Winter Party!
-- 1/26: Troop Meeting/PLC
+- 1/26: Troop Meeting
 - 2/2: Troop Meeting
 - 2/8: First Aid Meet - 11am - 3pm
 - 2/9: SPL/PL Elections
