@@ -16,6 +16,7 @@ The following events are currently scheduled.
 - 2/23: Troop Meeting/PLC
 - 3/2: Troop Meeting - DUES are Due
 - 3/9: Troop Meeting
+- 3/10: Pack 67 Crossover - 6:30-7:30pm
 - 3/13 - 3/15: Plane Crash Campout
 - 3/16: Troop Meeting
 - 3/23: Troop Meeting
