@@ -6,8 +6,9 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 1/19: Winter Party!
+- 1/25: Virtual PLC Meeting - 7pm
 - 1/26: Troop Meeting
+- 1/31: Jambo Spaghetti Dinner Fundraiser
 - 2/2: Troop Meeting
 - 2/8: First Aid Meet - 11am - 3pm
 - 2/9: SPL/PL Elections
