@@ -6,16 +6,11 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 1/26: Troop Meeting - CANCELED!
-- 1/31: Jambo Spaghetti Dinner Fundraiser
-- 2/2: Troop Meeting
-- 2/8: First Aid Meet - 11am - 3pm
-- 2/9: SPL/PL Elections
 - 2/16: NO Troop Meeting
 - 2/20 - 2/22: Cabin Camping - Games
 	- Meet at 5pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 11am on Sunday.
 - 2/23: Troop Meeting/PLC
-- 3/2: Troop Meeting - DUES are Due
+- 3/2: Troop Meeting & Pack 500 Crossover - DUES are Due
 - 3/9: Troop Meeting
 - 3/10: Pack 67 Crossover - 6:30-7:30pm
 - 3/13 - 3/15: Plane Crash Campout
