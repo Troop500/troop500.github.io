@@ -12,6 +12,7 @@ The following events are currently scheduled.
 - 3/13 - 3/14: Plane Crash Campout
 	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10pm on Saturday night.
 - 3/16: Troop Meeting
+- 3/18: Lenten Meal for Church - details coming soon!
 - 3/23: Troop Meeting
 - 3/28: MBU @ Beaumont
 - 3/30: Troop Meeting
