@@ -6,21 +6,22 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 2/23: Troop Meeting/PLC
 - 3/2: Troop Meeting & Pack 500 Crossover - DUES are Due
 - 3/9: Troop Meeting
-- 3/10: Pack 67 Crossover - 6:30-7:30pm
+- 3/10: Pack 67 Crossover - 6:00-7:00pm
 - 3/13 - 3/14: Plane Crash Campout
 	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10pm on Saturday night.
 - 3/16: Troop Meeting
 - 3/23: Troop Meeting
-- 3/30: Troop Meeting/PLC
+- 3/28: MBU @ Beaumont
+- 3/30: Troop Meeting
 - 4/6: Troop Meeting
 - 4/10 - 4/12: ILST/Advancement Campout
+	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10am on Sunday.
 - 4/13: Troop Meeting
 - 4/18: Elizabeth Eagle CoH - 4:30pm-6pm
 - 4/20: Court of Honor
-- 4/27: Troop Meeting/PLC
+- 4/27: Troop Meeting
 - 5/2: Trash the Trash in Solon
 - 5/3: Semi-Annual Planning
 - 5/4: Troop Meeting
