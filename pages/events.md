@@ -9,6 +9,7 @@ The following events are currently scheduled.
 - 3/16: Troop Meeting
 - 3/18: Lenten Meal for Church - details coming soon!
 - 3/23: Troop Meeting
+- 3/24: Parent Meeting via Zoom at 7pm
 - 3/25: PLC at Solon Library
 - 3/28: MBU @ Beaumont
 - 3/30: Troop Meeting
