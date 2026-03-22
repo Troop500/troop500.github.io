@@ -6,8 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 3/16: Troop Meeting
-- 3/18: Lenten Meal for Church - details coming soon!
 - 3/23: Troop Meeting
 - 3/24: Parent Meeting via Zoom at 7pm
 - 3/25: PLC at Solon Library
@@ -27,6 +25,7 @@ The following events are currently scheduled.
 - 5/8 - 5/9: MBU at Firelands
 - 5/11: Troop Meeting
 - 5/18: Troop Meeting
+- 5/25: NO Troop Meeting
 - 5/27: PLC
 - 6/8 - First Troop Meeting at Shelterhouse - 6:30pm - 8pm
 - 6/28/26 - 7/4/26: Summer Camp
