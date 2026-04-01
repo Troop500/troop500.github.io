@@ -6,18 +6,19 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 3/30: Troop Meeting
 - 4/6: Troop Meeting & Summer Camp meeting! 6:40pm
 - 4/10 - 4/12: ILST/Advancement Campout
 	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10am on Sunday.
 - 4/13: Troop Meeting
+- 4/18: Swim Test - noon-2pm
 - 4/18: Elizabeth Eagle CoH - 4:30pm-6pm
 - 4/20: Court of Honor
 - 4/26: Flag Ceremony at Special Olympics - 9am-10am
 - 4/27: Troop Meeting
 - 4/29: PLC @ Solon Library
-- 5/2: Trash the Trash in Solon (TBD)
-- 5/2: Archeology MB at Dover Dam Weekend (TBD)
+- 5/2: Trash the Trash in Solon (9am-noon)
+- 5/2: Archeology MB at Dover Dam Weekend (all day)
+- 5/2: Swim Test - noon-2pm
 - 5/3: Semi-Annual Planning
 - 5/4: Troop Meeting
 - 5/8 - 5/9: MBU at Firelands
