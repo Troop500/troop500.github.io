@@ -2,13 +2,13 @@
 
 ## Overview
 
-*Every Scout who joins Troop 500G brings their own unique strengths, interests, and needs â€” and this conference is our chance to learn about yours. By taking a little time to talk before your Scout's first campout, we can make sure our leaders are prepared to support them from day one. This form is a guide for that conversation, not an evaluation â€” there are no wrong answers, and you are always welcome to leave any question blank. Everything shared here stays confidential within our leadership team and is used only to help your Scout thrive.*
+*Every Scout who joins Troop 500G brings their own unique strengths, interests, and needs — and this conference is our chance to learn about yours. By taking a little time to talk before your Scout's first campout, we can make sure our leaders are prepared to support them from day one. This form is a guide for that conversation, not an evaluation — there are no wrong answers, and you are always welcome to leave any question blank. Everything shared here stays confidential within our leadership team and is used only to help your Scout thrive.*
 
 ---
 
 ### A Note About Scout Leadership
 
-Troop 500G leaders are volunteers â€” mostly parents who care deeply about Scouts and want to help. We attend a lot of training, but we also have full-time jobs and busy lives. Sometimes we miss details or make mistakes, but our goal is always to support your Scout and help them succeed. Just as Scouts "Do their best," we do too. If you ever have concerns or questions, please talk to us. We'll figure it out together!
+Troop 500G leaders are volunteers — mostly parents who care deeply about Scouts and want to help. We attend a lot of training, but we also have full-time jobs and busy lives. Sometimes we miss details or make mistakes, but our goal is always to support your Scout and help them succeed. Just as Scouts "Do their best," we do too. If you ever have concerns or questions, please talk to us. We'll figure it out together!
 
 ---
 
@@ -26,15 +26,15 @@ The goal of joining conferences is to provide leaders enough information to supp
 
 ### You're part of the team
 
-Leaders, parents, and Scouts work together as a team, and the goal is a supportive partnership where every Scout can thrive. Open communication is essential â€” if something is worrying you, please say so. If something is unclear, just ask. We would rather hear about a concern early than have a Scout struggle in silence.
+Leaders, parents, and Scouts work together as a team, and the goal is a supportive partnership where every Scout can thrive. Open communication is essential — if something is worrying you, please say so. If something is unclear, just ask. We would rather hear about a concern early than have a Scout struggle in silence.
 
 ### Strengths-Based
 
-Every Scout brings their own unique strengths, talents, and interests. The joining conference focuses on identifying and building upon these strengths, helping Scouts feel confident and valued in the troop. That said, building on strengths is most effective when leaders also understand where a Scout might struggle â€” knowing potential challenges helps us provide the right support before small difficulties become bigger ones.
+Every Scout brings their own unique strengths, talents, and interests. The joining conference focuses on identifying and building upon these strengths, helping Scouts feel confident and valued in the troop. That said, building on strengths is most effective when leaders also understand where a Scout might struggle — knowing potential challenges helps us provide the right support before small difficulties become bigger ones.
 
 ### No Diagnosis Required
 
-The conversation is about what helps the Scout succeed â€” not about medical diagnoses or labels. Families are encouraged to share strategies, preferences, and needs, regardless of whether there is a formal diagnosis.
+The conversation is about what helps the Scout succeed — not about medical diagnoses or labels. Families are encouraged to share strategies, preferences, and needs, regardless of whether there is a formal diagnosis.
 
 ### Conducted Post-Joining
 
