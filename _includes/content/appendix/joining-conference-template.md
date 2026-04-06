@@ -1,55 +1,190 @@
-# Appendix A: Joining Conference Template
+# Appendix A: Joining Conference
 
 *A tool to understand and support each Scout's unique strengths and needs*
 
 ---
 
-## Template Instructions
+## A Note About Scout Leadership
 
-This template helps leaders conduct inclusive, strengths-based joining conferences to better understand and support each Scout's unique needs. The conference should take place within the first month after a Scout joins, and is designed to build partnerships with families rather than evaluate suitability.
-
-**Key Principles:**
-- **Confidentiality:** Parents decide what to share - everything is confidential unless permission is given
-- **Partnership:** Work together as a team to support the Scout's success
-- **Strengths-Based:** Every Scout has unique strengths to build upon
-- **No Diagnosis Required:** Focus on what helps the Scout succeed, not labels
-- **Post-Joining:** This happens after the Scout has already joined, not as a decision point
+Troop 500G leaders are volunteers — mostly parents who care deeply about Scouts and want to help. We attend a lot of training, but we also have full-time jobs and busy lives. Sometimes we miss details or make mistakes, but our goal is always to support your Scout and help them succeed. Just as Scouts "Do their best," we do too. If you ever have concerns or questions, please talk to us. We'll figure it out together!
 
 ---
 
-## Conference Form
+## A Conversation Guide
 
-**Date:** ________________  **Time:** ________________  **Location:** ________________
+The Lake Erie Council Accessibility and Inclusion Committee encourages Units to hold joining conferences with every incoming Scout. These meetings are between leaders (often Scoutmasters, Assistant Scoutmasters, and New Member Coordinators), parents, and Scouts. Joining meetings encourage inclusive, strengths-based conversations to better understand and support each Scout's unique needs. The conference should take place within the first month after a Scout joins, and is designed to build partnerships with families rather than evaluate suitability.
 
-**Scout Name:** ________________________________  **Age:** ____  **School:** ________________
+### Inclusive
 
-**Parent(s)/Guardian(s):** ________________________________________________________________
+Joining conferences are held for every Scout, recognizing that all Scouts have unique needs and strengths. Some may require additional support, but every Scout benefits from understanding and partnership.
 
-**Contact Information:**
-- Primary Phone: ________________  Email: ________________________________________________
-- Secondary Phone: ________________  Email: ______________________________________________
-- Address: _____________________________________________________________________
+### Confidentiality & Privacy
+
+The goal of joining conferences is to provide leaders enough information to support Scouts during camping and troop activities. While confidentiality is important, we ask that parents and guardians share enough information with our trained leaders to help their Scout succeed. Required Annual Health and Medical Forms store private medical information and are not authorized for digital storage. All joining conference information is stored in Troop 500G Google Drive, with access limited to adult troop leaders who need it to provide support to your Scout. If you have privacy concerns, please let us know. You may leave any fields blank if you prefer not to share certain information. All details discussed are kept confidential unless explicit permission is given to share with other leaders.
+
+### Partnership
+
+Leaders, parents, and Scouts work together as a team. The goal is to build a supportive partnership that helps every Scout thrive. Open communication and collaboration ensure that everyone is working toward the Scout's best interests.
+
+### Strengths-Based
+
+Every Scout brings their own unique strengths, talents, and interests. The joining conference focuses on identifying and building upon these strengths, helping Scouts feel confident and valued in the troop.
+
+### No Diagnosis Required
+
+The conversation is about what helps the Scout succeed — not about medical diagnoses or labels. Families are encouraged to share strategies, preferences, and needs, regardless of whether there is a formal diagnosis.
+
+### Conducted Post-Joining
+
+The joining conference is held after the Scout has joined the troop. It is not an evaluation or selection process, but a way to welcome the Scout and ensure they have the support they need from the start.
+
+### An Ongoing Conversation
+
+The joining conference is just the beginning of a supportive relationship. Scouts, parents, and leaders all grow and change, and so do their needs. Any leader, Scout, or parent may request another conference at any time to revisit goals, address new challenges, or update support strategies. We especially encourage a follow-up conference with leaders and families before Scouts attend summer camp, to ensure everyone is prepared and supported for new experiences.
 
 ---
 
-### Pre-Meeting Checklist
-- [ ] Scout has already joined the unit (this is not a membership decision meeting)
-- [ ] Private, confidential meeting space arranged (out of earshot of others)
+## Pre-Meeting Checklist *(Completed by Troop Leadership)*
+
+- [ ] Scout has joined the Troop *(beascout.scouting.org)*
+- [ ] Private, confidential meeting space arranged *(out of earshot of others)*
 - [ ] At least one disability-awareness trained leader present if possible
 - [ ] Family understands this is about understanding their Scout, not evaluation
+- [ ] Troop 500G Handbook *(Printed Hardcopy)*
+- [ ] Below form has been sent to family for review
 
 ---
 
-### Meeting Opening Script
+\newpage
 
-**Opening Script (from AbleScouts):**
-> "Hi, I'm [name] and I'm the [position] of Troop 500G. I'm glad you and [Scout name] have joined our troop. The other leaders and I want to give your child the best experience we can. I know we have told you what our troop is like, and it will help if you can tell us what makes your son/daughter unique. Can we have a few minutes to talk?"
+## Scout Contact Information
+
+**Scout Name:** ________________________________  **Age:** _______
+
+**Birthday:** ________________  **Grade:** ___________
+
+**School:** _________________________________________________________
+
+**Phone:** ____________________  **Scout's Phone:** ________________________
+
+**Email:** ____________________________________________________________
+
+**Address:** __________________________________________________________
+
+**Scouting.org Member ID:** ___________________________________________
+
+**Previous Scouting Experience:** _______________________________________
+
+**Siblings:** ___________________________________________
+
+**Sibling Scouting involvement:** ________________
+
+#### Onboarding Checklist
+
+- [ ] Annual Health and Medical Record A & B *(C before summer camp)*
+- [ ] IEP / 504 *(As Needed)*
+- [ ] Social Media Waiver
+- [ ] Access to GroupMe
+- [ ] Access to Troop 500 Google Calendar
+
+\newpage
+
+## Parent / Guardian 1 Contact Information
+
+**Name:** ____________________________________________
+
+**Relationship to Scout:** ________________
+
+**Phone:** ____________________  **Secondary Phone:** ______________________
+
+**Email:** ____________________________________________________________
+
+**Address:** __________________________________________________________
+
+**Scouting.org Member ID:** ___________________________________________
+
+**Previous Scouting Experience:** _______________________________________
+
+#### Onboarding Checklist
+
+- [ ] Reviewed Safe Scouting Pamphlet with Scout
+- [ ] Youth Protection Training Complete
+- [ ] Family Skills Questionnaire
+- [ ] Access to GroupMe
+- [ ] Access to Troop 500 Google Calendar
+
+**Are you interested in volunteering with the troop? If so, how?**
+- [ ] Committee member
+- [ ] Activity / event helper *(occasional)*
+- [ ] Merit badge counselor *(skills or expertise: ________________________________)*
+- [ ] Adult leader *(willing to complete required training)*
+- [ ] Not at this time
+
+**Skills, interests, or resources you'd like to contribute to the troop:**
+________________________________________________________________
+________________________________________________________________
+
+\newpage
+
+## Parent / Guardian 2 Contact Information
+
+**Name:** ____________________________________________
+
+**Relationship to Scout:** ________________
+
+**Phone:** ____________________  **Secondary Phone:** ______________________
+
+**Email:** ____________________________________________________________
+
+**Address:** __________________________________________________________
+
+**Scouting.org Member ID:** ___________________________________________
+
+**Previous Scouting Experience:** _______________________________________
+
+#### Onboarding Checklist
+
+- [ ] Reviewed Safe Scouting Pamphlet with Scout
+- [ ] Youth Protection Training Complete
+- [ ] Family Skills Questionnaire
+- [ ] Access to GroupMe
+- [ ] Access to Troop 500 Google Calendar
+
+**Are you interested in volunteering with the troop? If so, how?**
+- [ ] Committee member
+- [ ] Activity / event helper *(occasional)*
+- [ ] Merit badge counselor *(skills or expertise: ________________________________)*
+- [ ] Adult leader *(willing to complete required training)*
+- [ ] Not at this time
+
+**Skills, interests, or resources you'd like to contribute to the troop:**
+________________________________________________________________
+________________________________________________________________
 
 ---
 
-### Understanding Your Scout
+\newpage
 
-#### 1. Strengths & Interests (15 minutes)
+## About Your Scout
+
+### Scouting Experience
+
+**Why did your Scout want to join our troop?**
+________________________________________________________________
+________________________________________________________________
+
+**Does your Scout like to camp?** ________________________________
+
+**Do you consider your Scout a swimmer?** ________________________
+
+**What is your Scout's goal in Scouting?**
+________________________________________________________________
+________________________________________________________________
+
+---
+
+### Strengths & Interests
+
 **What are your Scout's unique strengths?**
 ________________________________________________________________
 ________________________________________________________________
@@ -62,7 +197,14 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-#### 2. Learning & Communication Style (10 minutes)
+**Hobbies:**
+________________________________________________________________
+________________________________________________________________
+
+---
+
+### Learning & Communication Style
+
 **How does your Scout learn best? (visual, hands-on, verbal instructions, etc.)**
 ________________________________________________________________
 ________________________________________________________________
@@ -75,7 +217,10 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-#### 3. Social & Emotional Needs (15 minutes)
+---
+
+### Social & Emotional Needs
+
 **How does your Scout handle new situations or changes to routine?**
 ________________________________________________________________
 ________________________________________________________________
@@ -96,7 +241,10 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-#### 4. Physical & Sensory Considerations (10 minutes)
+---
+
+### Physical & Sensory Considerations
+
 **Any physical limitations or accommodations needed?**
 ________________________________________________________________
 ________________________________________________________________
@@ -105,11 +253,33 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-**Dietary restrictions or medical needs we should know about?**
+**Dietary restrictions:**
 ________________________________________________________________
 ________________________________________________________________
 
-#### 5. Previous Experiences & Concerns (10 minutes)
+**Is your Scout a picky eater? What foods will they eat, and what do they refuse or strongly dislike?**
+________________________________________________________________
+________________________________________________________________
+
+**Other medical needs? (What happens if your Scout misses meds?)**
+________________________________________________________________
+________________________________________________________________
+
+**Can your Scout take pills?** ___________________________________
+
+**Is your Scout prepared for her period?** ________________________
+
+**Bedtime and sleep routines** *(important for overnight and camping trips)*:
+
+- Regular bedtime: ________________
+- Bedtime routine or needs: ________________________________________________________________
+- Sleep concerns *(sleepwalking, nightmares, sleep aids, etc.)*:
+  ________________________________________________________________
+
+---
+
+### Previous Experiences & Concerns
+
 **What accommodations or adaptations are made at home and school?**
 ________________________________________________________________
 ________________________________________________________________
@@ -122,11 +292,18 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
+**What didn't we ask about?**
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+
 ---
 
-### Support Strategies & Action Planning
+## Support Strategies & Action Planning
 
-#### What Works for Your Scout?
+### What Works for Your Scout?
+
 **Strategies that help them succeed:**
 ________________________________________________________________
 ________________________________________________________________
@@ -143,71 +320,41 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-#### Troop Integration Plan
-**Suggested patrol assignment considerations:**
+---
+
+### Family Considerations
+
+*This information is kept strictly confidential and used only to ensure your Scout's safety and success.*
+
+**Any family needs, situations, or custody arrangements we should be aware of?**
+*(e.g., who may pick up the Scout, communication preferences between households, court orders, etc.)*
+________________________________________________________________
 ________________________________________________________________
 
-**Potential buddy/mentor scout:**
+**Who is authorized to pick up the Scout?**
 ________________________________________________________________
 
-**Specific accommodations or adaptations needed:**
-________________________________________________________________
+**Anyone who is NOT authorized to pick up the Scout?**
 ________________________________________________________________
 
-**Communication preferences with family:**
-________________________________________________________________
+**Emergency contact if parent(s)/guardian(s) are unavailable:**
+
+**Name:** ________________________________  **Relationship:** ________________
+
+**Phone:** ________________
 
 ---
 
-### Information Sharing Permissions
+\newpage
 
-**What information may we share with other key leaders who work with your Scout?**
-- [ ] General strengths and interests only
-- [ ] Learning style and strategies that work
-- [ ] Specific accommodations needed
-- [ ] Social/emotional support strategies
-- [ ] All information discussed today
-- [ ] Please ask before sharing anything
+## Conference Summary
 
-**Key leaders who should know this information:**
-________________________________________________________________
+### Key Takeaways
 
-**Information to keep completely confidential:**
-________________________________________________________________
-
----
-
-### Next Steps & Follow-Up
-
-**Immediate action items:**
-
-```{=latex}
-\begin{tabular}{|p{6.5cm}|p{3cm}|p{2cm}|p{1.5cm}|}
-\hline
-\textbf{Action Item} & \textbf{Responsible Person} & \textbf{Due Date} & \textbf{Done} \\
-\hline
- & & & $\square$ \\[1.5ex]
-\hline
- & & & $\square$ \\[1.5ex]
-\hline
- & & & $\square$ \\[1.5ex]
-\hline
-\end{tabular}
-```
-
-**Follow-up schedule:**
-- [ ] Check in after first meeting attendance
-- [ ] Formal follow-up in 30 days: ________________ (date)
-- [ ] Ongoing communication preference: ________________________________
-
-**Questions or concerns to revisit:**
+**Main Concern:**
 ________________________________________________________________
 ________________________________________________________________
-
----
-
-### Conference Summary
-*Shared with family unless marked otherwise*
+________________________________________________________________
 
 **Scout's key strengths to build upon:**
 ________________________________________________________________
@@ -221,25 +368,28 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-**Success indicators to watch for:**
-________________________________________________________________
-________________________________________________________________
+---
 
-**Areas needing ongoing attention:**
-________________________________________________________________
-________________________________________________________________
+### Troop Integration Plan
 
-**Leadership coordination notes** *(internal use only)*:
-________________________________________________________________
+- [ ] Patrol Assigned: ______________________________________________
+- [ ] Scout Buddy Assigned: ________________________________________
+- [ ] Parent(s)/Guardian(s) added to GroupMe
+- [ ] Scout added to GroupMe
+- [ ] Parent(s)/Guardian(s) can access Troop Calendar
+- [ ] Scout can access Troop Calendar
+- [ ] Check in after first campout *(Scoutmaster Conference)*
+- [ ] Check in conference before summer camp *(if desired)*
+- [ ] ____________________________________________________________
+- [ ] ____________________________________________________________
+- [ ] ____________________________________________________________
 
 ---
 
-**Meeting Conducted By:** ________________________________  **Signature:** ________________
+**Scoutmaster Signature:** _________________________  **Date:** ________________
 
-**Date Completed:** ________________  **File Location:** ________________
+**Parent/Guardian Signature:** _____________________  **Date:** ________________
 
-**Follow-up Contact:** ________________________________  **Date:** ________________
+**Parent/Guardian Signature:** _____________________  **Date:** ________________
 
----
-
-*This template supports an inclusive, strengths-based approach to understanding each Scout's unique needs. Based on guidance from AbleScouts.org and aligned with the Troop 500G Handbook Conference Communications section. Remember: Every Scout has unique attributes - our job is to help them succeed!*
+**File Location:** Troop 500G Google Drive: _________________________

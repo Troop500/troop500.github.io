@@ -1,26 +1,17 @@
 ﻿# Build and Test Issues Report
 
-Generated: 2026-04-06 03:15:30
-Total Issues Found: 4
+Generated: 2026-04-06 04:10:01
+Total Issues Found: 1
 
 ## Summary by Category
-- **External Links**: 4 issues ( errors, 0 warnings)
+- **PDF Links**: 1 issues ( errors, 0 warnings)
 
 ## Detailed Issues
 
-### External Links
-⚠️ **Issue #1**: 
-   - Details: The remote server returned an error: (403) Forbidden.
-   - Time: 2026-04-06 03:15:14
-⚠️ **Issue #2**: 
-   - Details: The remote server returned an error: (403) Forbidden.
-   - Time: 2026-04-06 03:15:27
-⚠️ **Issue #3**: 
-   - Details: The remote server returned an error: (403) Forbidden.
-   - Time: 2026-04-06 03:15:29
-❌ **Issue #4**: External link failures detected
-   - Details: 3 external link(s) failed out of 62 total
-   - Time: 2026-04-06 03:15:29
+### PDF Links
+❌ **Issue #1**: Test execution failed
+   - Details: A parameter with the name 'Verbose' was defined multiple times for the command.
+   - Time: 2026-04-06 04:09:54
 
 ## Recommendations for LLM Review
 
