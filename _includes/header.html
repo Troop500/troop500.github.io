@@ -6,10 +6,10 @@
     {% for item in site.data.settings.menu %}
       {% if item.submenu %}
         <div class="dropdown-nav">
-          <a href="#" class="menu-link dropdown-toggle">{{ item.name }} <i class="fa fa-caret-down"></i></a>
-          <div class="dropdown-nav-content">
+          <button class="menu-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">{{ item.name }} <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <div class="dropdown-nav-content" role="menu">
             {% for subitem in item.submenu %}
-              <a href="{{ site.github.url }}/{{ subitem.url }}" class="menu-link">{{ subitem.name }}</a>
+              <a href="{{ site.github.url }}/{{ subitem.url }}" class="menu-link" role="menuitem">{{ subitem.name }}</a>
             {% endfor %}
           </div>
         </div>

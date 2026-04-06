@@ -45,6 +45,10 @@
 .dropdown-toggle {
   cursor: pointer;
   padding: 5px 10px;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
 }
 
 .dropdown-nav-content {
@@ -70,11 +74,14 @@
   background-color: #f1f1f1;
 }
 
-.dropdown-nav:hover .dropdown-nav-content {
+.dropdown-nav:hover .dropdown-nav-content,
+.dropdown-nav:focus-within .dropdown-nav-content,
+.dropdown-nav .dropdown-nav-content.show {
   display: block;
 }
 
-.dropdown-nav:hover .dropdown-toggle {
+.dropdown-nav:hover .dropdown-toggle,
+.dropdown-nav:focus-within .dropdown-toggle {
   background-color: #f1f1f1;
 }
 
