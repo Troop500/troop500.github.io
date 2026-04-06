@@ -53,7 +53,7 @@ Our troop website at [troop500.org](https://troop500.org) contains the most up-t
 **Social Media Waiver**
 Troop 500G occasionally takes photos and videos during meetings, events, and outings for promotional purposes, social media posts, and documentation of activities. The Social Media Waiver allows families to specify their preferences regarding photography and the use of their Scout's image in troop communications and social media. This form ensures we respect each family's privacy wishes while still being able to share the great experiences and achievements of our troop.
 
-Download: [Troop 500 Social Media Waiver](assets/files/handbook/attachments/Troop%20500%20Social%20Media%20Waiver.pdf)
+Download: [Troop 500 Social Media Waiver]({{ site.baseurl }}/assets/files/handbook/attachments/Troop%20500%20Social%20Media%20Waiver.pdf)
 
 **Safeguarding Youth**
 Safeguarding Youth training is required for all Scouting America registered volunteers and is a joining requirement that must be renewed annually. If training is not current at registration renewal, the volunteer will not be re-registered. This training is strongly encouraged for parents and guardians, and is required for any adult attending longer campouts (72+ hours) like summer resident camp.
