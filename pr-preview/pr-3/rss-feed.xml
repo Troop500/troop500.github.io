@@ -3,8 +3,8 @@
 	<channel>
 		<title>Troop 500</title>
 		<description>a Scouting America Troop</description>
-		<link></link>
-		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://troop500.org/pr-preview/pr-3/</link>
+		<atom:link href="https://troop500.org/pr-preview/pr-3/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Duty Rosters</title>
@@ -16,8 +16,8 @@
 </description>
 				
 				<pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
-				<link>/duty-roster</link>
-				<guid isPermaLink="true">/duty-roster</guid>
+				<link>https://troop500.org/duty-roster</link>
+				<guid isPermaLink="true">https://troop500.org/duty-roster</guid>
 			</item>
 		
 			<item>
@@ -30,8 +30,8 @@
 </description>
 				
 				<pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-				<link>/grubmaster-201</link>
-				<guid isPermaLink="true">/grubmaster-201</guid>
+				<link>https://troop500.org/grubmaster-201</link>
+				<guid isPermaLink="true">https://troop500.org/grubmaster-201</guid>
 			</item>
 		
 			<item>
@@ -44,8 +44,8 @@
 </description>
 				
 				<pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
-				<link>/grubmaster-101</link>
-				<guid isPermaLink="true">/grubmaster-101</guid>
+				<link>https://troop500.org/grubmaster-101</link>
+				<guid isPermaLink="true">https://troop500.org/grubmaster-101</guid>
 			</item>
 		
 			<item>
@@ -58,8 +58,8 @@
 </description>
 				
 				<pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-				<link>/troop-gear-maintenance</link>
-				<guid isPermaLink="true">/troop-gear-maintenance</guid>
+				<link>https://troop500.org/troop-gear-maintenance</link>
+				<guid isPermaLink="true">https://troop500.org/troop-gear-maintenance</guid>
 			</item>
 		
 			<item>
@@ -72,8 +72,8 @@
 </description>
 				
 				<pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-				<link>/tent-camping-list</link>
-				<guid isPermaLink="true">/tent-camping-list</guid>
+				<link>https://troop500.org/tent-camping-list</link>
+				<guid isPermaLink="true">https://troop500.org/tent-camping-list</guid>
 			</item>
 		
 			<item>
@@ -86,8 +86,8 @@
 </description>
 				
 				<pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-				<link>/ten-essentials</link>
-				<guid isPermaLink="true">/ten-essentials</guid>
+				<link>https://troop500.org/ten-essentials</link>
+				<guid isPermaLink="true">https://troop500.org/ten-essentials</guid>
 			</item>
 		
 			<item>
@@ -100,8 +100,8 @@
 </description>
 				
 				<pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-				<link>/go-live</link>
-				<guid isPermaLink="true">/go-live</guid>
+				<link>https://troop500.org/go-live</link>
+				<guid isPermaLink="true">https://troop500.org/go-live</guid>
 			</item>
 		
 			<item>
@@ -114,8 +114,8 @@
 </description>
 				
 				<pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-				<link>/troopleader-online</link>
-				<guid isPermaLink="true">/troopleader-online</guid>
+				<link>https://troop500.org/troopleader-online</link>
+				<guid isPermaLink="true">https://troop500.org/troopleader-online</guid>
 			</item>
 		
 	</channel>

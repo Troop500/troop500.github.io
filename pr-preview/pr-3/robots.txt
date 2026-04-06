@@ -1,1 +1,1 @@
-Sitemap: /pr-preview/pr-3/sitemap.xml
+Sitemap: https://troop500.org/pr-preview/pr-3/sitemap.xml
