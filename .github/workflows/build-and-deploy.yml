@@ -3,6 +3,7 @@ name: Build Jekyll site and generate PDFs
 on:
   push:
     branches: [ gh-pages ]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -45,6 +46,9 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+
+      - name: Add .nojekyll
+        run: touch ./_site/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.8.0
