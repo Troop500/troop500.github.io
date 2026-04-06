@@ -16,7 +16,7 @@ param(
     [switch]$IncludeLatest,
     [switch]$IncludeArchive,
     [switch]$ReportIssues,
-    [switch]$Verbose,
+    [switch]$ShowDetails,
     [switch]$Help
 )
 
@@ -202,7 +202,7 @@ function Test-LinksInPdf {
         
         [int]$TimeoutSec = 10,
         [int]$MaxConcurrency = 3,
-        [switch]$Verbose
+        [switch]$ShowDetails
     )
     
     $pdfName = Split-Path $PdfPath -Leaf
@@ -275,7 +275,7 @@ function Test-LinksInPdf {
             $results += $result
             
             if ($result.Success) {
-                if ($Verbose) {
+                if ($ShowDetails) {
                     $note = if ($result.Note) { " ($($result.Note))" } else { "" }
                     Write-Host "    [PASS] $($result.Url) (Status: $($result.StatusCode), Method: $($result.Method))$note" -ForegroundColor Green
                 }
@@ -350,7 +350,7 @@ function Test-LinksInPdfs {
         [int]$MaxConcurrency = 3,
         [switch]$IncludeLatest,
         [switch]$IncludeArchive,
-        [switch]$Verbose
+        [switch]$ShowDetails
     )
     
     # Check if PDF tools are available
@@ -377,7 +377,7 @@ function Test-LinksInPdfs {
     $allResults = @()
     
     foreach ($pdfFile in $pdfFiles) {
-        $pdfResults = Test-LinksInPdf -PdfPath $pdfFile -TimeoutSec $TimeoutSec -MaxConcurrency $MaxConcurrency -Verbose:$Verbose
+        $pdfResults = Test-LinksInPdf -PdfPath $pdfFile -TimeoutSec $TimeoutSec -MaxConcurrency $MaxConcurrency -ShowDetails:$ShowDetails
         
         $totalLinks += $pdfResults.TotalLinks
         $totalFailed += $pdfResults.FailedLinks
@@ -442,7 +442,7 @@ This module can also be imported into other scripts:
 
 # Run tests if not being imported as module
 if ($MyInvocation.InvocationName -ne '.') {
-    $results = Test-LinksInPdfs -PdfPaths $PdfPaths -PdfDirectory $PdfDirectory -TimeoutSec $TimeoutSec -MaxConcurrency $MaxConcurrency -IncludeLatest:$IncludeLatest -IncludeArchive:$IncludeArchive -Verbose:$Verbose
+    $results = Test-LinksInPdfs -PdfPaths $PdfPaths -PdfDirectory $PdfDirectory -TimeoutSec $TimeoutSec -MaxConcurrency $MaxConcurrency -IncludeLatest:$IncludeLatest -IncludeArchive:$IncludeArchive -ShowDetails:$ShowDetails
     
     if ($results.FailedLinks -eq 0) {
         Write-Host "`nALL PDF LINKS PASSED!" -ForegroundColor Green

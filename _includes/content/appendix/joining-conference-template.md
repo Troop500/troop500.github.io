@@ -79,7 +79,16 @@ The joining conference is just the beginning of a supportive relationship. Scout
 
 **Sibling Scouting involvement:** ________________
 
-#### Onboarding Checklist
+
+### Emergency Contact
+Who should we contact if parent(s)/guardian(s) are unavailable?
+
+**Name:** ________________________________  **Relationship:** ________________
+
+**Phone:** ________________
+
+
+### Onboarding Checklist
 
 - [ ] Annual Health and Medical Record A & B *(C before summer camp)*
 - [ ] IEP / 504 *(As Needed)*
@@ -105,7 +114,7 @@ The joining conference is just the beginning of a supportive relationship. Scout
 
 **Previous Scouting Experience:** _______________________________________
 
-#### Onboarding Checklist
+### Onboarding Checklist
 
 - [ ] Reviewed Safe Scouting Pamphlet with Scout
 - [ ] Youth Protection Training Complete
@@ -113,12 +122,13 @@ The joining conference is just the beginning of a supportive relationship. Scout
 - [ ] Access to GroupMe
 - [ ] Access to Troop 500 Google Calendar
 
-**Are you interested in volunteering with the troop? If so, how?**
-- [ ] Committee member
-- [ ] Activity / event helper *(occasional)*
-- [ ] Merit badge counselor *(skills or expertise: ________________________________)*
-- [ ] Adult leader *(willing to complete required training)*
-- [ ] Not at this time
+### How would you like to help?
+- [ ] I would like to focus on my Scout for now!
+- [ ] I can help with small side-tasks and events!
+- [ ] Scouter Reserve, able to attend some campouts (Registration Required)
+- [ ] Committee member (Registration / Training Required)
+- [ ] Assistant Scoutmaster, Planning Campouts/Events (Registration / Training Required)
+- [ ] Merit badge counselor 
 
 **Skills, interests, or resources you'd like to contribute to the troop:**
 ________________________________________________________________
@@ -142,20 +152,20 @@ ________________________________________________________________
 
 **Previous Scouting Experience:** _______________________________________
 
-#### Onboarding Checklist
-
+### Onboarding Checklist
 - [ ] Reviewed Safe Scouting Pamphlet with Scout
 - [ ] Youth Protection Training Complete
 - [ ] Family Skills Questionnaire
 - [ ] Access to GroupMe
 - [ ] Access to Troop 500 Google Calendar
 
-**Are you interested in volunteering with the troop? If so, how?**
-- [ ] Committee member
-- [ ] Activity / event helper *(occasional)*
-- [ ] Merit badge counselor *(skills or expertise: ________________________________)*
-- [ ] Adult leader *(willing to complete required training)*
-- [ ] Not at this time
+### How would you like to help?
+- [ ] I would like to focus on my Scout for now!
+- [ ] I can help with small side-tasks and events!
+- [ ] Scouter Reserve, able to attend some campouts (Registration Required)
+- [ ] Committee member (Registration / Training Required)
+- [ ] Assistant Scoutmaster, Planning Campouts/Events (Registration / Training Required)
+- [ ] Merit badge counselor 
 
 **Skills, interests, or resources you'd like to contribute to the troop:**
 ________________________________________________________________
@@ -330,6 +340,9 @@ ________________________________________________________________
 *(e.g., who may pick up the Scout, communication preferences between households, court orders, etc.)*
 ________________________________________________________________
 ________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
 
 **Who is authorized to pick up the Scout?**
 ________________________________________________________________
@@ -337,11 +350,15 @@ ________________________________________________________________
 **Anyone who is NOT authorized to pick up the Scout?**
 ________________________________________________________________
 
-**Emergency contact if parent(s)/guardian(s) are unavailable:**
+---
 
-**Name:** ________________________________  **Relationship:** ________________
-
-**Phone:** ________________
+## What didn't we ask about?
+*What else should we know or talk about?*
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
 
 ---
 
@@ -349,9 +366,10 @@ ________________________________________________________________
 
 ## Conference Summary
 
-### Key Takeaways
+To be filled out by Troop Leadership during the Joining Conference. 
 
-**Main Concern:**
+### Main Concerns
+________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
@@ -379,7 +397,7 @@ ________________________________________________________________
 - [ ] Parent(s)/Guardian(s) can access Troop Calendar
 - [ ] Scout can access Troop Calendar
 - [ ] Check in after first campout *(Scoutmaster Conference)*
-- [ ] Check in conference before summer camp *(if desired)*
+- [ ] Check in conference before summer camp? 
 - [ ] ____________________________________________________________
 - [ ] ____________________________________________________________
 - [ ] ____________________________________________________________
