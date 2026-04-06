@@ -161,7 +161,7 @@ Many duty roster positions help fulfill:
 ## Resources
 
 ### Download Forms
-- [Duty Roster Template](assets/files/duty-roster.pdf){:target="_blank"}
+- [Duty Roster Template](/assets/files/duty-roster.pdf){:target="_blank"}
 - Additional templates available from patrol leaders
 
 ### Getting Help
