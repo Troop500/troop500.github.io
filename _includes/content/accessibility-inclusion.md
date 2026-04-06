@@ -92,7 +92,7 @@ If you have questions about accessibility or inclusion in our troop, or if you n
 ## Additional Resources
 
 ### Scouting America Resources
-- [Accessibility and Inclusion Information Booklet](/assets/files/pamphlets/Accessibility%20and%20Inclusion%20Committee-%20Information%20Booklet.pdf) - Download our comprehensive guide
+- [Accessibility and Inclusion Information Booklet](/assets/files/handbook/attachments/Accessibility%20and%20Inclusion%20Committee-%20Information%20Booklet.pdf) - Download our comprehensive guide
 - Council Accessibility Coordinator
 - National Accessibility and Inclusion resources
 
