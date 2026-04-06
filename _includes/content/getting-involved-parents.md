@@ -34,7 +34,7 @@ Please note that any direct contact volunteer leaders (those working directly wi
 - Learn about upcoming events
 - Take on "service in a snap" tasks that help the troop function
 - Complete online training modules on your phone or device
-- Go on a grocerie run!  Life's busy and you don't have to attend every meeting unless you want to. 
+- Go on a grocery run!  Life's busy and you don't have to attend every meeting unless you want to. 
 
 **Parent Meetings and Committee Meetings**
 - Attend monthly parent meetings to stay informed about troop activities and decisions
