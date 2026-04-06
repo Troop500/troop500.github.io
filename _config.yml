@@ -33,5 +33,6 @@ exclude:
   - templates/
   - Dockerfile.*
   - docker-compose.yml
-  - build_and_test_optimized.ps1
   - pdf_output.log
+  - test-issues-summary.md
+  - MODULARIZATION_SUMMARY.md

@@ -56,3 +56,6 @@ __pycache__/
 debug-*.sh
 test-*.sh
 *.debug
+
+# Build reports
+test-issues-summary.md
