@@ -8,8 +8,8 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{float}
-% Set graphics path
-\graphicspath{{assets/images/}{assets/images/handbook/}}
+% Set graphics path - images are referenced relative to assets/images/ (e.g. handbook/patch_scribe.jpg)
+\graphicspath{{assets/images/}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \setcounter{tocdepth}{2} % only show sections and subsections in TOC
 \usepackage{iftex}

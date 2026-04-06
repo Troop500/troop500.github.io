@@ -32,7 +32,7 @@ def convert_img_to_latex(content):
     - Position patches (containing 'patch_' or 'patrol_patch'): Use \hfill for alignment
     - Other images: Use wrapfigure environment for text wrapping
     - Width conversion: Pixel values mapped to \textwidth fractions
-    - Path normalization: Remove /assets/ prefixes for LaTeX graphics path
+    - Path normalization: Strip leading slash and 'assets/images/' prefix, preserving subdirectories (e.g. 'handbook/patch_scribe.jpg'). LaTeX template's \\graphicspath{{assets/images/}} resolves these paths correctly.
     
     Args:
         content (str): Markdown content containing HTML img tags
@@ -66,7 +66,9 @@ def convert_img_to_latex(content):
         style = style_match.group(1) if style_match else ""
         
         # Convert web path to LaTeX graphics path
-        # Remove leading slash and /assets/ prefix for LaTeX \graphicspath compatibility
+        # Strip the leading slash and the 'assets/images/' base, preserving any subdirectory.
+        # e.g. '/assets/images/handbook/patch_scribe.jpg' -> 'handbook/patch_scribe.jpg'
+        # The LaTeX template's \graphicspath{{assets/images/}} resolves this correctly.
         latex_path = src.lstrip('/').replace('assets/images/', '').replace('assets/', '')
         
         # Parse CSS styles to extract width and float positioning

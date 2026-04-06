@@ -11,8 +11,8 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{array}
-% Set graphics path
-\graphicspath{{assets/images/}{assets/images/handbook/}}
+% Set graphics path - images are referenced relative to assets/images/ (e.g. handbook/patch_scribe.jpg)
+\graphicspath{{assets/images/}}
 \setcounter{secnumdepth}{0} % Disable section numbering for appendix PDFs
 \setcounter{tocdepth}{2} % only show sections and subsections in TOC
 \usepackage{iftex}
