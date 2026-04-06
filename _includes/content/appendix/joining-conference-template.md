@@ -278,8 +278,6 @@ What strategies work well at home or school to help them learn?
 ________________________________________________________________
 ________________________________________________________________
 
----
-
 ### Social & Emotional Needs
 
 How does your Scout handle new situations or changes to routine?
@@ -316,6 +314,26 @@ Any previous challenges with group activities or programs?
 ________________________________________________________________
 ________________________________________________________________
 
+### Family Considerations
+
+*This information is kept strictly confidential and used only to ensure your Scout's safety and success.*
+
+Any family needs, situations, or custody arrangements we should be aware of?
+
+*(e.g., who may pick up the Scout, communication preferences between households, court orders, etc.)*
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+
+Who is authorized to pick up the Scout?
+________________________________________________________________
+
+Anyone who is NOT authorized to pick up the Scout?
+________________________________________________________________
+
+
+## Support Strategies & Action Planning
 
 ### What Works for Your Scout?
 
@@ -333,25 +351,6 @@ ________________________________________________________________
 
 When they're struggling, how do you help them? How can we help?
 ________________________________________________________________
-________________________________________________________________
-
-
-### Family Considerations
-
-*This information is kept strictly confidential and used only to ensure your Scout's safety and success.*
-
-Any family needs, situations, or custody arrangements we should be aware of?
-
-*(e.g., who may pick up the Scout, communication preferences between households, court orders, etc.)*
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
-
-Who is authorized to pick up the Scout?
-________________________________________________________________
-
-Anyone who is NOT authorized to pick up the Scout?
 ________________________________________________________________
 
 \newpage
@@ -382,10 +381,11 @@ ________________________________________________________________
 To be filled out by Troop Leadership during the Joining Conference. 
 
 ### Main Concerns
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
+
+- ____________________________________________
+- ____________________________________________
+- ____________________________________________
+- ____________________________________________
 
 Scout's key strengths to build upon:
 ________________________________________________________________
