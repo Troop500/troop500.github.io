@@ -140,7 +140,17 @@ function Test-ExternalLink {
             ResponseTime = $null
         }
     } catch [System.Net.WebException] {
-        # If HEAD fails, try GET (some servers don't support HEAD)
+        # Check if it's a 403 - server is reachable but blocking bots
+        $statusCode = $_.Exception.Response.StatusCode.value__
+        if ($statusCode -eq 403) {
+            return @{
+                Success = $true
+                StatusCode = 403
+                ResponseTime = $null
+                Note = "403 Forbidden (bot protection, server is reachable)"
+            }
+        }
+        # If HEAD fails for other reasons, try GET (some servers don't support HEAD)
         try {
             $response = Invoke-WebRequest -Uri $Url -UseBasicParsing -TimeoutSec $TimeoutSec -ErrorAction Stop
             return @{
@@ -148,6 +158,21 @@ function Test-ExternalLink {
                 StatusCode = $response.StatusCode
                 ResponseTime = $null
                 Note = "HEAD failed, GET succeeded"
+            }
+        } catch [System.Net.WebException] {
+            $getStatusCode = $_.Exception.Response.StatusCode.value__
+            if ($getStatusCode -eq 403) {
+                return @{
+                    Success = $true
+                    StatusCode = 403
+                    ResponseTime = $null
+                    Note = "403 Forbidden (bot protection, server is reachable)"
+                }
+            }
+            return @{
+                Success = $false
+                Error = $_.Exception.Message
+                StatusCode = $getStatusCode
             }
         } catch {
             return @{
@@ -222,9 +247,19 @@ function Test-ExternalLinksFromPage {
                             $response = Invoke-WebRequest -Uri $Url -Method Head -UseBasicParsing -TimeoutSec $TimeoutSec -ErrorAction Stop
                             return @{ Success = $true; StatusCode = $response.StatusCode; ResponseTime = $null }
                         } catch [System.Net.WebException] {
+                            $statusCode = $_.Exception.Response.StatusCode.value__
+                            if ($statusCode -eq 403) {
+                                return @{ Success = $true; StatusCode = 403; ResponseTime = $null; Note = "403 Forbidden (bot protection, server is reachable)" }
+                            }
                             try {
                                 $response = Invoke-WebRequest -Uri $Url -UseBasicParsing -TimeoutSec $TimeoutSec -ErrorAction Stop
                                 return @{ Success = $true; StatusCode = $response.StatusCode; ResponseTime = $null; Note = "HEAD failed, GET succeeded" }
+                            } catch [System.Net.WebException] {
+                                $getStatusCode = $_.Exception.Response.StatusCode.value__
+                                if ($getStatusCode -eq 403) {
+                                    return @{ Success = $true; StatusCode = 403; ResponseTime = $null; Note = "403 Forbidden (bot protection, server is reachable)" }
+                                }
+                                return @{ Success = $false; Error = $_.Exception.Message; StatusCode = $getStatusCode }
                             } catch {
                                 return @{ Success = $false; Error = $_.Exception.Message; StatusCode = $null }
                             }

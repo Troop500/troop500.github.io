@@ -181,11 +181,19 @@ ________________________________________________________________
 
 **Immediate action items:**
 
-| Action Item | Responsible Person | Due Date | Completed |
-|-------------|-------------------|----------|-----------|
-| | | | ☐ |
-| | | | ☐ |
-| | | | ☐ |
+```{=latex}
+\begin{tabular}{|p{6.5cm}|p{3cm}|p{2cm}|p{1.5cm}|}
+\hline
+\textbf{Action Item} & \textbf{Responsible Person} & \textbf{Due Date} & \textbf{Done} \\
+\hline
+ & & & $\square$ \\[1.5ex]
+\hline
+ & & & $\square$ \\[1.5ex]
+\hline
+ & & & $\square$ \\[1.5ex]
+\hline
+\end{tabular}
+```
 
 **Follow-up schedule:**
 - [ ] Check in after first meeting attendance

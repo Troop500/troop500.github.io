@@ -5,13 +5,13 @@ FROM jekyll/jekyll:latest
 WORKDIR /srv/jekyll
 
 # Copy Gemfile, Gemfile.lock, and gemspec first for better layer caching
-COPY Gemfile* millennial.gemspec ./
+COPY --chown=jekyll:jekyll Gemfile* millennial.gemspec ./
 
 # Install dependencies
 RUN bundle install
 
 # Copy the rest of the project
-COPY . .
+COPY --chown=jekyll:jekyll . .
 
 # Expose port 4000
 EXPOSE 4000
