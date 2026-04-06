@@ -20,7 +20,7 @@ Every new Scout family is required to participate in a joining conference with t
 
 The joining conference is scheduled within the first month after joining and serves as an important step in creating a supportive environment where every Scout can thrive. During the conference, we'll discuss how we can work together as partners to provide the best possible Scouting experience and establish open communication.
 
-**For detailed information about what to expect and how to prepare,** see our comprehensive [Conference Communications](conference-communications.md) section.
+**For detailed information about what to expect and how to prepare,** see our comprehensive [Conference Communications](/handbook#conference-communications) section.
 
 ## Documents, Sites and Training
 
