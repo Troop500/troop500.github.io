@@ -52,9 +52,6 @@ $endif$
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-$if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
-$endif$
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[L]{Troop 500G Handbook}
