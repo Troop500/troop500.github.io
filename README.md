@@ -106,15 +106,7 @@ The build generates `test-issues-summary.md` with categorized issues (build, int
 
 ## Deployment
 
-### Automated (GitHub Actions)
-
-Pushing to `main` triggers the CI/CD pipeline (`.github/workflows/build-and-deploy.yml`):
-
-1. Builds the Jekyll site
-2. Generates updated PDFs
-3. Deploys to GitHub Pages
-
-**Other triggers:** manual workflow dispatch, pull requests to `main`/`master`.
+The default branch is **`gh-pages`**. Pushing to it deploys the site via GitHub Pages.
 
 **Monitor:** [GitHub Actions](https://github.com/troop500/troop500.github.io/actions) | [Pages Settings](https://github.com/troop500/troop500.github.io/settings/pages)
 
@@ -155,7 +147,7 @@ troop500.github.io/
 │   └── img/                    # General site images
 ├── pages/                      # Top-level website pages
 │   └── handbook/               # Individual handbook topic pages
-├── scripts/
+├── scripts/                          # See scripts/README.md for details
 │   ├── build_and_test_pdf_first.ps1  # Main build/test orchestrator
 │   ├── build/                  # PDF generation scripts (run inside Docker)
 │   ├── test/                   # Test scripts (PowerShell)
@@ -274,7 +266,7 @@ docker-compose run --rm pdf-generator
 
 ## Contributing
 
-1. Create a feature branch from `main`
+1. Create a feature branch from `gh-pages`
 2. Build and test locally: `.\scripts\build_and_test_pdf_first.ps1`
 3. Verify all tests pass and PDFs generate correctly
 4. Submit a pull request
