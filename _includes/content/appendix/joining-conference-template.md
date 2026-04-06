@@ -1,14 +1,14 @@
-# Appendix A: Joining Conference
+ Appendix A: Joining Conference
 
 ## Overview
 
-*Every Scout who joins Troop 500G brings their own unique strengths, interests, and needs — and this conference is our chance to learn about yours. By taking a little time to talk before your Scout's first campout, we can make sure our leaders are prepared to support them from day one. This form is a guide for that conversation, not an evaluation — there are no wrong answers, and you are always welcome to leave any question blank. Everything shared here stays confidential within our leadership team and is used only to help your Scout thrive.*
+*Every Scout who joins Troop 500G brings their own unique strengths, interests, and needs â€” and this conference is our chance to learn about yours. By taking a little time to talk before your Scout's first campout, we can make sure our leaders are prepared to support them from day one. This form is a guide for that conversation, not an evaluation â€” there are no wrong answers, and you are always welcome to leave any question blank. Everything shared here stays confidential within our leadership team and is used only to help your Scout thrive.*
 
 ---
 
 ### A Note About Scout Leadership
 
-Troop 500G leaders are volunteers — mostly parents who care deeply about Scouts and want to help. We attend a lot of training, but we also have full-time jobs and busy lives. Sometimes we miss details or make mistakes, but our goal is always to support your Scout and help them succeed. Just as Scouts "Do their best," we do too. If you ever have concerns or questions, please talk to us. We'll figure it out together!
+Troop 500G leaders are volunteers â€” mostly parents who care deeply about Scouts and want to help. We attend a lot of training, but we also have full-time jobs and busy lives. Sometimes we miss details or make mistakes, but our goal is always to support your Scout and help them succeed. Just as Scouts "Do their best," we do too. If you ever have concerns or questions, please talk to us. We'll figure it out together!
 
 ---
 
@@ -26,15 +26,15 @@ The goal of joining conferences is to provide leaders enough information to supp
 
 ### You're part of the team
 
-Leaders, parents, and Scouts work together as a team, and the goal is a supportive partnership where every Scout can thrive. Open communication is essential — if something is worrying you, please say so. If something is unclear, just ask. We would rather hear about a concern early than have a Scout struggle in silence.
+Leaders, parents, and Scouts work together as a team, and the goal is a supportive partnership where every Scout can thrive. Open communication is essential â€” if something is worrying you, please say so. If something is unclear, just ask. We would rather hear about a concern early than have a Scout struggle in silence.
 
 ### Strengths-Based
 
-Every Scout brings their own unique strengths, talents, and interests. The joining conference focuses on identifying and building upon these strengths, helping Scouts feel confident and valued in the troop. That said, building on strengths is most effective when leaders also understand where a Scout might struggle — knowing potential challenges helps us provide the right support before small difficulties become bigger ones.
+Every Scout brings their own unique strengths, talents, and interests. The joining conference focuses on identifying and building upon these strengths, helping Scouts feel confident and valued in the troop. That said, building on strengths is most effective when leaders also understand where a Scout might struggle â€” knowing potential challenges helps us provide the right support before small difficulties become bigger ones.
 
 ### No Diagnosis Required
 
-The conversation is about what helps the Scout succeed — not about medical diagnoses or labels. Families are encouraged to share strategies, preferences, and needs, regardless of whether there is a formal diagnosis.
+The conversation is about what helps the Scout succeed â€” not about medical diagnoses or labels. Families are encouraged to share strategies, preferences, and needs, regardless of whether there is a formal diagnosis.
 
 ### Conducted Post-Joining
 
@@ -44,7 +44,7 @@ The joining conference is held after the Scout has joined the troop. It is not a
 
 The joining conference is just the beginning of a supportive relationship. Scouts, parents, and leaders all grow and change, and so do their needs. Any leader, Scout, or parent may request another conference at any time to revisit goals, address new challenges, or update support strategies. We especially encourage a follow-up conference with leaders and families before Scouts attend summer camp, to ensure everyone is prepared and supported for new experiences.
 
-\newpage
+<!-- pagebreak -->
 
 ## Pre-Meeting Checklist 
 *This section is to be completed by troop leadership prior to the Joining Conference.*
@@ -56,7 +56,7 @@ The joining conference is just the beginning of a supportive relationship. Scout
 - [ ] Troop 500G Handbook *(Printed Hardcopy)*
 - [ ] Below form has been sent to family for review
 
-\newpage
+<!-- pagebreak -->
 
 ## Scout Contact Information
 
@@ -95,7 +95,7 @@ Phone: ________________
 - [ ] Access to GroupMe
 - [ ] Access to Troop 500 Google Calendar
 
-\newpage
+<!-- pagebreak -->
 
 ## Parent / Guardian 1 Contact Information
 
@@ -139,7 +139,7 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-\newpage
+<!-- pagebreak -->
 
 ## Parent / Guardian 2 Contact Information
 
@@ -181,7 +181,7 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-\newpage
+<!-- pagebreak -->
 
 ## About Your Scout
 
@@ -353,7 +353,7 @@ When they're struggling, how do you help them? How can we help?
 ________________________________________________________________
 ________________________________________________________________
 
-\newpage
+<!-- pagebreak -->
 
 ## What else should we know?
 What else should we know or talk about?
@@ -374,7 +374,7 @@ ________________________________________________________________
 ________________________________________________________________
 ________________________________________________________________
 
-\newpage
+<!-- pagebreak -->
 
 ## Conference Summary
 

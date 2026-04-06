@@ -142,6 +142,9 @@ process_handbook "pages/handbook.md" "$PROCESSED_HANDBOOK"
 
 echo "🧹 Cleaning PDF-specific content..."
 
+# Convert web-safe page break markers to LaTeX \newpage
+sed -i 's/<!-- pagebreak -->/\\newpage/g' "$PROCESSED_HANDBOOK"
+
 # Remove web-specific elements for PDF version
 sed -i '/Download Complete Handbook PDF/d' "$PROCESSED_HANDBOOK"
 sed -i '/Build Tools.*BUILD_TOOLS.md/d' "$PROCESSED_HANDBOOK"
@@ -291,6 +294,14 @@ APPENDIX_DIR="_includes/content/appendix"
 
 # Create appendix output directory
 mkdir -p assets/files/handbook/appendix
+mkdir -p assets/files/handbook/appendix/archive
+
+echo "📁 Archiving old appendix PDF files..."
+for file in assets/files/handbook/appendix/*-[0-9]*.pdf; do
+    if [ -f "$file" ] && [[ "$file" != *"latest"* ]]; then
+        mv "$file" assets/files/handbook/appendix/archive/ 2>/dev/null || true
+    fi
+done
 
 # Process each .md file in the appendix directory
 for appendix_file in "$APPENDIX_DIR"/*.md; do
@@ -304,8 +315,11 @@ for appendix_file in "$APPENDIX_DIR"/*.md; do
         
         # Clean up any Jekyll includes or front matter for PDF processing
         echo "   🧹 Cleaning PDF-specific content for $filename..."
+        sed -i 's/\r$//' "/tmp/handbook-processed/${filename}-processed.md"
         sed -i 's/{% include [^%]*%}//g' "/tmp/handbook-processed/${filename}-processed.md"
         sed -i '/^---$/,/^---$/d' "/tmp/handbook-processed/${filename}-processed.md"
+        # Convert web-safe page break markers to LaTeX \newpage
+        sed -i 's/<!-- pagebreak -->/\\newpage/g' "/tmp/handbook-processed/${filename}-processed.md"
         
         # Remove numbering from subsection headers but keep main appendix header
         # Remove numbers from headers like "#### 1. Title" -> "#### Title"

@@ -45,13 +45,14 @@ jobs:
       - name: Generate PDFs
         run: |
           # Make scripts executable
-          chmod +x scripts/build-handbook-pandoc.sh
+          chmod +x scripts/build/build-handbook-simple.sh
+          chmod +x scripts/utils/convert_images_to_latex.py
           
           # Create output directory
           mkdir -p assets/files/handbook
           
           # Generate PDFs
-          ./scripts/build-handbook-pandoc.sh
+          ./scripts/build/build-handbook-simple.sh
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
