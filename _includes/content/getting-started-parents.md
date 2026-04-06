@@ -35,7 +35,7 @@ My.Scouting.org is where you'll create your Scouting America account, complete t
 **Scoutbook**
 Every Scout, adult leader, and parent/guardian should have a Scoutbook account. Scoutbook uses your My.Scouting.org account and is the official digital platform for Scouting America that tracks advancement, activities, and communication. Your Scout's progress, merit badge requirements, and troop calendar are all managed through Scoutbook. Parents and Scouts can access Scoutbook through the web at [scoutbook.scouting.org](https://scoutbook.scouting.org) or via the mobile app.
 
-For help getting started with Scoutbook, download the [Parents Trail Guide to Scoutbook](assets/files/handbook/attachments/Parents-trail-guide-to-scoutbook.pdf).
+For help getting started with Scoutbook, download the [Parents Trail Guide to Scoutbook]({{ site.baseurl }}/assets/files/handbook/attachments/Parents-trail-guide-to-scoutbook.pdf).
 
 **Guide to Safe Scouting**
 All participants in official Scouting activities should become familiar with the Guide to Safe Scouting and applicable program literature or manuals, and be aware of state or local government regulations that supersede Scouting America practices, policies, and guidelines. The Guide to Safe Scouting is an overview of Scouting policies and procedures gleaned from a variety sources. 
