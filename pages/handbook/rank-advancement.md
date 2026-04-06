@@ -60,8 +60,8 @@ Make regular copies of advancement pages because unlike Cub Scouts, if a handboo
 
 ### Where to Find More Information
 Detailed information about Scoutmaster Conferences and Boards of Review can be found in the respective sections of this handbook:
-- [Scoutmaster Conferences](scoutmaster-conferences)
-- [Boards of Review](boards-of-review)
+- [Scoutmaster Conferences](/handbook#conferences-and-reviews)
+- [Boards of Review](/handbook#conferences-and-reviews)
 
 ### Additional Support
 - Advancement tracking available through Scoutbook

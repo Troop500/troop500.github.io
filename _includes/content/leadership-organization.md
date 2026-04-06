@@ -1,6 +1,6 @@
 # Troop Leadership
 
-Troop 500 operates under the Scouting America troop leadership model, where youth leaders are elected by the troop and adult leaders provide guidance and support to all youth-led activities.
+Troop 500G operates under the Scouting America troop leadership model, where youth leaders are elected by the troop and adult leaders provide guidance and support to all youth-led activities.
 
 ## The Patrol Method
 
