@@ -24,7 +24,6 @@ author:              "Webmaster"
 # Exclude build and development files from Jekyll processing  
 exclude:
   - assets/files/handbook/archive/
-  - assets/files/handbook/attachments/
   - "assets/files/handbook/*-20*.pdf"  # Exclude timestamped PDFs only
   - scripts/
   - scripts/build/
