@@ -13,6 +13,9 @@ mkdir -p assets/files/handbook/appendix
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 APPENDIX_DIR="_includes/content/appendix"
 
+# Create archive directory before archiving old PDFs
+mkdir -p assets/files/handbook/appendix/archive
+
 echo "📁 Archiving old appendix PDF files..."
 # Archive all timestamped appendix PDFs (keep only the latest copies in main directory)
 for file in assets/files/handbook/appendix/*-[0-9]*.pdf; do
@@ -20,9 +23,6 @@ for file in assets/files/handbook/appendix/*-[0-9]*.pdf; do
         mv "$file" assets/files/handbook/appendix/archive/ 2>/dev/null || true
     fi
 done
-
-# Create archive directory if it doesn't exist
-mkdir -p assets/files/handbook/appendix/archive
 
 echo "🔍 Processing appendix files..."
 
