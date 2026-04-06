@@ -1,55 +1,55 @@
-name: Build Jekyll site and generate PDFs
+name: Deploy PR Preview
 
 on:
-  push:
-    branches: [ gh-pages ]
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
 
 permissions:
   contents: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  pull-requests: write
 
 jobs:
-  build-and-deploy:
+  deploy-preview:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
       - name: Setup Ruby
+        if: github.event.action != 'closed'
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
 
       - name: Install Pandoc and LaTeX
+        if: github.event.action != 'closed'
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-xetex
 
       - name: Generate PDFs
+        if: github.event.action != 'closed'
         run: |
-          # Make scripts executable
           chmod +x scripts/build/build-handbook-simple.sh
           chmod +x scripts/utils/convert_images_to_latex.py
-          
-          # Create output directory
           mkdir -p assets/files/handbook
-          
-          # Generate PDFs
           ./scripts/build/build-handbook-simple.sh
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build
+        if: github.event.action != 'closed'
+        run: bundle exec jekyll build --baseurl "/pr-preview/pr-${{ github.event.number }}"
         env:
           JEKYLL_ENV: production
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
         with:
-          branch: pages-deploy
-          folder: ./_site
-          clean-exclude: pr-preview
-          force: false
+          source-dir: ./_site/
+          preview-branch: pages-deploy
