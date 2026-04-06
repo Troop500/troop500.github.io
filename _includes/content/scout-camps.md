@@ -36,7 +36,7 @@ Buckeye Council's Scout reservation offering comprehensive summer camp programs 
 ## Erie Shores Council Camps
 
 ### [Pioneer Scout Reservation](https://www.psrweb.org/)
-Erie Shores Council's Pioneer Scout Reservation includes Camp Fontier and offers excellent summer camp programs with a focus on outdoor skills, leadership development, and traditional Scouting experiences.
+Erie Shores Council's Pioneer Scout Reservation includes Camp Frontier and offers excellent summer camp programs with a focus on outdoor skills, leadership development, and traditional Scouting experiences.
 
 ## Independent and Regional Camps
 
