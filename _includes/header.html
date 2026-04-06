@@ -1,6 +1,6 @@
 <header class="site-header">
   <h3 class="site-title">
-    <a href="{{ site.github.url }}/">{{ site.title }}</a>
+    <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
   </h3>
   <nav class="menu-list">
     {% for item in site.data.settings.menu %}
@@ -9,12 +9,12 @@
           <button class="menu-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">{{ item.name }} <i class="fa fa-caret-down" aria-hidden="true"></i></button>
           <div class="dropdown-nav-content" role="menu">
             {% for subitem in item.submenu %}
-              <a href="{{ site.github.url }}/{{ subitem.url }}" class="menu-link" role="menuitem">{{ subitem.name }}</a>
+              <a href="{{ subitem.url | relative_url }}" class="menu-link" role="menuitem">{{ subitem.name }}</a>
             {% endfor %}
           </div>
         </div>
       {% else %}
-        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+        <a href="{{ item.url | relative_url }}" class="menu-link">{{ item.name }}</a>
       {% endif %}
     {% endfor %}
     {% for item in site.data.settings.social %}
@@ -27,10 +27,10 @@
       {% for item in site.data.settings.menu %}
         {% if item.submenu %}
           {% for subitem in item.submenu %}
-            <a href="{{ site.github.url }}/{{ subitem.url }}" class="menu-link">{{ item.name }} - {{ subitem.name }}</a>
+            <a href="{{ subitem.url | relative_url }}" class="menu-link">{{ item.name }} - {{ subitem.name }}</a>
           {% endfor %}
         {% else %}
-          <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+          <a href="{{ item.url | relative_url }}" class="menu-link">{{ item.name }}</a>
         {% endif %}
       {% endfor %}
       {% for item in site.data.settings.social %}
