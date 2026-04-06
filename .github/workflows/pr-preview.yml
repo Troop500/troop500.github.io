@@ -56,4 +56,4 @@ jobs:
         with:
           source-dir: ./_site/
           preview-branch: pages-deploy
-          pages-base-url: https://troop500.org
+          pages-base-url: troop500.org
