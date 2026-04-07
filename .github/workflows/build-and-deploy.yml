@@ -1,0 +1,59 @@
+name: Build Jekyll site and generate PDFs
+
+on:
+  push:
+    branches: [ gh-pages ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-xetex
+
+      - name: Generate PDFs
+        run: |
+          # Make scripts executable
+          chmod +x scripts/build/build-handbook-simple.sh
+          chmod +x scripts/utils/convert_images_to_latex.py
+          
+          # Create output directory
+          mkdir -p assets/files/handbook
+          
+          # Generate PDFs
+          ./scripts/build/build-handbook-simple.sh
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Add .nojekyll
+        run: touch ./_site/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.8.0
+        with:
+          branch: pages-deploy
+          folder: ./_site
+          clean-exclude: pr-preview
+          force: false

@@ -1,5 +1,8 @@
 # Site Build Settings
 
+url:                 "https://troop500.org"
+baseurl:             ""
+
 # jekyll-paginate configuration
 paginate:            10
 
@@ -9,6 +12,9 @@ highlighter:         rouge
 permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
+# Tell Jekyll to treat PDFs as static files only, not content
+keep_files:          [".pdf"]
+
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:               "Troop 500"
 description:         "a Scouting America Troop"
@@ -17,3 +23,18 @@ author:              "Webmaster"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
+
+# Exclude build and development files from Jekyll processing  
+exclude:
+  - assets/files/handbook/archive/
+  - "assets/files/handbook/*-20*.pdf"  # Exclude timestamped PDFs only
+  - scripts/
+  - scripts/build/
+  - scripts/test/
+  - scripts/utils/
+  - templates/
+  - Dockerfile.*
+  - docker-compose.yml
+  - pdf_output.log
+  - test-issues-summary.md
+  - MODULARIZATION_SUMMARY.md
