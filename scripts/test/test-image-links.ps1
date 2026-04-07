@@ -220,7 +220,10 @@ function Test-ImageLinksFromPage {
                         Write-Host "    [PASS] $($result.Url) (Status: $($result.StatusCode))$note" -ForegroundColor Green
                     }
                 } else {
-                    Write-Host "    [FAIL] $($result.Url) - Status: $($result.StatusCode) - $($result.Error)" -ForegroundColor Red
+                    Write-Host "    [FAIL] $($result.Url)" -ForegroundColor Red
+                    Write-Host "            Status Code : $($result.StatusCode)" -ForegroundColor Red
+                    Write-Host "            Error       : $($result.Error)" -ForegroundColor Red
+                    Write-Host "            Found on    : $PageUrl" -ForegroundColor Red
                     $failedCount++
 
                     Add-Issue -Category "Image Links" -Severity "High" `
@@ -284,7 +287,9 @@ function Test-ImageLinksFromWebsite {
         foreach ($group in $groupedByPage) {
             Write-Host "  $($group.Name):" -ForegroundColor Yellow
             foreach ($failure in $group.Group) {
-                Write-Host "    - $($failure.Url) (HTTP $($failure.StatusCode))" -ForegroundColor Red
+                Write-Host "    - $($failure.Url)" -ForegroundColor Red
+                Write-Host "      Status Code : $($failure.StatusCode)" -ForegroundColor DarkRed
+                Write-Host "      Error       : $($failure.Status)" -ForegroundColor DarkRed
             }
         }
     }
