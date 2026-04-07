@@ -4,11 +4,11 @@ Scouting America advancement provides a progressive series of challenges that he
 
 ---
 
-# Advancement to Scout
+## Advancement to Scout
 
 Welcome to your Scouting adventure! Your Scout rank is your introduction to Scouting and the foundation for everything that follows. This rank should be completed within your first month and teaches you the fundamentals you need to participate fully in troop activities.
 
-## Your First 30 Days: What to Expect
+### Your First 30 Days: What to Expect
 
 Starting Scouting is an exciting adventure! Here's what you can expect during your first month as you work toward earning your Scout rank.
 
@@ -50,7 +50,7 @@ Your Scout rank covers the essential knowledge every Scout needs. Here's what yo
 - **Scoutmaster conference**: A friendly one-on-one chat with your Scoutmaster about what you've learned
 - **Board of review**: Meet with adult leaders to share your Scout knowledge and experience
 
-## Requirements Process: How Advancement Works
+### Requirements Process: How Advancement Works
 
 - Initially, Scouts get their rank requirements signed off by more advanced Scouts
 - Scouts should bring their Scout Handbook to meetings and outings for sign-offs
@@ -61,7 +61,7 @@ Your Scout rank covers the essential knowledge every Scout needs. Here's what yo
 
 **Important**: Your Scout Handbook is your advancement record - take good care of it and keep it with you at meetings and activities!
 
-## Your Scout Family
+### Your Scout Family
 
 During your first month, you'll meet the people who will support your Scouting journey:
 
@@ -87,7 +87,7 @@ During your first month, you'll meet the people who will support your Scouting j
 - Someone to sit with during meetings and help you feel included
 - Available to answer questions about troop procedures and activities
 
-## What You'll Accomplish
+### What You'll Accomplish
 
 By the end of your first 30 days, you'll have:
 
@@ -106,13 +106,13 @@ By the end of your first 30 days, you'll have:
 
 ---
 
-# Advancement to First Class
+## Advancement to First Class
 
 Welcome to your journey from Scout to First Class! This is where you'll learn the essential skills that will serve you throughout your entire Scouting adventure.
 
 The advancement path is outlined in the Scout Handbook. Scouts can work on any requirement for Scout, Tenderfoot, Second Class or First Class (ST21) or merit badges at any time. However, they can only advance a rank when ALL requirements for that rank and lower are completed.
 
-## Your Journey: Scout to First Class
+### Your Journey: Scout to First Class
 
 The ranks Scout → Tenderfoot → Second Class → First Class (ST21) teach you all the fundamental skills you'll need on your Scouting journey. While we encourage Scouts to work toward First Class within their first 18 months, this is a goal, not a requirement. Every Scout progresses at their own pace, and that's perfectly okay!
 
@@ -149,7 +149,7 @@ The ranks Scout → Tenderfoot → Second Class → First Class (ST21) teach you
 
 *Note: These are aspirational timelines. Every Scout progresses at their own pace based on their participation, effort, and opportunities to complete requirements.*
 
-## Your Scouting Experience
+### Your Scouting Experience
 
 ### Monthly Adventures: Campouts and Hiking
 
@@ -184,7 +184,7 @@ Summer camp is a week-long experience that accelerates your advancement and skil
 
 Service is a core part of Scouting, and you'll have many opportunities to help others through troop projects, community service, supporting Eagle Scout projects, environmental conservation, and helping with troop activities.
 
-## Leadership Development: Growing as a Leader
+### Leadership Development: Growing as a Leader
 
 **Patrol Leadership**
 - Take turns serving as patrol leader or assistant patrol leader
@@ -207,14 +207,14 @@ Service is a core part of Scouting, and you'll have many opportunities to help o
 - Teaching and mentoring others (Scouting E.D.G.E. Method)
 - Planning and organization
 
-## Conferences and Reviews
+### Conferences and Reviews
 
 - Every rank requires a Scoutmaster Conference
 - Ranks beyond Scout Rank also require a Board of Review
 
 Each rank advancement requires a board of review, where Scouts discuss their experiences and demonstrate their understanding of Scouting principles with adult leaders.
 
-## Merit Badge System
+### Merit Badge System
 
 Merit badges are earned throughout your Scouting career and provide opportunities to explore interests and develop specialized skills. While not required for the First Class rank, merit badges complement your advancement journey.
 
@@ -257,11 +257,11 @@ More information: [Scouting America Merit Badges](https://www.scouting.org/skill
 
 ---
 
-# The Path to Eagle
+## The Path to Eagle
 
 The Eagle Scout rank is Scouting's highest achievement, representing years of growth, leadership, and service. After earning First Class, your Scouting journey shifts from learning basic skills to developing expertise, leadership, and making a lasting impact on your community.
 
-## The Journey: Star to Eagle
+### The Journey: Star to Eagle
 
 **Star → Life → Eagle**
 - Emphasis shifts to leadership, service, and personal growth
@@ -269,21 +269,21 @@ The Eagle Scout rank is Scouting's highest achievement, representing years of gr
 - Leadership positions require greater responsibility and longer tenure
 - Community service hours increase significantly
 
-## Star Scout Requirements
+### Star Scout Requirements
 
 **Merit Badges**: Earn 6 merit badges (4 must be from Eagle-required list)
 **Leadership**: Serve actively in a leadership position for 4 months
 **Service**: Complete 6 hours of community service
 **Skills**: Demonstrate Scout spirit and outdoor skills proficiency
 
-## Life Scout Requirements
+### Life Scout Requirements
 
 **Merit Badges**: Earn 5 additional merit badges (3 must be from Eagle-required list)
 **Leadership**: Serve actively in a leadership position for 6 months
 **Service**: Complete 6 hours of community service
 **Skills**: Plan, develop, and lead a service project
 
-## Eagle Scout Requirements
+### Eagle Scout Requirements
 
 ### Merit Badge Requirements
 **Total**: 21 merit badges (including 13 specific Eagle-required badges)
@@ -325,7 +325,7 @@ The Eagle Scout rank is Scouting's highest achievement, representing years of gr
 **Community Service**: Complete 6 hours of community service
 **Eagle Scout Service Project**: Plan, develop, and lead a service project that benefits a religious institution, school, or community organization (not Scouting)
 
-## The Eagle Scout Service Project
+### The Eagle Scout Service Project
 
 The Eagle project is the capstone of your Scouting experience and what often distinguishes Eagle Scouts as leaders throughout their lives.
 
@@ -359,7 +359,7 @@ The Eagle project is the capstone of your Scouting experience and what often dis
 - **Problem Solving**: Adapting to challenges and finding creative solutions
 - **Service Leadership**: Understanding community needs and creating lasting impact
 
-## Beyond Eagle: Continuing Your Journey
+### Beyond Eagle: Continuing Your Journey
 
 ### Palms and Continued Recognition
 - **Bronze Palm**: Earn 5 additional merit badges after Eagle
@@ -379,7 +379,7 @@ The Eagle project is the capstone of your Scouting experience and what often dis
 - **Networking**: Lifelong connections with fellow Eagle Scouts
 - **Life Skills**: Project management, leadership, and service experience
 
-## Making Eagle Achievable
+### Making Eagle Achievable
 
 ### Start Early
 - **Age 14**: Begin working on Eagle-required merit badges
@@ -393,7 +393,7 @@ The Eagle project is the capstone of your Scouting experience and what often dis
 - **Document Service**: Keep records of all service hours
 - **Seek Mentorship**: Work with Eagle Scouts and adult leaders
 
-## The Eagle Scout Legacy
+### The Eagle Scout Legacy
 
 Eagle Scout is more than a rank - it's a commitment to lifelong leadership and service. Eagle Scouts are found among leaders in every field: business, government, military, education, and community service.
 
