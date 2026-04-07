@@ -112,7 +112,7 @@ For more information about the Scoutmaster role, see the [Scouting America Scout
 
 Available position. An assistant Scoutmaster is an adult leader over the age of 18 who helps the Scoutmaster deliver the promise of Scouting. Each assistant Scoutmaster is assigned specific program duties. They can serve the troop by guiding a particular patrol to which they've been assigned, advising certain Scouts who've assumed a position e.g. the quartermaster or OA representative, or fill in as necessary to assure the junior leaders have what they need to run things.
 
-They also provide the two-deep leadership required by Scouting America. An assistant Scoutmaster may be 18 years old, but at least one in each troop should be 21 or older so he or she can serve in the Scoutmaster's absence.
+They also provide the two-deep leadership required by Scouting America. An assistant Scoutmaster may be 18 years old, but at least one in each troop should be 21 or older so they can serve in the Scoutmaster's absence.
 
 For more information about the Assistant Scoutmaster role, see the [Scouting America Assistant Scoutmaster Guide](https://troopleader.scouting.org/general-troop-information/troop-structure/troop-positions/assistant-scoutmaster/).
 

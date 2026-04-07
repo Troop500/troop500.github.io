@@ -55,7 +55,7 @@ For other troop activities, a Troop 500G t-shirt (Class B) can be worn with:
 
 ## Patch Placement
 
-Proper placement of patches is detailed in the Scout Handbook. Ensure patches are sewn on securely and in the correct positions.
+Proper placement of patches is detailed in the Scout Handbook and the official [Scouting America Insignia Guide](https://www.scouting.org/resources/insignia-guide/). Ensure patches are sewn on securely and in the correct positions.
 
 ## Care Instructions
 

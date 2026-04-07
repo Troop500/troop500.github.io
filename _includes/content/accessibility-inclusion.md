@@ -108,6 +108,4 @@ For specific questions about accessibility accommodations or to discuss your Sco
 
 ---
 
-*"Scouting is a game for boys under the care of boys in which elder brothers can give their younger brothers healthy environment and encourage them to healthy activities such as will help them to develop CITIZENSHIP."* - Lord Baden-Powell
-
 Every Scout deserves the opportunity to experience the adventure, friendship, and character development that Scouting offers. We are here to make that possible for all youth in our community.

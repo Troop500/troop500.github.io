@@ -16,9 +16,9 @@ Understanding the financial aspects of scouting helps families plan and particip
 - **Purpose**: Reduce financial burden when starting in scouting
 
 ### Regular Membership Fees
-- **Amount**: $50 every 6 months (subject to change)
-- **Payment schedule**: Twice yearly
-- **Due dates**: Announced in advance with payment reminders
+- **Amount**: Assessed by the Treasurer and Troop Committee and communicated to families in advance
+- **Payment schedule**: Announced by the committee with payment reminders
+- **Questions**: Contact the Treasurer or Committee Chair for current fee information
 
 ### What Membership Fees Cover
 - Merit badge materials and awards
@@ -120,7 +120,7 @@ Understanding the financial aspects of scouting helps families plan and particip
 ## Budget Planning Tips
 
 ### For Families
-- Plan for regular membership fees twice yearly
+- Plan for regular membership fees as communicated by the Treasurer
 - Budget for monthly outing costs
 - Consider annual uniform and equipment needs
 - Take advantage of used uniform options
