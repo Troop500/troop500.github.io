@@ -34,12 +34,22 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Check if pandoc image sources changed
+        id: pandoc-changed
+        run: |
+          if git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -qE '(Dockerfile\.pandoc|scripts/build/)'; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Pandoc-related files changed — will force rebuild"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Pull or build pandoc image
         run: |
-          if docker pull ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest; then
+          if [ "${{ steps.pandoc-changed.outputs.changed }}" = "false" ] && docker pull ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest; then
             echo "Pulled pre-built pandoc image from GHCR"
           else
-            echo "Image not found in GHCR — building from Dockerfile.pandoc"
+            echo "Building pandoc image from Dockerfile.pandoc"
             docker build -t ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest -f Dockerfile.pandoc .
             echo "Pushing newly built pandoc image to GHCR for future runs"
             docker push ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest
@@ -68,12 +78,22 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Check if jekyll image sources changed
+        id: jekyll-changed
+        run: |
+          if git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -qE '(Dockerfile\.jekyll|Gemfile|Gemfile\.lock|millennial\.gemspec)'; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Jekyll-related files changed — will force rebuild"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Pull or build jekyll image
         run: |
-          if docker pull ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest; then
+          if [ "${{ steps.jekyll-changed.outputs.changed }}" = "false" ] && docker pull ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest; then
             echo "Pulled pre-built jekyll image from GHCR"
           else
-            echo "Image not found in GHCR — building from Dockerfile.jekyll"
+            echo "Building jekyll image from Dockerfile.jekyll"
             docker build -t ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest -f Dockerfile.jekyll .
             echo "Pushing newly built jekyll image to GHCR for future runs"
             docker push ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest
@@ -140,10 +160,7 @@ jobs:
             -v ${{ github.workspace }}:/srv/jekyll \
             -e JEKYLL_ENV=production \
             ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest \
-            bundle exec jekyll build
-
-      - name: Add .nojekyll
-        run: touch ./_site/.nojekyll
+            sh -c "bundle exec jekyll build && touch /srv/jekyll/_site/.nojekyll"
 
       - name: Upload site artifact
         uses: actions/upload-artifact@v7
