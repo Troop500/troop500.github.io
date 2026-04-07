@@ -118,7 +118,7 @@ function Get-ImageUrls {
         }
     }
 
-    return $images | Sort-Object -Unique
+    return @($images | Sort-Object -Unique)
 }
 
 # Test a single image URL
