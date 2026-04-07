@@ -119,6 +119,6 @@ Once you've earned your Scout rank, you'll be ready to begin your journey toward
 - Build the foundation for advanced ranks like Star, Life, and Eagle Scout
 
 **Ready for the next adventure?** Check out our guide:
-- [Advancement to First Class]({{ site.baseurl }}/handbook#first-class) - Your 18-month journey to mastering fundamental Scout skills
+- [Advancement to First Class]({{ site.baseurl }}/handbook#advancement-to-first-class) - Your 18-month journey to mastering fundamental Scout skills
 
 Congratulations on taking your first step into the amazing world of Scouting. Your adventure is just beginning!

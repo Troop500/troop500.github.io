@@ -1,10 +1,14 @@
 ---
 layout: page
-title: "Rank Advancement"
+title: "Advancement Guide"
 permalink: /handbook/rank-advancement
 ---
 
-# Rank Advancement
+{% include content/advancement-guide.md %}
+
+---
+
+*For more information, see the complete [Troop Handbook]({{ site.baseurl }}/handbook) or contact us at any meeting.*
 
 The advancement path is clearly outlined in the Scout Handbook. Advancement is earned by each scout - it is not automatic and requires active participation and skill demonstration.
 

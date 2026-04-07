@@ -16,11 +16,7 @@ permalink: /handbook
 
 {% include content/parents-guide.md %}
 
-{% include content/advancement-to-scout.md %}
-
-{% include content/advancement-first-class.md %}
-
-{% include content/advancement-eagle.md %}
+{% include content/advancement-guide.md %}
 
 {% include content/getting-involved-parents.md %}
 
