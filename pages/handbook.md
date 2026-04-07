@@ -44,4 +44,4 @@ permalink: /handbook
 
 {% include content/appendix/joining-conference-template.md %}
 
-**📋 Download this template as PDF:** [Joining Conference Template (PDF)](/assets/files/handbook/appendix/joining-conference-template-latest.pdf)
+**📋 Download this template as PDF:** [Joining Conference Template (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/joining-conference-template-latest.pdf)
