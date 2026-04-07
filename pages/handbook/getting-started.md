@@ -6,7 +6,7 @@ permalink: /handbook/getting-started
 
 # Getting Started with Troop 500G
 
-{% include content/getting-started.md %}
+{% include content/getting-started-parents.md %}
 
 ---
 

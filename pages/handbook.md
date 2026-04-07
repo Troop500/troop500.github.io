@@ -20,6 +20,8 @@ permalink: /handbook
 
 {% include content/leadership-organization.md %}
 
+{% include content/annual-planning.md %}
+
 {% include content/outdoor-program.md %}
 
 {% include content/accessibility-inclusion.md %}
@@ -29,8 +31,6 @@ permalink: /handbook
 {% include content/policies-safety.md %}
 
 {% include content/resources-equipment.md %}
-
-{% include content/scout-camps.md %}
 
 {% include content/useful-links.md %}
 

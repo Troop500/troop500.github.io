@@ -122,7 +122,7 @@ The Troop Committee handles the business side of Scouting, allowing our Scoutmas
 - **Treasurer**: Manage troop finances and track Scout accounts
 - **Outdoor Activities Coordinator**: Plan and coordinate troop outings and special events  
 - **Advancement Coordinator**: Track Scout progress and coordinate boards of review
-- **Chaplain**: Provides spiratual tone for troop meeting and activities
+- **Chaplain**: Provides spiritual tone for troop meetings and activities
 - **Training Coordinator**: Help adults complete required training
 - **Equipment Coordinator**: Maintain and organize troop gear
 - **Membership Coordinator**: Develop a plan for year-round membership flow into the troop
