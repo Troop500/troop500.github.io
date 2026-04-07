@@ -13,17 +13,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build-pdfs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
 
       - name: Install Pandoc and LaTeX
         run: |
@@ -32,15 +26,35 @@ jobs:
 
       - name: Generate PDFs
         run: |
-          # Make scripts executable
           chmod +x scripts/build/build-handbook-simple.sh
           chmod +x scripts/utils/convert_images_to_latex.py
-          
-          # Create output directory
           mkdir -p assets/files/handbook
-          
-          # Generate PDFs
           ./scripts/build/build-handbook-simple.sh
+
+      - name: Upload PDF artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: handbook-pdfs
+          path: assets/files/handbook/
+
+  build-jekyll:
+    runs-on: ubuntu-latest
+    needs: build-pdfs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download PDF artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: handbook-pdfs
+          path: assets/files/handbook/
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -49,6 +63,22 @@ jobs:
 
       - name: Add .nojekyll
         run: touch ./_site/.nojekyll
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: ./_site/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-jekyll
+    steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-site
+          path: ./_site/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.8.0
