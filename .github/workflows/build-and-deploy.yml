@@ -20,7 +20,7 @@ env:
   #   WARN_ONLY_PDF_LINKS      = 'false' to make PDF link failures blocking       (default: true)
 
 jobs:
-  build-pdfs:
+  prepare-pandoc:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,10 +33,81 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Pull or build pandoc image
+        run: |
+          if docker pull ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest; then
+            echo "Pulled pre-built pandoc image from GHCR"
+          else
+            echo "Image not found in GHCR — building from Dockerfile.pandoc"
+            docker build -t ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest -f Dockerfile.pandoc .
+            echo "Pushing newly built pandoc image to GHCR for future runs"
+            docker push ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest
+          fi
+
+      - name: Save pandoc image
+        run: docker save ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest | gzip > pandoc-image.tar.gz
+
+      - name: Upload pandoc image artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pandoc-image
+          path: pandoc-image.tar.gz
+          retention-days: 1
+
+  prepare-jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull or build jekyll image
+        run: |
+          if docker pull ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest; then
+            echo "Pulled pre-built jekyll image from GHCR"
+          else
+            echo "Image not found in GHCR — building from Dockerfile.jekyll"
+            docker build -t ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest -f Dockerfile.jekyll .
+            echo "Pushing newly built jekyll image to GHCR for future runs"
+            docker push ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest
+          fi
+
+      - name: Save jekyll image
+        run: docker save ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest | gzip > jekyll-image.tar.gz
+
+      - name: Upload jekyll image artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-image
+          path: jekyll-image.tar.gz
+          retention-days: 1
+
+  build-pdfs:
+    runs-on: ubuntu-latest
+    needs: prepare-pandoc
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download pandoc image artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pandoc-image
+
+      - name: Load pandoc image
+        run: docker load < pandoc-image.tar.gz
+
       - name: Generate PDFs
         run: |
           mkdir -p assets/files/handbook
           docker run --rm \
+            --user root \
             -v ${{ github.workspace }}:/srv/jekyll \
             ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest \
             bash /srv/jekyll/scripts/build/build-handbook-simple.sh
@@ -49,7 +120,7 @@ jobs:
 
   build-jekyll:
     runs-on: ubuntu-latest
-    needs: build-pdfs
+    needs: [build-pdfs, prepare-jekyll]
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -60,20 +131,22 @@ jobs:
           name: handbook-pdfs
           path: assets/files/handbook/
 
-      - name: Log in to GHCR
-        uses: docker/login-action@v3
+      - name: Download jekyll image artifact
+        uses: actions/download-artifact@v4
         with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          name: jekyll-image
+
+      - name: Load jekyll image
+        run: docker load < jekyll-image.tar.gz
 
       - name: Build Jekyll site
         run: |
           docker run --rm \
+            --user root \
             -v ${{ github.workspace }}:/srv/jekyll \
             -e JEKYLL_ENV=production \
             ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest \
-            bundle exec jekyll build
+            sh -c "git config --global --add safe.directory /srv/jekyll && bundle exec jekyll build"
 
       - name: Add .nojekyll
         run: touch ./_site/.nojekyll
