@@ -43,7 +43,7 @@ jobs:
           ./scripts/build/build-handbook-simple.sh
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl "/${{ github.event.repository.name }}"
         env:
           JEKYLL_ENV: production
 
