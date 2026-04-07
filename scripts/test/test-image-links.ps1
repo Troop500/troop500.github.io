@@ -64,7 +64,7 @@ function Get-ImageUrls {
     $pageUri = [Uri]$PageUrl
     $images = @()
 
-    $srcPattern = 'src\s*=\s*["'']([^"'']+)["'']'
+    $srcPattern = '(?<![\w-])src\s*=\s*["'']([^"'']+)["'']'
     $matches = [regex]::Matches($HtmlContent, $srcPattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 
     # Image file extensions to test (excludes iframe src, scripts, etc.)
@@ -93,7 +93,10 @@ function Get-ImageUrls {
                 $base = "$($pageUri.Scheme)://$($pageUri.Authority)$($pageUri.AbsolutePath -replace '[^/]+$', '')"
                 $absUrl = "$base$src"
             }
-            $images += $absUrl
+            # Only add valid http(s) URLs
+            if ($absUrl -match '^https?://') {
+                $images += $absUrl
+            }
         } catch {
             # Skip unparseable URLs
             continue
