@@ -10,7 +10,7 @@ menu:
 - {name: 'Upcoming Events',    url: 'events'}
 - {name: 'Learning Resources', url: 'resources'}
 - {name: 'Troop Handbook',     url: 'handbook'}
-- {name: 'For Families',       url: 'joining' }
+- {name: 'Joining',            url: 'joining' }
 - {name: 'Files',              url: 'files'}
 - name: 'About'
   submenu:
