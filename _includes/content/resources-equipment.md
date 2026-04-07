@@ -1,5 +1,17 @@
 # Resources & Equipment
 
+## Personal Equipment
+
+Scouts are responsible for acquiring and maintaining their own personal camping equipment. Essential items include:
+
+- A Daypack with the [Ten Essentials]({{ site.baseurl }}/ten-essentials)
+- Sleeping bag and pad
+- Mess Kit
+- Backpack / Duffle Bag
+- Personal camping items
+
+See our [Tent Camping List]({{ site.baseurl }}/tent-camping-list) for complete packing guidance.
+
 ## Troop Equipment
 
 The troop maintains a variety of equipment available for Scout use:
@@ -23,18 +35,6 @@ Regular maintenance of troop equipment is essential for safety and longevity. Sc
 
 See our [Troop Gear Maintenance]({{ site.baseurl }}/troop-gear-maintenance) guide for detailed maintenance procedures.
 
-## Personal Equipment
-
-Scouts are responsible for acquiring and maintaining their own personal camping equipment. Essential items include:
-
-- A Daypack with the [Ten Essentials]({{ site.baseurl }}/ten-essentials)
-- Sleeping bag and pad
-- Mess Kit
-- Backpack / Duffle Bag
-- Personal camping items
-
-See our [Tent Camping List]({{ site.baseurl }}/tent-camping-list) for complete packing guidance.
-
 ## Duty Roster
 
 All troop members participate in setup, cleanup, and maintenance activities through our [duty roster system]({{ site.baseurl }}/duty-roster). This teaches responsibility and ensures that everyone contributes to troop operations.
@@ -46,8 +46,3 @@ Our grubmaster program includes comprehensive resources for meal planning and ou
 - [Grubmaster 101]({{ site.baseurl }}/grubmaster-101) - Introduction to meal planning and basic cooking
 - [Grubmaster 201]({{ site.baseurl }}/grubmaster-201) - Advanced techniques and menu ideas
 
-## Online Resources
-
-- [TroopLeader Online]({{ site.baseurl }}/troopleader-online) - Digital advancement tracking
-- Lake Erie Council website - Council-wide events and information
-- Scouting America resources - Program materials and guides

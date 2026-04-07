@@ -14,7 +14,7 @@ permalink: /handbook
 
 {% include content/lake-erie-council.md %}
 
-{% include content/getting-started-parents.md %}
+{% include content/parents-guide.md %}
 
 {% include content/advancement-to-scout.md %}
 

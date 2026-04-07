@@ -24,7 +24,7 @@ Once your Scout joins, here's what to expect:
 
 2. **Get Connected** — We'll add you to our GroupMe groups and make sure you have access to the troop Google Calendar. We'll also invite your Scout to [Scoutbook](https://scoutbook.scouting.org/) — Scouting America's official platform for tracking rank advancement, merit badges, and attendance. Parents can log in to view their Scout's progress, approve advancement, and stay informed on upcoming activities.
 
-3. **Complete Required Paperwork** — Annual Health and Medical Record (Parts A & B), Social Media Waiver, and Safeguarding Youth training. Details are in our [Getting Started guide]({{ site.baseurl }}/handbook#getting-started---parents-information).
+3. **Complete Required Paperwork** — Annual Health and Medical Record (Parts A & B), Social Media Waiver, and Safeguarding Youth training. Details are in our [Parents Guide]({{ site.baseurl }}/handbook#parents-guide).
 
 4. **Gear Up** — Your Scout will need a Class A uniform, Class B troop shirt, Scout Handbook, and the [10 Essentials]({{ site.baseurl }}/ten-essentials). We have secondhand uniform items available — just ask! Full details in our [Uniform Guidelines]({{ site.baseurl }}/handbook/uniform-guidelines).
 

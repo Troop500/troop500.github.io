@@ -12,4 +12,4 @@ permalink: /handbook/contact
 
 - **Complete Handbook**: [Troop 500G Handbook](/handbook)
 - **Events Calendar**: [Upcoming Events](/events)
-- **Getting Started**: [New Scout Information](/handbook/getting-started)
+- **Parents Guide**: [New Scout Information]({{ site.baseurl }}/handbook/parents-guide)

@@ -1,4 +1,4 @@
-# Useful Links for Scouts, Scouters and Parents
+# Useful Links
 
 Here are some valuable online resources to support your Scouting journey and help you make the most of your experience in Troop 500G.
 
