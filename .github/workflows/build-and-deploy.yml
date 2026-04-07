@@ -134,17 +134,13 @@ jobs:
       - name: Load jekyll image
         run: docker load < jekyll-image.tar.gz
 
-      - name: Fix workspace permissions
-        run: chmod -R a+rw ${{ github.workspace }}
-
       - name: Build Jekyll site
         run: |
           docker run --rm \
-            --user root \
             -v ${{ github.workspace }}:/srv/jekyll \
             -e JEKYLL_ENV=production \
             ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest \
-            sh -c "git config --global --add safe.directory /srv/jekyll && bundle lock --add-platform x86_64-linux-musl && bundle exec jekyll build"
+            bundle exec jekyll build
 
       - name: Add .nojekyll
         run: touch ./_site/.nojekyll
