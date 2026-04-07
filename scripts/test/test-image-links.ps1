@@ -11,7 +11,7 @@
 
 param(
     [string]$BaseUrl = "http://localhost:4000",
-    [string[]]$Pages = @("/", "/handbook", "/about", "/events", "/contact", "/families", "/resources"),
+    [string[]]$Pages = @("/", "/handbook", "/about", "/charter-organization", "/scouting-america", "/lake-erie-council", "/events", "/contact", "/families", "/resources"),
     [int]$TimeoutSec = 10,
     [int]$MaxConcurrency = 5,
     [switch]$ShowDetails,
@@ -249,7 +249,7 @@ function Test-ImageLinksFromPage {
 function Test-ImageLinksFromWebsite {
     param(
         [string]$BaseUrl = "http://localhost:4000",
-        [string[]]$Pages = @("/", "/handbook", "/about", "/events", "/contact", "/families", "/resources"),
+        [string[]]$Pages = @("/", "/handbook", "/about", "/charter-organization", "/scouting-america", "/lake-erie-council", "/events", "/contact", "/families", "/resources"),
         [int]$TimeoutSec = 10,
         [int]$MaxConcurrency = 5,
         [switch]$ShowDetails
