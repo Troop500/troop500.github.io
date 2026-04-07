@@ -26,17 +26,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Install Pandoc and LaTeX
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-xetex
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate PDFs
         run: |
-          chmod +x scripts/build/build-handbook-simple.sh
-          chmod +x scripts/utils/convert_images_to_latex.py
           mkdir -p assets/files/handbook
-          ./scripts/build/build-handbook-simple.sh
+          docker run --rm \
+            -v ${{ github.workspace }}:/srv/jekyll \
+            ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest \
+            bash /srv/jekyll/scripts/build/build-handbook-simple.sh
 
       - name: Upload PDF artifacts
         uses: actions/upload-artifact@v4
@@ -57,16 +60,20 @@ jobs:
           name: handbook-pdfs
           path: assets/files/handbook/
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
         with:
-          ruby-version: '3.1'
-          bundler-cache: true
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/srv/jekyll \
+            -e JEKYLL_ENV=production \
+            ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest \
+            bundle exec jekyll build
 
       - name: Add .nojekyll
         run: touch ./_site/.nojekyll
@@ -109,11 +116,6 @@ jobs:
       - name: Wait for deployment to propagate
         run: sleep 30
 
-      - name: Install PowerShell
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y powershell
-
       - name: Test internal page URLs
         run: pwsh scripts/test/test-self-urls.ps1 -BaseUrl "${{ env.SITE_URL }}"
 
@@ -127,11 +129,6 @@ jobs:
 
       - name: Wait for deployment to propagate
         run: sleep 30
-
-      - name: Install PowerShell
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y powershell
 
       - name: Test external links
         run: pwsh scripts/test/test-external-links.ps1 -BaseUrl "${{ env.SITE_URL }}"
@@ -149,11 +146,6 @@ jobs:
         with:
           name: handbook-pdfs
           path: assets/files/handbook/
-
-      - name: Install PowerShell
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y powershell
 
       - name: Test PDF links
         run: pwsh scripts/test/test-pdf-links.ps1 -PdfDirectory "assets/files/handbook"
