@@ -329,4 +329,4 @@ jobs:
         run: sleep 30
 
       - name: Test image links
-        run: pwsh scripts/test/test-image-links.ps1 -BaseUrl "${{ steps.site.outputs.url }}"
+        run: pwsh scripts/test/test-image-links.ps1 -BaseUrl "${{ steps.site.outputs.url }}" -ShowDetails
