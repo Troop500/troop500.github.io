@@ -14,6 +14,7 @@ concurrency:
 
 env:
   SITE_URL: "https://murphy360.github.io/troop500dev.github.io"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   # To override test severity, set these in Settings → Secrets and variables → Actions → Variables:
   #   WARN_ONLY_SELF_URLS     = 'true'  to make internal URL failures non-blocking (default: false)
   #   WARN_ONLY_EXTERNAL_LINKS = 'false' to make external link failures blocking  (default: true)
@@ -142,9 +143,8 @@ jobs:
             --user root \
             -v ${{ github.workspace }}:/srv/jekyll \
             -e JEKYLL_ENV=production \
-            -e BUNDLE_FROZEN=true \
             ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest \
-            sh -c "git config --global --add safe.directory /srv/jekyll && bundle exec jekyll build"
+            sh -c "git config --global --add safe.directory /srv/jekyll && bundle lock --add-platform x86_64-linux-musl && bundle exec jekyll build"
 
       - name: Add .nojekyll
         run: touch ./_site/.nojekyll
