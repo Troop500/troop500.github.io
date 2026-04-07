@@ -1,59 +1,38 @@
-name: Build Jekyll site and generate PDFs
+name: Build and Deploy
 
 on:
   push:
-    branches: [ gh-pages ]
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          ruby-version: '3.1'
-          bundler-cache: true
+          node-version: '14'
 
-      - name: Install Pandoc and LaTeX
+      - name: Install Dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-xetex
+          npm install
 
-      - name: Generate PDFs
+      - name: Run Build
         run: |
-          # Make scripts executable
-          chmod +x scripts/build/build-handbook-simple.sh
-          chmod +x scripts/utils/convert_images_to_latex.py
-          
-          # Create output directory
-          mkdir -p assets/files/handbook
-          
-          # Generate PDFs
-          ./scripts/build/build-handbook-simple.sh
+          npm run build
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --baseurl "/${{ github.event.repository.name }}"
-        env:
-          JEKYLL_ENV: production
-
-      - name: Add .nojekyll
-        run: touch ./_site/.nojekyll
-
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.8.0
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: pages-deploy
-          folder: ./_site
-          clean-exclude: pr-preview
-          force: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          branch: gh-pages
+          target-folder: /
