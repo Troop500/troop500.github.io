@@ -5,7 +5,7 @@ Troop 500G is a female Scouting America troop operating out of Solon, Ohio, serv
 ## Our Mission
 To provide girls with opportunities to develop leadership skills, experience outdoor adventures, serve their community, and advance toward Eagle Scout while building lifelong friendships.
 
-*Check the [events calendar](/events) for current meeting times and locations.*
+*Check the [events calendar]({{ site.baseurl }}/events) for current meeting times and locations.*
 
 ## Scouting America's Foundation
 

@@ -170,7 +170,7 @@ More information: [Scouting America Merit Badges](https://www.scouting.org/skill
 
 The Eagle Scout project is a significant leadership service project required for Eagle rank. This project demonstrates a Scout's ability to plan, lead, and execute a meaningful community service project.
 
-For detailed guidance on Eagle project planning, requirements, and execution, see the comprehensive [Advancement to Eagle guide](/handbook#the-eagle-scout-service-project).
+For detailed guidance on Eagle project planning, requirements, and execution, see the comprehensive [Advancement to Eagle guide]({{ site.baseurl }}/handbook#the-eagle-scout-service-project).
 
 ## Looking Forward: Your Scouting Journey Ahead
 
@@ -185,6 +185,6 @@ Earning First Class is a significant milestone that opens the door to advanced o
 Focus on learning the basics now, building your skills, and enjoying every step of the adventure. The strong foundation you build working toward First Class will prepare you for all these exciting possibilities.
 
 **Ready for advanced ranks?** Check out our detailed guide:
-- [Advancement to Eagle](/handbook#advancement-to-eagle) - Comprehensive roadmap for Star, Life, and Eagle ranks
+- [Advancement to Eagle]({{ site.baseurl }}/handbook#advancement-to-eagle) - Comprehensive roadmap for Star, Life, and Eagle ranks
 
 Your Scouting adventure continues to grow!
