@@ -122,7 +122,9 @@ jobs:
           name: pandoc-image
 
       - name: Load pandoc image
-        run: docker load < pandoc-image.tar.gz
+        run: |
+          docker load < pandoc-image.tar.gz
+          rm pandoc-image.tar.gz
 
       - name: Generate PDFs
         run: |
@@ -152,7 +154,9 @@ jobs:
           name: jekyll-image
 
       - name: Load jekyll image
-        run: docker load < jekyll-image.tar.gz
+        run: |
+          docker load < jekyll-image.tar.gz
+          rm jekyll-image.tar.gz
 
       - name: Build Jekyll site
         run: |
