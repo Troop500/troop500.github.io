@@ -40,10 +40,16 @@ permalink: /handbook
 
 ---
 
-## Appendix
+# Appendix
 
-### Appendix A: Joining Conference Template
+## Appendix A: Joining Conference Template
 
 {% include content/appendix/joining-conference-template.md %}
 
 **📋 Download this template as PDF:** [Joining Conference Template (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/joining-conference-template-latest.pdf)
+
+---
+
+## Appendix B: Scout Camps We Frequent
+
+{% include content/appendix/scout-camps.md %}
