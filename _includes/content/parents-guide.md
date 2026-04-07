@@ -106,7 +106,7 @@ Event fees are collected by the troop Treasurer and tracked in your Scout's Scou
 
 While Scouting America is youth-led, it requires dedicated adult volunteers who undergo comprehensive training in youth protection, position-specific skills, advanced leadership development, and event/safety-specific training. We encourage any and all parents to become trained leaders, but we also realize that not everyone has the capacity in their lives at this time to take on formal leadership roles.
 
-## Support Your Scout
+### Support Your Scout
 
 The best way to get involved is by helping your Scout do their best in the Scouting program. Remember, help and support does not mean do it for them. A key tenet of Scouting is to develop independent and capable leaders. As Lord Baden-Powell said, "Never do for a Scout what they can do for themselves."
 
@@ -124,7 +124,7 @@ Here are ways to support your Scout's success:
 **Advocate for Your Scout's Needs**
 Our troop provides an accessible and inclusive environment for every eligible youth. We will always do our best to support your scouts needs, but you can help our best be better. We require a joining meeting prior to your Scout's first overnight outing, but that's not the end of our discussion. You are encouraged to request a pre-event check-in with leaders attending any event (particularly helpful for summer camp) to ensure we can provide the best possible support for your Scout's success.
 
-## Learn About the Troop
+### Learn About the Troop
 
 There's a lot to learn about Scouting in general and our troop specifically! Whether you're completely new to Scouting or earned your Eagle Scout rank back in the day, the program is always evolving. New families need time to understand how everything works, and even experienced Scouting parents find that each troop has its own culture and way of doing things. We encourage you to take time to observe and learn before jumping into formal roles.
 
@@ -145,13 +145,13 @@ Please note that any direct contact volunteer leaders (those working directly wi
 - Join committee meetings to participate in planning and troop business
 - These meetings are great opportunities to ask questions and connect with other parents and leaders
 
-## Support Your Troop
+### Support Your Troop
 
 **How can I help?**
 
 As volunteer adult leaders, we try to ask for help when we need it, but honestly, sometimes we don't get around to it or forget to mention it. If you have a little time and want to pitch in, we'd love to have you help! Come to our committee meetings, show up to parent meetings, or just ask any committee member how you can help. There's always more work than hands to do it, and any help is genuinely appreciated.
 
-### Supporting Troop Events and Activities
+***Supporting Troop Events and Activities***
 
 The simplest way to start getting involved is by providing minimal support for troop events and activities. These contributions are invaluable and help our troop function smoothly:
 
@@ -161,14 +161,12 @@ The simplest way to start getting involved is by providing minimal support for t
 
 These activities typically require Safeguarding Youth Training and provide a great way to see how the troop operates while making meaningful contributions.
 
-## Take Some Training
-
-### Safeguarding Youth Training
-Safeguarding Youth training is required for all registered adult leaders and strongly encouraged for all parents and guardians. This training helps new members understand the requirements behind every decision we make in Scouting America. Available online at [my.scouting.org](https://my.scouting.org), this training covers child abuse prevention and safe Scouting practices and must be renewed every three years.
-
 ### Online Training
 
 My.Scouting.org offers various online training modules that can help you better understand Scouting and support your Scout's experience. These courses are available at your own pace and can help you feel more confident when participating in troop activities.
+
+***Safeguarding Youth Training***
+Safeguarding Youth training is required for all registered adult leaders and strongly encouraged for all parents and guardians. This training helps new members understand the requirements behind every decision we make in Scouting America. Available online at [my.scouting.org](https://my.scouting.org), this training covers child abuse prevention and safe Scouting practices and must be renewed every three years.
 
 ### In-Person Training
 See the [Leaders Guide]({{ site.baseurl }}/handbook/leaders-guide) for details on in-person and advanced training offered through Lake Erie Council and Scouting America.
