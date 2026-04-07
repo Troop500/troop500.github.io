@@ -67,11 +67,18 @@ function Get-ImageUrls {
     $srcPattern = 'src\s*=\s*["'']([^"'']+)["'']'
     $matches = [regex]::Matches($HtmlContent, $srcPattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 
+    # Image file extensions to test (excludes iframe src, scripts, etc.)
+    $imageExtensions = @('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.ico', '.bmp')
+
     foreach ($match in $matches) {
         $src = $match.Groups[1].Value.Trim()
 
         # Skip data URIs and empty values
         if ($src -match '^data:' -or [string]::IsNullOrWhiteSpace($src)) { continue }
+
+        # Skip non-image URLs (e.g. Google Maps iframes, scripts)
+        $ext = [System.IO.Path]::GetExtension(($src -split '[?#]')[0]).ToLower()
+        if ($ext -notin $imageExtensions) { continue }
 
         # Resolve to absolute URL
         try {

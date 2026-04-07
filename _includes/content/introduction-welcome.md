@@ -1,4 +1,4 @@
-# About Troop 500G
+﻿# About Troop 500G
 
 Troop 500G is a female Scouting America troop operating out of Solon, Ohio, serving the youth of Northeast Ohio. We are a proud part of the Lake Erie Council and are chartered by Advent Lutheran Church.
 
@@ -56,7 +56,7 @@ Website: [adventsolon.org](https://www.adventsolon.org/)
 We are grateful for the support and partnership of Advent Lutheran Church, which provides us with meeting space and organizational support.
 
 ## Our Council
-<img src="/assets/images/handbook/patch_lake_erie_council.jpg" alt="Lake Erie Council patch" style="width: 200px; height: auto; float: right; margin-left: 15px;">
+<img src="{{ site.baseurl }}/assets/images/handbook/patch_lake_erie_council.jpg" alt="Lake Erie Council patch" style="width: 200px; height: auto; float: right; margin-left: 15px;">
 
 **Lake Erie Council, BSA**  
 Troop 500G is proudly chartered through the Lake Erie Council, which serves Scouts across Northeast Ohio. The Lake Erie Council provides training, resources, and support to help units deliver high-quality Scouting programs that build character, citizenship, and fitness in young people.

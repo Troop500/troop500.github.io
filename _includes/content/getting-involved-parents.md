@@ -1,4 +1,4 @@
-# Getting Involved - Parents
+﻿# Getting Involved - Parents
 
 While Scouting America is youth-led, it requires dedicated adult volunteers who undergo comprehensive training in youth protection, position-specific skills, advanced leadership development, and event/safety-specific training. We encourage any and all parents to become trained leaders, but we also realize that not everyone has the capacity in their lives at this time to take on formal leadership roles.
 
@@ -90,7 +90,7 @@ Before committing to a specific role:
 - Connect with other parents in similar roles
 
 **Becoming Position Trained**
-<img src="/assets/images/handbook/Trained_patch_green.jpg" alt="Scouting America Trained Patch" style="width: 150px; height: auto; float: right; margin: 0 0 15px 15px;">
+<img src="{{ site.baseurl }}/assets/images/handbook/Trained_patch_green.jpg" alt="Scouting America Trained Patch" style="width: 150px; height: auto; float: right; margin: 0 0 15px 15px;">
 When you take on a formal leadership role, completing both Safeguarding Youth and your position-specific training makes you "position trained." Position trained leaders earn the distinctive trained patch (shown) which recognizes their commitment to providing quality Scouting experiences. This training ensures you have the knowledge and skills needed for your specific role in the troop.
 
 ### Registered Adult Leader
@@ -142,7 +142,7 @@ The Troop Committee handles the business side of Scouting, allowing our Scoutmas
 
 ## Adult Training Requirements
 
-<img src="/assets/images/handbook/Trained_patch_green.jpg" alt="Scouting America Trained Patch" style="width: 150px; height: auto; float: right; margin: 0 0 15px 15px;">
+<img src="{{ site.baseurl }}/assets/images/handbook/Trained_patch_green.jpg" alt="Scouting America Trained Patch" style="width: 150px; height: auto; float: right; margin: 0 0 15px 15px;">
 
 Adult leaders in Scouting America must complete required training to ensure the safety and quality of the program. Our troop is committed to having well-trained leaders who can provide the best possible experience for our Scouts.
 
