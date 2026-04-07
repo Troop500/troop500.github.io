@@ -1,4 +1,4 @@
-﻿# Troop Leadership
+﻿# Troop Organization
 
 Troop 500G operates under the Scouting America troop leadership model, where youth leaders are elected by the troop and adult leaders provide guidance and support to all youth-led activities.
 
@@ -20,7 +20,7 @@ For more information about the patrol method, see the [Scouting America Patrol M
 
 ### Senior Patrol Leader (SPL) <img src="{{ site.baseurl }}/assets/images/handbook/patch_senior_patrol_leader.jpg" alt="Senior Patrol Leader Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-The highest youth leadership position, elected by the troop. With three green bars behind the Scout emblem, the senior patrol leader's shoulder patch symbolizes one of the oldest leadership positions in Scouting. Scouting America has long recognized the senior patrol leader as the highest youth leadership position in a troop. They are the primary link between a troop's Scouts and its adult leaders. They shoulder the responsibility for leading meetings of the troop and the patrol leaders' council and provide valuable leadership in planning and carrying out the troop's program of outdoor activities, service projects, and events.
+The highest youth leadership position, elected by the troop, the senior patrol leader is one of the oldest leadership positions in Scouting. Scouting America has long recognized the senior patrol leader as the highest youth leadership position in a troop. They are the primary link between a troop's Scouts and its adult leaders. They shoulder the responsibility for leading meetings of the troop and the patrol leaders' council and provide valuable leadership in planning and carrying out the troop's program of outdoor activities, service projects, and events.
 
 **Senior Patrol Leader Responsibilities:**
 - Runs all troop meetings, events, activities, and the annual program planning conference
@@ -236,38 +236,4 @@ This is not an exhaustive list of positions a troop may need. Troops are encoura
 
 The essential support literature for troop committee members is the Scouting America publication *Scouts BSA Troop Committee Guidebook*.
 
-<div style="page-break-before: always;"></div>
 
-# Leadership Development
-
-Leadership development is a core component of the Scouting program. Youth leaders attend training opportunities and gain real-world experience managing troop activities, planning meetings, and mentoring younger Scouts.
-
-## Youth Leadership Training
-
-### Position-Specific Training
-All youth leaders receive training specific to their position, including:
-- Leadership skills and techniques
-- Position-specific responsibilities and procedures
-- Communication and team-building skills
-- Problem-solving and decision-making
-
-### National Youth Leadership Training (NYLT)
-NYLT is an exciting, action-packed program designed for Scouts who are ready to take the next step in their leadership development. This course teaches leadership skills and outdoor skills in an outdoor adventure setting.
-
-## Leadership in Action
-
-Youth leaders apply their training through:
-- Leading troop meetings and activities
-- Planning and executing service projects
-- Mentoring younger Scouts
-- Representing the troop at district and council events
-
-## Adult Mentorship
-
-Adult leaders provide guidance and support to youth leaders through:
-- Regular coaching and feedback
-- Modeling good leadership practices
-- Providing opportunities for growth and development
-- Supporting youth-led decision making
-
-The combination of training, practical experience, and adult mentorship creates well-prepared leaders who are ready to succeed in Scouting and beyond.
