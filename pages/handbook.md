@@ -6,7 +6,13 @@ permalink: /handbook
 
 {% include content/handbook-introduction.md %}
 
-{% include content/introduction-welcome.md %}
+{% include content/troop-overview.md %}
+
+{% include content/scouting-america.md %}
+
+{% include content/charter-organization.md %}
+
+{% include content/lake-erie-council.md %}
 
 {% include content/getting-started-parents.md %}
 
