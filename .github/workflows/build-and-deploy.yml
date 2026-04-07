@@ -14,11 +14,10 @@ concurrency:
 
 env:
   SITE_URL: "https://murphy360.github.io/troop500dev.github.io"
-  # Set to 'true' to treat a test failure as a warning (non-blocking)
-  # Set to 'false' to treat a test failure as a hard failure (blocks deployment)
-  WARN_ONLY_SELF_URLS: "false"
-  WARN_ONLY_EXTERNAL_LINKS: "true"
-  WARN_ONLY_PDF_LINKS: "true"
+  # To override test severity, set these in Settings → Secrets and variables → Actions → Variables:
+  #   WARN_ONLY_SELF_URLS     = 'true'  to make internal URL failures non-blocking (default: false)
+  #   WARN_ONLY_EXTERNAL_LINKS = 'false' to make external link failures blocking  (default: true)
+  #   WARN_ONLY_PDF_LINKS      = 'false' to make PDF link failures blocking       (default: true)
 
 jobs:
   build-pdfs:
@@ -102,7 +101,7 @@ jobs:
   test-self-urls:
     runs-on: ubuntu-latest
     needs: deploy
-    continue-on-error: ${{ vars.WARN_ONLY_SELF_URLS == 'true' || env.WARN_ONLY_SELF_URLS == 'true' }}
+    continue-on-error: ${{ vars.WARN_ONLY_SELF_URLS == 'true' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -121,7 +120,7 @@ jobs:
   test-external-links:
     runs-on: ubuntu-latest
     needs: deploy
-    continue-on-error: ${{ vars.WARN_ONLY_EXTERNAL_LINKS == 'true' || env.WARN_ONLY_EXTERNAL_LINKS == 'true' }}
+    continue-on-error: ${{ vars.WARN_ONLY_EXTERNAL_LINKS != 'false' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -140,7 +139,7 @@ jobs:
   test-pdf-links:
     runs-on: ubuntu-latest
     needs: deploy
-    continue-on-error: ${{ vars.WARN_ONLY_PDF_LINKS == 'true' || env.WARN_ONLY_PDF_LINKS == 'true' }}
+    continue-on-error: ${{ vars.WARN_ONLY_PDF_LINKS != 'false' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
