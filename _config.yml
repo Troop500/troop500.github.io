@@ -1,7 +1,7 @@
 # Site Build Settings
 
-url:                 "https://troop500.org"
-baseurl:             ""
+url:                 "https://murphy360.github.io"
+baseurl:             "/troop500dev.github.io"
 
 # jekyll-paginate configuration
 paginate:            10
