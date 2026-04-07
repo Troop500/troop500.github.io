@@ -263,7 +263,6 @@ The Eagle Scout rank is Scouting's highest achievement, representing years of gr
 
 ## The Journey: Star to Eagle
 
-### Advanced Ranks (Ages 14+)
 **Star → Life → Eagle**
 - Emphasis shifts to leadership, service, and personal growth
 - Merit badge requirements become more diverse and challenging
