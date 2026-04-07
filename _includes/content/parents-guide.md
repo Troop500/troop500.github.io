@@ -94,8 +94,11 @@ The Class B uniform is purchased from the troop during your first couple of meet
 
 ## Troop Fees and Expenses
 
-**Annual Membership Fees**
-All Scouts and adult leaders must complete annual membership renewal through My.Scouting.org. This includes both Scouting America registration fees and troop dues.
+**Annual Scouting America Membership Fees**
+All Scouts and adult leaders must complete annual membership renewal through My.Scouting.org. 
+
+**Annual Troop Dues***
+All Scouts owe dues annually as defined by the troop treasurers. Make checks payable to Troop 500. 
 
 **Event Fees**
 Event fees are collected by the troop Treasurer and tracked in your Scout's Scoutbook account.
