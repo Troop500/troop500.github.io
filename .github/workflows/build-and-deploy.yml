@@ -12,6 +12,14 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  SITE_URL: "https://murphy360.github.io/troop500dev.github.io"
+  # Set to 'true' to treat a test failure as a warning (non-blocking)
+  # Set to 'false' to treat a test failure as a hard failure (blocks deployment)
+  WARN_ONLY_SELF_URLS: "false"
+  WARN_ONLY_EXTERNAL_LINKS: "true"
+  WARN_ONLY_PDF_LINKS: "true"
+
 jobs:
   build-pdfs:
     runs-on: ubuntu-latest
@@ -90,3 +98,63 @@ jobs:
           folder: ./_site
           clean-exclude: pr-preview
           force: false
+
+  test-self-urls:
+    runs-on: ubuntu-latest
+    needs: deploy
+    continue-on-error: ${{ vars.WARN_ONLY_SELF_URLS == 'true' || env.WARN_ONLY_SELF_URLS == 'true' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Wait for deployment to propagate
+        run: sleep 30
+
+      - name: Install PowerShell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y powershell
+
+      - name: Test internal page URLs
+        run: pwsh scripts/test/test-self-urls.ps1 -BaseUrl "${{ env.SITE_URL }}"
+
+  test-external-links:
+    runs-on: ubuntu-latest
+    needs: deploy
+    continue-on-error: ${{ vars.WARN_ONLY_EXTERNAL_LINKS == 'true' || env.WARN_ONLY_EXTERNAL_LINKS == 'true' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Wait for deployment to propagate
+        run: sleep 30
+
+      - name: Install PowerShell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y powershell
+
+      - name: Test external links
+        run: pwsh scripts/test/test-external-links.ps1 -BaseUrl "${{ env.SITE_URL }}"
+
+  test-pdf-links:
+    runs-on: ubuntu-latest
+    needs: deploy
+    continue-on-error: ${{ vars.WARN_ONLY_PDF_LINKS == 'true' || env.WARN_ONLY_PDF_LINKS == 'true' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download PDF artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: handbook-pdfs
+          path: assets/files/handbook/
+
+      - name: Install PowerShell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y powershell
+
+      - name: Test PDF links
+        run: pwsh scripts/test/test-pdf-links.ps1 -PdfDirectory "assets/files/handbook"
