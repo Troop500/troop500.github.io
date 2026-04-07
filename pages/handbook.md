@@ -34,8 +34,6 @@ permalink: /handbook
 
 {% include content/resources-equipment.md %}
 
-{% include content/useful-links.md %}
-
 {% include content/contact-info.md %}
 
 ---
@@ -53,3 +51,9 @@ permalink: /handbook
 ## Appendix B: Scout Camps We Frequent
 
 {% include content/appendix/scout-camps.md %}
+
+---
+
+## Appendix C: Useful Links
+
+{% include content/appendix/useful-links.md %}
