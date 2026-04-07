@@ -66,10 +66,11 @@ def convert_img_to_latex(content):
         style = style_match.group(1) if style_match else ""
         
         # Convert web path to LaTeX graphics path
-        # Strip the leading slash and the 'assets/images/' base, preserving any subdirectory.
+        # Strip Liquid baseurl tag, leading slash, and 'assets/images/' base, preserving any subdirectory.
         # e.g. '/assets/images/handbook/patch_scribe.jpg' -> 'handbook/patch_scribe.jpg'
-        # The LaTeX template's \graphicspath{{assets/images/}} resolves this correctly.
-        latex_path = src.lstrip('/').replace('assets/images/', '').replace('assets/', '')
+        # e.g. '{{ site.baseurl }}/assets/images/handbook/patch_scribe.jpg' -> 'handbook/patch_scribe.jpg'
+        # The LaTeX template's \graphicspath{{assets/images/}} resolves these paths correctly.
+        latex_path = re.sub(r'\{\{[^}]+\}\}', '', src).lstrip('/').replace('assets/images/', '').replace('assets/', '')
         
         # Parse CSS styles to extract width and float positioning
         width = None

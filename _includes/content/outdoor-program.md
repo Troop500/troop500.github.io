@@ -13,15 +13,15 @@ We camp monthly, year-round, in all weather conditions. Our camping program incl
 
 ## Essential Gear
 
-Every Scout should have their own basic camping equipment. See our [Ten Essentials guide](/ten-essentials) and [Tent Camping List](/tent-camping-list) for detailed packing information.
+Every Scout should have their own basic camping equipment. See our [Ten Essentials guide]({{ site.baseurl }}/ten-essentials) and [Tent Camping List]({{ site.baseurl }}/tent-camping-list) for detailed packing information.
 
 ## Grubmaster Program
 
 Our unique grubmaster system teaches Scouts meal planning, budgeting, and cooking skills. Each Scout takes turns being responsible for planning and preparing meals for the entire troop during camping trips.
 
 Resources:
-- [Grubmaster 101](/grubmaster-101) - Basic meal planning
-- [Grubmaster 201](/grubmaster-201) - Advanced cooking techniques
+- [Grubmaster 101]({{ site.baseurl }}/grubmaster-101) - Basic meal planning
+- [Grubmaster 201]({{ site.baseurl }}/grubmaster-201) - Advanced cooking techniques
 
 ## High Adventure
 

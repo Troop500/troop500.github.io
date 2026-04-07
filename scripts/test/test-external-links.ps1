@@ -139,12 +139,18 @@ function Test-ExternalLink {
             StatusCode = $response.StatusCode
             ResponseTime = $null
         }
-    } catch [System.Net.WebException] {
-        # Check if it's a 403 - server is reachable but blocking bots
-        $statusCode = $_.Exception.Response.StatusCode.value__
+    } catch {
+        # In PowerShell 7, HTTP errors throw HttpResponseException (not WebException)
+        # Check status code from either exception type
+        $statusCode = $null
+        if ($_.Exception.Response) {
+            $statusCode = [int]$_.Exception.Response.StatusCode
+        }
+        # 403 means server is reachable but blocking bots - treat as warning, not failure
         if ($statusCode -eq 403) {
             return @{
                 Success = $true
+                Warning = $true
                 StatusCode = 403
                 ResponseTime = $null
                 Note = "403 Forbidden (bot protection, server is reachable)"
@@ -159,11 +165,15 @@ function Test-ExternalLink {
                 ResponseTime = $null
                 Note = "HEAD failed, GET succeeded"
             }
-        } catch [System.Net.WebException] {
-            $getStatusCode = $_.Exception.Response.StatusCode.value__
+        } catch {
+            $getStatusCode = $null
+            if ($_.Exception.Response) {
+                $getStatusCode = [int]$_.Exception.Response.StatusCode
+            }
             if ($getStatusCode -eq 403) {
                 return @{
                     Success = $true
+                    Warning = $true
                     StatusCode = 403
                     ResponseTime = $null
                     Note = "403 Forbidden (bot protection, server is reachable)"
@@ -174,18 +184,6 @@ function Test-ExternalLink {
                 Error = $_.Exception.Message
                 StatusCode = $getStatusCode
             }
-        } catch {
-            return @{
-                Success = $false
-                Error = $_.Exception.Message
-                StatusCode = $null
-            }
-        }
-    } catch {
-        return @{
-            Success = $false
-            Error = $_.Exception.Message
-            StatusCode = $null
         }
     }
 }
@@ -246,25 +244,23 @@ function Test-ExternalLinksFromPage {
                         try {
                             $response = Invoke-WebRequest -Uri $Url -Method Head -UseBasicParsing -TimeoutSec $TimeoutSec -ErrorAction Stop
                             return @{ Success = $true; StatusCode = $response.StatusCode; ResponseTime = $null }
-                        } catch [System.Net.WebException] {
-                            $statusCode = $_.Exception.Response.StatusCode.value__
+                        } catch {
+                            $statusCode = $null
+                            if ($_.Exception.Response) { $statusCode = [int]$_.Exception.Response.StatusCode }
                             if ($statusCode -eq 403) {
-                                return @{ Success = $true; StatusCode = 403; ResponseTime = $null; Note = "403 Forbidden (bot protection, server is reachable)" }
+                                return @{ Success = $true; Warning = $true; StatusCode = 403; ResponseTime = $null; Note = "403 Forbidden (bot protection, server is reachable)" }
                             }
                             try {
                                 $response = Invoke-WebRequest -Uri $Url -UseBasicParsing -TimeoutSec $TimeoutSec -ErrorAction Stop
                                 return @{ Success = $true; StatusCode = $response.StatusCode; ResponseTime = $null; Note = "HEAD failed, GET succeeded" }
-                            } catch [System.Net.WebException] {
-                                $getStatusCode = $_.Exception.Response.StatusCode.value__
+                            } catch {
+                                $getStatusCode = $null
+                                if ($_.Exception.Response) { $getStatusCode = [int]$_.Exception.Response.StatusCode }
                                 if ($getStatusCode -eq 403) {
-                                    return @{ Success = $true; StatusCode = 403; ResponseTime = $null; Note = "403 Forbidden (bot protection, server is reachable)" }
+                                    return @{ Success = $true; Warning = $true; StatusCode = 403; ResponseTime = $null; Note = "403 Forbidden (bot protection, server is reachable)" }
                                 }
                                 return @{ Success = $false; Error = $_.Exception.Message; StatusCode = $getStatusCode }
-                            } catch {
-                                return @{ Success = $false; Error = $_.Exception.Message; StatusCode = $null }
                             }
-                        } catch {
-                            return @{ Success = $false; Error = $_.Exception.Message; StatusCode = $null }
                         }
                     }
                     
@@ -289,7 +285,10 @@ function Test-ExternalLinksFromPage {
                 $results += $result
                 
                 if ($result.Success) {
-                    if ($ShowDetails) {
+                    if ($result.Warning) {
+                        $note = if ($result.Note) { " ($($result.Note))" } else { "" }
+                        Write-Host "    [WARN] $($result.Url) (Status: $($result.StatusCode))$note" -ForegroundColor Yellow
+                    } elseif ($ShowDetails) {
                         $note = if ($result.Note) { " ($($result.Note))" } else { "" }
                         Write-Host "    [PASS] $($result.Url) (Status: $($result.StatusCode))$note" -ForegroundColor Green
                     }
