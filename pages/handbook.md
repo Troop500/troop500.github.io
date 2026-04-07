@@ -14,13 +14,13 @@ permalink: /handbook
 
 {% include content/lake-erie-council.md %}
 
+{% include content/leadership-organization.md %}
+
 {% include content/parents-guide.md %}
 
 {% include content/advancement-guide.md %}
 
-{% include content/getting-involved-parents.md %}
-
-{% include content/leadership-organization.md %}
+{% include content/leaders-guide.md %}
 
 {% include content/annual-planning.md %}
 
