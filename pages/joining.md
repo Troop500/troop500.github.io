@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to Join Troop 500G
-permalink: /families
+permalink: /joining
 ---
 
 Welcome to Scouting America Troop 500G! We are a female Scouting America troop operating out of Solon, Ohio, chartered by Advent Lutheran Church through the Lake Erie Council. We are happy to have you and your daughter join us for the awesome adventure of Scouting!
@@ -22,7 +22,7 @@ Once your Scout joins, here's what to expect:
 
 1. **Joining Conference** — Every new Scout family participates in a joining conference with troop leadership before their Scout's first overnight camping experience. This friendly meeting helps us understand your Scout's strengths, interests, and any considerations for their success. [Learn more]({{ site.baseurl }}/handbook#conference-communications)
 
-2. **Get Connected** — We'll add you to our GroupMe groups and make sure you have access to Scoutbook and the troop Google Calendar.
+2. **Get Connected** — We'll add you to our GroupMe groups and make sure you have access to the troop Google Calendar. We'll also invite your Scout to [Scoutbook](https://scoutbook.scouting.org/) — Scouting America's official platform for tracking rank advancement, merit badges, and attendance. Parents can log in to view their Scout's progress, approve advancement, and stay informed on upcoming activities.
 
 3. **Complete Required Paperwork** — Annual Health and Medical Record (Parts A & B), Social Media Waiver, and Safeguarding Youth training. Details are in our [Getting Started guide]({{ site.baseurl }}/handbook#getting-started---parents-information).
 
