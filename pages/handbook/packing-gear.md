@@ -4,8 +4,6 @@ title: "Packing Lists & Gear"
 permalink: /handbook/packing-gear
 ---
 
-# Packing Lists & Gear
-
 Proper packing and gear selection are essential for safe, comfortable, and successful outdoor adventures. This section provides comprehensive packing guidance for various activities.
 
 ## The Ten Essentials
