@@ -1,4 +1,4 @@
-# Resources & Equipment
+# Equipment
 
 ## Personal Equipment
 
@@ -38,15 +38,4 @@ View our complete equipment inventory in the [Files section]({{ site.baseurl }}/
 Regular maintenance of troop equipment is essential for safety and longevity. Scouts participate in equipment maintenance as part of their service hours and skill development.
 
 See our [Troop Gear Maintenance]({{ site.baseurl }}/troop-gear-maintenance) guide for detailed maintenance procedures, including equipment check-out tracking, the Quartermaster's Report, and pre-trip inspection checklists.
-
-## Duty Roster
-
-All troop members participate in setup, cleanup, and maintenance activities through our [duty roster system]({{ site.baseurl }}/duty-roster). This teaches responsibility and ensures that everyone contributes to troop operations.
-
-## Grubmaster Resources
-
-Our grubmaster program includes comprehensive resources for meal planning and outdoor cooking:
-
-- [Grubmaster 101]({{ site.baseurl }}/grubmaster-101) - Introduction to meal planning and basic cooking
-- [Grubmaster 201]({{ site.baseurl }}/grubmaster-201) - Advanced techniques and menu ideas
 

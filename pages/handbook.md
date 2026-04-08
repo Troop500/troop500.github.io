@@ -32,7 +32,7 @@ permalink: /handbook
 
 {% include content/policies-safety.md %}
 
-{% include content/resources-equipment.md %}
+{% include content/equipment.md %}
 
 {% include content/contact-info.md %}
 
