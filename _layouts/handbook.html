@@ -13,7 +13,7 @@ layout: default
 .handbook-sidebar {
   flex: 0 0 250px;
   position: sticky;
-  top: 2rem;
+  top: 80px; /* clear the fixed site-header (56px) + breathing room */
   height: fit-content;
   background: #f8f9fa;
   border: 1px solid #dee2e6;
@@ -124,7 +124,9 @@ layout: default
 document.addEventListener('DOMContentLoaded', function() {
   const tocContainer = document.getElementById('handbook-toc');
   const headings = document.querySelectorAll('.handbook-content h1, .handbook-content h2');
-  const SCROLL_OFFSET = 20; // px above heading to stop
+  // Account for the fixed site-header plus a small breathing room
+  const siteHeader = document.querySelector('.site-header');
+  const SCROLL_OFFSET = (siteHeader ? siteHeader.offsetHeight : 0) + 16;
 
   // Track used IDs to guarantee uniqueness
   const usedIds = new Set();
@@ -286,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, {
-    rootMargin: '-10% 0px -80% 0px', // trigger when heading is in top 20% of viewport
+    rootMargin: '-' + SCROLL_OFFSET + 'px 0px -70% 0px',
     threshold: 0
   });
 
