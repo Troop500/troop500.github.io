@@ -33,7 +33,7 @@ View our complete equipment inventory in the [Files section]({{ site.baseurl }}/
 
 Regular maintenance of troop equipment is essential for safety and longevity. Scouts participate in equipment maintenance as part of their service hours and skill development.
 
-See our [Troop Gear Maintenance]({{ site.baseurl }}/troop-gear-maintenance) guide for detailed maintenance procedures.
+See our [Troop Gear Maintenance]({{ site.baseurl }}/troop-gear-maintenance) guide for detailed maintenance procedures, including equipment check-out tracking, the Quartermaster's Report, and pre-trip inspection checklists.
 
 ## Duty Roster
 
