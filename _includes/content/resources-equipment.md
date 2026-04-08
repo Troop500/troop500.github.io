@@ -29,6 +29,10 @@ The troop maintains a variety of equipment available for Scout use:
 
 View our complete equipment inventory in the [Files section]({{ site.baseurl }}/files).
 
+## Winter Camping Gear
+
+{% include content/handbook/winter-gear.md %}
+
 ## Equipment Maintenance
 
 Regular maintenance of troop equipment is essential for safety and longevity. Scouts participate in equipment maintenance as part of their service hours and skill development.
