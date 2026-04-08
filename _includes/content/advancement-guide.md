@@ -48,7 +48,6 @@ Your Scout rank covers the essential knowledge every Scout needs. Here's what yo
 
 **Scout Participation**
 - **Scoutmaster conference**: A friendly one-on-one chat with your Scoutmaster about what you've learned
-- **Board of review**: Meet with adult leaders to share your Scout knowledge and experience
 
 ### Requirements Process: How Advancement Works
 
@@ -101,7 +100,7 @@ By the end of your first 30 days, you'll have:
 **Achievement and Recognition**
 - Earned your Scout rank - your first official milestone!
 - Received your Scout rank patch to wear on your uniform
-- Completed your first Scoutmaster conference and board of review
+- Completed your first Scoutmaster conference
 - Set goals for your continued advancement toward Tenderfoot rank
 
 ---
@@ -209,10 +208,24 @@ Service is a core part of Scouting, and you'll have many opportunities to help o
 
 ### Conferences and Reviews
 
-- Every rank requires a Scoutmaster Conference
-- Ranks beyond Scout Rank also require a Board of Review
+Scoutmaster Conferences and Boards of Review are required steps in the advancement process. Rather than repeating these at every rank, here is how they work:
 
-Each rank advancement requires a board of review, where Scouts discuss their experiences and demonstrate their understanding of Scouting principles with adult leaders.
+**Scoutmaster Conference**
+- Required for **every rank**, including Scout
+- A one-on-one conversation between the Scout and a Scoutmaster or Assistant Scoutmaster
+- Not a test — this is a discussion about the Scout's experience, goals, and growth
+- Schedule with a Scoutmaster or Assistant Scoutmaster when you are ready to advance
+
+**Board of Review**
+- Required for **all ranks beyond Scout** (Tenderfoot through Eagle)
+- A meeting with members of the troop committee to discuss the Scout's Scouting experience
+- Not a retest of requirements — requirements must already be signed off before the Board of Review
+- Schedule through the Advancement Coordinator or Committee Chair
+- **Eagle Board of Review**: Unlike other ranks, the Eagle Board of Review is conducted at the **council level**, not by the troop
+
+For more information, see the [Guide to Advancement](https://www.scouting.org/resources/guide-to-advancement/).
+
+A Board of Review is not a retest — it is a friendly conversation with committee members about the Scout's experience, what they've learned, and how they've grown. The only way a Scout does not pass a Board of Review is by arriving without all requirements for the rank already signed off.
 
 ### Merit Badge System
 
@@ -271,39 +284,32 @@ The Eagle Scout rank is Scouting's highest achievement, representing years of gr
 
 ### Star Scout Requirements
 
-**Merit Badges**: Earn 6 merit badges (4 must be from Eagle-required list)
+**Merit Badges**: Earn 6 merit badges (4 must be from the Eagle-required list)
+**Time in Rank**: At least 4 months as a First Class Scout
 **Leadership**: Serve actively in a leadership position for 4 months
 **Service**: Complete 6 hours of community service
-**Skills**: Demonstrate Scout spirit and outdoor skills proficiency
+**Scoutmaster Conference and Board of Review**: Required
+
+For detailed requirements, see the [Star Scout Requirements](https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/star/).
 
 ### Life Scout Requirements
 
-**Merit Badges**: Earn 5 additional merit badges (3 must be from Eagle-required list)
+**Merit Badges**: Earn 5 additional merit badges (3 must be from the Eagle-required list) for a total of 11
+**Time in Rank**: At least 6 months as a Star Scout
 **Leadership**: Serve actively in a leadership position for 6 months
 **Service**: Complete 6 hours of community service
-**Skills**: Plan, develop, and lead a service project
+**Scoutmaster Conference and Board of Review**: Required
+
+For detailed requirements, see the [Life Scout Requirements](https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/life/).
 
 ### Eagle Scout Requirements
 
+**Time in Rank**: At least 6 months as a Life Scout
+
 ### Merit Badge Requirements
-**Total**: 21 merit badges (including 13 specific Eagle-required badges)
+**Total**: 21 merit badges (including 13 specific Eagle-required badges and 8 elective badges of your choice)
 
-**Eagle-Required Merit Badges (All 13 Required)**:
-1. **First Aid** - Emergency response and medical skills
-2. **Citizenship in the Community** - Local civic engagement
-3. **Citizenship in the Nation** - National civic responsibility
-4. **Citizenship in the World** - Global awareness and responsibility
-5. **Communication** - Written and verbal communication skills
-6. **Personal Fitness** - Physical health and wellness
-7. **Emergency Preparedness** OR **Lifesaving** - Crisis response skills
-8. **Environmental Science** OR **Sustainability** - Environmental stewardship
-9. **Personal Management** - Financial literacy and life skills
-10. **Swimming** OR **Hiking** OR **Cycling** - Physical fitness activity
-11. **Camping** - Advanced outdoor skills
-12. **Cooking** - Food preparation and nutrition
-13. **Family Life** - Relationship and family skills
-
-**Additional Merit Badges**: 8 merit badges of your choice from any available options
+{% include content/handbook/eagle-merit-badges.md %}
 
 ### Leadership Requirement
 **Position**: Serve actively in a leadership position for 6 months, including:
@@ -324,6 +330,9 @@ The Eagle Scout rank is Scouting's highest achievement, representing years of gr
 ### Service Requirements
 **Community Service**: Complete 6 hours of community service
 **Eagle Scout Service Project**: Plan, develop, and lead a service project that benefits a religious institution, school, or community organization (not Scouting)
+**Scoutmaster Conference and Board of Review**: Required — the Eagle Board of Review is conducted at the council level, not by the troop
+
+For detailed requirements, see the [Eagle Scout Requirements](https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle/).
 
 ### The Eagle Scout Service Project
 
