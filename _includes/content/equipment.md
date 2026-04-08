@@ -10,6 +10,27 @@ Scouts are responsible for acquiring and maintaining their own personal camping 
 - Backpack / Duffle Bag
 - Personal camping items
 
+### The Ten Essentials
+
+Every Scout should carry these items on any camping trip or hike:
+
+1. Pocketknife (when you complete the Totin' Chip training)
+2. First Aid Kit
+3. Extra clothing
+4. Rain gear
+5. Filled water bottle (1 liter)
+6. Flashlight or headlamp
+7. Trail food
+8. Matches/fire starter (when you complete the Firem'n Chit training)
+9. Sun protection (e.g. hat, sunscreen)
+10. Map and compass
+
+### Beyond the Ten
+
+11. Insect repellant
+12. Safety whistle
+13. Toilet paper (small roll in a plastic bag)
+
 See our [Tent Camping List]({{ site.baseurl }}/tent-camping-list) for complete packing guidance.
 
 ## Troop Equipment
