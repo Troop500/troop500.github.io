@@ -22,8 +22,6 @@ permalink: /handbook
 
 {% include content/leaders-guide.md %}
 
-{% include content/annual-planning.md %}
-
 {% include content/outdoor-program.md %}
 
 {% include content/accessibility-inclusion.md %}

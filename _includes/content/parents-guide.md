@@ -141,6 +141,10 @@ Our troop provides an accessible and inclusive environment for every eligible yo
 
 ---
 
+{% include content/handbook/first-planning-conference.md %}
+
+---
+
 ## The First Summer Camp
 
 Summer camp is a week-long adventure that accelerates your Scout's advancement and skill development. It's often the highlight of the Scouting year — and a bigger commitment for families than a weekend campout.
