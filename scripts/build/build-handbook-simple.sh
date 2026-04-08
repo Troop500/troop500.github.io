@@ -344,11 +344,13 @@ for appendix_file in "$APPENDIX_DIR"/*.md; do
         echo "   📖 Creating PDF for $filename..."
         
         # Generate PDF using Pandoc with appendix template
+        # --shift-heading-level-by=-1 promotes ## to # for standalone PDFs
         pandoc "/tmp/handbook-processed/${filename}-processed.md" \
             --from markdown \
             --to pdf \
             --pdf-engine=xelatex \
             --template=templates/appendix.latex \
+            --shift-heading-level-by=-1 \
             --variable=date:"$CURRENT_DATE" \
             --variable=timestamp:"$TIMESTAMP" \
             --output="assets/files/handbook/appendix/$APPENDIX_PDF_DATED" \
