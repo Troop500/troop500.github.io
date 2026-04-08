@@ -10,36 +10,10 @@ echo "========================================"
 # Create temporary and output directories
 mkdir -p /tmp/handbook-processed
 mkdir -p assets/files/handbook/appendix
-mkdir -p assets/files/handbook/appendix/archive
 
 CURRENT_DATE=$(date +"%B %Y")
 
-# Reuse timestamp from build-handbook.sh if available, otherwise generate new
-if [ -f /tmp/handbook-processed/timestamp.txt ]; then
-    TIMESTAMP=$(cat /tmp/handbook-processed/timestamp.txt)
-    echo "📅 Reusing timestamp from handbook build: $TIMESTAMP"
-else
-    TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-    echo "📅 Generated new timestamp: $TIMESTAMP"
-fi
-
 APPENDIX_DIR="_includes/content/appendix"
-
-echo "📁 Archiving old appendix PDF files..."
-for file in assets/files/handbook/appendix/*-[0-9]*.pdf; do
-    if [ -f "$file" ] && [[ "$file" != *"latest"* ]]; then
-        mv "$file" assets/files/handbook/appendix/archive/ 2>/dev/null || true
-    fi
-done
-
-echo "🧹 Cleaning appendix archive (keeping last 5 versions of each type)..."
-cd assets/files/handbook/appendix/archive/
-for prefix in $(ls *.pdf 2>/dev/null | sed 's/-[0-9][0-9]*_.*//' | sort -u); do
-    if ls ${prefix}-*.pdf 1> /dev/null 2>&1; then
-        ls -1 ${prefix}-*.pdf | sort -r | tail -n +6 | xargs rm -f 2>/dev/null || true
-    fi
-done
-cd - > /dev/null
 
 # Track results
 TOTAL_APPENDIX=0
@@ -83,9 +57,8 @@ for appendix_file in "$APPENDIX_DIR"/*.md; do
             python3 /scripts/utils/convert_images_to_latex.py "/tmp/handbook-processed/${filename}-processed.md" || true
         fi
         
-        # Define output filenames
-        APPENDIX_PDF_DATED="${filename}-${TIMESTAMP}.pdf"
-        APPENDIX_PDF_LATEST="${filename}-latest.pdf"
+        # Define output filename—simple, no timestamp
+        APPENDIX_PDF="${filename}.pdf"
         
         echo "   📖 Creating PDF for $filename..."
         
@@ -98,19 +71,13 @@ for appendix_file in "$APPENDIX_DIR"/*.md; do
             --template=templates/appendix.latex \
             --shift-heading-level-by=-1 \
             --variable=date:"$CURRENT_DATE" \
-            --variable=timestamp:"$TIMESTAMP" \
-            --output="assets/files/handbook/appendix/$APPENDIX_PDF_DATED" \
+            --output="assets/files/handbook/appendix/$APPENDIX_PDF" \
             --verbose || true
         
         # Verify PDF was created
-        if [ -s "assets/files/handbook/appendix/$APPENDIX_PDF_DATED" ]; then
+        if [ -s "assets/files/handbook/appendix/$APPENDIX_PDF" ]; then
             PASSED_APPENDIX=$((PASSED_APPENDIX + 1))
-            echo "   ✅ Created: $APPENDIX_PDF_DATED ($(stat -c%s "assets/files/handbook/appendix/$APPENDIX_PDF_DATED") bytes)"
-            
-            # Create latest version copy
-            echo "   🔗 Creating latest file copy for $filename..."
-            cp "assets/files/handbook/appendix/$APPENDIX_PDF_DATED" "assets/files/handbook/appendix/$APPENDIX_PDF_LATEST"
-            echo "   🔗 Created: $APPENDIX_PDF_LATEST"
+            echo "   ✅ Created: $APPENDIX_PDF ($(stat -c%s "assets/files/handbook/appendix/$APPENDIX_PDF") bytes)"
         else
             FAILED_APPENDIX=$((FAILED_APPENDIX + 1))
             echo "   ❌ Failed to create PDF for $filename"
@@ -134,11 +101,7 @@ if ls assets/files/handbook/appendix/*.pdf 1> /dev/null 2>&1; then
     for pdf in assets/files/handbook/appendix/*.pdf; do
         if [ -f "$pdf" ]; then
             size=$(stat -c%s "$pdf" 2>/dev/null || echo "?")
-            if [[ "$pdf" == *"latest"* ]]; then
-                echo "   🔗 $(basename "$pdf") ($size bytes)"
-            else
-                echo "   📋 $(basename "$pdf") ($size bytes)"
-            fi
+            echo "   📋 $(basename "$pdf") ($size bytes)"
         fi
     done
 fi

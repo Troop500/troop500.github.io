@@ -1,6 +1,6 @@
 ## Appendix D: Troop Contact Information
 
-**📋 Download as PDF:** [Troop Contact Information (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/contact-info-latest.pdf)
+**📋 Download as PDF:** [Troop Contact Information (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/contact-info.pdf)
 
 ### Chartered Organization
 

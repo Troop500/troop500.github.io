@@ -13,8 +13,6 @@ param(
     [string]$PdfDirectory = "assets/files/handbook",
     [int]$TimeoutSec = 10,
     [int]$MaxConcurrency = 3,
-    [switch]$IncludeLatest,
-    [switch]$IncludeArchive,
     [switch]$ReportIssues,
     [switch]$ShowDetails,
     [switch]$Help
@@ -304,9 +302,7 @@ function Test-LinksInPdf {
 function Get-PdfFilesToTest {
     param(
         [string[]]$PdfPaths = @(),
-        [string]$PdfDirectory = "assets/files/handbook",
-        [switch]$IncludeLatest,
-        [switch]$IncludeArchive
+        [string]$PdfDirectory = "assets/files/handbook"
     )
     
     $pdfFiles = @()
@@ -322,26 +318,9 @@ function Get-PdfFilesToTest {
     
     # Add PDFs from directory if specified
     if (-not [string]::IsNullOrEmpty($PdfDirectory) -and (Test-Path $PdfDirectory)) {
-        $searchPatterns = @()
-        
-        if ($IncludeLatest) {
-            $searchPatterns += "*-latest.pdf"
-        }
-        
-        # Always include timestamped PDFs
-        $searchPatterns += "*-20*.pdf"
-        
-        foreach ($pattern in $searchPatterns) {
-            # Always recurse into subdirectories (e.g., appendix/) to find all PDFs
-            $foundPdfs = Get-ChildItem -Path $PdfDirectory -Filter $pattern -Recurse | Where-Object { -not $_.PSIsContainer }
-            
-            if (-not $IncludeArchive) {
-                # Exclude archive directories unless explicitly requested
-                $foundPdfs = $foundPdfs | Where-Object { $_.FullName -notlike '*archive*' }
-            }
-            
-            $pdfFiles += $foundPdfs.FullName
-        }
+        # Recurse into subdirectories (e.g., appendix/) to find all PDFs
+        $foundPdfs = Get-ChildItem -Path $PdfDirectory -Filter "*.pdf" -Recurse | Where-Object { -not $_.PSIsContainer }
+        $pdfFiles += $foundPdfs.FullName
     }
     
     return $pdfFiles | Sort-Object -Unique
@@ -354,8 +333,6 @@ function Test-LinksInPdfs {
         [string]$PdfDirectory = "assets/files/handbook",
         [int]$TimeoutSec = 10,
         [int]$MaxConcurrency = 3,
-        [switch]$IncludeLatest,
-        [switch]$IncludeArchive,
         [switch]$ShowDetails
     )
     
@@ -368,7 +345,7 @@ function Test-LinksInPdfs {
     Write-Host "PDF text extraction tools available: $($availableTools -join ', ')" -ForegroundColor Green
     
     # Find PDF files to test
-    $pdfFiles = Get-PdfFilesToTest -PdfPaths $PdfPaths -PdfDirectory $PdfDirectory -IncludeLatest:$IncludeLatest -IncludeArchive:$IncludeArchive
+    $pdfFiles = Get-PdfFilesToTest -PdfPaths $PdfPaths -PdfDirectory $PdfDirectory
     
     if ($pdfFiles.Count -eq 0) {
         Write-Host "No PDF files found to test" -ForegroundColor Yellow
@@ -415,15 +392,13 @@ PDF Links Testing Module
 
 USAGE:
     .\test-pdf-links.ps1 [-PdfPaths <paths>] [-PdfDirectory <dir>] [-TimeoutSec <seconds>] 
-                         [-MaxConcurrency <num>] [-IncludeLatest] [-IncludeArchive] [-Verbose] [-Help]
+                         [-MaxConcurrency <num>] [-Verbose] [-Help]
 
 OPTIONS:
     -PdfPaths        Specific PDF file paths to test
     -PdfDirectory    Directory to scan for PDFs (default: assets/files/handbook)
     -TimeoutSec      Timeout for each link test (default: 10)
     -MaxConcurrency  Maximum concurrent link tests (default: 3)
-    -IncludeLatest   Include *-latest.pdf files instead of timestamped versions
-    -IncludeArchive  Include archive subdirectories in search
     -Verbose         Show detailed results for each link
     -Help            Show this help message
 
@@ -434,10 +409,10 @@ PREREQUISITES:
     - PdfSharp PowerShell module
 
 EXAMPLES:
-    .\test-pdf-links.ps1                                    # Test timestamped PDFs in default directory
-    .\test-pdf-links.ps1 -IncludeLatest -Verbose           # Test latest PDFs with detailed output
+    .\test-pdf-links.ps1                                    # Test all PDFs in default directory
+    .\test-pdf-links.ps1 -Verbose                           # Test with detailed output
     .\test-pdf-links.ps1 -PdfPaths @("path/to/file.pdf")   # Test specific PDF file
-    .\test-pdf-links.ps1 -IncludeArchive -MaxConcurrency 5 # Test all PDFs including archives
+    .\test-pdf-links.ps1 -MaxConcurrency 5                  # Test with higher concurrency
 
 This module can also be imported into other scripts:
     . .\test-pdf-links.ps1
@@ -448,7 +423,7 @@ This module can also be imported into other scripts:
 
 # Run tests if not being imported as module
 if ($MyInvocation.InvocationName -ne '.') {
-    $results = Test-LinksInPdfs -PdfPaths $PdfPaths -PdfDirectory $PdfDirectory -TimeoutSec $TimeoutSec -MaxConcurrency $MaxConcurrency -IncludeLatest:$IncludeLatest -IncludeArchive:$IncludeArchive -ShowDetails:$ShowDetails
+    $results = Test-LinksInPdfs -PdfPaths $PdfPaths -PdfDirectory $PdfDirectory -TimeoutSec $TimeoutSec -MaxConcurrency $MaxConcurrency -ShowDetails:$ShowDetails
     
     if ($results.FailedLinks -eq 0) {
         Write-Host "`nALL PDF LINKS PASSED!" -ForegroundColor Green

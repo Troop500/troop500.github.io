@@ -234,14 +234,14 @@ Edit the file directly in `_includes/content/` — changes appear in both web an
 
 ### PDF Generation
 
-The system produces two PDF documents:
+The system produces PDF documents for the handbook and each appendix:
 
 | File | Contents |
 |---|---|
-| `troop-handbook-*.pdf` | Complete handbook with all sections |
-| `contact-info-*.pdf` | Leadership and contact directory |
+| `troop-handbook.pdf` | Complete handbook with all sections |
+| `appendix/{name}.pdf` | Individual appendix PDFs (contact-info, scout-camps, etc.) |
 
-Each PDF gets a timestamped version (`*-YYYYMMDD_HHMMSS.pdf`) and an auto-updated `*-latest.pdf`.
+PDFs are built fresh on each CI run with simple, stable filenames — no timestamps or versioning.
 
 **Pipeline:** Markdown → strip Jekyll syntax → convert HTML images to LaTeX → Pandoc → PDF
 

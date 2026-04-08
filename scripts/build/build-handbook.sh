@@ -10,31 +10,11 @@ echo "================================================="
 # Create temporary and output directories
 mkdir -p /tmp/handbook-processed
 mkdir -p assets/files/handbook
-mkdir -p assets/files/handbook/archive
 
 CURRENT_DATE=$(date +"%B %Y")
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 
-# Save timestamp so build-appendices.sh can reuse it
-echo "$TIMESTAMP" > /tmp/handbook-processed/timestamp.txt
-
-echo "📁 Archiving old handbook PDF files..."
-for file in assets/files/handbook/troop-handbook-[0-9]*.pdf; do
-    if [ -f "$file" ] && [[ "$file" != *"latest"* ]]; then
-        mv "$file" assets/files/handbook/archive/ 2>/dev/null || true
-    fi
-done
-
-echo "🧹 Cleaning archive (keeping last 5 versions)..."
-cd assets/files/handbook/archive/
-if ls troop-handbook-*.pdf 1> /dev/null 2>&1; then
-    ls -1 troop-handbook-*.pdf | sort -r | tail -n +6 | xargs rm -f 2>/dev/null || true
-    echo "   📖 Handbook archive: kept $(ls troop-handbook-*.pdf 2>/dev/null | wc -l) versions"
-fi
-cd - > /dev/null
-
-# Define unique filenames
-HANDBOOK_PDF="troop-handbook-${TIMESTAMP}.pdf"
+# Single output filename — no timestamps, no archiving
+HANDBOOK_PDF="troop-handbook.pdf"
 
 echo "🔄 Processing main handbook file (same as website)..."
 
@@ -187,26 +167,8 @@ else
     echo "✅ Handbook PDF created: $HANDBOOK_PDF ($(stat -c%s "assets/files/handbook/$HANDBOOK_PDF") bytes)"
 fi
 
-# Create copies for latest versions (for consistent URLs)
 echo ""
-echo "🔗 Creating latest file copies..."
-cd assets/files/handbook
-
-sleep 2
-
-if [ -f "$HANDBOOK_PDF" ] && [ -s "$HANDBOOK_PDF" ]; then
-    cp "$HANDBOOK_PDF" "troop-handbook-latest.pdf"
-    if [ -s "troop-handbook-latest.pdf" ]; then
-        echo "🔗 Created: troop-handbook-latest.pdf ($(stat -c%s "$HANDBOOK_PDF") bytes)"
-    else
-        echo "⚠️  Failed to copy: troop-handbook-latest.pdf"
-    fi
-else
-    echo "⚠️  Source not found or empty: $HANDBOOK_PDF"
-    ls -la "$HANDBOOK_PDF" 2>/dev/null || echo "   File does not exist"
-fi
-
-cd - > /dev/null
+echo "✅ Handbook PDF build complete!"
 
 # Summary
 echo ""
@@ -215,7 +177,6 @@ echo "📖 Handbook PDF Build Summary"
 echo "================================================="
 echo "📁 Output directory: assets/files/handbook/"
 echo "📖 Main handbook: $HANDBOOK_PDF"
-echo "🔗 Latest: troop-handbook-latest.pdf"
 
 # Exit with error if handbook PDF failed
 if [ "${HANDBOOK_FAILED:-}" = "true" ]; then

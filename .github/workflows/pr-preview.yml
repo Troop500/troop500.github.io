@@ -34,14 +34,23 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate PDFs
+      - name: Generate Handbook PDF
         run: |
           mkdir -p assets/files/handbook
           docker run --rm \
             --user root \
             -v ${{ github.workspace }}:/srv/jekyll \
             ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest \
-            bash /srv/jekyll/scripts/build/build-handbook-simple.sh
+            bash /srv/jekyll/scripts/build/build-handbook.sh
+
+      - name: Generate Appendix PDFs
+        run: |
+          mkdir -p assets/files/handbook/appendix
+          docker run --rm \
+            --user root \
+            -v ${{ github.workspace }}:/srv/jekyll \
+            ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest \
+            bash /srv/jekyll/scripts/build/build-appendices.sh
 
       - name: Upload PDF artifacts
         uses: actions/upload-artifact@v7

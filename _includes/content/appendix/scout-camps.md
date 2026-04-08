@@ -1,6 +1,6 @@
 ## Appendix B: Scout Camps We Frequent
 
-**📋 Download as PDF:** [Scout Camps We Frequent (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/scout-camps-latest.pdf)
+**📋 Download as PDF:** [Scout Camps We Frequent (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/scout-camps.pdf)
 
 Our troop has experience with many excellent Scout camps throughout Ohio and the surrounding region. These camps offer diverse programs, beautiful settings, and memorable experiences for our Scouts.
 

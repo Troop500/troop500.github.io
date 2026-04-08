@@ -117,7 +117,7 @@ jobs:
           path: jekyll-image.tar.gz
           retention-days: 1
 
-  build-pdfs:
+  build-appendix-pdfs:
     runs-on: ubuntu-latest
     needs: prepare-pandoc
     steps:
@@ -143,6 +143,29 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest \
             bash /srv/jekyll/scripts/build/build-appendices.sh
 
+      - name: Upload Appendix PDF artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: appendix-pdfs
+          path: assets/files/handbook/appendix/
+
+  build-handbook-pdf:
+    runs-on: ubuntu-latest
+    needs: prepare-pandoc
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download pandoc image artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: pandoc-image
+
+      - name: Load pandoc image
+        run: |
+          docker load < pandoc-image.tar.gz
+          rm pandoc-image.tar.gz
+
       - name: Build Handbook PDF
         run: |
           mkdir -p assets/files/handbook
@@ -152,11 +175,12 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest \
             bash /srv/jekyll/scripts/build/build-handbook.sh
 
-      - name: Upload PDF artifacts
+      - name: Upload Handbook PDF artifacts
         uses: actions/upload-artifact@v7
         with:
-          name: handbook-pdfs
-          path: assets/files/handbook/
+          name: handbook-pdf
+          path: |
+            assets/files/handbook/*.pdf
 
   build-jekyll:
     runs-on: ubuntu-latest
@@ -211,7 +235,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: [build-jekyll, build-pdfs]
+    needs: [build-jekyll, build-handbook-pdf, build-appendix-pdfs]
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -222,11 +246,17 @@ jobs:
           name: jekyll-site
           path: ./_site/
 
-      - name: Download PDF artifacts
+      - name: Download Handbook PDF artifact
         uses: actions/download-artifact@v8
         with:
-          name: handbook-pdfs
+          name: handbook-pdf
           path: ./_site/assets/files/handbook/
+
+      - name: Download Appendix PDF artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: appendix-pdfs
+          path: ./_site/assets/files/handbook/appendix/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.8.0
@@ -294,35 +324,57 @@ jobs:
       - name: Test external links
         run: pwsh scripts/test/test-external-links.ps1 -BaseUrl "${{ steps.site.outputs.url }}"
 
-  test-pdf-existence:
+  test-handbook-existence:
     runs-on: ubuntu-latest
-    needs: build-pdfs
+    needs: build-handbook-pdf
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Download PDF artifacts
+      - name: Download Handbook PDF artifact
         uses: actions/download-artifact@v8
         with:
-          name: handbook-pdfs
+          name: handbook-pdf
           path: assets/files/handbook/
 
-      - name: Verify expected PDFs exist
-        run: pwsh scripts/test/test-pdf-existence.ps1 -PdfDirectory "assets/files/handbook" -SourceDirectory "_includes/content/appendix" -RequireLatest
+      - name: Verify Handbook PDF exists
+        run: pwsh scripts/test/test-pdf-existence.ps1 -PdfDirectory "assets/files/handbook" -Mode Handbook
+
+  test-appendix-existence:
+    runs-on: ubuntu-latest
+    needs: build-appendix-pdfs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download Appendix PDF artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: appendix-pdfs
+          path: assets/files/handbook/appendix/
+
+      - name: Verify Appendix PDFs exist
+        run: pwsh scripts/test/test-pdf-existence.ps1 -PdfDirectory "assets/files/handbook" -SourceDirectory "_includes/content/appendix" -Mode Appendix
 
   test-pdf-links:
     runs-on: ubuntu-latest
-    needs: build-pdfs
+    needs: [build-handbook-pdf, build-appendix-pdfs]
     continue-on-error: ${{ vars.WARN_ONLY_PDF_LINKS != 'false' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Download PDF artifacts
+      - name: Download Handbook PDF artifact
         uses: actions/download-artifact@v8
         with:
-          name: handbook-pdfs
+          name: handbook-pdf
           path: assets/files/handbook/
+
+      - name: Download Appendix PDF artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: appendix-pdfs
+          path: assets/files/handbook/appendix/
 
       - name: Test PDF links
         run: pwsh scripts/test/test-pdf-links.ps1 -PdfDirectory "assets/files/handbook"

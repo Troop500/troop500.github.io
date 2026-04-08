@@ -1,6 +1,6 @@
 ## Appendix A: Joining Conference
 
-**📋 Download as PDF:** [Joining Conference Template (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/joining-conference-template-latest.pdf)
+**📋 Download as PDF:** [Joining Conference Template (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/joining-conference-template.pdf)
 
 ### Overview
 

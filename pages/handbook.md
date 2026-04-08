@@ -30,7 +30,7 @@ permalink: /handbook
 
 {% include content/appendix/joining-conference-template.md %}
 
-**📋 Download this template as PDF:** [Joining Conference Template (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/joining-conference-template-latest.pdf)
+**📋 Download this template as PDF:** [Joining Conference Template (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/joining-conference-template.pdf)
 
 ---
 
@@ -44,4 +44,4 @@ permalink: /handbook
 
 {% include content/appendix/contact-info.md %}
 
-**📋 Download Contact Directory as PDF:** [Contact Directory (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/contact-info-latest.pdf)
+**📋 Download Contact Directory as PDF:** [Contact Directory (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/contact-info.pdf)
