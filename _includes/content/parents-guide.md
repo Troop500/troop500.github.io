@@ -109,7 +109,7 @@ Every new Scout family is required to participate in a joining conference with t
 
 The joining conference is scheduled within the first month after joining and serves as an important step in creating a supportive environment where every Scout can thrive. During the conference, we'll discuss how we can work together as partners to provide the best possible Scouting experience and establish open communication.
 
-**For detailed information about what to expect and how to prepare,** see our comprehensive [Conference Communications]({{ site.baseurl }}/handbook#conference-communications) section.
+For full details on what to expect and how to prepare, see the [Joining Conference Template]({{ site.baseurl }}/handbook#appendix-a-joining-conference) in the Appendix.
 
 ### Annual Health and Medical Record
 
@@ -140,6 +140,16 @@ Here are ways to support your Scout's success:
 
 **Advocate for Your Scout's Needs**
 Our troop provides an accessible and inclusive environment for every eligible youth. We will always do our best to support your scouts needs, but you can help our best be better. We require a joining meeting prior to your Scout's first overnight outing, but that's not the end of our discussion. You are encouraged to request a pre-event check-in with leaders attending any event (particularly helpful for summer camp) to ensure we can provide the best possible support for your Scout's success.
+
+### Support Conferences
+
+A Support Conference is an as-needed meeting between parents and leadership to address specific situations, plan for special events, or reassess a Scout's needs. Any leader, Scout, or parent may request a support conference at any time. These are especially helpful:
+
+- **Before major events** — summer camp, high adventure, or activities that may present unique challenges
+- **When needs change** — new medical considerations, behavioral concerns, or significant life changes
+- **To celebrate progress** — discuss next steps, leadership opportunities, or strategies for challenging advancement requirements
+
+To request a support conference, contact the Scoutmaster or any Assistant Scoutmaster. As with joining conferences, all information shared is kept confidential within our leadership team.
 
 ---
 

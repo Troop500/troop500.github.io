@@ -34,7 +34,7 @@ To join our troop, visit [BeAScout.scouting.org](https://beascout.scouting.org/)
 
 Once your Scout joins, here's what to expect:
 
-1. **Joining Conference** — Every new Scout family participates in a joining conference with troop leadership before their Scout's first overnight camping experience. This friendly meeting helps us understand your Scout's strengths, interests, and any considerations for their success. [Learn more]({{ site.baseurl }}/handbook#conference-communications)
+1. **Joining Conference** — Every new Scout family participates in a joining conference with troop leadership before their Scout's first overnight camping experience. This friendly meeting helps us understand your Scout's strengths, interests, and any considerations for their success. [Learn more]({{ site.baseurl }}/handbook#parents-guide)
 
 2. **Get Connected** — We'll add you to our GroupMe groups and make sure you have access to the troop Google Calendar. We'll also invite your Scout to [Scoutbook](https://scoutbook.scouting.org/) — Scouting America's official platform for tracking rank advancement, merit badges, and attendance. Parents can log in to view their Scout's progress, approve advancement, and stay informed on upcoming activities.
 

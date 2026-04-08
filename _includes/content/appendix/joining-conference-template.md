@@ -398,6 +398,34 @@ Accommodations/adaptations to implement:
 ________________________________________________________________
 ________________________________________________________________
 
+<!-- pagebreak -->
+
+## Support Conference
+
+A Support Conference is an as-needed follow-up meeting between parents and leadership. Any leader, Scout, or parent may request one at any time to revisit goals, address new challenges, or update support strategies.
+
+### When to Request a Support Conference
+
+**Event-Specific:**
+- Before major camping trips, summer camp, or high adventure activities
+- When leaders need additional information for specific events
+- Before participation in activities that may present unique challenges
+
+**Ongoing Support:**
+- When a Scout's needs or circumstances change
+- If behavioral or participation concerns arise
+- When parents have new concerns or need additional support
+- Following significant life changes (family situations, medical changes, etc.)
+
+**Success Planning:**
+- To celebrate progress and discuss next steps
+- When considering leadership positions or advanced opportunities
+- To plan strategies for challenging advancement requirements
+
+### Confidentiality
+
+Support conferences follow the same confidentiality guidelines as joining conferences. Information is shared only on a need-to-know basis to support your Scout's success.
+
 #### Troop Integration Plan
 
 - [ ] Patrol Assigned: ______________________________________________

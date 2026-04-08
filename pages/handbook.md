@@ -24,8 +24,6 @@ permalink: /handbook
 
 {% include content/outdoor-program.md %}
 
-{% include content/conference-communications.md %}
-
 {% include content/equipment.md %}
 
 ---
