@@ -117,7 +117,8 @@ try {
 # Test 7: Build script availability
 Write-Host "`n7. Build Scripts:" -ForegroundColor Yellow
 $buildScripts = @(
-    "build/build-handbook-simple.sh"
+    "build/build-handbook.sh",
+    "build/build-appendices.sh"
 )
 
 foreach ($script in $buildScripts) {

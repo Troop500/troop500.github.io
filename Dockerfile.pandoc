@@ -11,6 +11,6 @@ RUN chmod +x /scripts/build/*.sh
 # Set working directory to match Jekyll
 WORKDIR /srv/jekyll
 
-# Override the entrypoint and command to run our bash script
+# Override the entrypoint and command to run our build scripts
 ENTRYPOINT []
-CMD ["bash", "/scripts/build/build-handbook-simple.sh"]
+CMD ["bash", "-c", "/scripts/build/build-handbook.sh && /scripts/build/build-appendices.sh"]

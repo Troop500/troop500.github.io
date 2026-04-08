@@ -8,7 +8,8 @@ Build, test, and utility scripts for the Troop 500G website. For build/test/depl
 scripts/
 ├── build_and_test_pdf_first.ps1  # Main orchestrator script
 ├── build/                        # PDF generation (run inside Docker)
-│   └── build-handbook-simple.sh  # Handbook + appendix PDF generation
+│   ├── build-handbook.sh         # Phase 1: Handbook + contact info PDF
+│   └── build-appendices.sh       # Phase 2: Individual appendix PDFs
 ├── test/                         # Validation scripts (PowerShell)
 │   ├── test-appendix-pdfs.ps1    # Appendix PDF validation
 │   ├── test-external-links.ps1   # External link checking
