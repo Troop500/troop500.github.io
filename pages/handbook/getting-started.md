@@ -6,7 +6,7 @@ permalink: /handbook/getting-started
 
 # Parents Guide
 
-{% include content/getting-started-parents.md %}
+{% include content/parents-guide.md %}
 
 ---
 

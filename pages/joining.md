@@ -6,11 +6,25 @@ permalink: /joining
 
 Welcome to Scouting America Troop 500G! We are a female Scouting America troop operating out of Solon, Ohio, chartered by Advent Lutheran Church through the Lake Erie Council. We are happy to have you and your daughter join us for the awesome adventure of Scouting!
 
+## Who Can Join
+
+Scouts BSA is open to all youth ages 11 through 17. Youth may also join if they are at least 10 years old and have completed the fifth grade, or have earned the Arrow of Light Award in Cub Scouts. No prior Scouting experience is required.
+
+Troop 500G is a **girls-only troop**. Scouting America allows chartered organizations to operate boy troops, girl troops, or family troops. Our charter organization, Advent Lutheran Church, has chosen to operate a girl troop — providing a dedicated space for girls to develop leadership skills, build confidence, and experience everything Scouting has to offer alongside other girls.
+
+For more information, visit [Scouting America — Scouts BSA](https://www.scouting.org/programs/scouts-bsa/).
+
 ## Visit Us at a Meeting
 
 The best way to learn about our troop is to visit a meeting. We meet Monday evenings at Advent Lutheran Church (regular meetings 7:00-8:30 PM, summer meetings 6:30-8:00 PM at South Chagrin Reservation Shelterhouse). Check the [events calendar]({{ site.baseurl }}/events) for up-to-date details.
 
 You may not have everything figured out when you start — don't worry! Do your best, show up ready to learn about Scouting, and we'll work with you on the rest.
+
+### What to Bring to Your First Meeting
+- A pen or pencil and a small notebook
+- Your Scout uniform, if you have one (don't worry if you don't have it yet)
+- A Scoutbook account set up on your phone or device, if possible (we'll help you if not)
+- A positive attitude and readiness to learn!
 
 ## Register with Scouting America
 
@@ -33,6 +47,14 @@ Once your Scout joins, here's what to expect:
 Membership fees and event fees are assessed by the Treasurer and Troop Committee and communicated to families in advance. To reduce the financial burden of getting started, the initial membership fee is waived for all new members. Financial assistance is always available — contact the Scoutmaster confidentially to discuss options. No Scout is excluded due to financial constraints.
 
 For full details, see our [Financial Information]({{ site.baseurl }}/handbook/financial-info) page.
+
+## New Scout Patrol
+
+New Scouts — whether crossing over from Arrow of Light (Cub Scouts) or joining Scouts BSA for the first time — will be placed in the **New Scout Patrol**. This patrol is designed to help new Scouts learn the basics of the Scouting program together. During campouts, the New Scout Patrol is hosted by our standing patrols, giving new Scouts hands-on mentorship from experienced members of the troop.
+
+## Transfer Scouts
+
+Scouts transferring from another troop carry all rank and merit badges earned in their prior troop. Your advancement record is maintained by Scouting America and will follow you to Troop 500G.
 
 ## What Your Scout Will Experience
 
