@@ -44,4 +44,4 @@ permalink: /handbook
 
 {% include content/appendix/contact-info.md %}
 
-**📋 Download Contact Directory as PDF:** [Contact Directory (PDF)]({{ site.baseurl }}/assets/files/handbook/contact-info-latest.pdf)
+**📋 Download Contact Directory as PDF:** [Contact Directory (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/contact-info-latest.pdf)

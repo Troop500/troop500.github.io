@@ -363,8 +363,8 @@ if (-not $SkipPDFs) {
                 "[2025 Troop Handbook](/assets/files/handbook/troop-handbook-latest.pdf?v=$timestamp)"
             
             $content = $content -replace 
-                '\[Contact Directory\]\(/assets/files/handbook/contact-info-latest\.pdf[^)]*\)', 
-                "[Contact Directory](/assets/files/handbook/contact-info-latest.pdf?v=$timestamp)"
+                '\[Contact Directory\]\(/assets/files/handbook/appendix/contact-info-latest\.pdf[^)]*\)', 
+                "[Contact Directory](/assets/files/handbook/appendix/contact-info-latest.pdf?v=$timestamp)"
             
             Set-Content -Path $handbookPath -Value $content -NoNewline
             Write-Host "PASS - Updated handbook page with cache-busting timestamp: $timestamp" -ForegroundColor Green

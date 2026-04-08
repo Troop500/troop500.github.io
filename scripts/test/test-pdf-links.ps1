@@ -324,16 +324,22 @@ function Get-PdfFilesToTest {
     if (-not [string]::IsNullOrEmpty($PdfDirectory) -and (Test-Path $PdfDirectory)) {
         $searchPatterns = @()
         
-        # Main handbook PDFs
         if ($IncludeLatest) {
             $searchPatterns += "*-latest.pdf"
-        } else {
-            # Include timestamped PDFs by default
-            $searchPatterns += "*-20*.pdf"
         }
         
+        # Always include timestamped PDFs
+        $searchPatterns += "*-20*.pdf"
+        
         foreach ($pattern in $searchPatterns) {
-            $foundPdfs = Get-ChildItem -Path $PdfDirectory -Filter $pattern -Recurse:$IncludeArchive | Where-Object { -not $_.PSIsContainer }
+            # Always recurse into subdirectories (e.g., appendix/) to find all PDFs
+            $foundPdfs = Get-ChildItem -Path $PdfDirectory -Filter $pattern -Recurse | Where-Object { -not $_.PSIsContainer }
+            
+            if (-not $IncludeArchive) {
+                # Exclude archive directories unless explicitly requested
+                $foundPdfs = $foundPdfs | Where-Object { $_.FullName -notlike '*archive*' }
+            }
+            
             $pdfFiles += $foundPdfs.FullName
         }
     }

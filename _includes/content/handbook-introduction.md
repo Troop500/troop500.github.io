@@ -6,7 +6,7 @@ Welcome to the official handbook for Scouting America Troop 500G. This handbook 
 
 **Download Troop 500G Handbook**: [Troop 500G Handbook]({{ site.baseurl }}/assets/files/handbook/troop-handbook-latest.pdf?v=20250803_114057){:target="_blank"}
 
-**Download Troop Contact Information**: [Contact Directory]({{ site.baseurl }}/assets/files/handbook/contact-info-latest.pdf?v=20250803_114057){:target="_blank"}
+**Download Troop Contact Information**: [Contact Directory]({{ site.baseurl }}/assets/files/handbook/appendix/contact-info-latest.pdf){:target="_blank"}
 
 ---
 
