@@ -29,7 +29,7 @@ For more information about the New Scout Patrol and the Troop Guide role, see th
 
 ### Senior Patrol Leader (SPL) <img src="{{ site.baseurl }}/assets/images/handbook/patch_senior_patrol_leader.jpg" alt="Senior Patrol Leader Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-The highest youth leadership position, elected by the troop, the senior patrol leader is one of the oldest leadership positions in Scouting. Scouting America has long recognized the senior patrol leader as the highest youth leadership position in a troop. They are the primary link between a troop's Scouts and its adult leaders. They shoulder the responsibility for leading meetings of the troop and the patrol leaders' council and provide valuable leadership in planning and carrying out the troop's program of outdoor activities, service projects, and events.
+The senior patrol leader is the highest youth leadership position in the troop, elected by the Scouts. They serve as the primary link between the troop's Scouts and its adult leaders. The SPL leads troop meetings, runs the patrol leaders' council, and drives planning for outdoor activities, service projects, and events.
 
 **Senior Patrol Leader Responsibilities:**
 - Runs all troop meetings, events, activities, and the annual program planning conference
