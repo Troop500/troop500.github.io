@@ -1,5 +1,5 @@
 ---
-# Handbook Introduction
+# Introduction
 ---
 
 Welcome to the official handbook for Scouting America Troop 500G. This handbook serves as your comprehensive guide to troop operations, policies, procedures, and resources.
