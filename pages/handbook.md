@@ -20,7 +20,7 @@ permalink: /handbook
 
 {% include content/advancement-guide.md %}
 
-{% include content/leaders-guide.md %}
+{% include content/adult-leaders-guide.md %}
 
 {% include content/outdoor-program.md %}
 

@@ -253,4 +253,4 @@ Scouting is youth-led, but it doesn't happen without dedicated adults behind the
 
 Every role matters, and every role requires training — starting with Safeguarding Youth and building from there. Not everyone has the capacity for a formal role right now, and that's completely fine. But if you're interested, we'd love to talk about where you might fit.
 
-For full details on each role, training requirements, and how to get started, see the [Leaders Guide]({{ site.baseurl }}/handbook/leaders-guide).
+For full details on each role, training requirements, and how to get started, see the [Adult Leaders Guide]({{ site.baseurl }}/handbook#adult-leaders-guide).

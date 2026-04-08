@@ -1,4 +1,4 @@
-# Leaders Guide
+# Adult Leaders Guide
 
 ## Adult Leadership Opportunities
 
