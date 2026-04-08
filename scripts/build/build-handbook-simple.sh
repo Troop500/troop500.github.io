@@ -217,7 +217,7 @@ pandoc "$COMBINED_MD" \
 echo "📞 Creating contact information PDF..."
 
 # Process contact-info.md directly with includes resolved
-process_handbook "_includes/content/contact-info.md" "/tmp/handbook-processed/contact-info-processed.md"
+process_handbook "_includes/content/appendix/contact-info.md" "/tmp/handbook-processed/contact-info-processed.md"
 
 echo "🖼️ Converting contact info images to LaTeX format..."
 # Convert HTML img tags to LaTeX \includegraphics for contact info

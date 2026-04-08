@@ -32,8 +32,6 @@ permalink: /handbook
 
 {% include content/equipment.md %}
 
-{% include content/contact-info.md %}
-
 ---
 
 # Appendix
@@ -49,3 +47,9 @@ permalink: /handbook
 ---
 
 {% include content/appendix/useful-links.md %}
+
+---
+
+{% include content/appendix/contact-info.md %}
+
+**📋 Download Contact Directory as PDF:** [Contact Directory (PDF)]({{ site.baseurl }}/assets/files/handbook/contact-info-latest.pdf)

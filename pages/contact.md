@@ -4,4 +4,4 @@ title: Contact
 permalink: /contact
 ---
 
-{% include content/contact-info.md %}
+{% include content/appendix/contact-info.md %}

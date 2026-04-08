@@ -6,7 +6,7 @@ permalink: /handbook/contact
 
 # Contact Information
 
-{% include content/contact-info.md %}
+{% include content/appendix/contact-info.md %}
 
 ## Additional Resources
 
