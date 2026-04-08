@@ -4,6 +4,8 @@ Welcome to Scouting America Troop 500G! We are happy to have you and your daught
 
 Scouting is a new experience for both scout and parent. There is a time when the parents, although still involved in new ways, take a step back and let their daughters take on more and more responsibility for their achievements. While Scouting is girl-led, it is parent-facilitated. Your role as a facilitator requires a commitment of your time on both organizational and activity levels. This guide provides what a parent needs to know to survive the first year of scout life.
 
+All troop members are expected to follow the Scout Oath and Law in their behavior during troop activities and in their daily lives.
+
 ---
 
 ## The First Meeting

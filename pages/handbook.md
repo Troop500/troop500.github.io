@@ -28,8 +28,6 @@ permalink: /handbook
 
 {% include content/conference-communications.md %}
 
-{% include content/policies-safety.md %}
-
 {% include content/equipment.md %}
 
 ---
