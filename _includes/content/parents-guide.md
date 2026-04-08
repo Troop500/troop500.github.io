@@ -81,17 +81,25 @@ The Class B uniform is purchased from the troop during your first couple of meet
 **Annual Scouting America Membership Fees**
 All Scouts and adult leaders must complete annual membership renewal through My.Scouting.org.
 
-**Annual Troop Dues***
-All Scouts owe dues annually as defined by the troop treasurers. Make checks payable to Troop 500.
+**Annual Troop Dues**
+All Scouts owe annual dues as assessed by the Treasurer and Troop Committee. Checks are the preferred payment method — make checks payable to **Troop 500**.
 
 **Event Fees**
-Event fees are collected by the troop Treasurer and tracked in your Scout's Scoutbook account.
+Event fees are collected by the troop Treasurer. Fees are paid in advance and are based on confirmed attendance.
+
+For full details on payment methods, Scout Dollars, the sign-up and cancellation policy, financial assistance, and reimbursements, see the [Financial Information](/handbook/financial-info) page.
 
 ---
 
 ## The First Campout
 
 Your Scout's first overnight outing is a big milestone! There are a few things to take care of before they go.
+
+### Sign Up in Scoutbook
+
+All outings are managed through Scoutbook. Scoutmasters will post each event with a sign-up due date. **RSVP through Scoutbook on or before that date** — scouts who have not signed up by the deadline will not be able to attend. A Google Form may also be required; the link will be provided in the Scoutbook event.
+
+Once you have signed up, you are financially committed to the event. If your Scout cannot attend after signing up, you are responsible for paying the fee or finding a replacement. See the [Financial Information](/handbook/financial-info) page for the full cancellation policy.
 
 ### Joining Conference
 

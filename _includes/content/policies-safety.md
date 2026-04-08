@@ -43,13 +43,7 @@ For current medical forms and requirements, visit: [Scouting America Health and 
 
 ## Financial Policies
 
-### Troop Fees
-- Annual registration fees cover troop insurance and Scouting America registration
-- Activity fees cover specific trip costs and are collected in advance
-- Equipment fees may apply for specialized gear rental
-
-### Fundraising
-The troop participates in fundraising activities to help offset program costs and support Scouts who need financial assistance.
+The troop is committed to transparent and accessible financial management. For complete information on fees, payment methods, Scout Dollars, the event sign-up and cancellation policy, financial assistance, and reimbursement procedures, see the [Financial Information](/handbook/financial-info) page.
 
 ### Financial Assistance
 Financial assistance is available for Scouts who need help with fees or equipment costs. Contact the Scoutmaster confidentially to discuss options.

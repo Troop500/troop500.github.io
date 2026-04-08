@@ -51,15 +51,22 @@ Troop 500G camps monthly, providing scouts with regular outdoor adventure opport
 
 **RSVP Process:**
 - RSVPs completed through Scoutbook
-- Google Form completion required (link provided in Scoutbook)
-- Indicate commitment to paying scout's fees for the event
+- A Google Form may also be required; the link is provided in the Scoutbook event
+- RSVP on or before the due date announced by the Scoutmaster
 
 **Fee Structure:**
 - Fees vary per outing and are paid in advance
 - Fees are based on attendance numbers for planning purposes
 - Payment covers registration, campsite reservations, and food costs
+- Checks are the preferred payment method, payable to **Troop 500**
 
-**Important**: We often register scouts in advance for Council events and reserve campsites based on RSVP numbers, so accurate responses are essential.
+**Sign-Up and Cancellation Policy:**
+- **Scouts who have not signed up by the deadline will not be able to attend**
+- Scouts who have signed up are financially committed to the event
+- If a Scout cannot attend after signing up, they are responsible for paying the fee or finding a replacement
+- This policy exists because registrations, campsites, and food are purchased in advance based on confirmed attendance
+
+For complete financial details including Scout Dollars and financial assistance, see the [Financial Information](/handbook/financial-info) page.
 
 ## Safety Requirements
 
