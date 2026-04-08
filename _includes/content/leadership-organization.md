@@ -19,7 +19,7 @@ For more information about the patrol method, see the [Scouting America Patrol M
 
 ### New Scout Patrol
 
-Troop 500G uses a New Scout Patrol for our incoming Arrow of Light crossover Scouts. This patrol has its own identity and is led by a Troop Guide — an experienced Scout appointed to mentor new members as they transition into the troop. The Troop Guide helps new Scouts learn the basics of troop life, build confidence, and work toward early rank advancement.
+Troop 500G uses a New Scout Patrol for all new Scouts joining the troop who have not yet earned the Scout rank, including incoming Arrow of Light crossover Scouts. This patrol has its own identity and is led by a Troop Guide — an experienced Scout appointed to mentor new members as they transition into the troop. The Troop Guide helps new Scouts learn the basics of troop life, build confidence, and work toward early rank advancement.
 
 While the New Scout Patrol meets and operates as its own patrol during regular troop meetings, new Scouts roll into one of our regular patrols for campouts based on individual campout participation. This approach gives new Scouts a supportive learning environment while also integrating them into the broader troop experience in the field.
 
