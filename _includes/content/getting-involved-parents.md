@@ -18,7 +18,7 @@ Here are ways to support your Scout's success:
 - Help with setup and cleanup at events while letting your Scout take the lead on their responsibilities
 
 **Advocate for Your Scout's Needs**
-Our troop provides an accessible and inclusive environment for every eligible youth. We will always do our best to support your scouts needs, but you can help our best be better. We require a joining meeting prior to your Scout's first overnight outing, but that's not the end of our discussion. You are encouraged to request a pre-event check-in with leaders attending any event (particularly helpful for summer camp) to ensure we can provide the best possible support for your Scout's success. 
+Our troop provides an accessible and inclusive environment for every eligible youth. We will always do our best to support your Scout's needs, but you can help our best be better. We require a joining meeting prior to your Scout's first overnight outing, but that's not the end of our discussion. You are encouraged to request a pre-event check-in with leaders attending any event (particularly helpful for summer camp) to ensure we can provide the best possible support for your Scout's success. 
 
 ## Learn About the Troop
 

@@ -20,7 +20,7 @@ Troop 500 goes on tent campouts very often. You can use the following checklist 
 - [ ] Books for reading
 - [ ] Shoes (boots, Camp shoes)
 - [ ] Mess Kit (Fork/spoon/knife, Plate, Cup all in a mesh bag)
-- [ ] Scout Book
+- [ ] Scout Handbook
 - [ ] Small Backpack/daypack
 - [ ] Trash Bag
 - [ ] Towel
@@ -28,4 +28,4 @@ Troop 500 goes on tent campouts very often. You can use the following checklist 
 - [ ] camp chair
 
 Notes:
-- DO NOT bring a pocket knife or lighter if you don’t have the Totin' Chit or Firem'n Chip.
+- DO NOT bring a pocket knife or lighter if you don't have the Totin' Chip or Firem'n Chit.

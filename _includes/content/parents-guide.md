@@ -2,7 +2,7 @@
 
 Welcome to Scouting America Troop 500G! We are happy to have you and your daughter join us for the awesome adventure of Scouting!
 
-Scouting is a new experience for both scout and parent. There is a time when the parents, although still involved in new ways, take a step back and let their daughters take on more and more responsibility for their achievements. While Scouting is girl-led, it is parent-facilitated. Your role as a facilitator requires a commitment of your time on both organizational and activity levels. This guide provides what a parent needs to know to survive the first year of scout life.
+Scouting is a new experience for both Scout and parent. There is a time when the parents, although still involved in new ways, take a step back and let their daughters take on more and more responsibility for their achievements. While Scouting is girl-led, it is parent-facilitated. Your role as a facilitator requires a commitment of your time on both organizational and activity levels. This guide provides what a parent needs to know to survive the first year of Scout life.
 
 All troop members are expected to follow the Scout Oath and Law in their behavior during troop activities and in their daily lives.
 
@@ -139,7 +139,7 @@ Here are ways to support your Scout's success:
 - Help with setup and cleanup at events while letting your Scout take the lead on their responsibilities
 
 **Advocate for Your Scout's Needs**
-Our troop provides an accessible and inclusive environment for every eligible youth. We will always do our best to support your scouts needs, but you can help our best be better. We require a joining meeting prior to your Scout's first overnight outing, but that's not the end of our discussion. You are encouraged to request a pre-event check-in with leaders attending any event (particularly helpful for summer camp) to ensure we can provide the best possible support for your Scout's success.
+Our troop provides an accessible and inclusive environment for every eligible youth. We will always do our best to support your Scout's needs, but you can help our best be better. We require a joining meeting prior to your Scout's first overnight outing, but that's not the end of our discussion. You are encouraged to request a pre-event check-in with leaders attending any event (particularly helpful for summer camp) to ensure we can provide the best possible support for your Scout's success.
 
 ### Support Conferences
 

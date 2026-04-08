@@ -1,6 +1,6 @@
 # Financial Information
 
-Understanding the financial aspects of scouting helps families plan and participate fully in the troop's activities and programs.
+Understanding the financial aspects of Scouting helps families plan and participate fully in the troop's activities and programs.
 
 ## Membership Fees
 
@@ -27,7 +27,7 @@ This fee is paid **to Troop 500** and is separate from your Scouting America reg
 
 ### Variable Costs
 - **Fee structure**: Varies per outing based on activities and location
-- **Payment timing**: Paid in advance by attending scouts and adults
+- **Payment timing**: Paid in advance by all Scouts and adult leaders. 
 - **Planning impact**: Fees used for advance registration and reservations
 
 ### What Outing Fees Cover
@@ -191,4 +191,4 @@ Credits are added to your Scout's account for any of the following reasons:
 
 ---
 
-*Our goal is to make scouting accessible to all families. Please communicate with leadership about any financial concerns.*
+*Our goal is to make Scouting accessible to all families. Please communicate with leadership about any financial concerns.*
