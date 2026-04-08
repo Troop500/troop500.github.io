@@ -129,39 +129,3 @@ Once a month Scouting volunteers in a local community come together to provide i
 These opportunities may be available through your local council. Typically these are a series of courses that take place in one day and often provide the opportunity to take several sessions on various topics that help you provide a great program.
 
 **Remember**: Every youth deserves a trained leader. Your commitment to training ensures we provide the highest quality Scouting program possible, and there's a place for every parent to contribute meaningfully to their Scout's experience.
-
----
-
-# Youth Leadership Development
-
-Leadership development is a core component of the Scouting program. Youth leaders attend training opportunities and gain real-world experience managing troop activities, planning meetings, and mentoring younger Scouts.
-
-## Youth Leadership Training
-
-### Position-Specific Training
-All youth leaders receive training specific to their position, including:
-- Leadership skills and techniques
-- Position-specific responsibilities and procedures
-- Communication and team-building skills
-- Problem-solving and decision-making
-
-### National Youth Leadership Training (NYLT)
-NYLT is an exciting, action-packed program designed for Scouts who are ready to take the next step in their leadership development. This course teaches leadership skills and outdoor skills in an outdoor adventure setting.
-
-## Leadership in Action
-
-Youth leaders apply their training through:
-- Leading troop meetings and activities
-- Planning and executing service projects
-- Mentoring younger Scouts
-- Representing the troop at district and council events
-
-## Adult Mentorship
-
-Adult leaders provide guidance and support to youth leaders through:
-- Regular coaching and feedback
-- Modeling good leadership practices
-- Providing opportunities for growth and development
-- Supporting youth-led decision making
-
-The combination of training, practical experience, and adult mentorship creates well-prepared leaders who are ready to succeed in Scouting and beyond.

@@ -186,6 +186,48 @@ Please note that any direct contact volunteer leaders (those working directly wi
 
 ---
 
+## Youth Leadership: What Parents Need to Know
+
+One of the most distinctive things about Scouting is that it is **youth-led**. Troop 500G operates using the patrol method, where Scouts — not adults — plan meetings, lead activities, and make decisions. This can be an adjustment for parents, especially when your Scout is elected or appointed to a leadership position for the first time.
+
+### How Youth Leadership Works
+
+Every six months, Scouts elect their troop and patrol leaders. These positions carry real responsibility:
+
+- **Senior Patrol Leader (SPL)** — Leads troop meetings, chairs Patrol Leader Council, and coordinates with adult leaders
+- **Assistant Senior Patrol Leader (ASPL)** — Supports and steps in for the SPL
+- **Patrol Leaders** — Lead their patrol's meetings, activities, cooking, and camping
+- **Quartermaster** — Manages troop or patrol equipment and inventory
+- **Scribe** — Keeps attendance and meeting records
+
+These aren't ceremonial titles. The Scouts who hold them are expected to plan, organize, lead, and follow through — and they will occasionally stumble. That's by design.
+
+### Supporting Without Doing
+
+When your Scout takes on a leadership role, your instinct may be to help them succeed by organizing their notes, reminding them of every responsibility, or stepping in when things get messy. We get it — but the goal of youth leadership is for Scouts to develop these skills themselves, even when the process is imperfect.
+
+Here's how you can support your young leader:
+
+- **Ask questions instead of giving answers.** "What's your plan for the patrol meeting?" is more helpful than a to-do list.
+- **Let them own the outcome.** A meeting that doesn't go perfectly is a learning experience, not a failure. Leaders grow by reflecting on what went well and what didn't.
+- **Encourage, don't manage.** Celebrate their effort and growth, not just results. A Scout who led a campfire program that fell flat but tried their best learned more than one who had a parent orchestrate success behind the scenes.
+- **Resist the rescue.** If your Scout forgets a responsibility, let them work through the consequences with their fellow Scouts and adult mentors. The troop's adult leaders are there to guide — and they'll intervene when it matters.
+- **Be a sounding board.** Your Scout may come home frustrated about a decision that didn't go their way or a peer who isn't pulling their weight. Listen, empathize, and help them think through options rather than solving it for them.
+
+### What Adult Leaders Provide
+
+Adult leaders serve as mentors and a safety net — not managers. The Scoutmaster and Assistant Scoutmasters coach youth leaders behind the scenes, ask guiding questions, and step in only when health, safety, or youth protection requires it. If you have concerns about how a leadership situation is going, talk to the Scoutmaster. They are watching, even when it looks like the Scouts are running the show on their own.
+
+As your Scout takes on leadership responsibilities, you'll notice that adult leaders communicate more directly with them — not around them. Mentoring conversations, feedback on how a meeting went, and planning discussions happen between the adult leader and the Scout. Parents are always kept in the loop (you'll be copied on communications), but the dialogue is directed at your Scout because that's who is leading. All adult-youth communications follow Scouting America's two-deep leadership policy, so there is always more than one adult involved. This shift can feel unfamiliar at first, but it's an important part of treating your Scout as the leader they're becoming.
+
+### Why It Matters
+
+Holding a leadership position is a requirement for advancement to Star, Life, and Eagle ranks. More importantly, it builds the skills that Scouting is really about: responsibility, communication, problem-solving, and the confidence that comes from leading peers through real challenges. The less we do for our Scouts, the more capable they become.
+
+For a full list of youth leadership positions, responsibilities, and the current roster, see the [Youth Leadership Positions]({{ site.baseurl }}/handbook/youth-leadership) section of the handbook.
+
+---
+
 ## The Rest of the Story...
 
 Once your Scout has found their footing, there's a whole world of continued involvement for parents who want to give back.
