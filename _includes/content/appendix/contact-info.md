@@ -1,5 +1,7 @@
 ## Appendix D: Troop Contact Information
 
+**📋 Download as PDF:** [Troop Contact Information (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/contact-info-latest.pdf)
+
 ### Chartered Organization
 
 <img src="{{ site.baseurl }}/assets/images/handbook/patch_chartered_organization_rep.png" alt="Chartered Organization Representative Patch" style="width: 100px; height: auto; float: right; margin: 0 0 15px 15px;">

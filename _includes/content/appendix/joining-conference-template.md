@@ -1,4 +1,7 @@
 ## Appendix A: Joining Conference
+
+**📋 Download as PDF:** [Joining Conference Template (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/joining-conference-template-latest.pdf)
+
 ### Overview
 
 *Every Scout who joins Troop 500G brings their own unique strengths, interests, and needs — and this conference is our chance to learn about yours. By taking a little time to talk before your Scout's first campout, we can make sure our leaders are prepared to support them from day one. This form is a guide for that conversation, not an evaluation — there are no wrong answers, and you are always welcome to leave any question blank. Everything shared here stays confidential within our leadership team and is used only to help your Scout thrive.*

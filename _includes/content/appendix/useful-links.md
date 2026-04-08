@@ -1,4 +1,7 @@
 ## Appendix C: Useful Links
+
+**📋 Download as PDF:** [Useful Links (PDF)]({{ site.baseurl }}/assets/files/handbook/appendix/useful-links-latest.pdf)
+
 Here are some valuable online resources to support your Scouting journey and help you make the most of your experience in Troop 500G.
 
 ### Official Scouting America Resources
