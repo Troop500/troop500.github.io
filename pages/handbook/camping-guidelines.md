@@ -10,7 +10,7 @@ Troop 500G camps monthly, providing scouts with regular outdoor adventure opport
 
 ## Monthly Outings
 
-**Frequency**: Most outings are Friday evening through Sunday mid-day  
+**Frequency**: Most outings are Friday evening through Sunday morning.  
 **Purpose**: Complete rank requirements, earn merit badges, and enjoy outdoor activities  
 **Activities**: Camping, hiking, cooking, outdoor skills training, and team building
 

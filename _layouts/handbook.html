@@ -122,180 +122,184 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Auto-generate table of contents from headings
   const tocContainer = document.getElementById('handbook-toc');
   const headings = document.querySelectorAll('.handbook-content h1, .handbook-content h2');
-  
-  let currentH1Container = null;
+  const SCROLL_OFFSET = 20; // px above heading to stop
+
+  // Track used IDs to guarantee uniqueness
+  const usedIds = new Set();
+  // Map each heading element to its TOC link for direct lookup (no querySelector needed)
+  const headingToLink = new Map();
+  // Map each TOC link to its heading element for click navigation
+  const linkToHeading = new Map();
+
   let currentH2Container = null;
-  let isManualNavigation = false; // Flag to prevent scroll interference
-  
+  let isManualNavigation = false;
+
+  // ── Build TOC ──────────────────────────────────────────────────────
   headings.forEach(function(heading, index) {
-    // Skip the main title
+    // Skip the page title (first H1)
     if (heading.tagName === 'H1' && index === 0) return;
-    
-    // Create unique ID if it doesn't exist
-    if (!heading.id) {
-      heading.id = heading.textContent.toLowerCase()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/--+/g, '-')
-        .trim();
+
+    // Generate a unique slug-based ID
+    let baseId = heading.textContent.toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/--+/g, '-')
+      .trim();
+    let uniqueId = baseId;
+    let suffix = 2;
+    while (usedIds.has(uniqueId)) {
+      uniqueId = baseId + '-' + suffix++;
     }
-    
+    usedIds.add(uniqueId);
+    heading.id = uniqueId;
+
     if (heading.tagName === 'H1') {
-      // Create H1 entry
       const li = document.createElement('li');
       const a = document.createElement('a');
-      a.href = '#' + heading.id;
+      a.href = '#' + uniqueId;
       a.textContent = heading.textContent;
       a.className = 'toc-h1';
-      
       li.appendChild(a);
-      
-      // Create container for H2 children
-      const h2Container = document.createElement('ul');
-      h2Container.className = 'toc-h2-children';
-      li.appendChild(h2Container);
-      
+
+      const h2List = document.createElement('ul');
+      h2List.className = 'toc-h2-children';
+      li.appendChild(h2List);
+
       tocContainer.appendChild(li);
-      currentH1Container = li;
-      currentH2Container = h2Container;
-      
-      // Add click handler for H1
-      a.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // Set flag to prevent scroll interference
-        isManualNavigation = true;
-        
-        // Remove active class from all H1s and hide all H2 children
-        document.querySelectorAll('.toc-h1').forEach(h1 => {
-          h1.classList.remove('active');
-          const parentLi = h1.parentElement;
-          const h2Container = parentLi.querySelector('.toc-h2-children');
-          if (h2Container) {
-            const h2Children = h2Container.querySelectorAll('.toc-h2-child');
-            h2Children.forEach(h2 => h2.style.display = 'none');
-          }
-        });
-        
-        // Add active class to clicked H1 and show its H2 children
-        this.classList.add('active');
-        const parentLi = this.parentElement;
-        const h2Container = parentLi.querySelector('.toc-h2-children');
-        if (h2Container) {
-          const h2Children = h2Container.querySelectorAll('.toc-h2-child');
-          h2Children.forEach(h2 => h2.style.display = 'block');
-        }
-        
-        // Scroll to target
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-          // Add a small offset to ensure title is clearly visible
-          setTimeout(() => {
-            window.scrollBy(0, -20);
-            // Re-enable scroll tracking after navigation is complete
-            setTimeout(() => {
-              isManualNavigation = false;
-            }, 100);
-          }, 500);
-        }
-      });
-      
+      currentH2Container = h2List;
+
+      headingToLink.set(heading, a);
+      linkToHeading.set(a, heading);
+
     } else if (heading.tagName === 'H2' && currentH2Container) {
-      // Create H2 entry as child of current H1
       const li = document.createElement('li');
       const a = document.createElement('a');
-      a.href = '#' + heading.id;
+      a.href = '#' + uniqueId;
       a.textContent = heading.textContent.trim();
       a.className = 'toc-h2-child';
-      a.style.display = 'none'; // Start hidden
-      
+      a.style.display = 'none';
       li.appendChild(a);
       currentH2Container.appendChild(li);
-      
-      // Add click handler for H2
-      a.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // Set flag to prevent scroll interference
-        isManualNavigation = true;
-        
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-          // Add a small offset to ensure title is clearly visible
-          setTimeout(() => {
-            window.scrollBy(0, -20);
-            // Re-enable scroll tracking after navigation is complete
-            setTimeout(() => {
-              isManualNavigation = false;
-            }, 100);
-          }, 500);
-        }
-      });
+
+      headingToLink.set(heading, a);
+      linkToHeading.set(a, heading);
     }
   });
-  
-  // Auto-activate first H1 on page load
-  const firstH1 = document.querySelector('.toc-h1');
-  if (firstH1) {
-    firstH1.classList.add('active');
-    const parentLi = firstH1.parentElement;
-    const h2Container = parentLi.querySelector('.toc-h2-children');
-    if (h2Container) {
-      const h2Children = h2Container.querySelectorAll('.toc-h2-child');
-      h2Children.forEach(h2 => h2.style.display = 'block');
-    }
+
+  // ── Scroll-to helper ───────────────────────────────────────────────
+  // Single smooth scroll with offset — no double-jump.
+  function scrollToHeading(heading) {
+    const top = heading.getBoundingClientRect().top + window.pageYOffset - SCROLL_OFFSET;
+    window.scrollTo({ top: top, behavior: 'smooth' });
   }
-  
-  // Update active section based on scroll position
-  window.addEventListener('scroll', function() {
-    // Skip if manual navigation is in progress
-    if (isManualNavigation) return;
-    
-    const headings = document.querySelectorAll('.handbook-content h1, .handbook-content h2');
-    let currentSection = null;
-    
-    headings.forEach(function(heading) {
-      const rect = heading.getBoundingClientRect();
-      if (rect.top <= 100) {
-        currentSection = heading;
+
+  // ── Activate a given H1 section in the sidebar ─────────────────────
+  function activateH1(link) {
+    if (!link) return;
+    // Deactivate all
+    document.querySelectorAll('.toc-h1').forEach(function(h1) {
+      h1.classList.remove('active');
+      var children = h1.parentElement.querySelectorAll('.toc-h2-child');
+      children.forEach(function(c) { c.style.display = 'none'; });
+    });
+    // Activate target
+    link.classList.add('active');
+    var children = link.parentElement.querySelectorAll('.toc-h2-child');
+    children.forEach(function(c) { c.style.display = 'block'; });
+  }
+
+  // ── Click handlers (event delegation) ──────────────────────────────
+  tocContainer.addEventListener('click', function(e) {
+    var a = e.target.closest('a');
+    if (!a || !linkToHeading.has(a)) return;
+    e.preventDefault();
+
+    isManualNavigation = true;
+
+    if (a.classList.contains('toc-h1')) {
+      activateH1(a);
+    }
+
+    scrollToHeading(linkToHeading.get(a));
+  });
+
+  // Re-enable scroll tracking once the browser finishes scrolling.
+  // 'scrollend' is supported in modern browsers; fall back to a
+  // debounced scroll listener for older ones.
+  if ('onscrollend' in window) {
+    window.addEventListener('scrollend', function() {
+      isManualNavigation = false;
+    });
+  } else {
+    var scrollTimer;
+    window.addEventListener('scroll', function() {
+      if (isManualNavigation) {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function() {
+          isManualNavigation = false;
+        }, 150);
       }
     });
-    
-    if (currentSection && currentSection.tagName === 'H1') {
-      // Remove active from all H1s and hide all H2 children
-      document.querySelectorAll('.toc-h1').forEach(h1 => {
-        h1.classList.remove('active');
-        const parentLi = h1.parentElement;
-        const h2Container = parentLi.querySelector('.toc-h2-children');
-        if (h2Container) {
-          const h2Children = h2Container.querySelectorAll('.toc-h2-child');
-          h2Children.forEach(h2 => h2.style.display = 'none');
+  }
+
+  // ── Scroll-spy via IntersectionObserver ─────────────────────────────
+  // Fires only when headings enter/leave the top of the viewport —
+  // far more reliable (and performant) than a scroll-event loop.
+  var lastActiveH1Link = null;
+
+  var observer = new IntersectionObserver(function(entries) {
+    if (isManualNavigation) return;
+
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+
+      var heading = entry.target;
+      // Walk up to the parent H1 if this is an H2
+      var h1Heading = heading;
+      if (heading.tagName === 'H2') {
+        // Find the preceding H1
+        var prev = heading.previousElementSibling;
+        while (prev) {
+          if (prev.tagName === 'H1') { h1Heading = prev; break; }
+          prev = prev.previousElementSibling;
         }
-      });
-      
-      // Activate current H1 and show its H2 children
-      const activeLink = document.querySelector(`.toc-h1[href="#${currentSection.id}"]`);
-      if (activeLink) {
-        activeLink.classList.add('active');
-        const parentLi = activeLink.parentElement;
-        const h2Container = parentLi.querySelector('.toc-h2-children');
-        if (h2Container) {
-          const h2Children = h2Container.querySelectorAll('.toc-h2-child');
-          h2Children.forEach(h2 => h2.style.display = 'block');
+        // If no sibling found, search all tracked headings
+        if (h1Heading === heading) {
+          var allH1s = Array.from(headingToLink.keys()).filter(function(h) {
+            return h.tagName === 'H1';
+          });
+          for (var i = allH1s.length - 1; i >= 0; i--) {
+            if (allH1s[i].compareDocumentPosition(heading) & Node.DOCUMENT_POSITION_FOLLOWING) {
+              h1Heading = allH1s[i];
+              break;
+            }
+          }
         }
       }
-    }
+
+      var link = headingToLink.get(h1Heading);
+      if (link && link !== lastActiveH1Link) {
+        lastActiveH1Link = link;
+        activateH1(link);
+      }
+    });
+  }, {
+    rootMargin: '-10% 0px -80% 0px', // trigger when heading is in top 20% of viewport
+    threshold: 0
   });
+
+  // Observe all headings that are in the TOC
+  headingToLink.forEach(function(_link, heading) {
+    observer.observe(heading);
+  });
+
+  // ── Initial state ──────────────────────────────────────────────────
+  var firstH1Link = document.querySelector('.toc-h1');
+  if (firstH1Link) {
+    activateH1(firstH1Link);
+    lastActiveH1Link = firstH1Link;
+  }
 });
 </script>
