@@ -52,7 +52,7 @@ Lead individual patrols, elected by patrol members. The patrol leader is the pat
 - Plans and leads patrol meetings and activities
 - Keeps patrol members informed
 - Assigns each patrol member a specific duty
-- Represents his patrol at all patrol leaders' council meetings and the annual program planning conference
+- Represents the patrol at all patrol leaders' council meetings and the annual program planning conference
 - Prepares the patrol to participate in all troop activities
 - Works with other troop leaders to make the troop run well
 - Knows the abilities of each patrol member

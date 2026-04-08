@@ -1,5 +1,7 @@
 ## Our Charter Organization
 
+A chartered organization is a community group — such as a church, civic organization, or school — that partners with Scouting America to sponsor and support a local unit, providing a meeting place and organizational oversight.
+
 **Advent Lutheran Church**  
 5525 Harper Road  
 Solon, OH 44139  
