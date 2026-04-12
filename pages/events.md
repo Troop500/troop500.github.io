@@ -6,9 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 4/6: Troop Meeting & Summer Camp meeting! 6:40pm
-- 4/10 - 4/12: ILST/Advancement Campout
-	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10am on Sunday.
 - 4/13: Troop Meeting
 - 4/18: Swim Test - noon-2pm
 - 4/18: Elizabeth Eagle CoH - 4:30pm-6pm
@@ -16,8 +13,9 @@ The following events are currently scheduled.
 - 4/26: Flag Ceremony at Special Olympics - 9am-10am
 - 4/27: Troop Meeting
 - 4/29: PLC @ Solon Library
+- 5/1 - 5/2: Archeology MB at Dover Dam Weekend
+	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10pm on Saturday.
 - 5/2: Trash the Trash in Solon (9am-noon)
-- 5/2: Archeology MB at Dover Dam Weekend (all day)
 - 5/2: Swim Test - noon-2pm
 - 5/3: Semi-Annual Planning
 - 5/4: Troop Meeting
@@ -26,9 +24,10 @@ The following events are currently scheduled.
 - 5/18: Troop Meeting
 - 5/25: NO Troop Meeting
 - 5/27: PLC
+- 6/1: Troop Meeting
 - 6/8: First Troop Meeting at Shelterhouse - 6:30pm - 8pm
-- 6/28/26 - 7/4/26: Summer Camp
-- 7/22/26 - 7/31/26: National Jamboree
+- 6/28 - 7/4: Summer Camp
+- 7/22 - 7/31: National Jamboree
 - 8/31: Court of Honor - last meeting at Shelterhouse
 - 9/7: First Troop Meeting at Church
 
