@@ -6,7 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 4/20: Court of Honor
 - 4/26: Flag Ceremony at Special Olympics - 9am-10am
 - 4/27: Troop Meeting
 - 4/29: PLC @ Solon Library
@@ -20,7 +19,7 @@ The following events are currently scheduled.
 	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10pm on Saturday.
 - 5/11: Troop Meeting
 - 5/18: Troop Meeting
-- 5/25: Twinsburg Memorial Day Parade - Details TBD
+- 5/25: Twinsburg Memorial Day Parade - 9:30am
 - 5/25: NO Troop Meeting
 - 5/27: PLC
 - 6/1: Troop Meeting
