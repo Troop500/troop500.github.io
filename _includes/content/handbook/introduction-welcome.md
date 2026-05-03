@@ -10,7 +10,7 @@ To provide girls with opportunities to develop leadership skills, experience out
 - **Summer Schedule**: Monday evenings, 6:30-8:00 PM at South Chagrin Reservation Shelterhouse
 - **Location**: Advent Lutheran Church, Solon, OH
 
-*Check the [events calendar](/events) for current meeting times and locations.*
+*Check the [events calendar]({{ site.baseurl }}/events) for current meeting times and locations.*
 
 ## Our Charter Organization
 

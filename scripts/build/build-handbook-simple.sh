@@ -164,6 +164,8 @@ python3 /scripts/utils/convert_images_to_latex.py "$PROCESSED_HANDBOOK" --verbos
 # Fallback sed-based image conversion if Python isn't available
 if [ $? -ne 0 ]; then
     echo "🔧 Using sed-based image conversion fallback..."
+    # Normalize {{ site.baseurl }}/assets/ -> /assets/ so patterns below match consistently
+    sed -i 's|{{ site\.baseurl }}/assets/|/assets/|g' "$PROCESSED_HANDBOOK"
     # Convert HTML img tags to LaTeX includegraphics commands
     # Handle images with float: right styling
     sed -i 's|<img src="/assets/images/handbook/\([^"]*\)" alt="[^"]*" style="[^"]*float: right[^"]*width: *\([0-9]*\)px[^"]*">|\\begin{wrapfigure}{r}{0.15\\textwidth}\\centering\\includegraphics[width=0.15\\textwidth]{handbook/\1}\\end{wrapfigure}|g' "$PROCESSED_HANDBOOK"
