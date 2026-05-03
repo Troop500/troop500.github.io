@@ -1,0 +1,129 @@
+﻿{
+    "generatedAt":  "2026-05-03T13:34:15.5051126-07:00",
+    "currentAsOf":  "Current as of 5/3/2026 4:34 PM",
+    "source":  "https://api.scouting.org/advancements/events/calendar/126388",
+    "count":  11,
+    "events":  [
+                   {
+                       "uid":  "6872350@advancements.scouting.org",
+                       "title":  "SemiAnnual Planning",
+                       "description":  "Discuss plans for next 8 months",
+                       "location":  "None",
+                       "url":  "https://advancements.scouting.org/calendar/event/6872350",
+                       "start":  "2026-05-02T21:00:00",
+                       "end":  "2026-05-03T20:45:00",
+                       "allDay":  false,
+                       "display":  "5/2 9:00pm - 5/3 8:45pm: SemiAnnual Planning"
+                   },
+                   {
+                       "uid":  "6703597@advancements.scouting.org",
+                       "title":  "Merit Badge University @ Firelands",
+                       "description":  "RSVPs are due by April 6th for early registration discountÂ ---------------------------Â Event: Merit Badge University Campout @ Firelands\n\nThe Short Version: Earn some Merit Badges while hanging with your peeps\n\nWhat We\u0027re Doing:Â  TentÂ camping for one night, Saturday will be Merit Badge classes. The current list is here:Â https://scoutingevent.com/440-105130. We will return Saturday evening after dinner.\n\nWho Should Attend: All Scouts and registered Adult Leaders\n\nUniform: Class As for travel. Class Bs for Saturday\n\nCost: ~$45 for Scouts and $20 for Scouters. Scout price increases by $10 if RSVP late.\n\nSignup Deadline: April 6, 2026\n\nWhen \u0026amp; Where: \n* Drop-off: 5:30pm on Fri 5/8\n* Pick-up: 10:00pm on Sat 5/9\n* Meet at: Advent Lutheran - eat dinner prior to arriving\n\nWhy We\u0027re Doing It: Earn merit badges, have fun with each other, practice the patrol method, scout spirit, and group bonding\nÂ \nAccommodations: We will be tent camping. Site is TBD\nÂ \nEvent Location:Â  13782 Gore Orphanage Rd, Wakeman, Ohio 44889 \n\nTroop Gear:\n* trailer\n* cooking materials\n* tents\n\nPersonal Gear:\n* 13 essentials (https://troop500.org/ten-essentials)\n* maybe cold weather gearÂ Â \n* sleeping bags/pads\nÂ \nGrubmastering: TBD",
+                       "location":  "13782 Gore Orphanage Rd, Wakeman, Ohio 44889",
+                       "url":  "https://advancements.scouting.org/calendar/event/6703597",
+                       "start":  "2026-05-08T14:30:00",
+                       "end":  "2026-05-09T19:00:00",
+                       "allDay":  false,
+                       "display":  "5/8 2:30pm - 5/9 7:00pm: Merit Badge University @ Firelands"
+                   },
+                   {
+                       "uid":  "6931482@advancements.scouting.org",
+                       "title":  "Memorial Day Parade",
+                       "description":  "Meet at the Twinsburg High School parking lot. Come dressed in full Class As. Bringing water is a great idea.",
+                       "location":  "Twinsburg High School",
+                       "url":  "https://advancements.scouting.org/calendar/event/6931482",
+                       "start":  "2026-05-25T06:30:00",
+                       "end":  "2026-05-25T09:00:00",
+                       "allDay":  false,
+                       "display":  "5/25 6:30am - 9:00am: Memorial Day Parade"
+                   },
+                   {
+                       "uid":  "6512092@advancements.scouting.org",
+                       "title":  "Summer Camp",
+                       "description":  "Summer Camp at Pioneer Scout Reservation. Meeting approximately 9:30am Sunday to depart, and return around 1:00/2:00pm Saturday.Leader Guide for Pioneer Scout Reservation, Camp FrontierDates are June 28-July 4Early Bird registration due by April 20th WITH payment- $496;regular rate of $516 due after April 20thAdults are $238 weekly, $48 daily ratesThere WILL BE extra costs for food, transportation, misc. that is figured out closer to the timeThere are out of council Camperships (scholarships) available, due by APRIL 16RSVP in Scoutbook ASAPVideoCAMP MEETING April 6, 20 minutes before Troop meeting, so as to include Scouts, initially",
+                       "location":  "Pioneer Scout Camp, Camp Frontier",
+                       "url":  "https://advancements.scouting.org/calendar/event/6512092",
+                       "start":  "2026-06-28T06:30:00",
+                       "end":  "2026-07-04T10:30:00",
+                       "allDay":  false,
+                       "display":  "6/28 6:30am - 7/4 10:30am: Summer Camp"
+                   },
+                   {
+                       "uid":  "6703600@advancements.scouting.org",
+                       "title":  "National Jamboree",
+                       "description":  "details TBD",
+                       "location":  "None",
+                       "url":  "https://advancements.scouting.org/calendar/event/6703600",
+                       "start":  "2026-07-21T21:00:00",
+                       "end":  "2026-07-31T20:45:00",
+                       "allDay":  false,
+                       "display":  "7/21 9:00pm - 7/31 8:45pm: National Jamboree"
+                   },
+                   {
+                       "uid":  "6943403@advancements.scouting.org",
+                       "title":  "OA Summer Induction",
+                       "description":  "TBD",
+                       "location":  "None",
+                       "url":  "https://advancements.scouting.org/calendar/event/6943403",
+                       "start":  "2026-08-13T21:00:00",
+                       "end":  "2026-08-16T20:45:00",
+                       "allDay":  false,
+                       "display":  "8/13 9:00pm - 8/16 8:45pm: OA Summer Induction"
+                   },
+                   {
+                       "uid":  "6943409@advancements.scouting.org",
+                       "title":  "Camp Hi with 223",
+                       "description":  "Canoeing/Kayaking at Camp Hi with camping at Chickagami",
+                       "location":  "Location was not specified",
+                       "url":  "https://advancements.scouting.org/calendar/event/6943409",
+                       "start":  "2026-08-14T10:45:00",
+                       "end":  "2026-08-15T11:45:00",
+                       "allDay":  false,
+                       "display":  "8/14 10:45am - 8/15 11:45am: Camp Hi with 223"
+                   },
+                   {
+                       "uid":  "6943416@advancements.scouting.org",
+                       "title":  "Scouting in the Sqaure",
+                       "description":  "Details TBD. One night of camping at the Square.",
+                       "location":  "None",
+                       "url":  "https://advancements.scouting.org/calendar/event/6943416",
+                       "start":  "2026-09-11T10:45:00",
+                       "end":  "2026-09-12T11:45:00",
+                       "allDay":  false,
+                       "display":  "9/11 10:45am - 9/12 11:45am: Scouting in the Sqaure"
+                   },
+                   {
+                       "uid":  "6943411@advancements.scouting.org",
+                       "title":  "Cub Haunted",
+                       "description":  "Cabin camping at Beaumont and volunteering to help the Cubs",
+                       "location":  "Location was not specified",
+                       "url":  "https://advancements.scouting.org/calendar/event/6943411",
+                       "start":  "2026-10-16T10:45:00",
+                       "end":  "2026-10-18T11:45:00",
+                       "allDay":  false,
+                       "display":  "10/16 10:45am - 10/18 11:45am: Cub Haunted"
+                   },
+                   {
+                       "uid":  "6943423@advancements.scouting.org",
+                       "title":  "Cooking Campout",
+                       "description":  "Details TBD",
+                       "location":  "Location was not specified",
+                       "url":  "https://advancements.scouting.org/calendar/event/6943423",
+                       "start":  "2026-11-13T11:00:00",
+                       "end":  "2026-11-15T12:00:00",
+                       "allDay":  false,
+                       "display":  "11/13 11:00am - 11/15 12:00pm: Cooking Campout"
+                   },
+                   {
+                       "uid":  "6943424@advancements.scouting.org",
+                       "title":  "Boomers v Zoomers",
+                       "description":  "with 223 at Manitoc. 2 days of cabin camping - Need to reserve cabin!!!",
+                       "location":  "Location was not specified",
+                       "url":  "https://advancements.scouting.org/calendar/event/6943424",
+                       "start":  "2026-12-04T11:00:00",
+                       "end":  "2026-12-06T12:00:00",
+                       "allDay":  false,
+                       "display":  "12/4 11:00am - 12/6 12:00pm: Boomers v Zoomers"
+                   }
+               ]
+}

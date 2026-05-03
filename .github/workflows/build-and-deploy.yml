@@ -3,6 +3,8 @@ name: Build Jekyll site and generate PDFs
 on:
   push:
     branches: [ gh-pages ]
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -188,6 +190,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Refresh Scoutbook events data
+        shell: pwsh
+        run: ./scripts/utils/parse-scoutbook-ical.ps1
 
       - name: Download jekyll image artifact
         uses: actions/download-artifact@v8
