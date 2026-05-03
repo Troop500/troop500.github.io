@@ -6,14 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 4/26: Flag Ceremony at Special Olympics - 9am-10am
-- 4/27: Troop Meeting
-- 4/29: PLC @ Solon Library
-- 5/1 - 5/2: Archeology MB at Dover Dam Weekend
-	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10pm on Saturday.
-- 5/2: Trash the Trash in Solon (9am-noon)
-- 5/2: Swim Test - noon-2pm
-- 5/3: Semi-Annual Planning
 - 5/4: Troop Meeting
 - 5/8 - 5/9: MBU at Firelands
 	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10pm on Saturday.
@@ -25,9 +17,23 @@ The following events are currently scheduled.
 - 6/1: Troop Meeting
 - 6/8: First Troop Meeting at Shelterhouse - 6:30pm - 8pm
 - 6/28 - 7/4: Summer Camp
+- 7/13: Gagaball Tourney
 - 7/22 - 7/31: National Jamboree
+- 8/10: PLC Elections
+- 8/14-8/16: Canoeing & Camp Hi
+- 8/22: High ROPES Course
 - 8/31: Court of Honor - last meeting at Shelterhouse
 - 9/7: First Troop Meeting at Church
+- 9/11 - 9/12: Scouting in the Sqaure
+- 9/19 or 9/26: Horseback riding
+- 10/16 - 10/18: Cub Haunted
+- 11/1: Semi-Annual Planning - PLC Only
+- 11/13 - 11/16: Cooking Campout in Metroparks
+- 12/4 - 12/6: Boomers vs Zoomers
+- Jan: Klondike
+- Feb: Gaming Campout
+- 2/15: PLC Elections
+- Mar: E-Prep Campout
 
 
 ## Troop Google Calendar
