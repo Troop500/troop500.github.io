@@ -92,25 +92,6 @@ function Parse-IcsDateTime {
         $tzid = $Matches[1]
     }
 
-    if ($isAllDay) {
-        $localDate = [datetime]::ParseExact($RawValue, "yyyyMMdd", [System.Globalization.CultureInfo]::InvariantCulture)
-        return [pscustomobject]@{
-            LocalDateTime = $localDate
-            UtcDateTime = $localDate.ToUniversalTime()
-            IsAllDay = $true
-        }
-    }
-
-    if ($RawValue -match "Z$") {
-        $utc = [datetime]::ParseExact($RawValue, "yyyyMMdd'T'HHmmss'Z'", [System.Globalization.CultureInfo]::InvariantCulture, [System.Globalization.DateTimeStyles]::AssumeUniversal)
-        return [pscustomobject]@{
-            LocalDateTime = $utc.ToLocalTime()
-            UtcDateTime = $utc.ToUniversalTime()
-            IsAllDay = $false
-        }
-    }
-
-    $local = [datetime]::ParseExact($RawValue, "yyyyMMdd'T'HHmmss", [System.Globalization.CultureInfo]::InvariantCulture)
     $timeZoneInput = $DefaultTimeZone
     if (-not [string]::IsNullOrWhiteSpace($tzid)) {
         $timeZoneInput = $tzid
@@ -118,6 +99,28 @@ function Parse-IcsDateTime {
 
     $timezoneToUse = Resolve-TimeZoneId -RequestedId $timeZoneInput
     $tz = [TimeZoneInfo]::FindSystemTimeZoneById($timezoneToUse)
+
+    if ($isAllDay) {
+        $localDate = [datetime]::ParseExact($RawValue, "yyyyMMdd", [System.Globalization.CultureInfo]::InvariantCulture)
+        $utcDate = [TimeZoneInfo]::ConvertTimeToUtc($localDate, $tz)
+        return [pscustomobject]@{
+            LocalDateTime = $localDate
+            UtcDateTime = $utcDate
+            IsAllDay = $true
+        }
+    }
+
+    if ($RawValue -match "Z$") {
+        $utc = [datetime]::ParseExact($RawValue, "yyyyMMdd'T'HHmmss'Z'", [System.Globalization.CultureInfo]::InvariantCulture, ([System.Globalization.DateTimeStyles]::AssumeUniversal -bor [System.Globalization.DateTimeStyles]::AdjustToUniversal))
+        $localInConfiguredZone = [TimeZoneInfo]::ConvertTimeFromUtc($utc, $tz)
+        return [pscustomobject]@{
+            LocalDateTime = $localInConfiguredZone
+            UtcDateTime = $utc
+            IsAllDay = $false
+        }
+    }
+
+    $local = [datetime]::ParseExact($RawValue, "yyyyMMdd'T'HHmmss", [System.Globalization.CultureInfo]::InvariantCulture)
     $utcTime = [TimeZoneInfo]::ConvertTimeToUtc($local, $tz)
 
     return [pscustomobject]@{
