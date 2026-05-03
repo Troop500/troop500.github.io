@@ -31,6 +31,7 @@ Welcome to the Documents page. Here you can find important files and resources f
 ## Service in a Snap
 
 - [Axe Yard Maintenance]({{ site.baseurl }}/assets/files/service-in-a-snap/Service%20in%20a%20Snap%20-%20Axe%20Yard%20Maintenance.pdf){:target="_blank"}
+- [Camp Stove Maintenance]({{ site.baseurl }}/assets/files/service-in-a-snap/Service%20in%20a%20Snap%20-%20Camp%20Stove%20Maintenance.pdf){:target="_blank"}
 - [First Aid Kit Maintenance]({{ site.baseurl }}/assets/files/service-in-a-snap/Service%20in%20a%20Snap%20-%20First%20Aid%20Kit%20Maintenance.pdf){:target="_blank"}
 - [Food Pantry]({{ site.baseurl }}/assets/files/service-in-a-snap/Service%20in%20a%20Snap%20-%20Food%20Pantry.pdf){:target="_blank"}
 - [Tent Maintenance]({{ site.baseurl }}/assets/files/service-in-a-snap/Service%20in%20a%20Snap%20-%20Tent%20Maintenance.pdf){:target="_blank"}
