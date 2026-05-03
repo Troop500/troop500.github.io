@@ -161,10 +161,17 @@ The following events are currently scheduled.
 					<details>
 						<summary>{{ event.display }}</summary>
 						<div class="event-detail-body">
-							<p><strong>Title:</strong> {{ event.title }}</p>
-							<p><strong>Start:</strong> {{ event.start }}</p>
-							<p><strong>End:</strong> {{ event.end }}</p>
-							<p><strong>All day:</strong> {% if event.allDay %}Yes{% else %}No{% endif %}</p>
+							{% if event.allDay %}
+							<p><strong>When:</strong> All day</p>
+							{% else %}
+							{% assign start_day = event.start | date: "%Y-%m-%d" %}
+							{% assign end_day = event.end | date: "%Y-%m-%d" %}
+							{% if start_day == end_day %}
+							<p><strong>When:</strong> {{ event.start | date: "%B %-d, %Y %-I:%M%p" }} - {{ event.end | date: "%-I:%M%p" }}</p>
+							{% else %}
+							<p><strong>When:</strong> {{ event.start | date: "%B %-d, %Y %-I:%M%p" }} - {{ event.end | date: "%B %-d, %Y %-I:%M%p" }}</p>
+							{% endif %}
+							{% endif %}
 							{% if event.location and event.location != "Location was not specified" and event.location != "None" %}
 							<p><strong>Location:</strong> {{ event.location }}</p>
 							{% endif %}
@@ -172,7 +179,7 @@ The following events are currently scheduled.
 							<p><strong>Description:</strong><br>{{ event.description | escape | newline_to_br }}</p>
 							{% endif %}
 							{% if event.url %}
-							<p><a href="{{ event.url }}" target="_blank" rel="noopener">View event details</a></p>
+							<p><a href="{{ event.url }}" target="_blank" rel="noopener">RSVP on Scoutbook</a></p>
 							{% endif %}
 						</div>
 					</details>
