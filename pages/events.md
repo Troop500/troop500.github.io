@@ -69,33 +69,7 @@ The following events are currently scheduled.
 	margin: 4px 0 8px 0;
 }
 
-.expandable-events {
-	list-style: none;
-	margin: 0 0 14px 0;
-	padding-left: 0;
-}
 
-.event-details {
-	border: 1px solid #e2e2e2;
-	border-radius: 6px;
-	margin-bottom: 8px;
-	padding: 6px 10px;
-	background: #fafafa;
-}
-
-.event-details summary {
-	cursor: pointer;
-	font-weight: 600;
-}
-
-.event-detail-body {
-	margin-top: 8px;
-	padding-left: 8px;
-}
-
-.event-detail-body p {
-	margin: 0 0 6px 0;
-}
 
 .events-current-as-of {
 	font-size: 0.95em;
@@ -155,34 +129,13 @@ The following events are currently scheduled.
 			{% if scoutbook_data.currentAsOf %}
 			<p class="events-current-as-of">{{ scoutbook_data.currentAsOf }}</p>
 			{% endif %}
-			<ul class="expandable-events" id="scoutbook-upcoming-events">
+			<ul class="upcoming-events-list" id="scoutbook-upcoming-events">
 				{% for event in scoutbook_data.events %}
-				<li class="event-details">
-					<details>
-						<summary>{{ event.display }}</summary>
-						<div class="event-detail-body">
-							{% if event.allDay %}
-							<p><strong>When:</strong> All day</p>
-							{% else %}
-							{% assign start_day = event.start | date: "%Y-%m-%d" %}
-							{% assign end_day = event.end | date: "%Y-%m-%d" %}
-							{% if start_day == end_day %}
-							<p><strong>When:</strong> {{ event.start | date: "%B %-d, %Y %-I:%M%p" }} - {{ event.end | date: "%-I:%M%p" }}</p>
-							{% else %}
-							<p><strong>When:</strong> {{ event.start | date: "%B %-d, %Y %-I:%M%p" }} - {{ event.end | date: "%B %-d, %Y %-I:%M%p" }}</p>
-							{% endif %}
-							{% endif %}
-							{% if event.location and event.location != "Location was not specified" and event.location != "None" %}
-							<p><strong>Location:</strong> {{ event.location }}</p>
-							{% endif %}
-							{% if event.description %}
-							<p><strong>Description:</strong><br>{{ event.description | escape | newline_to_br }}</p>
-							{% endif %}
-							{% if event.url %}
-							<p><a href="{{ event.url }}" target="_blank" rel="noopener">RSVP on Scoutbook</a></p>
-							{% endif %}
-						</div>
-					</details>
+				<li>
+					{{ event.display }}
+					{% if event.url %}
+					(<a href="{{ event.url }}" target="_blank" rel="noopener">Details / RSVP</a>)
+					{% endif %}
 				</li>
 				{% endfor %}
 			</ul>
