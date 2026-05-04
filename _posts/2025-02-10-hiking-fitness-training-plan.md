@@ -7,6 +7,12 @@ tags: [resources, hiking, high-adventure, fitness, merit-badge]
 image: backpack.jpg
 ---
 
+**Before your first 10-mile hike: complete Hiking Merit Badge Requirements 1 and 2 first.**
+
+Troop 500G Scouts often delay the paperwork, then realize later that the knowledge from Requirements 1 and 2 would have helped on every training hike. Do not wait. Finish those requirements early so your safety planning, preparation, and trail decision-making are stronger from day one.
+
+The BSA provides an **official Hiking Trip Plan** form that covers the Five W's: Where, When, Who, Why, and What — plus how you will follow Leave No Trace principles. Fill one out for every qualifying hike and leave a copy with a parent or troop leader before you head out. Download the official form here: [BSA Hiking Trip Plan (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Hiking/Hiking-Trip-Plan.pdf).
+
 Troop 500G has a growing interest in high-adventure activities, and that means making sure our Scouts and adult leaders in Northeast Ohio are physically prepared. This training plan is designed to help newer and experienced hikers build the endurance and strength needed to complete a 10-mile or 20-mile hike with confidence.
 
 Use this as a personal roadmap, a patrol challenge, or a foundation for earning the [Hiking Merit Badge](https://www.scouting.org/merit-badges/hiking/).
@@ -34,75 +40,24 @@ This method makes merit badge preparation less intimidating and helps new hikers
 
 ---
 
-## Fitness Tracks
+## The Progression
 
-| Track | Starting Point | Goal |
-|---|---|---|
-| **Beginner** | Little to no regular walking/exercise | Complete a 10-mile hike |
-| **Intermediate** | Walking regularly, some trail experience | Complete a 10-mile hike comfortably, attempt a 20-miler |
-| **Advanced** | Active hiker, comfortable on trails | Complete a 20-mile hike |
+The goal is simple: build up gradually, complete two 10-mile hikes, and work your way to the 20-miler. There is no rigid schedule — hike at whatever pace works for you and your patrol. More hiking is never a bad thing, and some people need more conditioning in smaller increments to get there. That is completely fine and part of the process.
 
----
+**Step 1 — Build your base.**
+Start with shorter hikes of 3–5 miles and add distance week over week. Aim to increase your long-day distance by no more than 10–15% at a time. Carry your actual daypack so your body adapts to the weight. Use the local NE Ohio routes below — Liberty Park and the Towpath are great low-pressure starting points.
 
-## 12-Week Training Schedule
+**Step 2 — Complete your first 10-miler.**
+When shorter hikes feel comfortable, step up to a full 10-mile hike. This is Requirement 4 for the Hiking Merit Badge. Log it with your counselor.
 
-This schedule builds progressively toward a 10-mile hike. Advanced hikers can extend it to 20 miles by continuing for an additional 6–8 weeks.
+**Step 3 — Do it again.**
+Repeat the 10-miler on a different route. Consistency builds confidence and fitness. Two solid 10-milers will tell you a lot about your pacing, gear, and nutrition needs before you go longer.
 
-### Weeks 1–3: Foundation
-Build a base of consistent walking. Focus on time on feet, not speed.
+**Step 4 — Optional 15-miler.**
+If you or your patrol want an intermediate step before the 20, do a 15-miler. This is Requirement 5. It is an excellent confidence builder and reveals any gear or pacing issues while the stakes are still lower.
 
-| Day | Beginner | Intermediate | Advanced |
-|---|---|---|---|
-| Monday | Rest | 30-min walk | 45-min walk + bodyweight exercises |
-| Tuesday | 20-min walk | 45-min walk | 5-mile trail hike |
-| Wednesday | Rest | Rest | Rest |
-| Thursday | 20-min walk | 45-min walk | 45-min walk + core workout |
-| Friday | Rest | Rest | Rest |
-| Saturday | 2-mile walk (flat) | 4-mile walk/hike | 6-mile trail hike (with pack) |
-| Sunday | Rest | Rest | Rest |
-
-### Weeks 4–6: Build Mileage
-Increase distance on your long day. Add a light daypack (5–10 lbs) on Saturday hikes.
-
-| Day | Beginner | Intermediate | Advanced |
-|---|---|---|---|
-| Monday | Rest | 30-min walk | 45-min walk + bodyweight exercises |
-| Tuesday | 30-min walk | 60-min walk/hike | 6-mile trail hike |
-| Wednesday | Rest | Rest | Rest |
-| Thursday | 30-min walk | 60-min walk | 60-min walk + core workout |
-| Friday | Rest | Rest | Rest |
-| Saturday | 4-mile walk | 6-mile hike (with pack) | 8–10-mile trail hike (with pack) |
-| Sunday | Rest | Stretch / light walk | Rest |
-
-### Weeks 7–9: Peak Training
-Your Saturday long hike should push toward your goal distance. Carry the pack weight you plan to use on the real hike.
-
-| Day | Beginner | Intermediate | Advanced |
-|---|---|---|---|
-| Monday | 30-min walk | 30-min walk | 60-min walk + strength |
-| Tuesday | 45-min walk | 5-mile hike | 8-mile hike |
-| Wednesday | Rest | Rest | Rest |
-| Thursday | 45-min walk | 5-mile walk | 5-mile walk + core workout |
-| Friday | Rest | Rest | Rest |
-| Saturday | 6–7-mile hike | 8–10-mile hike (with pack) | 15-mile hike (with pack) |
-| Sunday | Rest | Stretch / light walk | Stretch / light walk |
-
-### Weeks 10–11: Taper
-Reduce mileage to let your body recover. Stay active, but don't push hard.
-
-| Day | Beginner | Intermediate | Advanced |
-|---|---|---|---|
-| Monday | 30-min walk | 30-min walk | 45-min walk |
-| Tuesday | 30-min walk | 4-mile walk | 5-mile hike |
-| Wednesday | Rest | Rest | Rest |
-| Thursday | 30-min walk | 3-mile walk | 4-mile walk |
-| Friday | Rest | Rest | Rest |
-| Saturday | 4-mile walk | 5-mile easy hike | 8-mile easy hike |
-| Sunday | Rest | Rest | Rest |
-
-### Week 12: Goal Hike Week
-- **Monday–Friday:** Light 20–30-min walks only. Rest and prepare.
-- **Saturday or Sunday:** **Complete your goal hike!** 🥾
+**Step 5 — The 20-miler.**
+With solid 10s (and ideally a 15) under your belt, the 20-mile hike becomes achievable rather than daunting. This is Requirement 6. Plan your route carefully, carry appropriate gear and water, and have a bailout point identified in advance.
 
 ---
 
@@ -130,17 +85,14 @@ For Troop 500G trip planning, this simple workflow works well:
 3. Share route links and printed maps with Scouts, parents, and leaders before the hike.
 4. Keep a post-hike log so future patrols can reuse proven NE Ohio routes.
 
----
+### Troop 500G October 2025 Long-Hike Progression
 
-## Pack Weight Guidelines
+Troop 500G used an August-October hike progression in 2025 that is useful for new hikers preparing for the Hiking Merit Badge:
 
-Carrying the right pack weight during training will prepare your body for the real hike.
-
-| Hiker | Pack Weight |
-|---|---|
-| Youth Scouts | No more than 25% of body weight |
-| Adult leaders | 20–30 lbs is a reasonable training target |
-| Everyone | Start lighter and add weight gradually across weeks |
+- **[16 Aug 2025 training hike](https://www.alltrails.com/explore/custom-routes/map-august-11-2025-a8d3b1e?u=i&sh=fyewjv):** Early distance base-building and gear check.
+- **[13 Sep 2025 training hike](https://www.alltrails.com/explore/custom-routes/hinkley-lake-20b5e1c?u=i&sh=fyewjv):** Early long-mileage preparation and pacing check.
+- **[4 Oct 2025 conditioning hike](https://www.alltrails.com/explore/custom-routes/map-september-16-2025-bf851ff?p=-1&sh=fyewjv&utm_medium=map_share&utm_source=alltrails_virality):** Some Scouts intentionally dropped off around mile 16 as part of their conditioning plan.
+- **[18 Oct 2025 full 20-miler](https://www.alltrails.com/explore/custom-routes/20mi-bridalveil-to-boston-via-bt-68a97f2?ref=share-sms&sh=fyewjv) — [CalTopo](https://caltopo.com/m/8F1DB2V):** Scouts completed the full 20-miler after additional training.
 
 ---
 
@@ -152,9 +104,15 @@ If a Scout is working toward the [Hiking Merit Badge](https://www.scouting.org/m
 - **Req. 5:** Take a 15-mile hike.
 - **Req. 6:** Take a 20-mile hike.
 
-Scouts must be physically prepared and have adult supervision for all qualifying hikes. Talk to your Scoutmaster about logging your hikes for merit badge credit.
+Scouts must be physically prepared and have adult supervision for all qualifying hikes. Use the official [BSA Hike Report Template (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Hiking/Hike%20Report%20Template.pdf) to document each qualifying hike and present it to your merit badge counselor.
 
-For the official requirements and updates, always use the BSA source: [Hiking Merit Badge](https://www.scouting.org/merit-badges/hiking/).
+For the official requirements and updates, use these core resources together:
+
+- [Hiking Merit Badge Requirements](https://www.scouting.org/merit-badges/hiking/)
+- [BSA Hiking Trip Plan (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Hiking/Hiking-Trip-Plan.pdf)
+- [BSA Hike Report Template (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Hiking/Hike%20Report%20Template.pdf)
+- Hiking Merit Badge Pamphlet (Scout Shop / council library)
+- [Hiking Digital Resource Guide](https://www.scouting.org/skills/merit-badges/digital-resource-guides/hiking/)
 
 ---
 
@@ -163,7 +121,15 @@ For the official requirements and updates, always use the BSA source: [Hiking Me
 - [Hiking Project](https://www.hikingproject.com/)
 - [CalTopo](https://caltopo.com/)
 - [AllTrails](https://www.alltrails.com/)
+- [Troop 500G AllTrails Route (16 Aug 2025 training hike)](https://www.alltrails.com/explore/custom-routes/map-august-11-2025-a8d3b1e?u=i&sh=fyewjv)
+- [Troop 500G AllTrails Route (13 Sep 2025 training hike)](https://www.alltrails.com/explore/custom-routes/hinkley-lake-20b5e1c?u=i&sh=fyewjv)
+- [Troop 500G AllTrails Route (4 Oct 2025 conditioning hike)](https://www.alltrails.com/explore/custom-routes/map-september-16-2025-bf851ff?p=-1&sh=fyewjv&utm_medium=map_share&utm_source=alltrails_virality)
+- [Troop 500G AllTrails Route (18 Oct 2025 full 20-miler)](https://www.alltrails.com/explore/custom-routes/20mi-bridalveil-to-boston-via-bt-68a97f2?ref=share-sms&sh=fyewjv)
 - [Scouting America Hiking Merit Badge](https://www.scouting.org/merit-badges/hiking/)
+- [BSA Hiking Trip Plan (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Hiking/Hiking-Trip-Plan.pdf)
+- [BSA Hike Report Template (PDF)](https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Hiking/Hike%20Report%20Template.pdf)
+- [Scouting America Hiking Digital Resource Guide](https://www.scouting.org/skills/merit-badges/digital-resource-guides/hiking/)
+- [Troop 500G CalTopo Map (Oct 2025 20-miler)](https://caltopo.com/m/8F1DB2V)
 
 ---
 
