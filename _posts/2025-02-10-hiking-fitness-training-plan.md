@@ -7,7 +7,7 @@ tags: [resources, hiking, high-adventure, fitness, merit-badge]
 image: backpack.jpg
 ---
 
-Troop 500 has a growing interest in high-adventure activities, and that means making sure our Scouts and adult leaders are physically prepared. This training plan is designed to help anyone — regardless of current fitness level — build up the endurance and strength needed to complete a 10-mile or 20-mile hike with confidence.
+Troop 500G has a growing interest in high-adventure activities, and that means making sure our Scouts and adult leaders in Northeast Ohio are physically prepared. This training plan is designed to help newer and experienced hikers build the endurance and strength needed to complete a 10-mile or 20-mile hike with confidence.
 
 Use this as a personal roadmap, a patrol challenge, or a foundation for earning the [Hiking Merit Badge](https://www.scouting.org/merit-badges/hiking/).
 
@@ -19,6 +19,18 @@ Use this as a personal roadmap, a patrol challenge, or a foundation for earning 
 - **Start where you are.** This plan has three tracks: Beginner, Intermediate, and Advanced. Pick the one that matches your current fitness level — there is no wrong answer.
 - **Wear your boots early.** Whatever footwear you plan to hike in, start wearing it during your training walks now.
 - **Stay hydrated.** Aim for at least 8–10 cups of water per day, and always carry water on every training walk.
+
+### Troop 500G Quick Start (For New Scouts and Leaders)
+
+If the Hiking Merit Badge feels big at first, start with this simple process:
+
+1. Pick one easy local route from the NE Ohio list below (Liberty Park or Towpath are great first choices).
+2. Hike once per week for 3 weeks at your current level.
+3. Log distance, time, weather, and how you felt after each hike.
+4. Add distance slowly (about 10-15% per week) instead of making big jumps.
+5. Join a buddy or patrol hike at least once per month for skill confidence and accountability.
+
+This method makes merit badge preparation less intimidating and helps new hikers build success early.
 
 ---
 
@@ -96,7 +108,7 @@ Reduce mileage to let your body recover. Stay active, but don't push hard.
 
 ## Local Training Routes (Twinsburg / Solon Area)
 
-These trails are great for building up your mileage. All distances are approximate round-trip.
+These Northeast Ohio trails are great for building up your mileage. All distances are approximate round-trip.
 
 | Trail | Location | Distance | Difficulty | Notes |
 |---|---|---|---|---|
@@ -108,6 +120,15 @@ These trails are great for building up your mileage. All distances are approxima
 | Pine Lane / Buckeye Trail Connector | Boston Township, OH | 8–12 miles | Moderate–Hard | Good 10-mile prep hike |
 
 > **Accessible Routes:** Liberty Park Trail in Twinsburg and the Towpath Trail in Cuyahoga Valley National Park both offer paved or packed-surface options suitable for those with mobility limitations or who are just starting out.
+
+### Route Planning Workflow (NE Ohio)
+
+For Troop 500G trip planning, this simple workflow works well:
+
+1. Find trail options and recent condition notes on [AllTrails](https://www.alltrails.com/) and [Hiking Project](https://www.hikingproject.com/).
+2. Build or refine the route in [CalTopo](https://caltopo.com/) to verify mileage, elevation, turn points, and bailout spots.
+3. Share route links and printed maps with Scouts, parents, and leaders before the hike.
+4. Keep a post-hike log so future patrols can reuse proven NE Ohio routes.
 
 ---
 
@@ -132,6 +153,17 @@ If a Scout is working toward the [Hiking Merit Badge](https://www.scouting.org/m
 - **Req. 6:** Take a 20-mile hike.
 
 Scouts must be physically prepared and have adult supervision for all qualifying hikes. Talk to your Scoutmaster about logging your hikes for merit badge credit.
+
+For the official requirements and updates, always use the BSA source: [Hiking Merit Badge](https://www.scouting.org/merit-badges/hiking/).
+
+---
+
+## References
+
+- [Hiking Project](https://www.hikingproject.com/)
+- [CalTopo](https://caltopo.com/)
+- [AllTrails](https://www.alltrails.com/)
+- [Scouting America Hiking Merit Badge](https://www.scouting.org/merit-badges/hiking/)
 
 ---
 
