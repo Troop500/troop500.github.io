@@ -19,6 +19,7 @@ The following events are currently scheduled.
 - 6/28 - 7/4: Summer Camp
 - 7/13: Gagaball Tourney
 - 7/22 - 7/31: National Jamboree
+- 8/3: Lake House Party!
 - 8/10: PLC Elections
 - 8/14-8/16: Canoeing & Camp Hi
 - 8/22: High ROPES Course
