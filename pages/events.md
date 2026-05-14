@@ -6,23 +6,28 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 5/4: Troop Meeting
-- 5/8 - 5/9: MBU at Firelands
-	- Meet at 5:30pm at the Church wearing Class As. Come having eaten dinner. Expect to return around 10pm on Saturday.
-- 5/11: Troop Meeting
 - 5/18: Troop Meeting
 - 5/25: Twinsburg Memorial Day Parade - 9:30am
 - 5/25: NO Troop Meeting
 - 5/27: PLC
 - 6/1: Troop Meeting
 - 6/8: First Troop Meeting at Shelterhouse - 6:30pm - 8pm
+- 6/15: Troop Meeting
+- 6/22: Troop Meeting
+- 6/24: PLC
 - 6/28 - 7/4: Summer Camp
+- 7/6: Troop Meeting
 - 7/13: Gagaball Tourney
+- 7/20: Troop Meeting followed by PLC
 - 7/22 - 7/31: National Jamboree
+- 7/27: Troop Meeting
 - 8/3: Lake House Party!
-- 8/10: PLC Elections
+- 8/10: SPL/PL Elections
 - 8/14-8/16: Canoeing & Camp Hi
+- 8/17: Troop Meeting & COH Deadline
 - 8/22: High ROPES Course
+- 8/24: Troop Meeting
+- 8/26: PLC
 - 8/31: Court of Honor - last meeting at Shelterhouse
 - 9/7: First Troop Meeting at Church
 - 9/11 - 9/12: Scouting in the Sqaure
