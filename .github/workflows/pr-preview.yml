@@ -1,0 +1,144 @@
+name: Deploy PR Preview
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write
+  packages: read
+  pull-requests: write
+
+jobs:
+  build-pdfs:
+    runs-on: ubuntu-latest
+    if: github.event.action != 'closed'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate PDFs
+        run: |
+          mkdir -p assets/files/handbook
+          docker run --rm \
+            --user root \
+            -v ${{ github.workspace }}:/srv/jekyll \
+            ghcr.io/${{ github.repository_owner }}/troop500-pandoc:latest \
+            bash /srv/jekyll/scripts/build/build-handbook-simple.sh
+
+      - name: Upload PDF artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: handbook-pdfs
+          path: assets/files/handbook/
+
+  build-jekyll:
+    runs-on: ubuntu-latest
+    if: github.event.action != 'closed'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Compute preview URL and config override
+        run: |
+          OWNER="${{ github.repository_owner }}"
+          REPO=$(basename "${{ github.repository }}")
+          if [ -n "${{ vars.SITE_URL }}" ]; then
+            URL="${{ vars.SITE_URL }}"
+          elif [ "${REPO,,}" = "${OWNER,,}.github.io" ] && [ -f CNAME ]; then
+            URL="https://$(cat CNAME | tr -d '[:space:]')"
+          elif [ "${REPO,,}" = "${OWNER,,}.github.io" ]; then
+            URL="https://${OWNER}.github.io"
+          else
+            URL="https://${OWNER}.github.io"
+          fi
+          if [ "${REPO,,}" != "${OWNER,,}.github.io" ]; then
+            BASEURL="/${REPO}/pr-preview/pr-${{ github.event.number }}"
+          else
+            BASEURL="/pr-preview/pr-${{ github.event.number }}"
+          fi
+          echo "Site: ${URL}${BASEURL}"
+          printf 'url: "%s"\nbaseurl: "%s"\n' "$URL" "$BASEURL" > _config_ci.yml
+
+      - name: Build Jekyll site
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/srv/jekyll \
+            -e JEKYLL_ENV=production \
+            ghcr.io/${{ github.repository_owner }}/troop500-jekyll:latest \
+            sh -c "bundle exec jekyll build --config _config.yml,_config_ci.yml && touch /srv/jekyll/_site/.nojekyll"
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: jekyll-site
+          path: ./_site/
+
+  deploy-preview:
+    runs-on: ubuntu-latest
+    needs: [build-pdfs, build-jekyll]
+    if: always() && (needs.build-pdfs.result == 'success' || needs.build-pdfs.result == 'skipped') && (needs.build-jekyll.result == 'success' || needs.build-jekyll.result == 'skipped')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download site artifact
+        if: github.event.action != 'closed'
+        uses: actions/download-artifact@v8
+        with:
+          name: jekyll-site
+          path: ./_site/
+
+      - name: Download PDF artifacts
+        if: github.event.action != 'closed'
+        uses: actions/download-artifact@v8
+        with:
+          name: handbook-pdfs
+          path: ./_site/assets/files/handbook/
+
+      - name: Determine pages base URL
+        id: site
+        run: |
+          OWNER="${{ github.repository_owner }}"
+          REPO=$(basename "${{ github.repository }}")
+          if [ -n "${{ vars.SITE_URL }}" ]; then
+            PAGES_BASE=$(echo "${{ vars.SITE_URL }}" | sed 's|https://||')
+          elif [ "${REPO,,}" = "${OWNER,,}.github.io" ] && [ -f CNAME ]; then
+            PAGES_BASE=$(cat CNAME | tr -d '[:space:]')
+          elif [ "${REPO,,}" = "${OWNER,,}.github.io" ]; then
+            PAGES_BASE="${OWNER}.github.io"
+          else
+            PAGES_BASE="${OWNER}.github.io/${REPO}"
+          fi
+          echo "pages_base_url=${PAGES_BASE}" >> $GITHUB_OUTPUT
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./_site/
+          preview-branch: pages-deploy
+          pages-base-url: ${{ steps.site.outputs.pages_base_url }}

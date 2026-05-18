@@ -1,0 +1,26 @@
+# Debian-based Ruby image (glibc) — avoids Alpine/musl incompatibility
+# with sass-embedded's native Dart Sass binary
+FROM ruby:3.1-slim
+
+# Install build dependencies needed by native gem extensions
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends build-essential git && \
+    rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /srv/jekyll
+
+# Copy Gemfile, Gemfile.lock, and gemspec first for better layer caching
+COPY Gemfile* millennial.gemspec ./
+
+# Install dependencies
+RUN bundle install
+
+# Copy the rest of the project
+COPY . .
+
+# Expose port 4000
+EXPOSE 4000
+
+# Default command
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload"]

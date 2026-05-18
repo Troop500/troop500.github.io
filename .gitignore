@@ -1,7 +1,61 @@
-_site
-Gemfile.lock
-.sass-cache
+# Jekyll generated files
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-.DS_Store
-.jekyll-cache
+
+# Ruby/Jekyll dependencies
+Gemfile.lock
+vendor/
 *.gem
+
+# Build artifacts and temporary files
+_temp_handbook/
+combined-handbook.md
+*.tmp
+*.log
+*.backup
+
+# PDF build outputs (all generated PDFs - these are build artifacts)
+assets/files/handbook/*.pdf
+assets/files/handbook/archive/*.pdf
+assets/files/handbook/appendix/*.pdf
+assets/files/handbook/appendix/archive/*.pdf
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor and IDE files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (if ever needed)
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Docker
+.docker/
+
+# Debug and development files
+debug-*.sh
+test-*.sh
+*.debug
+
+# Build reports
+test-issues-summary.md
