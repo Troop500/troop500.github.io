@@ -1,26 +1,35 @@
-﻿# Troop Leadership
+# Troop Organization
 
 Troop 500G operates under the Scouting America troop leadership model, where youth leaders are elected by the troop and adult leaders provide guidance and support to all youth-led activities.
 
+<img src="{{ site.baseurl }}/assets/images/handbook/Organization-Chart-726x1024.png" alt="Troop Organization Chart" style="width: 50%; max-width: 400px; height: auto; display: block; margin: 0 auto;">
+
+*Sample Troop Organization Structure*
+
+The chart above illustrates a typical Scouting America troop structure, which Troop 500G adheres to. Youth leaders are elected by their peers and supported by adult volunteers, ensuring a Scout-led program at every level.
+
 ## The Patrol Method
 
-A Scout patrol is a small team of normally six to eight members where Scouts learn skills together, share responsibilities and take on leadership roles. Each patrol elects its own patrol leader and develops its own identity and traditions.
+A Scout patrol is a small team of normally six to eight members where Scouts learn skills together, share responsibilities, and take on leadership roles. Each patrol elects its own patrol leader and develops its own identity and traditions.
 
 "The patrol system is not one method in which Scouting can be carried on. It is the only method."
 —Lord Baden-Powell, Scouting's founder
 
 For more information about the patrol method, see the [Scouting America Patrol Method Guide](https://troopleader.scouting.org/general-troop-information/troop-structure/the-patrol/).
 
+### New Scout Patrol
+
+Troop 500G uses a New Scout Patrol for all new Scouts joining the troop who have not yet earned the Scout rank, including incoming Arrow of Light crossover Scouts. This patrol has its own identity and is led by a Troop Guide — an experienced Scout appointed to mentor new members as they transition into the troop. The Troop Guide helps new Scouts learn the basics of troop life, build confidence, and work toward early rank advancement.
+
+While the New Scout Patrol meets and operates as its own patrol during regular troop meetings, new Scouts roll into one of our regular patrols for campouts based on individual campout participation. This approach gives new Scouts a supportive learning environment while also integrating them into the broader troop experience in the field.
+
+For more information about the New Scout Patrol and the Troop Guide role, see the [Scouting America Troop Guide](https://troopleader.scouting.org/general-troop-information/troop-structure/troop-positions/troop-guide/) and the [New-Scout Patrol Guide](https://troopleader.scouting.org/general-troop-information/troop-structure/the-patrol/new-scout-patrol/).
 
 ## Youth Leadership Positions
 
-<img src="{{ site.baseurl }}/assets/images/handbook/Organization-Chart-726x1024.png" alt="Troop Organization Chart" style="width: 50%; max-width: 400px; height: auto; display: block; margin: 0 auto;">
-
-*Troop 500G Leadership Structure and Organization*
-
 ### Senior Patrol Leader (SPL) <img src="{{ site.baseurl }}/assets/images/handbook/patch_senior_patrol_leader.jpg" alt="Senior Patrol Leader Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-The highest youth leadership position, elected by the troop. With three green bars behind the Scout emblem, the senior patrol leader's shoulder patch symbolizes one of the oldest leadership positions in Scouting. Scouting America has long recognized the senior patrol leader as the highest youth leadership position in a troop. They are the primary link between a troop's Scouts and its adult leaders. They shoulder the responsibility for leading meetings of the troop and the patrol leaders' council and provide valuable leadership in planning and carrying out the troop's program of outdoor activities, service projects, and events.
+The senior patrol leader is the highest youth leadership position in the troop, elected by the Scouts. They serve as the primary link between the troop's Scouts and its adult leaders. The SPL leads troop meetings, runs the patrol leaders' council, and drives planning for outdoor activities, service projects, and events.
 
 **Senior Patrol Leader Responsibilities:**
 - Runs all troop meetings, events, activities, and the annual program planning conference
@@ -37,13 +46,13 @@ For more information about the Senior Patrol Leader role, see the [Scouting Amer
 
 ### Patrol Leaders <img src="{{ site.baseurl }}/assets/images/handbook/patch_patrol_leader.jpg" alt="Patrol Leader Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-Lead individual patrols, elected by patrol members. The patrol leader is the patrol's key leader, representing the patrol at all patrol leaders' council meetings and the annual program planning conference, and keeping patrol members informed of decisions made. Patrol leaders carry out planning, leading, and evaluating patrol meetings and activities, and assure patrols are prepared to participate in all troop activities. They keep their patrol intact so they can work together and share responsibilities to get things done. It is incumbent upon them to be a good example for the members of their patrol and the rest of the troop.
+Each patrol elects its own patrol leader. The patrol leader is the patrol's key leader, representing the patrol at patrol leaders' council meetings and the annual program planning conference. They plan and lead patrol meetings and activities, keep members informed, and ensure the patrol is prepared for all troop activities. Patrol leaders set the example for their patrol and the rest of the troop.
 
 **Patrol Leader Responsibilities:**
 - Plans and leads patrol meetings and activities
 - Keeps patrol members informed
 - Assigns each patrol member a specific duty
-- Represents his patrol at all patrol leaders' council meetings and the annual program planning conference
+- Represents the patrol at all patrol leaders' council meetings and the annual program planning conference
 - Prepares the patrol to participate in all troop activities
 - Works with other troop leaders to make the troop run well
 - Knows the abilities of each patrol member
@@ -56,7 +65,7 @@ For more information about the Patrol Leader role, see the [Scouting America Pat
 
 ### Quartermaster <img src="{{ site.baseurl }}/assets/images/handbook/patch_quartermaster.jpg" alt="Quartermaster Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-Quartermasters serve as the troop's supply boss. They keep an inventory of troop equipment and see that the gear is in good condition. They work with patrol quartermasters as they check out equipment and return it. At meetings of the patrol leaders' council they report on the status of equipment in need of replacement or repair. In carrying out their responsibilities, they may have the guidance of a member of the troop committee.
+The Quartermaster serves as the troop's supply boss. They maintain an inventory of troop equipment and ensure gear is in good condition. They coordinate with patrol quartermasters to check out and return equipment, and report on replacement or repair needs at patrol leaders' council meetings.
 
 **Quartermaster Responsibilities:**
 - Keeps records on patrol and troop equipment
@@ -73,7 +82,7 @@ For more information about the Quartermaster role, see the [Scouting America Qua
 
 ### Scribe <img src="{{ site.baseurl }}/assets/images/handbook/patch_scribe.jpg" alt="Scribe Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-The scribe is the troop's secretary. Though not a voting member, they attend meetings of the patrol leaders' council and keep a record of the discussions. They cooperate with the patrol scribes to record attendance at troop meetings and to maintain troop advancement records. The troop scribe may be assisted by a member of the troop committee.
+The scribe is the troop's secretary. They attend patrol leaders' council meetings and keep a record of the discussions. They work with patrol scribes to track attendance and maintain troop advancement records.
 
 **Scribe Responsibilities:**
 - Attends and keeps a log of patrol leaders' council meetings
@@ -95,11 +104,11 @@ For more information about the Scribe role, see the [Scouting America Scribe Gui
 
 ### Scoutmaster <img src="{{ site.baseurl }}/assets/images/handbook/patch_scoutmaster.jpg" alt="Scoutmaster Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-The Scoutmaster is the adult responsible for working directly with the Scouts providing direction, coaching, and support.
+The Scoutmaster is the adult responsible for working directly with the Scouts, providing direction, coaching, and support.
 
 **The Scoutmaster has three basic roles:**
 - Providing the youth leaders with the tools and skills so they can run the troop
-- Making sure the rules of Scouting America and chartered partner are followed
+- Making sure the rules of Scouting America and the chartered partner are followed
 - Being a good mentor and positive role model
 
 For more information about the Scoutmaster role, see the [Scouting America Scoutmaster Guide](https://troopleader.scouting.org/general-troop-information/troop-structure/troop-positions/scoutmaster/).
@@ -110,7 +119,7 @@ For more information about the Scoutmaster role, see the [Scouting America Scout
 
 ### Assistant Scoutmaster <img src="{{ site.baseurl }}/assets/images/handbook/patch_assistant_scoutmaster.jpg" alt="Assistant Scoutmaster Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
-Available position. An assistant Scoutmaster is an adult leader over the age of 18 who helps the Scoutmaster deliver the promise of Scouting. Each assistant Scoutmaster is assigned specific program duties. They can serve the troop by guiding a particular patrol to which they've been assigned, advising certain Scouts who've assumed a position e.g. the quartermaster or OA representative, or fill in as necessary to assure the junior leaders have what they need to run things.
+The assistant Scoutmasters are adult leaders over the age of 18 who help the Scoutmaster deliver the promise of Scouting. Each assistant Scoutmaster is assigned specific program duties. They can serve the troop by guiding a particular patrol, advising Scouts in appointed positions (e.g., the quartermaster or OA representative), or filling in as needed to ensure youth leaders have what they need to run things.
 
 They also provide the two-deep leadership required by Scouting America. An assistant Scoutmaster may be 18 years old, but at least one in each troop should be 21 or older so they can serve in the Scoutmaster's absence.
 
@@ -130,12 +139,12 @@ For detailed information about all adult leadership positions and responsibiliti
 
 The troop committee is a cross between a board of directors and a parent support group. It sets troop policies and handles administrative functions, allowing the Scoutmaster and assistant Scoutmasters to focus on working directly with the Scouts.
 
-A robust troop committee supports an effective scouting program. The below is a list of common and desirable roles for adults within the troop committee.
+A robust troop committee supports an effective Scouting program. Below is a list of common and desirable roles for adults within the troop committee.
 
 ### Committee Chair <img src="{{ site.baseurl }}/assets/images/handbook/patch_committee_chair.jpg" alt="Committee Chair Patch" style="width: 80px; float: right; margin-left: 15px; margin-bottom: 10px; vertical-align: top;">
 
 **Available position**  
-The troop committee chair is appointed by the chartered organization to see that all committee functions are carried out. The troop committee chair appoints and supervises the unit committee and unit leaders, and organizes the committee to see that all committee responsibilities are delegated, coordinated and completed.
+The troop committee chair is appointed by the chartered organization to see that all committee functions are carried out. The troop committee chair appoints and supervises the unit committee and unit leaders, and organizes the committee to see that all committee responsibilities are delegated, coordinated, and completed.
 
 **Committee Chair Duties:**
 - Organize the committee to see that all functions are delegated, coordinated, and completed
@@ -153,7 +162,7 @@ For more information about the Committee Chair role, see the [Scouting America C
 ### Secretary
 
 **Duties:**
-- Keep minutes of meeting and send out committee meeting notices
+- Keep minutes of meetings and send out committee meeting notices
 - Handle publicity
 - Prepare a family newsletter of troop events and activities
 - Conduct troop resource survey
@@ -236,38 +245,4 @@ This is not an exhaustive list of positions a troop may need. Troops are encoura
 
 The essential support literature for troop committee members is the Scouting America publication *Scouts BSA Troop Committee Guidebook*.
 
-<div style="page-break-before: always;"></div>
 
-# Leadership Development
-
-Leadership development is a core component of the Scouting program. Youth leaders attend training opportunities and gain real-world experience managing troop activities, planning meetings, and mentoring younger Scouts.
-
-## Youth Leadership Training
-
-### Position-Specific Training
-All youth leaders receive training specific to their position, including:
-- Leadership skills and techniques
-- Position-specific responsibilities and procedures
-- Communication and team-building skills
-- Problem-solving and decision-making
-
-### National Youth Leadership Training (NYLT)
-NYLT is an exciting, action-packed program designed for Scouts who are ready to take the next step in their leadership development. This course teaches leadership skills and outdoor skills in an outdoor adventure setting.
-
-## Leadership in Action
-
-Youth leaders apply their training through:
-- Leading troop meetings and activities
-- Planning and executing service projects
-- Mentoring younger Scouts
-- Representing the troop at district and council events
-
-## Adult Mentorship
-
-Adult leaders provide guidance and support to youth leaders through:
-- Regular coaching and feedback
-- Modeling good leadership practices
-- Providing opportunities for growth and development
-- Supporting youth-led decision making
-
-The combination of training, practical experience, and adult mentorship creates well-prepared leaders who are ready to succeed in Scouting and beyond.

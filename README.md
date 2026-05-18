@@ -213,7 +213,7 @@ The handbook uses a **write-once, render-everywhere** architecture:
 
 1. **Content lives in** `_includes/content/*.md` — each file is one handbook section
 2. **Web rendering:** `pages/handbook.md` pulls sections together with `{% include content/section.md %}`
-3. **PDF rendering:** `scripts/build/build-handbook-simple.sh` concatenates and converts the same content via Pandoc + LaTeX
+3. **PDF rendering:** `scripts/build/build-handbook.sh` (handbook) and `scripts/build/build-appendices.sh` (appendices) convert the same content via Pandoc + LaTeX
 
 #### Editing a Section
 
@@ -223,7 +223,6 @@ Edit the file directly in `_includes/content/` — changes appear in both web an
 
 1. Create `_includes/content/new-section.md`
 2. Add `{% include content/new-section.md %}` to `pages/handbook.md`
-3. Add the file to the `process_file` calls in `scripts/build/build-handbook-simple.sh`
 
 #### Content Guidelines
 
@@ -234,14 +233,14 @@ Edit the file directly in `_includes/content/` — changes appear in both web an
 
 ### PDF Generation
 
-The system produces two PDF documents:
+The system produces PDF documents for the handbook and each appendix:
 
 | File | Contents |
 |---|---|
-| `troop-handbook-*.pdf` | Complete handbook with all sections |
-| `contact-info-*.pdf` | Leadership and contact directory |
+| `troop-handbook.pdf` | Complete handbook with all sections |
+| `appendix/{name}.pdf` | Individual appendix PDFs (contact-info, scout-camps, etc.) |
 
-Each PDF gets a timestamped version (`*-YYYYMMDD_HHMMSS.pdf`) and an auto-updated `*-latest.pdf`.
+PDFs are built fresh on each CI run with simple, stable filenames — no timestamps or versioning.
 
 **Pipeline:** Markdown → strip Jekyll syntax → convert HTML images to LaTeX → Pandoc → PDF
 
@@ -259,7 +258,7 @@ docker-compose run --rm pdf-generator
 | PDFs not updating | `docker-compose build pdf-generator --no-cache` then `docker-compose run --rm pdf-generator` |
 | Content not appearing on web | Verify file is in `_includes/content/` and included with `{% include content/filename.md %}` |
 | Jekyll won't start | Check Docker is running, try `docker-compose down` then `docker-compose up jekyll` |
-| PDF formatting issues | Edit `scripts/build/build-handbook-simple.sh` or LaTeX templates in `templates/` |
+| PDF formatting issues | Edit `scripts/build/build-handbook.sh`, `scripts/build/build-appendices.sh`, or LaTeX templates in `templates/` |
 | Test failures | Review `test-issues-summary.md` for categorized issues and suggested resolutions |
 
 ---

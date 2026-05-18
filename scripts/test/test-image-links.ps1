@@ -11,7 +11,7 @@
 
 param(
     [string]$BaseUrl = "http://localhost:4000",
-    [string[]]$Pages = @("/", "/handbook", "/about", "/events", "/contact", "/families", "/resources"),
+    [string[]]$Pages = @("/", "/handbook", "/about", "/charter-organization", "/scouting-america", "/lake-erie-council", "/events", "/contact", "/joining", "/resources"),
     [int]$TimeoutSec = 10,
     [int]$MaxConcurrency = 5,
     [switch]$ShowDetails,
@@ -58,7 +58,9 @@ function Get-ImageUrls {
         [string]$HtmlContent,
 
         [Parameter(Mandatory)]
-        [string]$PageUrl
+        [string]$PageUrl,
+
+        [switch]$ShowDetails
     )
 
     $pageUri = [Uri]$PageUrl
@@ -67,6 +69,10 @@ function Get-ImageUrls {
     $srcPattern = '(?<![\w-])src\s*=\s*["'']([^"'']+)["'']'
     $matches = [regex]::Matches($HtmlContent, $srcPattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 
+    if ($ShowDetails) {
+        Write-Host "  [DEBUG] $($matches.Count) total src= match(es) found in HTML" -ForegroundColor DarkGray
+    }
+
     # Image file extensions to test (excludes iframe src, scripts, etc.)
     $imageExtensions = @('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.ico', '.bmp')
 
@@ -74,11 +80,17 @@ function Get-ImageUrls {
         $src = $match.Groups[1].Value.Trim()
 
         # Skip data URIs and empty values
-        if ($src -match '^data:' -or [string]::IsNullOrWhiteSpace($src)) { continue }
+        if ($src -match '^data:' -or [string]::IsNullOrWhiteSpace($src)) {
+            if ($ShowDetails) { Write-Host "  [DEBUG]   SKIP (data/empty)  raw='$src'" -ForegroundColor DarkGray }
+            continue
+        }
 
         # Skip non-image URLs (e.g. Google Maps iframes, scripts)
         $ext = [System.IO.Path]::GetExtension(($src -split '[?#]')[0]).ToLower()
-        if ($ext -notin $imageExtensions) { continue }
+        if ($ext -notin $imageExtensions) {
+            if ($ShowDetails) { Write-Host "  [DEBUG]   SKIP (ext='$ext')   raw='$($src.Substring(0, [Math]::Min(80,$src.Length)))'" -ForegroundColor DarkGray }
+            continue
+        }
 
         # Resolve to absolute URL
         try {
@@ -95,15 +107,18 @@ function Get-ImageUrls {
             }
             # Only add valid http(s) URLs
             if ($absUrl -match '^https?://') {
+                if ($ShowDetails) { Write-Host "  [DEBUG]   KEEP (ext='$ext')   raw='$src' -> resolved='$absUrl'" -ForegroundColor DarkGray }
                 $images += $absUrl
+            } else {
+                Write-Host "  [WARN] src extracted but resolved to non-http URL: raw='$src' -> resolved='$absUrl'" -ForegroundColor Yellow
             }
         } catch {
-            # Skip unparseable URLs
+            Write-Host "  [WARN] src could not be resolved: raw='$src' error='$($_.Exception.Message)'" -ForegroundColor Yellow
             continue
         }
     }
 
-    return $images | Sort-Object -Unique
+    return @($images | Sort-Object -Unique)
 }
 
 # Test a single image URL
@@ -153,7 +168,7 @@ function Test-ImageLinksFromPage {
 
     try {
         $pageResponse = Invoke-WebRequest -Uri $PageUrl -UseBasicParsing -TimeoutSec $TimeoutSec
-        $imageUrls = Get-ImageUrls -HtmlContent $pageResponse.Content -PageUrl $PageUrl
+        $imageUrls = Get-ImageUrls -HtmlContent $pageResponse.Content -PageUrl $PageUrl -ShowDetails:$ShowDetails
 
         if ($imageUrls.Count -eq 0) {
             Write-Host "  No images found" -ForegroundColor Yellow
@@ -220,7 +235,10 @@ function Test-ImageLinksFromPage {
                         Write-Host "    [PASS] $($result.Url) (Status: $($result.StatusCode))$note" -ForegroundColor Green
                     }
                 } else {
-                    Write-Host "    [FAIL] $($result.Url) - Status: $($result.StatusCode) - $($result.Error)" -ForegroundColor Red
+                    Write-Host "    [FAIL] $($result.Url)" -ForegroundColor Red
+                    Write-Host "            Status Code : $($result.StatusCode)" -ForegroundColor Red
+                    Write-Host "            Error       : $($result.Error)" -ForegroundColor Red
+                    Write-Host "            Found on    : $PageUrl" -ForegroundColor Red
                     $failedCount++
 
                     Add-Issue -Category "Image Links" -Severity "High" `
@@ -246,7 +264,7 @@ function Test-ImageLinksFromPage {
 function Test-ImageLinksFromWebsite {
     param(
         [string]$BaseUrl = "http://localhost:4000",
-        [string[]]$Pages = @("/", "/handbook", "/about", "/events", "/contact", "/families", "/resources"),
+        [string[]]$Pages = @("/", "/handbook", "/about", "/charter-organization", "/scouting-america", "/lake-erie-council", "/events", "/contact", "/joining", "/resources"),
         [int]$TimeoutSec = 10,
         [int]$MaxConcurrency = 5,
         [switch]$ShowDetails
@@ -284,7 +302,9 @@ function Test-ImageLinksFromWebsite {
         foreach ($group in $groupedByPage) {
             Write-Host "  $($group.Name):" -ForegroundColor Yellow
             foreach ($failure in $group.Group) {
-                Write-Host "    - $($failure.Url) (HTTP $($failure.StatusCode))" -ForegroundColor Red
+                Write-Host "    - $($failure.Url)" -ForegroundColor Red
+                Write-Host "      Status Code : $($failure.StatusCode)" -ForegroundColor DarkRed
+                Write-Host "      Error       : $($failure.Status)" -ForegroundColor DarkRed
             }
         }
     }

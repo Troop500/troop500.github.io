@@ -6,7 +6,7 @@ This script processes markdown files and converts HTML image tags with CSS styli
 to appropriate LaTeX includegraphics commands with proper positioning and sizing.
 
 Key Features:
-- Converts HTML <img> tags to LaTeX \includegraphics commands
+- Converts HTML <img> tags to LaTeX \\includegraphics commands
 - Handles CSS float positioning (left/right) 
 - Special handling for Scout position patches (right-aligned using \hfill)
 - Automatic width scaling based on pixel values
@@ -29,7 +29,7 @@ def convert_img_to_latex(content):
     This function processes HTML <img> tags and converts them to appropriate LaTeX
     commands based on their attributes and CSS styling:
     
-    - Position patches (containing 'patch_' or 'patrol_patch'): Use \hfill for alignment
+    - Position patches (containing 'patch_' or 'patrol_patch'): Use \\hfill for alignment
     - Other images: Use wrapfigure environment for text wrapping
     - Width conversion: Pixel values mapped to \textwidth fractions
     - Path normalization: Strip leading slash and 'assets/images/' prefix, preserving subdirectories (e.g. 'handbook/patch_scribe.jpg'). LaTeX template's \\graphicspath{{assets/images/}} resolves these paths correctly.

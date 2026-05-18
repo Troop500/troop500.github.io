@@ -259,7 +259,7 @@ if (-not $Quick) {
 }
 
 # Ensure PDF directories exist
-@("assets/files/handbook", "assets/files/handbook/archive", "assets/files/handbook/appendix", "assets/files/handbook/appendix/archive") | ForEach-Object {
+@("assets/files/handbook", "assets/files/handbook/appendix") | ForEach-Object {
     if (!(Test-Path $_)) {
         New-Item -Path $_ -ItemType Directory -Force | Out-Null
     }
@@ -298,169 +298,48 @@ if (-not $SkipPDFs) {
     if ($LASTEXITCODE -eq 0) {
         Write-Host "PASS - PDF generation completed successfully!" -ForegroundColor Green
         
-        # Update latest PDF files from newly generated timestamped versions
-        Write-Host "Updating latest PDF files from newly generated versions..." -ForegroundColor Yellow
-        
-        $pdfTypes = @("troop-handbook", "contact-info")
-        foreach ($pdfType in $pdfTypes) {
-            $mostRecentPDF = Get-ChildItem "assets/files/handbook/$pdfType-20*.pdf" -ErrorAction SilentlyContinue | 
-                             Sort-Object LastWriteTime -Descending | 
-                             Select-Object -First 1
-            
-            $latestPath = "assets/files/handbook/$pdfType-latest.pdf"
-            
-            if ($mostRecentPDF) {
-                # Use the retry function for safer file operations
-                if (Copy-FileWithRetry -SourcePath $mostRecentPDF.FullName -DestinationPath $latestPath) {
-                    $sizeKB = [Math]::Round($mostRecentPDF.Length / 1024, 1)
-                    Write-Host "PASS - Updated $pdfType-latest.pdf from $($mostRecentPDF.Name) ($sizeKB KB)" -ForegroundColor Green
-                } else {
-                    Write-Host "FAIL - Could not update $pdfType-latest.pdf (file may be locked)" -ForegroundColor Red
-                }
-            } else {
-                Write-Host "WARN - No timestamped $pdfType PDF found to copy" -ForegroundColor Yellow
-            }
+        # List generated PDFs
+        Write-Host "Generated PDF files:" -ForegroundColor Yellow
+        $handbookPdf = Get-Item "assets/files/handbook/troop-handbook.pdf" -ErrorAction SilentlyContinue
+        if ($handbookPdf -and $handbookPdf.Length -gt 0) {
+            $sizeKB = [Math]::Round($handbookPdf.Length / 1024, 1)
+            Write-Host "PASS - troop-handbook.pdf ($sizeKB KB)" -ForegroundColor Green
+        } else {
+            Write-Host "WARN - troop-handbook.pdf not found or empty" -ForegroundColor Yellow
         }
         
-        # Update appendix PDF latest files
-        Write-Host "Updating appendix PDF latest files..." -ForegroundColor Yellow
         $appendixDir = "assets/files/handbook/appendix"
         if (Test-Path $appendixDir) {
-            $appendixMdFiles = Get-ChildItem "_includes/content/appendix/*.md" -ErrorAction SilentlyContinue
-            foreach ($mdFile in $appendixMdFiles) {
-                $baseName = $mdFile.BaseName
-                $mostRecentAppendixPDF = Get-ChildItem "$appendixDir/$baseName-20*.pdf" -ErrorAction SilentlyContinue | 
-                                       Sort-Object LastWriteTime -Descending | 
-                                       Select-Object -First 1
-                
-                $latestAppendixPath = "$appendixDir/$baseName-latest.pdf"
-                
-                if ($mostRecentAppendixPDF) {
-                    # Use the retry function for safer file operations
-                    if (Copy-FileWithRetry -SourcePath $mostRecentAppendixPDF.FullName -DestinationPath $latestAppendixPath) {
-                        $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
-                        Write-Host "PASS - Updated appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
-                    } else {
-                        Write-Host "FAIL - Could not update appendix $baseName-latest.pdf (file may be locked)" -ForegroundColor Red
-                    }
-                } else {
-                    Write-Host "WARN - No timestamped appendix PDF found for $baseName" -ForegroundColor Yellow
-                }
+            $appendixPdfs = Get-ChildItem "$appendixDir/*.pdf" -ErrorAction SilentlyContinue
+            foreach ($pdf in $appendixPdfs) {
+                $sizeKB = [Math]::Round($pdf.Length / 1024, 1)
+                Write-Host "PASS - appendix/$($pdf.Name) ($sizeKB KB)" -ForegroundColor Green
             }
-        }
-        
-        # Update handbook page with cache-busting timestamp
-        Write-Host "Updating handbook page with cache-busting parameters..." -ForegroundColor Yellow
-        $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-        $handbookPath = "pages/handbook.md"
-        
-        if (Test-Path $handbookPath) {
-            $content = Get-Content $handbookPath -Raw
-            
-            # Update PDF links with cache-busting parameters
-            $content = $content -replace 
-                '\[2025 Troop Handbook\]\(/assets/files/handbook/troop-handbook-latest\.pdf[^)]*\)', 
-                "[2025 Troop Handbook](/assets/files/handbook/troop-handbook-latest.pdf?v=$timestamp)"
-            
-            $content = $content -replace 
-                '\[Contact Directory\]\(/assets/files/handbook/contact-info-latest\.pdf[^)]*\)', 
-                "[Contact Directory](/assets/files/handbook/contact-info-latest.pdf?v=$timestamp)"
-            
-            Set-Content -Path $handbookPath -Value $content -NoNewline
-            Write-Host "PASS - Updated handbook page with cache-busting timestamp: $timestamp" -ForegroundColor Green
-        } else {
-            Write-Host "WARN - handbook.md not found, skipping cache-busting update" -ForegroundColor Yellow
         }
     } else {
         Write-Host "FAIL - PDF generation failed" -ForegroundColor Red
         Write-Host "Continuing with Jekyll build anyway..." -ForegroundColor Yellow
     }
 } else {
-    Write-Host "`nSkipping PDF generation (will ensure latest files exist)" -ForegroundColor Yellow
+    Write-Host "`nSkipping PDF generation" -ForegroundColor Yellow
     
-    # Even when skipping PDF generation, ensure latest files exist from previous runs
-    Write-Host "Ensuring latest PDF files exist from previous generations..." -ForegroundColor Yellow
+    # Verify expected PDFs exist from previous runs
+    Write-Host "Checking for existing PDF files..." -ForegroundColor Yellow
     
-    $pdfTypes = @("troop-handbook", "contact-info")
-    foreach ($pdfType in $pdfTypes) {
-        $latestPath = "assets/files/handbook/$pdfType-latest.pdf"
-        
-        if (-not (Test-Path $latestPath)) {
-            # Find most recent timestamped PDF to use as latest
-            $mostRecentPDF = Get-ChildItem "assets/files/handbook/$pdfType-20*.pdf" -ErrorAction SilentlyContinue | 
-                             Sort-Object LastWriteTime -Descending | 
-                             Select-Object -First 1
-            
-            if ($mostRecentPDF) {
-                if (Copy-FileWithRetry -SourcePath $mostRecentPDF.FullName -DestinationPath $latestPath) {
-                    $sizeKB = [Math]::Round($mostRecentPDF.Length / 1024, 1)
-                    Write-Host "PASS - Created $pdfType-latest.pdf from $($mostRecentPDF.Name) ($sizeKB KB)" -ForegroundColor Green
-                } else {
-                    Write-Host "FAIL - Could not create $pdfType-latest.pdf (file may be locked)" -ForegroundColor Red
-                }
-            } else {
-                # Create minimal placeholder if no PDFs exist
-                $pdfContent = @"
-%PDF-1.4
-1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
-endobj
-2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
-endobj
-3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] >>
-endobj
-xref
-0 4
-0000000000 65535 f 
-0000000010 00000 n 
-0000000056 00000 n 
-0000000111 00000 n 
-trailer
-<< /Size 4 /Root 1 0 R >>
-startxref
-180
-%%EOF
-"@
-                $pdfContent | Out-File -FilePath $latestPath -Encoding ASCII -NoNewline
-                Write-Host "WARN - Created minimal placeholder for $pdfType-latest.pdf (no previous generation found)" -ForegroundColor Yellow
-            }
-        } else {
-            $existingSize = [Math]::Round((Get-Item $latestPath).Length / 1024, 1)
-            Write-Host "PASS - $pdfType-latest.pdf already exists ($existingSize KB)" -ForegroundColor Green
-        }
+    $handbookPdf = "assets/files/handbook/troop-handbook.pdf"
+    if (Test-Path $handbookPdf) {
+        $existingSize = [Math]::Round((Get-Item $handbookPdf).Length / 1024, 1)
+        Write-Host "PASS - troop-handbook.pdf already exists ($existingSize KB)" -ForegroundColor Green
+    } else {
+        Write-Host "WARN - troop-handbook.pdf not found (run without -SkipPDFs to generate)" -ForegroundColor Yellow
     }
     
-    # Also ensure appendix PDF latest files exist when skipping generation
-    Write-Host "Ensuring appendix PDF latest files exist..." -ForegroundColor Yellow
     $appendixDir = "assets/files/handbook/appendix"
     if (Test-Path $appendixDir) {
-        $appendixMdFiles = Get-ChildItem "_includes/content/appendix/*.md" -ErrorAction SilentlyContinue
-        foreach ($mdFile in $appendixMdFiles) {
-            $baseName = $mdFile.BaseName
-            $latestAppendixPath = "$appendixDir/$baseName-latest.pdf"
-            
-            if (-not (Test-Path $latestAppendixPath)) {
-                # Find most recent timestamped appendix PDF to use as latest
-                $mostRecentAppendixPDF = Get-ChildItem "$appendixDir/$baseName-20*.pdf" -ErrorAction SilentlyContinue | 
-                                       Sort-Object LastWriteTime -Descending | 
-                                       Select-Object -First 1
-                
-                if ($mostRecentAppendixPDF) {
-                    if (Copy-FileWithRetry -SourcePath $mostRecentAppendixPDF.FullName -DestinationPath $latestAppendixPath) {
-                        $sizeKB = [Math]::Round($mostRecentAppendixPDF.Length / 1024, 1)
-                        Write-Host "PASS - Created appendix $baseName-latest.pdf from $($mostRecentAppendixPDF.Name) ($sizeKB KB)" -ForegroundColor Green
-                    } else {
-                        Write-Host "FAIL - Could not create appendix $baseName-latest.pdf (file may be locked)" -ForegroundColor Red
-                    }
-                } else {
-                    Write-Host "WARN - No previous appendix PDF found for $baseName" -ForegroundColor Yellow
-                }
-            } else {
-                $existingSize = [Math]::Round((Get-Item $latestAppendixPath).Length / 1024, 1)
-                Write-Host "PASS - Appendix $baseName-latest.pdf already exists ($existingSize KB)" -ForegroundColor Green
-            }
+        $appendixPdfs = Get-ChildItem "$appendixDir/*.pdf" -ErrorAction SilentlyContinue
+        foreach ($pdf in $appendixPdfs) {
+            $existingSize = [Math]::Round($pdf.Length / 1024, 1)
+            Write-Host "PASS - appendix/$($pdf.Name) already exists ($existingSize KB)" -ForegroundColor Green
         }
     }
 }

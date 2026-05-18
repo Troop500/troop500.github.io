@@ -10,11 +10,14 @@ menu:
 - {name: 'Upcoming Events',    url: 'events'}
 - {name: 'Learning Resources', url: 'resources'}
 - {name: 'Troop Handbook',     url: 'handbook'}
-- {name: 'For Families',       url: 'families' }
+- {name: 'Joining',            url: 'joining' }
 - {name: 'Files',              url: 'files'}
 - name: 'About'
   submenu:
-  - {name: 'About Us', url: 'about'}
+  - {name: 'Troop 500G', url: 'about'}
+  - {name: 'Charter Organization', url: 'charter-organization'}
+  - {name: 'Scouting America', url: 'scouting-america'}
+  - {name: 'Lake Erie Council', url: 'lake-erie-council'}
   - {name: 'Contact', url: 'contact'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

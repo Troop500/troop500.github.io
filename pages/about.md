@@ -4,4 +4,4 @@ title: About
 permalink: /about
 ---
 
-{% include content/introduction-welcome.md %} 
+{% include content/troop-overview.md %}

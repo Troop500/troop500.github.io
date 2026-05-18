@@ -4,8 +4,6 @@ title: "Packing Lists & Gear"
 permalink: /handbook/packing-gear
 ---
 
-# Packing Lists & Gear
-
 Proper packing and gear selection are essential for safe, comfortable, and successful outdoor adventures. This section provides comprehensive packing guidance for various activities.
 
 ## The Ten Essentials
@@ -184,6 +182,69 @@ For typical weekend tent camping trips, use this comprehensive packing list.
 2. **Quality rain gear** - keeps you dry and comfortable
 3. **Proper footwear** - prevents injuries and improves enjoyment
 4. **Reliable flashlight/headlamp** - critical for safety
+
+## Winter Camping Gear List
+
+{% include content/handbook/winter-gear.md %}
+
+## High Adventure Gear Lists
+
+High adventure trips go beyond regular troop camping. These programs push scouts physically and mentally, and they require specialized gear tailored to each destination.
+
+**Important:** Each high adventure base publishes its own official gear list. The lists below are based on published requirements and past troop experience, but **always check the official source** for the most current requirements before your trip.
+
+### National Jamboree — Summit Bechtel Reserve
+
+**Location:** Mount Hope, West Virginia — Appalachian Mountains at the Summit Bechtel Reserve
+
+**What it is:** Scouting's flagship 10-day gathering (July 22–31, 2026) with tens of thousands of Scouts. Stadium shows, adventure sports, pioneer village, Mount Jack hikes, and more across 10,000 acres. This is not a typical campout — it's a full immersion experience.
+
+**What's provided:** Basecamp tents and cots, meals, water stations, and a 22L ALPS Mountaineering "Elevate" day pack with participant neckerchief and patches (all included with registration).
+
+**Key gear focus:** Broken-in hiking shoes (you'll walk 5–10+ miles per day), lightweight sleeping bag (40°F–50°F), rain jacket (afternoon thunderstorms are common), 2+ liters of water capacity, sun protection, and 10 days of clothing. Pack light — you carry everything from the bus to your campsite. Patch trading supplies are a Jamboree tradition.
+
+**Official site & gear list:** [jamboree.scouting.org](https://jamboree.scouting.org/)
+
+### Philmont Scout Ranch
+
+**Location:** Cimarron, New Mexico — Sangre de Cristo Mountains (6,500–12,441 ft elevation)
+
+**What it is:** A 7–12 day backpacking trek covering 50–100+ miles through high desert, mountain forests, and alpine terrain. Everything you need is carried on your back.
+
+**Key gear focus:** Lightweight backpacking pack (60–75L), 20°F sleeping bag, broken-in hiking boots with ankle support, rain gear, layers for altitude temperature swings, and 3+ liters of water capacity. Every ounce counts.
+
+**Official gear list & info:** [philmontscoutranch.org](https://www.philmontscoutranch.org/)
+
+### Florida Sea Base
+
+**Location:** Islamorada, Florida Keys — tropical ocean environment
+
+**What it is:** Ocean-based adventures (sailing, snorkeling, SCUBA, island hopping) lasting 6–8 days in the Florida Keys and Bahamas.
+
+**Key gear focus:** Quick-dry clothing, reef-safe sunscreen (mandatory), water shoes, UV protection for full days on the water, and waterproof bags for everything. Swim test required.
+
+**Official gear list & info:** [bsaseabase.org](https://www.bsaseabase.org/)
+
+### Northern Tier
+
+**Location:** Ely, Minnesota / Atikokan, Ontario — Boundary Waters Canoe Area and Quetico Provincial Park
+
+**What it is:** A 6–10 day wilderness canoe trek through remote lakes and rivers, with portages (carrying canoe and gear overland between lakes).
+
+**Key gear focus:** Waterproof everything (gear goes in Duluth packs — provided by Northern Tier), serious insect protection (head net and DEET are not optional), rain gear, quick-dry clothing, and sturdy water shoes for rugged portage trails. Passport required if crossing into Canada.
+
+**Official gear list & info:** [ntier.org](https://www.ntier.org/)
+
+### General High Adventure Preparation
+
+Regardless of which program you attend, these apply to all high adventure trips:
+
+- Start training **at least 6 months** before your trip
+- All participants must pass the BSA physical (Parts A, B, and C of the Annual Health and Medical Record)
+- **Check the official gear list** for your specific program and year — requirements change
+- **Don't buy everything new** — borrow or rent specialized gear when possible
+- **Test all gear before the trip** — never use untested equipment on a high adventure
+- **Label everything** — gear gets mixed up in group settings
 
 ---
 

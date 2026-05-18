@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Getting Started with Troop 500G"
+title: "Parents Guide"
 permalink: /handbook/getting-started
 ---
 
-# Getting Started with Troop 500G
+# Parents Guide
 
-{% include content/getting-started-parents.md %}
+{% include content/parents-guide.md %}
 
 ---
 

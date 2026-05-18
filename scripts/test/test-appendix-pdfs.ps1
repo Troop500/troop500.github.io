@@ -55,7 +55,7 @@ function Add-Issue {
 function Test-AppendixPDFs {
     param(
         [string]$BaseDir = (Get-Location),
-        [string]$PdfPath = "assets/files/handbook/appendix/*-latest.pdf"
+        [string]$PdfPath = "assets/files/handbook/appendix/*.pdf"
     )
     
     Write-Host "Testing appendix PDFs..." -ForegroundColor Cyan
@@ -123,7 +123,7 @@ function Test-AppendixPDFs {
 function Test-AppendixPDFContent {
     param(
         [string]$BaseDir = (Get-Location),
-        [string]$PdfPath = "assets/files/handbook/appendix/*-latest.pdf",
+        [string]$PdfPath = "assets/files/handbook/appendix/*.pdf",
         [string[]]$RequiredContent = @("Joining Conference", "Template", "Troop 500")
     )
     
@@ -180,7 +180,7 @@ function Test-AppendixPDFContent {
 function Clear-OldAppendixPDFs {
     param(
         [string]$BaseDir = (Get-Location),
-        [string]$PdfPath = "assets/files/handbook/appendix/*-20*.pdf",
+        [string]$PdfPath = "assets/files/handbook/appendix/*.pdf",
         [int]$KeepNewest = 3
     )
     

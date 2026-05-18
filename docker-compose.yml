@@ -17,6 +17,6 @@ services:
       dockerfile: Dockerfile.pandoc
     volumes:
       - .:/srv/jekyll
-    command: /scripts/build/build-handbook-simple.sh
+    command: bash -c "/scripts/build/build-handbook.sh && /scripts/build/build-appendices.sh"
     profiles:
       - pdf

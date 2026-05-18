@@ -14,6 +14,17 @@ $endif$
 \usepackage{float}
 \usepackage{longtable}
 \usepackage{booktabs}
+\usepackage{array}
+\usepackage{calc}
+% Fix pandoc longtable column width calculations
+\makeatletter
+\newlength\Oldarrayrulewidth
+\newlength\Oldtabcolsep
+\providecommand*\LT@cols{0}
+\makeatother
+% Fix for Pandoc's \def\LTcaptype{none} used to suppress longtable captions
+% Without this counter, LaTeX errors with "No counter 'none' defined"
+\newcounter{none}
 % Set graphics path - images are referenced relative to assets/images/ (e.g. handbook/patch_scribe.jpg)
 \graphicspath{{assets/images/}}
 \setcounter{secnumdepth}{5}

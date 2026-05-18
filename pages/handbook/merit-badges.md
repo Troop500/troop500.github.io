@@ -12,8 +12,10 @@ Merit badges are an essential part of the scouting experience, allowing scouts t
 
 ### Eagle Scout Requirements
 - **Total merit badges needed**: 21 minimum for Eagle Scout rank
-- **Required merit badges**: 14 specific badges are required
-- **Elective merit badges**: 7 additional badges of the scout's choice
+- **Required merit badges**: 13 specific badges are required
+- **Elective merit badges**: 8 additional badges of the Scout's choice
+
+{% include content/handbook/eagle-merit-badges.md %}
 
 ## Merit Badge Process
 
@@ -50,6 +52,12 @@ Merit badges are an essential part of the scouting experience, allowing scouts t
 - Merit badge counselor keeps one part
 
 ## Important Safeguards
+
+### Blue Card Validity and Partial Completion
+- **Blue cards do not expire** — a partially completed merit badge can be continued at any time
+- If a Scout starts a merit badge with one counselor but cannot finish, they may continue with a **different approved counselor**
+- The new counselor should be given the original blue card showing which requirements have already been completed
+- There is no time limit on completing a merit badge once started
 
 ### Record Protection
 Because blue cards are the ONLY acceptable documentation if computer records are lost:
