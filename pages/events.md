@@ -6,11 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 5/18: Troop Meeting
-- 5/25: Twinsburg Memorial Day Parade - 9:30am
-- 5/25: NO Troop Meeting
-- 5/27: PLC
-- 6/1: Troop Meeting
 - 6/8: First Troop Meeting at Shelterhouse - 6:30pm - 8pm
 - 6/15: Troop Meeting
 - 6/22: Troop Meeting
