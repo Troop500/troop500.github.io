@@ -25,11 +25,11 @@ The following events are currently scheduled.
 - 8/26: PLC
 - 8/31: Court of Honor - last meeting at Shelterhouse
 - 9/7: First Troop Meeting at Church
-- 9/11 - 9/12: Scouting in the Sqaure
+- 9/11 - 9/12: Scouting in the Square (AOLs welcome!)
 - 9/19 or 9/26: Horseback riding
 - 10/16 - 10/18: Cub Haunted
 - 11/1: Semi-Annual Planning - PLC Only
-- 11/13 - 11/16: Cooking Campout in Metroparks
+- 11/13 - 11/16: Cooking Campout in Metroparks (AOLs welcome!)
 - 12/4 - 12/6: Boomers vs Zoomers
 - Jan: Klondike
 - Feb: Gaming Campout
