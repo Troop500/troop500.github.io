@@ -6,11 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 6/8: First Troop Meeting at Shelterhouse - 6:30pm - 8pm
-- 6/15: Troop Meeting
-- 6/22: Troop Meeting
-- 6/24: PLC
-- 6/28 - 7/4: Summer Camp
 - 7/6: Troop Meeting
 - 7/13: Gagaball Tourney
 - 7/20: Troop Meeting followed by PLC

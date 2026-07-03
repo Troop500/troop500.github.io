@@ -106,7 +106,6 @@ The path to Eagle consists of the following steps:
 |Typical Active Period| | | | | | | 10 months |
 |Cumulative Merit Badges| | | | | 6, 4 Eagle require | 11, 7 Eagle required | 21, 14 Eagle required |
 |Typical Age| 11-12 | 11-12 | 12-13 | 14-15 | 15-16 | 16-17 | Before 18 years old |
-|Fast Track Age| | | By end of 1st year | 11-12 | 12-13 | 13-14 | 14-15 |
 
 Note: Advancement requires scoutmaster conference, merit badges, service projects, and other activities so the "Minimum Active Period" quoted here and in the Scout Book is very misleading.
 
