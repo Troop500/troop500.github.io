@@ -24,7 +24,7 @@ The following events are currently scheduled.
 - 9/19 or 9/26: Horseback riding
 - 10/16 - 10/18: Cub Haunted
 - 11/1: Semi-Annual Planning - PLC Only
-- 11/13 - 11/16: Cooking Campout in Metroparks (AOLs welcome!)
+- 11/13 - 11/15: Cooking Campout in Metroparks (AOLs welcome!)
 - 12/4 - 12/6: Boomers vs Zoomers
 - Jan: Klondike
 - Feb: Gaming Campout
