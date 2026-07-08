@@ -6,8 +6,8 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 7/6: Troop Meeting
 - 7/13: Gagaball Tourney
+- 7/18: Navy's Eagle Fundraiser - Noon-3pm
 - 7/20: Troop Meeting followed by PLC
 - 7/22 - 7/31: National Jamboree
 - 7/27: Troop Meeting
