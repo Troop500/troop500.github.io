@@ -6,11 +6,8 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 7/13: Gagaball Tourney
-- 7/18: Navy's Eagle Fundraiser - Noon-3pm
-- 7/20: Troop Meeting (PLC at 5:30pm)
 - 7/22 - 7/31: National Jamboree
-- 7/27: Troop Meeting
+- 7/27: Troop Meeting @ Pool!
 - 8/3: Lake House Party!
 - 8/10: SPL/PL Elections
 - 8/14-8/16: Canoeing & Camp Hi
@@ -21,7 +18,7 @@ The following events are currently scheduled.
 - 8/31: Court of Honor - last meeting at Shelterhouse
 - 9/7: First Troop Meeting at Church
 - 9/11 - 9/12: Scouting in the Square (AOLs welcome!)
-- 9/26: Horseback riding
+- 9/26: Horseback MB/Riding
 - 10/16 - 10/18: Cub Haunted
 - 11/1: Semi-Annual Planning - PLC Only
 - 11/13 - 11/15: Cooking Campout in Metroparks (AOLs welcome!)
