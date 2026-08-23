@@ -6,11 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 8/3: Lake House Party!
-- 8/10: SPL/PL Elections
-- 8/14-8/16: Canoeing & Camp Hi
-- 8/17: Troop Meeting & COH Deadline
-- 8/22: High ROPES Course
 - 8/24: Troop Meeting
 - 8/26: PLC
 - 8/31: Court of Honor - last meeting at Shelterhouse
@@ -25,7 +20,6 @@ The following events are currently scheduled.
 - Jan: Klondike
 - Feb: Gaming Campout
 - 2/15: PLC Elections
-- Mar: E-Prep Campout
 
 
 ## Troop Google Calendar
