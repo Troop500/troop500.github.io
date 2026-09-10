@@ -12,6 +12,7 @@ The following events are currently scheduled.
 - 9/14: First Troop Meeting at Church
 - 9/21: Troop meeting
 - 9/26: Horseback MB/Riding
+- 9/27: Navy's Eagle Work Day #2
 - 9/28: Troop meeting
 - 10/5: Troop meeting
 - 10/12: Troop meeting
