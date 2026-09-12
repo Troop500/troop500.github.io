@@ -6,8 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 9/7: No Troop meeting - Happy Labor Day!
-- 9/11 - 9/12: Scouting in the Square (AOLs welcome!)
 - 9/13: Cycling MB - 10mi ride
 - 9/14: First Troop Meeting at Church
 - 9/21: Troop meeting
