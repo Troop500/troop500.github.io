@@ -6,11 +6,10 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 9/14: First Troop Meeting at Church
-- 9/20: Cycling MB - 15mi ride
 - 9/21: Troop meeting
 - 9/26: Horseback MB/Riding
 - 9/27: Navy's Eagle Work Day #2
+- 9/27: Semi-Annual Planning - PLC Only
 - 9/28: Troop meeting
 - 9/30: PLC Meeting @ Library
 - 10/3: Cycling MB - 20mi ride
@@ -20,7 +19,6 @@ The following events are currently scheduled.
 - 10/19: Troop meeting
 - 10/24: Trunk-or-Treat @ Church
 - 10/26: Troop meeting
-- 11/1: Semi-Annual Planning - PLC Only
 - 11/2: Troop Meeting (no access to Gym)
 - 11/9: Troop Meeting
 - 11/13 - 11/15: Cooking Campout in Metroparks (AOLs welcome!)
