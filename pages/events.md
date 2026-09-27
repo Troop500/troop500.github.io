@@ -6,19 +6,16 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 9/21: Troop meeting
-- 9/26: Horseback MB/Riding
-- 9/27: Navy's Eagle Work Day #2
-- 9/27: Semi-Annual Planning - PLC Only
 - 9/28: Troop meeting
 - 9/30: PLC Meeting @ Library
-- 10/3: Cycling MB - 20mi ride
+- 10/3: Cycling MB - 15mi ride
 - 10/5: Troop meeting
 - 10/12: Troop meeting
 - 10/16 - 10/18: Cub Haunted
 - 10/19: Troop meeting
 - 10/24: Trunk-or-Treat @ Church
 - 10/26: Troop meeting
+- 10/28: PLC Meeting @ Library
 - 11/2: Troop Meeting (no access to Gym)
 - 11/9: Troop Meeting
 - 11/13 - 11/15: Cooking Campout in Metroparks (AOLs welcome!)
@@ -28,12 +25,19 @@ The following events are currently scheduled.
 - 12/4 - 12/6: Boomers vs Zoomers
 - 12/7: Troop meeting
 - 12/14: Troop meeting
-- 12/21: Troop meeting (one of these might be canceled)
-- 12/28: Troop meeting (one of these might be canceled)
--- 2027 --
-- Jan: Klondike
-- Feb: Gaming Campout
+- 12/21: Troop meeting
+- 12/28: Troop meeting
+2027 Events!
+- Jan: Klondike or Ski Trip
+- Feb: Klondike or Ski Trip
 - 2/15: PLC Elections
+- 3/9: Pack 67 Crossover Ceremony
+- 3/12-3/14: Gaming Campout
+- 4/9-4/11: Advancement Campout
+- 4/23-4/25: OA Spring Inductions
+- May: Dover Dam Weekend
+- 5/2: Semi-Annual Planning Meeting (PLC Only)
+- 6/7: Troop Meeting at Shelterhouse
 
 
 ## Troop Google Calendar
