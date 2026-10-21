@@ -6,21 +6,17 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 10/11: Bike Ride (20mi)
-- 10/12: Troop meeting
-- 10/16 - 10/18: Cub Haunted
-- 10/19: Troop meeting
 - 10/24: Trunk-or-Treat @ Church
-- 10/25: Bike Ride (25mi)
+- 10/25: Bike Ride (20mi)
 - 10/26: Troop meeting
 - 10/28: PLC Meeting @ Library
-- 11/1: Bike Ride (30mi)
+- 11/1: Bike Ride (25mi)
 - 11/2: Troop Meeting (no access to Gym)
-- 11/7: Bike Ride (35mi)
+- 11/7: Bike Ride (30mi)
 - 11/9: Troop Meeting
 - 11/13 - 11/15: Cooking Campout in Metroparks (AOLs welcome!)
 - 11/16: Troop meeting
-- 11/21: Bike Ride (40mi)
+- 11/21: Bike Ride (35mi)
 - 11/23: Troop meeting
 - 11/30: Troop meeting
 - 12/4 - 12/6: Boomers vs Zoomers
