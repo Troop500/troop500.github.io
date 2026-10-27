@@ -6,8 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 10/24: Trunk-or-Treat @ Church
-- 10/25: Bike Ride (20mi)
 - 10/26: Troop meeting
 - 10/28: PLC Meeting @ Library
 - 11/1: Bike Ride (25mi)
@@ -24,7 +22,9 @@ The following events are currently scheduled.
 - 12/14: Troop meeting
 - 12/21: Troop meeting
 - 12/28: Troop meeting
+
 2027 Events!
+
 - 1/15 - 1/17: Klondike
 - Feb: Ski Trip
 - 2/15: PLC Elections
