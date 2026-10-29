@@ -6,8 +6,7 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 10/26: Troop meeting
-- 10/28: PLC Meeting @ Library
+- 10/30: PLC Meeting
 - 11/1: Bike Ride (25mi)
 - 11/2: Troop Meeting (no access to Gym)
 - 11/7: Bike Ride (30mi)
