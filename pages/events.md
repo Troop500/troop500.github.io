@@ -6,14 +6,12 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 10/30: PLC Meeting
-- 11/1: Bike Ride (25mi)
 - 11/2: Troop Meeting (no access to Gym)
-- 11/7: Bike Ride (30mi)
+- 11/7: Bike Ride (25mi)
 - 11/9: Troop Meeting
 - 11/13 - 11/15: Cooking Campout in Metroparks (AOLs welcome!)
 - 11/16: Troop meeting
-- 11/21: Bike Ride (35mi)
+- 11/21: Bike Ride (30mi)
 - 11/23: Troop meeting
 - 11/30: Troop meeting
 - 12/4 - 12/6: Boomers vs Zoomers
