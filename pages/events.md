@@ -6,10 +6,10 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 11/13 - 11/15: Cooking Campout in Metroparks (AOLs welcome!)
 - 11/16: Troop meeting
 - 11/21: Bike Ride (25mi)
 - 11/23: Troop meeting
+- 11/29: PLC Meeting @ Church
 - 11/30: Troop meeting
 - 12/4 - 12/6: Boomers vs Zoomers
 - 12/7: Troop meeting
