@@ -33,7 +33,7 @@ Clean it soon after cooking, while it's still warm. Food comes off much more eas
 
 ![Step 2: scrub with hot water]({{ '/assets/img/cast-iron-step2-scrub.jpg' | relative_url }})
 
-Use hot water and a scrub brush or a chain-mail scrubber. A small squirt of dish soap is fine.
+Use hot water and a scrub brush or a chain-mail scrubber. **You don't need soap.** The heat in the next step does the germ-killing. If something greasy or smelly won't come off (like fish), one drop of soap is OK, but that's the exception, not the rule.
 
 - **Don't** leave it soaking in the wash tub.
 - **Don't** use steel wool. It scrubs off the seasoning.
@@ -44,6 +44,8 @@ Use hot water and a scrub brush or a chain-mail scrubber. A small squirt of dish
 ![Step 3: dry it on the heat]({{ '/assets/img/cast-iron-step3-dry.jpg' | relative_url }})
 
 Wipe it with a towel, then set it on the stove or coals for 2 to 3 minutes until every drop of water is gone. A towel alone leaves the metal damp, and damp metal rusts by morning.
+
+This step also **sanitizes** the pan. Germs can't survive on metal that's too hot to touch, so the heat does the job that soap does on other dishes. That's why cast iron gets heated, not soaped.
 
 ### 4. Wipe on a thin coat of oil
 
