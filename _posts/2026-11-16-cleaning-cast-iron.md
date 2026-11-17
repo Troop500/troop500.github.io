@@ -43,9 +43,9 @@ Use hot water and a scrub brush or a chain-mail scrubber. **You don't need soap.
 
 ![Step 3: dry it on the heat]({{ '/assets/img/cast-iron-step3-dry.jpg' | relative_url }})
 
-Wipe it with a towel, then set it on the stove or coals until every drop of water is gone, then leave it on for one more minute. A towel alone leaves the metal damp, and damp metal rusts by morning.
+Wipe it with a towel, then put it on the stove on medium heat for **about 5 minutes**. The water will be gone in a minute or two. Leave it on anyway. A towel alone leaves the metal damp, and damp metal rusts by morning.
 
-This step also **sanitizes** the pan. Once the water is gone, the metal heats up past the temperature of boiling water, and a few minutes that hot kills the germs that make people sick. The heat does the job that soap does on other dishes. That's why cast iron gets heated, not soaped.
+This step also **sanitizes** the pan. After a few minutes the metal is much hotter than boiling water, and [bacteria can't survive that heat](https://www.americastestkitchen.com/articles/5037-is-it-ok-to-use-soap-on-cast-iron). The heat does the job that soap does on other dishes. That's why cast iron gets heated, not soaped.
 
 ### 4. Wipe on a thin coat of oil
 
