@@ -6,8 +6,6 @@ permalink: /events
 
 The following events are currently scheduled.
 
-- 11/16: Troop meeting
-- 11/21: Bike Ride (25mi)
 - 11/23: Troop meeting
 - 11/29: PLC Meeting @ Church
 - 11/30: Troop meeting
